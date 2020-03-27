@@ -1,7 +1,14 @@
-CFLAGS = -Wall -Wextra -Werror
+cc		 = gcc
+CFLAGS	 = -Wall -Wextra -g
+LDFLAGS  =
+DEPS	 = main.c logs.c logs.h Makefile
+OBJFILES = main.o logs.o
+TARGET	 = simgrep
 
-simpledu: main.c
-	gcc $(CFLAGS) -o simpledu main.c
+all: $(TARGET)
+
+$(TARGET): $(OBJFILES) $(DEPS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJFILES) $(LDFLAGS)
 
 clean:
-	rm simpledu
+	rm -f $(OBJFILES) $(TARGET) *~

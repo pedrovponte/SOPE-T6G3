@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdlib.h>
-#include <string.h>
+#include "logs.h"
 
 
 struct commands {
@@ -21,7 +21,7 @@ struct commands {
 
 int main(int argc, char* argv[]){
     if(argc < 2){ //2 ou 1, depende se é preciso especificar ou não o path
-        perror("Wrong number of arguments");
+        perror("Wrong number of arguments.\n");
         exit(1);
     }
 
@@ -61,4 +61,5 @@ int main(int argc, char* argv[]){
             //Descobrir a profundidade neste caso
         }
     }
+    return 0;
 }
