@@ -19,13 +19,7 @@ struct commands {
     long int max_depth_size;
 } coms;
 
-
-
 int main(int argc, char* argv[]){
-
-intmax_t num;
-char* end;
-int base = 10;
 
     if(argc < 2){ //2 ou 1, depende se é preciso especificar ou não o path
         fprintf(stderr, "Wrong number of arguments.\n");
@@ -59,8 +53,15 @@ int base = 10;
 
         if(strncmp(argv[i], "--block-size=", 13) == 0){
             coms.block_size = true;
-            num = strtoimax(argv[i], &end, base);
-            coms.block_size_bytes = num;
+            char str[16];
+            char* last;
+            strcpy(str, argv[i]);
+            char* token = strtok(str, "=");
+            while(token != NULL){
+                last = token;
+                token = strtok(NULL, "=");
+            }
+            coms.block_size_bytes = atoi(last);
         }        
 
         if(strcmp(argv[i], "-S") == 0 || strcmp(argv[i], "--separate-dirs") == 0){
@@ -69,11 +70,18 @@ int base = 10;
 
         if(strncmp(argv[i], "--max-depth=", 12) == 0){
             coms.max_depth = true;
-            num = strtoimax(argv[i], &end, base);
-            coms.max_depth_size = num;
+            char str[16];
+            char* last;
+            strcpy(str, argv[i]);
+            char* token = strtok(str, "=");
+            while(token != NULL){
+                last = token;
+                token = strtok(NULL, "=");
+            }
+            coms.max_depth_size = atoi(last);
         }
     }
 
-    printf("%d, %d, %d, %i, %d, %d, %li \n",coms.all_files, coms.show_bytes, coms.block_size, coms.block_size_bytes, coms.separate_dirs, coms.max_depth, coms.max_depth_size);
+    //printf("%d, %d, %d, %i, %d, %d, %li \n",coms.all_files, coms.show_bytes, coms.block_size, coms.block_size_bytes, coms.separate_dirs, coms.max_depth, coms.max_depth_size);
     return 0;
 }
