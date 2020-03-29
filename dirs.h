@@ -1,0 +1,1 @@
+int dirs(const char* name);
