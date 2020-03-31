@@ -1,27 +1,15 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <dirent.h>
-#include <sys/stat.h>
-#include <sys/types.h>
-#include <unistd.h>
-#include <string.h>
-#include <sys/wait.h>
-#include "main.c"
-//#include <limits.h>
+#include "dirs.h"
 
 #define READ 0
 #define WRITE 1
 
-extern struct commands coms;
-
-int main(void){
-    
-    long int total = 4;
+int dirs(struct commands *coms){
+    long int total = 0;
     //long int total_rest = 0;
     struct stat path_stat;
     struct dirent *de;
     //int fd[2];
-    //int pid;
+    int pid;
     //int aux = -1;
 
     DIR *dir = opendir(".");
@@ -40,23 +28,76 @@ int main(void){
         lstat(de->d_name, &path_stat);
         
         if(S_ISREG(path_stat.st_mode)){    
-            total += path_stat.st_blocks/2;
-        }
-	
-        if(coms.all_files == 1){
-            printf("%ld", path_stat.st_blocks / 2);
-            printf("    %s\n", de->d_name);
+            if(coms->all_files == 1){
+                if(coms->show_bytes == 1 && coms->block_size == 1){     //faltam bytes
+                    if((path_stat.st_size % coms->block_size_bytes) == 0){
+                        printf("%li", (long int)(path_stat.st_size / coms->block_size_bytes));
+                        printf("    %s\n", de->d_name);
+                        total += path_stat.st_size / coms->block_size_bytes;
+                    }
+                    else{
+                        printf("%li", (long int)(path_stat.st_size / coms->block_size_bytes + 1));
+                        printf("    %s\n", de->d_name);
+                        total += path_stat.st_size / coms->block_size_bytes + 1;
+                    }
+                }
+                if(coms->block_size == 1 && coms->show_bytes == 0){             //faltam bytes
+                    if(((path_stat.st_blocks / 2) * 1024 % coms->block_size_bytes) == 0) {
+                        printf("%li", (long int)((path_stat.st_blocks / 2) * 1024 / coms->block_size_bytes));
+                        printf("    %s\n", de->d_name);
+                        total += (path_stat.st_blocks / 2) * 1024 / coms->block_size_bytes;
+                    }
+                    else{
+                        printf("%li", (long int)((path_stat.st_blocks / 2) * 1024 / coms->block_size_bytes + 1));
+                        printf("    %s\n", de->d_name);
+                        total += (path_stat.st_blocks / 2) * 1024 / coms->block_size_bytes + 1;
+                    }
+                }
+                if(coms->block_size == 0 && coms->show_bytes == 1){
+                    printf("%ld", path_stat.st_size);
+                    printf("    %s\n", de->d_name);
+                    total += path_stat.st_size;             //faltam 4096 bytes
+                }
+                if(coms->block_size == 0 && coms->show_bytes == 0){
+                    printf("%ld", path_stat.st_blocks / 2);
+                    printf("    %s\n", de->d_name);
+                    total += path_stat.st_blocks / 2;     //faltam 4 blocos
+                }
+            }
+            else{
+                if(coms->show_bytes == 1 && coms->block_size == 1){
+                    if((path_stat.st_size % coms->block_size_bytes) == 0){
+                        total += path_stat.st_size / coms->block_size_bytes;
+                    }
+                    else{
+                        total += path_stat.st_size / coms->block_size_bytes + 1;
+                    }
+                }
+                if(coms->block_size == 1 && coms->show_bytes == 0){               //faltam 2048 bytes
+                    if(((path_stat.st_blocks / 2) * 1024 % coms->block_size_bytes) == 0) {
+                        total += (path_stat.st_blocks / 2) * 1024 / coms->block_size_bytes;
+                    }
+                    else{
+                        total += (path_stat.st_blocks / 2) * 1024 / coms->block_size_bytes + 1;
+                    }
+                }
+                if(coms->block_size == 0 && coms->show_bytes == 1){
+                    total += path_stat.st_size;
+                }
+                if(coms->block_size == 0 && coms->show_bytes == 0){
+                    total += path_stat.st_blocks / 2;     //faltam 4 blocos
+                }
+            }
         }
 
-        if(coms.dereference == 1){
-            if(S_ISLNK(path_stat.st_mode)){
+        if(coms->dereference == 1){                  //Corrigir
+            if(S_ISLNK(path_stat.st_mode)){                
                 total += path_stat.st_blocks / 2;
             }
-            printf("%ld", path_stat.st_blocks / 2);
-            printf("    %s\n", de->d_name);
         }
 
-        /*if(S_ISDIR(path_stat.st_mode)){
+
+        if(S_ISDIR(path_stat.st_mode)){
                 
             //pipe(fd);
 
@@ -69,31 +110,31 @@ int main(void){
                 
 
                 dir = opendir(".");
-                total = 4;
+                total = path_stat.st_blocks / 2;
                 if(dir == NULL){
                     exit(0);
                 }
 
-                close(fd[READ]);
-                write(fd[WRITE],&total,8);
+                //close(fd[READ]);
+                //write(fd[WRITE],&total,8);
 
             }
 
             else if(pid > 0){
-                parent = getpid();
+                //parent = getpid();
                 wait(NULL);
 
-                close(fd[WRITE]);
-                read(fd[READ],&total_rest,8);
+                //close(fd[WRITE]);
+                //read(fd[READ],&total_rest,8);
 
-                total = total + total_rest;
+                //total = total + total_rest;
             }
 
             else{
                 fprintf(stderr, "fork error\n");
                 return 1;
             }
-        }*/
+        }
     }
     
     /*if(pid == 0){
@@ -108,6 +149,10 @@ int main(void){
         total = total + total_rest;
     }*/
     
+    /*if(coms->show_bytes == 0){
+        total += 4;
+    }*/
+
     printf("%ld\n", total);
     /*printf("%s", de->d_name);*/
     

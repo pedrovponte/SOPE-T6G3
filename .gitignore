@@ -8,3 +8,5 @@ logs.o
 comp
 
 main.o
+
+*.o

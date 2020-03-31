@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "stdbool.h": "c"
+        "stdbool.h": "c",
+        "dirs.h": "c",
+        "args_handler.h": "c"
     }
 }
