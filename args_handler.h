@@ -4,6 +4,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <dirent.h>
+#include <sys/stat.h>
+#include <sys/types.h>
 #include <inttypes.h>
 
 struct commands {
@@ -18,3 +21,5 @@ struct commands {
 };
 
 int args_commands(int argc, char* argv[], struct commands *coms);
+
+bool check_is_dir(const char* path);

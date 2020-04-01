@@ -2,6 +2,7 @@
     "files.associations": {
         "stdbool.h": "c",
         "dirs.h": "c",
-        "args_handler.h": "c"
+        "args_handler.h": "c",
+        "sstream": "c"
     }
 }

@@ -4,7 +4,7 @@
 int args_commands(int argc, char* argv[], struct commands *coms){
     if(argc < 1){ //2 ou 1, depende se é preciso especificar ou não o path
         fprintf(stderr, "Wrong number of arguments.\n");
-        return 1;
+        exit(1);
     }
 
     coms->all_files = false;
@@ -61,4 +61,15 @@ int args_commands(int argc, char* argv[], struct commands *coms){
         }
     }
     return 0;
+}
+
+bool check_is_dir(const char* path){
+    struct stat path_stat;
+
+    if(stat(path, &path_stat) != 0){
+        fprintf(stderr, "Invalid directory.\n");
+        exit(1);
+    }
+
+    return S_ISDIR(path_stat.st_mode);
 }

@@ -11,4 +11,4 @@
 #include <sys/wait.h>
 #include "args_handler.h"
 
-int dirs(struct commands *coms);
+int dirs(struct commands *coms, const char *path_file);
