@@ -2,10 +2,6 @@
 
 
 int args_commands(int argc, char* argv[], struct commands *coms){
-    if(argc < 1){ //2 ou 1, depende se é preciso especificar ou não o path
-        fprintf(stderr, "Wrong number of arguments.\n");
-        exit(1);
-    }
 
     coms->all_files = false;
     coms->show_bytes = false;
