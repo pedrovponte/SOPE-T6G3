@@ -10,6 +10,7 @@ int dirs(struct commands *coms, const char *path_file){
     struct dirent *de;
     int fd[2];
     int pid;
+    char* name;
 
     DIR *dir = opendir(path_file);
 
@@ -19,14 +20,30 @@ int dirs(struct commands *coms, const char *path_file){
 
     while((de = readdir(dir)) != NULL){
 
+        char *entry_name = de->d_name;
+
+        printf("Estou aqui 1\n");
+        printf("%s\n",de->d_name);
+
         if(strcmp(de->d_name,".") == 0 || strcmp(de->d_name,"..") == 0){
-            
+            //printf("Entrei %s\n",de->d_name);
             continue;
         }
         
-        lstat(de->d_name, &path_stat);
+        if(strcmp(".",path_file) == 0 || strcmp("..",path_file))
+            return 0;
+
+        name = (char*) malloc (512 * sizeof(char));
+
+        sprintf(name, "%s%s", path_file, entry_name);
+
+        if(stat(name, &path_stat) == -1){
+            perror("Stat error");
+            exit(1);
+        }           
         
         if(S_ISREG(path_stat.st_mode)){    
+            printf("Estou aqui 2\n");
             if(coms->all_files == 1){
                 if(coms->show_bytes == 1 && coms->block_size == 1){     //faltam bytes
                     if((path_stat.st_size % coms->block_size_bytes) == 0){
@@ -63,6 +80,7 @@ int dirs(struct commands *coms, const char *path_file){
                     total += path_stat.st_size;             //faltam 4096 bytes
                 }
                 if(coms->block_size == 0 && coms->show_bytes == 0){
+                    printf("Estou aqui 3\n");
                     printf("%ld", path_stat.st_blocks / 2);
                     printf("    /");
                     printf("%s\n", de->d_name);
@@ -111,7 +129,7 @@ int dirs(struct commands *coms, const char *path_file){
                 if(chdir(de->d_name) != 0){
                     exit(1);
                 }
-                
+                printf("Estou aqui 4\n");
 
                 dir = opendir(".");
                 total = path_stat.st_blocks / 2;
@@ -129,6 +147,8 @@ int dirs(struct commands *coms, const char *path_file){
             else if(pid > 0){
                 
                 wait(NULL);
+
+                printf("Estou aqui 5\n");
 
                 /*close(fd[WRITE]);
                 read(fd[READ],&total_rest,8);
