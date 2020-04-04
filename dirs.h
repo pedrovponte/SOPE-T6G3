@@ -9,6 +9,7 @@
 #include <string.h>
 #include <math.h>
 #include <sys/wait.h>
+#include <signal.h>
 #include "args_handler.h"
 
-int dirs(struct commands *coms, const char *path_file);
+int dirs(struct commands *coms, char *path_file);
