@@ -11,5 +11,6 @@
 #include <sys/wait.h>
 #include <signal.h>
 #include "args_handler.h"
+#include "logs.h"
 
-int dirs(struct commands *coms, char *path_file);
+int dirs(struct commands *coms, char *path_file, int level);

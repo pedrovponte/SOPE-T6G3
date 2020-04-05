@@ -5,7 +5,7 @@
 
 extern char *directory;
 
-int dirs(struct commands *coms, char *path_file){
+int dirs(struct commands *coms, char *path_file, int level){
     long int total = 0;
     long int total_rest = 0;
     long int size = 0;
@@ -38,15 +38,23 @@ int dirs(struct commands *coms, char *path_file){
 
         sprintf(name, "%s%s", path_file, dir_name);
         
-        if(stat(name, &path_stat) == -1){
-            perror("Stat error");
-            exit(1);
-        }           
+        if(!coms->dereference){
+            if(stat(name, &path_stat) == -1){
+                perror("Stat error");
+                exit(1);
+            }
+        }
+        else{
+            if(lstat(name, &path_stat) == -1){
+                perror("Lstat error");
+                exit(1);
+            }
+        }        
         
-        if(S_ISREG(path_stat.st_mode)){    
+        if(S_ISREG(path_stat.st_mode) || S_ISLNK(path_stat.st_mode)){    
             char *size_file;
 
-            if(coms->all_files == 1){
+            if(coms->all_files == 1 && level < coms->max_depth_size){
                 if(coms->show_bytes == 1 && coms->block_size == 1){     //faltam bytes
                     if((path_stat.st_size % coms->block_size_bytes) == 0){
                         size = path_stat.st_size / coms->block_size_bytes;
@@ -126,11 +134,11 @@ int dirs(struct commands *coms, char *path_file){
             }
         }
 
-        if(coms->dereference == 1){                  //Corrigir
+        /*if(coms->dereference == 1){                  //Corrigir
             if(S_ISLNK(path_stat.st_mode)){                
                 total += path_stat.st_blocks / 2;
             }
-        }
+        }*/
 
 
         if(S_ISDIR(path_stat.st_mode)){   
@@ -146,7 +154,7 @@ int dirs(struct commands *coms, char *path_file){
                 wait(NULL);
 
                 close(fd[WRITE]);
-                if(read(fd[READ],&total_rest,8) == -1){
+                if(read(fd[READ],&total_rest,sizeof(long int)) == -1){
                     perror("Error reading from pipe");
                     exit(1);
                 }
@@ -158,8 +166,11 @@ int dirs(struct commands *coms, char *path_file){
             else if(pid == 0){
                 signal(SIGINT, SIG_IGN);
                 
-                dirs(coms, subdir);
-                //closedir(dir);
+                dirs(coms, subdir, level + 1);
+                /*if(closedir(dir) == -1){
+                    perror("Error closing dir");
+                    exit(1);
+                }*/
 
                 //close(fd[READ]);
                 //write(fd[WRITE],&total,8);
@@ -175,7 +186,7 @@ int dirs(struct commands *coms, char *path_file){
     
     if(pid == 0){
         close(fd[READ]);
-        if(write(fd[WRITE],&total,8) == -1){
+        if(write(fd[WRITE],&total,sizeof(long int)) == -1){
             perror("Error writing to pipe");
             exit(1);
         }
@@ -188,12 +199,15 @@ int dirs(struct commands *coms, char *path_file){
     }*/
 
     total += 4;
-    if(strcmp(path_file, directory)){
-        if(!strcmp(".", directory)){
-            path_file = ".";
-        }
-        else{
-            path_file[strlen(path_file) - 1] = '\0';
+
+    if(level <= coms->max_depth_size){
+        if(strcmp(path_file, directory)){
+            if(!strcmp(".", directory)){
+                path_file = ".";
+            }
+            else{
+                path_file[strlen(path_file) - 1] = '\0';
+            }
         }
     }
     

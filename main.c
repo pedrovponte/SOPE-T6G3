@@ -9,6 +9,7 @@ char *directory;
 int main(int argc, char *argv[]){
     struct commands coms;
     char *copy = malloc(100);
+    get_initial_time();
 
     if(argc < 1){ 
         fprintf(stderr, "Wrong number of arguments.\n");
@@ -41,7 +42,7 @@ int main(int argc, char *argv[]){
 
     args_commands(argc, argv, &coms);
 
-    dirs(&coms,copy);
+    dirs(&coms, copy, 0);
 
     return 0;
 }

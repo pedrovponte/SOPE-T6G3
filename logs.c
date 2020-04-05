@@ -43,8 +43,8 @@ double get_elapsed_time(void){
     return elapsed_time;
 }
 
-int registLog(pid_t pid, char* action, char* info){
-    if(fprintf(file, " %2f - %8u - %s - %s\n", get_elapsed_time(), pid, action, info) < 0){
+int registLog(pid_t pid, char* action, long int info){
+    if(fprintf(file, " %2f - %8u - %s - %li\n", get_elapsed_time(), pid, action, info) < 0){
         perror("Error writing to log file.\n");
         exit(1);
     }

@@ -9,7 +9,7 @@ int args_commands(int argc, char* argv[], struct commands *coms){
     coms->block_size_bytes = 0;
     coms->separate_dirs = false;
     coms->max_depth = false;
-    coms->max_depth_size = 0;
+    coms->max_depth_size = INT_MAX;
 
     for(int i = 1; i < argc; i++){
 
