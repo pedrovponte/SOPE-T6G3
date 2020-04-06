@@ -5,6 +5,7 @@
 #include "logs.h"
 
 char *directory;
+int fd[2];
 
 int main(int argc, char *argv[]){
     struct commands coms;
@@ -41,6 +42,8 @@ int main(int argc, char *argv[]){
     //printf("%s\n", copy);
 
     args_commands(argc, argv, &coms);
+
+    pipe(fd);
 
     dirs(&coms, copy, 0);
 
