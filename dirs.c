@@ -129,9 +129,10 @@ int dirs(struct commands *coms, char *path_file, int level){
                     perror("Error reading from pipe");
                     exit(1);
                 }
-                //printf("Ola do pai\n");
-
+                printf("Ola do pai\n");
+                printf("Total Rest: %li\n", total_rest);
                 total += total_rest;
+                printf("Total: %li\n", total);
                 exit(0);
             }
 
@@ -165,7 +166,7 @@ int dirs(struct commands *coms, char *path_file, int level){
             perror("Error writing to pipe");
             exit(1);
         }
-        //printf("Filho %i escreveu\n",getpid());
+        printf("Filho %i escreveu: %li\n",getpid(),total);
     }
     
     /*else{
@@ -178,14 +179,14 @@ int dirs(struct commands *coms, char *path_file, int level){
     total += 4;
 
     if(level <= coms->max_depth_size){
-        /*if(strcmp(path_file, directory)){
+        if(strcmp(path_file, directory)){       //tirar a barra do final do diretorio
             if(!strcmp(".", directory)){
                 path_file = ".";
             }
             else{
                 path_file[strlen(path_file) - 1] = '\0';
             }
-        }*/
+        }
         char *final_dir;
         final_dir = (char*) malloc(512 * 2 * sizeof(char));
         sprintf(final_dir, "%ld\t%s\n", total, path_file);
