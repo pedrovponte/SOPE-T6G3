@@ -122,14 +122,14 @@ int dirs(struct commands *coms, char *path_file, int level){
                 waitpid(pid, &status, WUNTRACED);
 
                 //while((pid = wait(&status)));
-                printf("%i\n",getpid());
+                //printf("%i\n",getpid());
                 long int total_rest;
                 //close(fd[WRITE]);
                 if(read(fd[READ],&total_rest,sizeof(long int)) == -1){
                     perror("Error reading from pipe");
                     exit(1);
                 }
-                printf("Ola do pai\n");
+                //printf("Ola do pai\n");
 
                 total += total_rest;
                 exit(0);
@@ -140,7 +140,7 @@ int dirs(struct commands *coms, char *path_file, int level){
                 
                 dirs(coms, subdir, level + 1);
 
-                printf("Ola do filho %i\n",getpid());
+                //printf("Ola do filho %i\n",getpid());
                 
                 /*if(closedir(dir) == -1){
                     perror("Error closing dir");
@@ -165,7 +165,7 @@ int dirs(struct commands *coms, char *path_file, int level){
             perror("Error writing to pipe");
             exit(1);
         }
-        printf("Filho %i escreveu\n",getpid());
+        //printf("Filho %i escreveu\n",getpid());
     }
     
     /*else{
