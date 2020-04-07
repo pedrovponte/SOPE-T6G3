@@ -12,7 +12,7 @@ int dirs(struct commands *coms, char *path_file, int level){
     struct stat path_stat;
     struct dirent *de;
     pid_t pid;
-    int status;
+    int status = 0;
     char *name, *dir_name, *subdir;
 
     DIR *dir = opendir(path_file);
@@ -119,21 +119,23 @@ int dirs(struct commands *coms, char *path_file, int level){
             pid = fork();
 
             if(pid > 0){
-                waitpid(pid, &status, WUNTRACED);
-
+                //waitpid(pid, &status, WUNTRACED);
+                waitpid(-1, &status, WNOHANG);
                 //while((pid = wait(&status)));
                 //printf("%i\n",getpid());
                 long int total_rest;
                 //close(fd[WRITE]);
-                if(read(fd[READ],&total_rest,sizeof(long int)) == -1){
-                    perror("Error reading from pipe");
-                    exit(1);
-                }
-                printf("Ola do pai\n");
-                printf("Total Rest: %li\n", total_rest);
-                total += total_rest;
-                printf("Total: %li\n", total);
-                exit(0);
+                
+                    if(read(fd[READ],&total_rest,sizeof(long int)) == -1){
+                        perror("Error reading from pipe");
+                        exit(1);
+                    }
+                    //printf("Ola do pai\n");
+                    //printf("Total Rest: %li\n", total_rest);
+                    total += total_rest;
+                    //printf("Total: %li\n", total);
+                
+                //exit(0);
             }
 
             else if(pid == 0){
@@ -143,10 +145,10 @@ int dirs(struct commands *coms, char *path_file, int level){
 
                 //printf("Ola do filho %i\n",getpid());
                 
-                /*if(closedir(dir) == -1){
+                if(closedir(dir) == -1){
                     perror("Error closing dir");
                     exit(1);
-                }*/
+                }
 
                 //close(fd[READ]);
                 //write(fd[WRITE],&total,sizeof(long int));
@@ -166,7 +168,7 @@ int dirs(struct commands *coms, char *path_file, int level){
             perror("Error writing to pipe");
             exit(1);
         }
-        printf("Filho %i escreveu: %li\n",getpid(),total);
+        //printf("Filho %i escreveu: %li\n",getpid(),total);
     }
     
     /*else{
@@ -196,7 +198,7 @@ int dirs(struct commands *coms, char *path_file, int level){
     
     //free(name);
     
-    closedir(dir);
+    //closedir(dir);
     
     return 0;
 }
