@@ -13,4 +13,4 @@
 #include "args_handler.h"
 #include "logs.h"
 
-int dirs(struct commands *coms, char *path_file, int level);
+int dirs(char *path_file, int level);

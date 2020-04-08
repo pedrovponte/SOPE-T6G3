@@ -5,20 +5,23 @@
 
 extern char *directory;
 extern int fd[2];
+extern commands coms;
 
-int dirs(struct commands *coms, char *path_file, int level){
+int dirs(char *path_file, int level){
+    
     long int total = 0;
     //long int total_rest = 0;
     struct stat path_stat;
     struct dirent *de;
     pid_t pid;
-    int status = 0;
+    int status;
     char *name, *dir_name, *subdir;
 
     DIR *dir = opendir(path_file);
 
     if(dir == NULL){
         perror("Error opening dir");
+        exitLog(EXIT_FAILURE);
         exit(1);
     }
 
@@ -38,15 +41,17 @@ int dirs(struct commands *coms, char *path_file, int level){
 
         sprintf(name, "%s%s", path_file, dir_name);
         
-        if(coms->dereference){
+        if(coms.dereference == 1){
             if(lstat(name, &path_stat) == -1){
                 perror("Lstat error");
-                exit(1);
+                exitLog(1);
+                exit(EXIT_FAILURE);
             }
         }
         else{
             if(stat(name, &path_stat) == -1){
                 perror("Stat error");
+                exitLog(EXIT_FAILURE);
                 exit(1);
             }
         }        
@@ -55,56 +60,57 @@ int dirs(struct commands *coms, char *path_file, int level){
             long int size;
             char *size_file;
 
-            if(coms->all_files == 1 && level < coms->max_depth_size){
-                if(coms->show_bytes == 1 && coms->block_size == 1){     //faltam bytes
-                    if((path_stat.st_size % coms->block_size_bytes) == 0){
-                        size = path_stat.st_size / coms->block_size_bytes;
+            if(coms.all_files == 1 && level < coms.max_depth_size){
+                if(coms.show_bytes == 1 && coms.block_size == 1){     //faltam bytes
+                    if((path_stat.st_size % coms.block_size_bytes) == 0){
+                        size = path_stat.st_size / coms.block_size_bytes;
                     }
                     else{
-                        size = path_stat.st_size / coms->block_size_bytes + 1;
+                        size = path_stat.st_size / coms.block_size_bytes + 1;
                     }
                 }
-                if(coms->block_size == 1 && coms->show_bytes == 0){             //faltam bytes
-                    if(((path_stat.st_blocks / 2) * 1024 % coms->block_size_bytes) == 0) {
-                        size = (path_stat.st_blocks / 2) * 1024 / coms->block_size_bytes;
+                if(coms.block_size == 1 && coms.show_bytes == 0){             //faltam bytes
+                    if(((path_stat.st_blocks / 2) * 1024 % coms.block_size_bytes) == 0) {
+                        size = (path_stat.st_blocks / 2) * 1024 / coms.block_size_bytes;
                     }
                     else{
-                        size = (path_stat.st_blocks / 2) * 1024 / coms->block_size_bytes + 1;
+                        size = (path_stat.st_blocks / 2) * 1024 / coms.block_size_bytes + 1;
                     }
                 }
-                if(coms->block_size == 0 && coms->show_bytes == 1){
+                if(coms.block_size == 0 && coms.show_bytes == 1){
                     size = path_stat.st_size;   //faltam 4096 bytes
                 }
-                if(coms->block_size == 0 && coms->show_bytes == 0){
+                if(coms.block_size == 0 && coms.show_bytes == 0){
                     size = path_stat.st_blocks / 2; //faltam 4 blocos
                 }
                 size_file = (char*) malloc(512 * 2 * sizeof(char));
                 sprintf(size_file, "%ld\t%s\n", size, name);
                 write(STDOUT_FILENO, size_file, strlen(size_file));
+                entryLog(size_file);
                 free(size_file);
                 total += size;
             }
             else{
-                if(coms->show_bytes == 1 && coms->block_size == 1){
-                    if((path_stat.st_size % coms->block_size_bytes) == 0){
-                        total += path_stat.st_size / coms->block_size_bytes;
+                if(coms.show_bytes == 1 && coms.block_size == 1){
+                    if((path_stat.st_size % coms.block_size_bytes) == 0){
+                        total += path_stat.st_size / coms.block_size_bytes;
                     }
                     else{
-                        total += path_stat.st_size / coms->block_size_bytes + 1;
+                        total += path_stat.st_size / coms.block_size_bytes + 1;
                     }
                 }
-                if(coms->block_size == 1 && coms->show_bytes == 0){               //faltam 2048 bytes
-                    if(((path_stat.st_blocks / 2) * 1024 % coms->block_size_bytes) == 0) {
-                        total += (path_stat.st_blocks / 2) * 1024 / coms->block_size_bytes;
+                if(coms.block_size == 1 && coms.show_bytes == 0){               //faltam 2048 bytes
+                    if(((path_stat.st_blocks / 2) * 1024 % coms.block_size_bytes) == 0) {
+                        total += (path_stat.st_blocks / 2) * 1024 / coms.block_size_bytes;
                     }
                     else{
-                        total += (path_stat.st_blocks / 2) * 1024 / coms->block_size_bytes + 1;
+                        total += (path_stat.st_blocks / 2) * 1024 / coms.block_size_bytes + 1;
                     }
                 }
-                if(coms->block_size == 0 && coms->show_bytes == 1){
+                if(coms.block_size == 0 && coms.show_bytes == 1){
                     total += path_stat.st_size;
                 }
-                if(coms->block_size == 0 && coms->show_bytes == 0){
+                if(coms.block_size == 0 && coms.show_bytes == 0){
                     total += path_stat.st_blocks / 2;     //faltam 4 blocos
                 }
             }
@@ -113,43 +119,53 @@ int dirs(struct commands *coms, char *path_file, int level){
         if(S_ISDIR(path_stat.st_mode)){   
             subdir = (char*) malloc(strlen(path_file) + strlen(dir_name) + 2);
             sprintf(subdir, "%s%s/", path_file, dir_name);
+            //int fd[2];
 
             //pipe(fd);
 
             pid = fork();
+            
 
             if(pid > 0){
-                //waitpid(pid, &status, WUNTRACED);
-                waitpid(-1, &status, WNOHANG);
+                waitpid(pid, &status, WUNTRACED);
+                //waitpid(-1, &status, WNOHANG);
+                //wait(NULL);
                 //waitpid(-1, &status, 0);
+                //waitpid(pid, &status, 0);
                 //while((pid = wait(&status)));
                 //printf("%i\n",getpid());
                 long int total_rest;
                 //close(fd[WRITE]);
-                
+                if(!coms.separate_dirs){
                     if(read(fd[READ],&total_rest,sizeof(long int)) == -1){
                         perror("Error reading from pipe");
+                        exitLog(EXIT_FAILURE);
                         exit(1);
                     }
-                    //printf("Ola do pai\n");
-                    //printf("Total Rest: %li\n", total_rest);
-                    total += total_rest + 4;
-                    //printf("Total: %li\n", total);
-                
+                    total += total_rest;
+                }
+                recvPipeLog(total_rest);
+                //printf("Ola do pai\n");
+                //printf("Total Rest: %li\n", total_rest);
+                //total += total_rest;
+                //printf("Total: %li\n", total);
+                exitLog(EXIT_SUCCESS);
                 //exit(0);
             }
 
             else if(pid == 0){
-                signal(SIGINT, SIG_IGN);
+                //signal(SIGINT, SIG_IGN);
                 
-                dirs(coms, subdir, level + 1);
+                dirs(subdir, level + 1);
 
                 //printf("Ola do filho %i\n",getpid());
                 
                 if(closedir(dir) == -1){
                     perror("Error closing dir");
+                    exitLog(EXIT_FAILURE);
                     exit(1);
                 }
+                exit(0);
 
                 //close(fd[READ]);
                 //write(fd[WRITE],&total,sizeof(long int));
@@ -157,7 +173,16 @@ int dirs(struct commands *coms, char *path_file, int level){
 
             else{
                 fprintf(stderr, "fork error\n");
+                exitLog(EXIT_FAILURE);
                 return 1;
+            }
+            if(!coms.separate_dirs){
+                if(coms.show_bytes == 1){
+                    total += path_stat.st_size;
+                }
+                else{
+                    total += (path_stat.st_blocks / 2) * 1024 / coms.block_size_bytes;
+                }
             }
             free(subdir);
         }
@@ -165,10 +190,14 @@ int dirs(struct commands *coms, char *path_file, int level){
     
     //if(pid == 0){
         //close(fd[READ]);
+    if(!coms.separate_dirs){
         if(write(fd[WRITE],&total,sizeof(long int)) == -1){
             perror("Error writing to pipe");
+            exitLog(EXIT_FAILURE);
             exit(1);
         }
+        sendPipeLog(total);
+    }
         //printf("Filho %i escreveu: %li\n",getpid(),total);
     //}
     
@@ -179,9 +208,16 @@ int dirs(struct commands *coms, char *path_file, int level){
         //printf("Total rest: %li\n",total_rest);
     }*/
 
-    total += 4;
+    //total += 4;
 
-    if(level <= coms->max_depth_size){
+    if(coms.show_bytes == 1){
+        total += 4096;
+    }
+    else{
+        total += 4096 / coms.block_size_bytes;
+    }
+
+    if(level <= coms.max_depth_size){
         if(strcmp(path_file, directory)){       //tirar a barra do final do diretorio
             if(!strcmp(".", directory)){
                 path_file = ".";
@@ -194,6 +230,7 @@ int dirs(struct commands *coms, char *path_file, int level){
         final_dir = (char*) malloc(512 * 2 * sizeof(char));
         sprintf(final_dir, "%ld\t%s\n", total, path_file);
         write(STDOUT_FILENO, final_dir, strlen(final_dir));
+        entryLog(final_dir);
         free(final_dir);
     }
     

@@ -1,11 +1,4 @@
-#include <stdbool.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <stdlib.h>
-#include <sys/time.h>
-#include <sys/types.h>
-#include <fcntl.h>
+#include "logs.h"
 
 struct timeval initial;
 FILE *file;
@@ -19,10 +12,11 @@ int get_initial_time(){
     return 0;
 }
 
-int openLog(const char* filename){
+int openLog(){
     get_initial_time();
-
-    if((file = open(filename, O_RDWR | O_CREAT | O_TRUNC, 0666)) == NULL){ //ver no caso de o ficheiro ser dado na linha de comandos ou ser um a nossa escolha
+    setenv("LOG_FILENAME", "logfile.txt", 0);
+    
+    if((file = fopen(getenv("LOG_FILENAME"), "w")) == NULL){ 
         perror("Error opening log file.\n");
         exit(1);
     } 
@@ -44,7 +38,7 @@ double get_elapsed_time(void){
 }
 
 int registLog(pid_t pid, char* action, char *info){
-    if(fprintf(file, " %2f - %8u - %s - %s\n", get_elapsed_time(), pid, action, info) < 0){
+    if(fprintf(file, " %2f \t-\t %8u \t-\t %s \t-\t %s\n", get_elapsed_time(), pid, action, info) < 0){
         perror("Error writing to log file.\n");
         exit(1);
     }
@@ -55,7 +49,7 @@ int registLog(pid_t pid, char* action, char *info){
 }
 
 void createLog(int argc, char *args[]){
-    pid_t pid = getpid();
+    //pid_t pid = getpid();
     char info[150];
     for(int i = 0; i < argc; i++){
         strcat(info, args[i]);
@@ -63,49 +57,47 @@ void createLog(int argc, char *args[]){
             strcat(info, " ");
         }
     }
-    registLog(pid, "CREATE", info);
+    registLog(getpid(), "CREATE", info);
 }
 
 void exitLog(int status_code){
-    pid_t pid = getpid();
+    //pid_t pid = getpid();
     char info[150];
     sprintf(info, "%d", status_code);
-    registLog(pid, "EXIT", info);
+    registLog(getpid(), "EXIT", info);
 }
 
 void recvSignalLog(char *signal){
-    pid_t pid = getpid();
+    //pid_t pid = getpid();
     char info[150];
     strcpy(info, signal);
-    registLog(pid, "RECV_SIGNAL", info);
+    registLog(getpid(), "RECV_SIGNAL", info);
 }
 
 void sendSignalLog(char *signal, int pid){
-    pid_t pidp = getpid();
+    //pid_t pidp = getpid();
     char info[200];
     sprintf(info, "Signal %s sent to process with pid %d", signal, pid);
-    registLog(pidp, "SEND_SIGNAL", info);
+    registLog(getpid(), "SEND_SIGNAL", info);
 }
 
-void recvPipeLog(char *message){
-    pid_t pid = getpid();
+void recvPipeLog(long int message){
     char info[200];
-    sprintf(info, "%s", message);
-    registLog(pid, "RECV_PIPE", info);
+    sprintf(info, "%ld", message);
+    registLog(getpid(), "RECV_PIPE", info);
 }
 
-void sendPipeLog(char *message){
-    pid_t pid = getpid();
+void sendPipeLog(long int message){
     char info[200];
-    sprintf(info, "%s", message);
-    registLog(pid, "SEND_PIPE", info);
+    sprintf(info, "%ld", message);
+    registLog(getpid(), "SEND_PIPE", info);
 }
 
 void entryLog(char *path){
-    pid_t pid = getpid();
+    //pid_t pid = getpid();
     char info[200];
     sprintf(info, "%s", path);
-    registLog(pid, "ENTRY", info);
+    registLog(getpid(), "ENTRY", info);
 }
 
 int closeLog(){

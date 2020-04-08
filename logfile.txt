@@ -1,0 +1,960 @@
+ 0.000000 	-	     4262 	-	 ENTRY 	-	 8	./dirs.c
+
+ 0.000000 	-	     4262 	-	 ENTRY 	-	 4	./logs.c
+
+ 0.000000 	-	     4262 	-	 ENTRY 	-	 36	./simpledu
+
+ 0.000000 	-	     4263 	-	 ENTRY 	-	 4	./.vscode/settings.json
+
+ 0.000000 	-	     4263 	-	 SEND_PIPE 	-	 4
+ 0.000000 	-	     4263 	-	 ENTRY 	-	 8	.
+
+ 0.000000 	-	     4262 	-	 RECV_PIPE 	-	 4
+ 1.000000 	-	     4262 	-	 EXIT 	-	 0
+ 1.000000 	-	     4262 	-	 ENTRY 	-	 4	./args_handler.h
+
+ 1.000000 	-	     4262 	-	 ENTRY 	-	 4	./Makefile
+
+ 1.000000 	-	     4262 	-	 ENTRY 	-	 4	./logs.h
+
+ 1.000000 	-	     4262 	-	 ENTRY 	-	 4	./.gitignore
+
+ 1.000000 	-	     4262 	-	 ENTRY 	-	 4	./dirs.h
+
+ 1.000000 	-	     4262 	-	 ENTRY 	-	 4	./README.md
+
+ 1.000000 	-	     4262 	-	 ENTRY 	-	 20	./dirs.o
+
+ 1.000000 	-	     4266 	-	 ENTRY 	-	 4	./Testar/D2/D3/file1.txt
+
+ 1.000000 	-	     4266 	-	 ENTRY 	-	 4	./Testar/D2/D3/file2.txt
+
+ 2.000000 	-	     4267 	-	 ENTRY 	-	 4	./Testar/D2/D3/D4/file.txt
+
+ 2.000000 	-	     4267 	-	 ENTRY 	-	 4	./Testar/D2/D3/D4/fil35.txt
+
+ 2.000000 	-	     4267 	-	 SEND_PIPE 	-	 8
+ 2.000000 	-	     4267 	-	 ENTRY 	-	 12	.
+
+ 2.000000 	-	     4266 	-	 RECV_PIPE 	-	 8
+ 2.000000 	-	     4266 	-	 EXIT 	-	 0
+ 2.000000 	-	     4266 	-	 SEND_PIPE 	-	 20
+ 2.000000 	-	     4266 	-	 ENTRY 	-	 24	.
+
+ 2.000000 	-	     4265 	-	 RECV_PIPE 	-	 20
+ 2.000000 	-	     4265 	-	 EXIT 	-	 0
+ 2.000000 	-	     4265 	-	 ENTRY 	-	 4	./Testar/D2/ex2c.c
+
+ 2.000000 	-	     4265 	-	 ENTRY 	-	 4	./Testar/D2/ex2d.c
+
+ 2.000000 	-	     4265 	-	 ENTRY 	-	 4	./Testar/D2/ex1.c
+
+ 2.000000 	-	     4265 	-	 ENTRY 	-	 4	./Testar/D2/ex2a.c
+
+ 2.000000 	-	     4265 	-	 SEND_PIPE 	-	 40
+ 2.000000 	-	     4265 	-	 ENTRY 	-	 44	.
+
+ 2.000000 	-	     4264 	-	 RECV_PIPE 	-	 40
+ 2.000000 	-	     4264 	-	 EXIT 	-	 0
+ 3.000000 	-	     4268 	-	 ENTRY 	-	 4	./Testar/D1/ex2b.c
+
+ 3.000000 	-	     4268 	-	 ENTRY 	-	 4	./Testar/D1/ex3b.c
+
+ 3.000000 	-	     4268 	-	 ENTRY 	-	 4	./Testar/D1/ex1.c
+
+ 3.000000 	-	     4268 	-	 ENTRY 	-	 4	./Testar/D1/ex2a.c
+
+ 3.000000 	-	     4268 	-	 ENTRY 	-	 4	./Testar/D1/ex3a.c
+
+ 3.000000 	-	     4268 	-	 SEND_PIPE 	-	 20
+ 3.000000 	-	     4268 	-	 ENTRY 	-	 24	.
+
+ 3.000000 	-	     4264 	-	 RECV_PIPE 	-	 20
+ 3.000000 	-	     4264 	-	 EXIT 	-	 0
+ 3.000000 	-	     4264 	-	 ENTRY 	-	 4	./Testar/ex3.c
+
+ 3.000000 	-	     4264 	-	 ENTRY 	-	 4	./Testar/ex2.c
+
+ 3.000000 	-	     4264 	-	 ENTRY 	-	 4	./Testar/ex4.c
+
+ 3.000000 	-	     4264 	-	 ENTRY 	-	 4	./Testar/mylink.txt
+
+ 3.000000 	-	     4264 	-	 SEND_PIPE 	-	 84
+ 3.000000 	-	     4264 	-	 ENTRY 	-	 88	.
+
+ 3.000000 	-	     4262 	-	 RECV_PIPE 	-	 84
+ 3.000000 	-	     4262 	-	 EXIT 	-	 0
+ 3.000000 	-	     4262 	-	 ENTRY 	-	 4	./main.c
+
+ 3.000000 	-	     4262 	-	 ENTRY 	-	 16	./args_handler.o
+
+ 3.000000 	-	     4262 	-	 ENTRY 	-	 4	./args_handler.c
+
+ 3.000000 	-	     4262 	-	 ENTRY 	-	 12	./a.out
+
+ 4.000000 	-	     4262 	-	 ENTRY 	-	 16	./logs.o
+
+ 4.000000 	-	     4262 	-	 ENTRY 	-	 12	./main.o
+
+ 4.000000 	-	     4269 	-	 ENTRY 	-	 4	./.git/config
+
+ 4.000000 	-	     4271 	-	 ENTRY 	-	 4	./.git/objects/86/7c4e7a215bd001c19b61c22e8eb2f28dade08c
+
+ 4.000000 	-	     4271 	-	 SEND_PIPE 	-	 4
+ 4.000000 	-	     4271 	-	 ENTRY 	-	 8	.
+
+ 4.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 4.000000 	-	     4270 	-	 EXIT 	-	 0
+ 5.000000 	-	     4272 	-	 ENTRY 	-	 4	./.git/objects/a0/337850731e1771183e3bbfa7be36503db52fa9
+
+ 5.000000 	-	     4272 	-	 SEND_PIPE 	-	 4
+ 5.000000 	-	     4272 	-	 ENTRY 	-	 8	.
+
+ 5.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 5.000000 	-	     4270 	-	 EXIT 	-	 0
+ 5.000000 	-	     4273 	-	 ENTRY 	-	 8	./.git/objects/99/dc1118c268424d2c79e3bf27062f677fe8e82f
+
+ 5.000000 	-	     4273 	-	 SEND_PIPE 	-	 8
+ 5.000000 	-	     4273 	-	 ENTRY 	-	 12	.
+
+ 5.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 5.000000 	-	     4270 	-	 EXIT 	-	 0
+ 5.000000 	-	     4274 	-	 ENTRY 	-	 4	./.git/objects/54/6b856ff89153fc064f1f147aa483600700df39
+
+ 6.000000 	-	     4274 	-	 SEND_PIPE 	-	 4
+ 6.000000 	-	     4274 	-	 ENTRY 	-	 8	.
+
+ 6.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 6.000000 	-	     4270 	-	 EXIT 	-	 0
+ 43.000000 	-	     4280 	-	 ENTRY 	-	 4	./.git/objects/45/523ab1dcfe1cca53561fdc29d8736ddbd2142a
+
+ 43.000000 	-	     4280 	-	 SEND_PIPE 	-	 4
+ 43.000000 	-	     4280 	-	 ENTRY 	-	 8	.
+
+ 43.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 43.000000 	-	     4270 	-	 EXIT 	-	 0
+ 43.000000 	-	     4281 	-	 ENTRY 	-	 4	./.git/objects/f0/aff85c0e1076738cb0bb594542e29e1d40aa1f
+
+ 43.000000 	-	     4281 	-	 SEND_PIPE 	-	 4
+ 43.000000 	-	     4281 	-	 ENTRY 	-	 8	.
+
+ 44.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 44.000000 	-	     4270 	-	 EXIT 	-	 0
+ 44.000000 	-	     4282 	-	 ENTRY 	-	 4	./.git/objects/a6/576884fab9e7d039e1c45587b7c068cb3abdcf
+
+ 44.000000 	-	     4282 	-	 SEND_PIPE 	-	 4
+ 44.000000 	-	     4282 	-	 ENTRY 	-	 8	.
+
+ 44.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 44.000000 	-	     4270 	-	 EXIT 	-	 0
+ 44.000000 	-	     4283 	-	 ENTRY 	-	 4	./.git/objects/33/4df1fcd153224c4da210cf60fb26f66f91766e
+
+ 44.000000 	-	     4283 	-	 SEND_PIPE 	-	 4
+ 44.000000 	-	     4283 	-	 ENTRY 	-	 8	.
+
+ 45.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 45.000000 	-	     4270 	-	 EXIT 	-	 0
+ 45.000000 	-	     4287 	-	 ENTRY 	-	 4	./.git/objects/36/dc45de4bdb9ea818b4a8a557ab3070b45e67ae
+
+ 45.000000 	-	     4287 	-	 SEND_PIPE 	-	 4
+ 45.000000 	-	     4287 	-	 ENTRY 	-	 8	.
+
+ 45.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 45.000000 	-	     4270 	-	 EXIT 	-	 0
+ 45.000000 	-	     4290 	-	 ENTRY 	-	 4	./.git/objects/e9/65047ad7c57865823c7d992b1d046ea66edf78
+
+ 45.000000 	-	     4290 	-	 SEND_PIPE 	-	 4
+ 45.000000 	-	     4290 	-	 ENTRY 	-	 8	.
+
+ 46.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 46.000000 	-	     4270 	-	 EXIT 	-	 0
+ 46.000000 	-	     4291 	-	 ENTRY 	-	 4	./.git/objects/2b/60207f037a00cfa1dbdbc8ef00cd7b84f7b688
+
+ 46.000000 	-	     4291 	-	 ENTRY 	-	 4	./.git/objects/2b/d787e3b07960eddaa3ff284a611e5232450449
+
+ 46.000000 	-	     4291 	-	 SEND_PIPE 	-	 8
+ 46.000000 	-	     4291 	-	 ENTRY 	-	 12	.
+
+ 46.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 46.000000 	-	     4270 	-	 EXIT 	-	 0
+ 46.000000 	-	     4292 	-	 ENTRY 	-	 4	./.git/objects/14/d8769c9410116931ec600521bea49f4959949e
+
+ 46.000000 	-	     4292 	-	 SEND_PIPE 	-	 4
+ 46.000000 	-	     4292 	-	 ENTRY 	-	 8	.
+
+ 47.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 47.000000 	-	     4270 	-	 EXIT 	-	 0
+ 47.000000 	-	     4293 	-	 ENTRY 	-	 4	./.git/objects/ae/0a95cf1f52811ea13cdbed247a9e01d9e4b7b8
+
+ 47.000000 	-	     4293 	-	 SEND_PIPE 	-	 4
+ 47.000000 	-	     4293 	-	 ENTRY 	-	 8	.
+
+ 47.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 47.000000 	-	     4270 	-	 EXIT 	-	 0
+ 48.000000 	-	     4294 	-	 ENTRY 	-	 4	./.git/objects/62/ea9d980aec6a367b474c4ad972d35d7c710723
+
+ 48.000000 	-	     4294 	-	 ENTRY 	-	 4	./.git/objects/62/4477d07e33a9977ccd0bd0c5f82dee3cda024b
+
+ 48.000000 	-	     4294 	-	 ENTRY 	-	 4	./.git/objects/62/746ddf1e0f5ba8819468135498fd90753c64ac
+
+ 48.000000 	-	     4294 	-	 SEND_PIPE 	-	 12
+ 48.000000 	-	     4294 	-	 ENTRY 	-	 16	.
+
+ 48.000000 	-	     4270 	-	 RECV_PIPE 	-	 12
+ 48.000000 	-	     4270 	-	 EXIT 	-	 0
+ 48.000000 	-	     4295 	-	 ENTRY 	-	 4	./.git/objects/94/5074db2ffcf269876cd6b689480c8862a3eae7
+
+ 48.000000 	-	     4295 	-	 SEND_PIPE 	-	 4
+ 48.000000 	-	     4295 	-	 ENTRY 	-	 8	.
+
+ 49.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 49.000000 	-	     4270 	-	 EXIT 	-	 0
+ 49.000000 	-	     4296 	-	 ENTRY 	-	 4	./.git/objects/29/ab23df6c177355a559136a49f7fd721aa58338
+
+ 49.000000 	-	     4296 	-	 SEND_PIPE 	-	 4
+ 49.000000 	-	     4296 	-	 ENTRY 	-	 8	.
+
+ 49.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 49.000000 	-	     4270 	-	 EXIT 	-	 0
+ 49.000000 	-	     4297 	-	 ENTRY 	-	 4	./.git/objects/c1/297d1bdfc6c7217738db68cfd751d393d2cc4c
+
+ 49.000000 	-	     4297 	-	 SEND_PIPE 	-	 4
+ 49.000000 	-	     4297 	-	 ENTRY 	-	 8	.
+
+ 49.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 49.000000 	-	     4270 	-	 EXIT 	-	 0
+ 50.000000 	-	     4298 	-	 ENTRY 	-	 4	./.git/objects/f2/1dbea4dba5b49ae0450ffeba9f774f9fa15023
+
+ 50.000000 	-	     4298 	-	 SEND_PIPE 	-	 4
+ 50.000000 	-	     4298 	-	 ENTRY 	-	 8	.
+
+ 50.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 50.000000 	-	     4270 	-	 EXIT 	-	 0
+ 50.000000 	-	     4299 	-	 ENTRY 	-	 4	./.git/objects/9b/eb884298a2091dc92a60961353738726b79ddb
+
+ 50.000000 	-	     4299 	-	 SEND_PIPE 	-	 4
+ 50.000000 	-	     4299 	-	 ENTRY 	-	 8	.
+
+ 50.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 50.000000 	-	     4270 	-	 EXIT 	-	 0
+ 51.000000 	-	     4300 	-	 ENTRY 	-	 4	./.git/objects/93/4a3a43a562fd1328c95f99f4d34ed5c1a7071f
+
+ 51.000000 	-	     4300 	-	 ENTRY 	-	 4	./.git/objects/93/34c60e08a8a0d54de18587d9d36adbac173e0f
+
+ 51.000000 	-	     4300 	-	 SEND_PIPE 	-	 8
+ 51.000000 	-	     4300 	-	 ENTRY 	-	 12	.
+
+ 51.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 51.000000 	-	     4270 	-	 EXIT 	-	 0
+ 51.000000 	-	     4301 	-	 ENTRY 	-	 4	./.git/objects/12/98d827384ab34195b526dd7a4ee8bca3cd5416
+
+ 51.000000 	-	     4301 	-	 ENTRY 	-	 4	./.git/objects/12/c32823c854c35e52b1f5cd01635752f8470d0f
+
+ 51.000000 	-	     4301 	-	 SEND_PIPE 	-	 8
+ 51.000000 	-	     4301 	-	 ENTRY 	-	 12	.
+
+ 51.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 51.000000 	-	     4270 	-	 EXIT 	-	 0
+ 52.000000 	-	     4302 	-	 ENTRY 	-	 4	./.git/objects/e0/cf96f9e0730c3c254926adf7f79047c4ee3806
+
+ 52.000000 	-	     4302 	-	 SEND_PIPE 	-	 4
+ 52.000000 	-	     4302 	-	 ENTRY 	-	 8	.
+
+ 52.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 52.000000 	-	     4270 	-	 EXIT 	-	 0
+ 52.000000 	-	     4303 	-	 ENTRY 	-	 4	./.git/objects/6b/ff2d29c067ae6ad44327ec446f53b164269f77
+
+ 52.000000 	-	     4303 	-	 SEND_PIPE 	-	 4
+ 52.000000 	-	     4303 	-	 ENTRY 	-	 8	.
+
+ 52.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 52.000000 	-	     4270 	-	 EXIT 	-	 0
+ 52.000000 	-	     4304 	-	 ENTRY 	-	 4	./.git/objects/ef/7f996b7f9bd192994d4095f15e38b30b1df652
+
+ 52.000000 	-	     4304 	-	 SEND_PIPE 	-	 4
+ 52.000000 	-	     4304 	-	 ENTRY 	-	 8	.
+
+ 52.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 53.000000 	-	     4270 	-	 EXIT 	-	 0
+ 53.000000 	-	     4305 	-	 ENTRY 	-	 4	./.git/objects/03/9751e378562e12f8bdb7d1e14c71811a6c2191
+
+ 53.000000 	-	     4305 	-	 ENTRY 	-	 4	./.git/objects/03/f7f1752d4af6db29bd908ec447442a815d7e96
+
+ 53.000000 	-	     4305 	-	 SEND_PIPE 	-	 8
+ 53.000000 	-	     4305 	-	 ENTRY 	-	 12	.
+
+ 53.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 53.000000 	-	     4270 	-	 EXIT 	-	 0
+ 53.000000 	-	     4306 	-	 ENTRY 	-	 4	./.git/objects/da/aaaff4e637f9781599d15312f0c9157df27f8e
+
+ 53.000000 	-	     4306 	-	 SEND_PIPE 	-	 4
+ 53.000000 	-	     4306 	-	 ENTRY 	-	 8	.
+
+ 53.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 53.000000 	-	     4270 	-	 EXIT 	-	 0
+ 54.000000 	-	     4307 	-	 ENTRY 	-	 4	./.git/objects/9e/045178f12e970749fcee2e02e0c0ac7c02ce75
+
+ 54.000000 	-	     4307 	-	 SEND_PIPE 	-	 4
+ 54.000000 	-	     4307 	-	 ENTRY 	-	 8	.
+
+ 54.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 54.000000 	-	     4270 	-	 EXIT 	-	 0
+ 54.000000 	-	     4308 	-	 ENTRY 	-	 4	./.git/objects/0f/04850b0f446a9ec23a6904655232e7506e9443
+
+ 54.000000 	-	     4308 	-	 ENTRY 	-	 4	./.git/objects/0f/79d39fc664ccafd85ffd541db46390d739ff46
+
+ 54.000000 	-	     4308 	-	 SEND_PIPE 	-	 8
+ 54.000000 	-	     4308 	-	 ENTRY 	-	 12	.
+
+ 54.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 54.000000 	-	     4270 	-	 EXIT 	-	 0
+ 54.000000 	-	     4309 	-	 ENTRY 	-	 4	./.git/objects/1f/22d5b71b6298619f0236aad80617c3734c97e4
+
+ 54.000000 	-	     4309 	-	 SEND_PIPE 	-	 4
+ 54.000000 	-	     4309 	-	 ENTRY 	-	 8	.
+
+ 55.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 55.000000 	-	     4270 	-	 EXIT 	-	 0
+ 55.000000 	-	     4310 	-	 ENTRY 	-	 4	./.git/objects/6f/bdb2be42fabb4596f14c9c00bd7bc0169ea26a
+
+ 55.000000 	-	     4310 	-	 SEND_PIPE 	-	 4
+ 55.000000 	-	     4310 	-	 ENTRY 	-	 8	.
+
+ 55.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 55.000000 	-	     4270 	-	 EXIT 	-	 0
+ 55.000000 	-	     4311 	-	 ENTRY 	-	 4	./.git/objects/43/d396d4858adf0fd152b09aa7e5cd57d94144d7
+
+ 55.000000 	-	     4311 	-	 SEND_PIPE 	-	 4
+ 55.000000 	-	     4311 	-	 ENTRY 	-	 8	.
+
+ 55.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 55.000000 	-	     4270 	-	 EXIT 	-	 0
+ 56.000000 	-	     4312 	-	 ENTRY 	-	 4	./.git/objects/48/abea4128b446176adcd574b3cc12385b20421d
+
+ 56.000000 	-	     4312 	-	 SEND_PIPE 	-	 4
+ 56.000000 	-	     4312 	-	 ENTRY 	-	 8	.
+
+ 56.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 56.000000 	-	     4270 	-	 EXIT 	-	 0
+ 56.000000 	-	     4313 	-	 ENTRY 	-	 4	./.git/objects/7b/8f733d4500da065b95a0f3f42c6e05f08fd4f8
+
+ 56.000000 	-	     4313 	-	 SEND_PIPE 	-	 4
+ 56.000000 	-	     4313 	-	 ENTRY 	-	 8	.
+
+ 56.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 56.000000 	-	     4270 	-	 EXIT 	-	 0
+ 56.000000 	-	     4314 	-	 ENTRY 	-	 4	./.git/objects/a7/3cad0f3f9c2ccaa36c2b1b9db65ef051ac1d70
+
+ 56.000000 	-	     4314 	-	 SEND_PIPE 	-	 4
+ 56.000000 	-	     4314 	-	 ENTRY 	-	 8	.
+
+ 57.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 57.000000 	-	     4270 	-	 EXIT 	-	 0
+ 57.000000 	-	     4315 	-	 ENTRY 	-	 4	./.git/objects/e2/d459f0936955e0867e83af4eb2b6fd4a174f88
+
+ 57.000000 	-	     4315 	-	 SEND_PIPE 	-	 4
+ 57.000000 	-	     4315 	-	 ENTRY 	-	 8	.
+
+ 57.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 57.000000 	-	     4270 	-	 EXIT 	-	 0
+ 57.000000 	-	     4316 	-	 ENTRY 	-	 4	./.git/objects/76/2b08eed78fd37d59b6a8053f41a56171225890
+
+ 57.000000 	-	     4316 	-	 SEND_PIPE 	-	 4
+ 57.000000 	-	     4316 	-	 ENTRY 	-	 8	.
+
+ 57.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 57.000000 	-	     4270 	-	 EXIT 	-	 0
+ 58.000000 	-	     4317 	-	 ENTRY 	-	 4	./.git/objects/73/fc71321fbef39a8654f00445586d0a10a467d9
+
+ 58.000000 	-	     4317 	-	 ENTRY 	-	 4	./.git/objects/73/290a7f7467abd5cd788745ef0102984b77950e
+
+ 58.000000 	-	     4317 	-	 SEND_PIPE 	-	 8
+ 58.000000 	-	     4317 	-	 ENTRY 	-	 12	.
+
+ 58.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 58.000000 	-	     4270 	-	 EXIT 	-	 0
+ 58.000000 	-	     4318 	-	 ENTRY 	-	 4	./.git/objects/70/7d844e38d9eabfae86717b8eaa5ec3ae4d466b
+
+ 58.000000 	-	     4318 	-	 SEND_PIPE 	-	 4
+ 58.000000 	-	     4318 	-	 ENTRY 	-	 8	.
+
+ 58.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 58.000000 	-	     4270 	-	 EXIT 	-	 0
+ 59.000000 	-	     4319 	-	 ENTRY 	-	 4	./.git/objects/aa/c42c84324e704e045bcfa2fa4d34ba32e726a3
+
+ 59.000000 	-	     4319 	-	 SEND_PIPE 	-	 4
+ 59.000000 	-	     4319 	-	 ENTRY 	-	 8	.
+
+ 59.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 59.000000 	-	     4270 	-	 EXIT 	-	 0
+ 59.000000 	-	     4320 	-	 ENTRY 	-	 4	./.git/objects/58/24cfdf60f81fe449c02f66ed1394eceb5b4dc4
+
+ 59.000000 	-	     4320 	-	 SEND_PIPE 	-	 4
+ 59.000000 	-	     4320 	-	 ENTRY 	-	 8	.
+
+ 59.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 59.000000 	-	     4270 	-	 EXIT 	-	 0
+ 59.000000 	-	     4321 	-	 ENTRY 	-	 4	./.git/objects/2f/1e7edd5c82423bcc3a4ef1d64b1f0d24349e4e
+
+ 59.000000 	-	     4321 	-	 SEND_PIPE 	-	 4
+ 59.000000 	-	     4321 	-	 ENTRY 	-	 8	.
+
+ 59.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 59.000000 	-	     4270 	-	 EXIT 	-	 0
+ 60.000000 	-	     4322 	-	 ENTRY 	-	 4	./.git/objects/1c/339d81e2789c7350ec5836843c22477a51133c
+
+ 60.000000 	-	     4322 	-	 ENTRY 	-	 4	./.git/objects/1c/e2e976dd941b7666e4597f98183adaf07449d9
+
+ 60.000000 	-	     4322 	-	 ENTRY 	-	 4	./.git/objects/1c/b5a1b6883131d767aef01b9e7b1a35bd0fb23a
+
+ 60.000000 	-	     4322 	-	 SEND_PIPE 	-	 12
+ 60.000000 	-	     4322 	-	 ENTRY 	-	 16	.
+
+ 60.000000 	-	     4270 	-	 RECV_PIPE 	-	 12
+ 60.000000 	-	     4270 	-	 EXIT 	-	 0
+ 61.000000 	-	     4323 	-	 ENTRY 	-	 4	./.git/objects/20/d59049772c4b38c02af2e89104a27b8f659beb
+
+ 61.000000 	-	     4323 	-	 SEND_PIPE 	-	 4
+ 61.000000 	-	     4323 	-	 ENTRY 	-	 8	.
+
+ 61.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 62.000000 	-	     4270 	-	 EXIT 	-	 0
+ 62.000000 	-	     4324 	-	 ENTRY 	-	 4	./.git/objects/4f/adc95ceef9fd881e34d94521bfb6e912bb1fa4
+
+ 62.000000 	-	     4324 	-	 ENTRY 	-	 4	./.git/objects/4f/989d922a031d4afae83e9fd1aa65991f8fa74f
+
+ 62.000000 	-	     4324 	-	 SEND_PIPE 	-	 8
+ 62.000000 	-	     4324 	-	 ENTRY 	-	 12	.
+
+ 62.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 62.000000 	-	     4270 	-	 EXIT 	-	 0
+ 62.000000 	-	     4329 	-	 ENTRY 	-	 4	./.git/objects/77/72268e17d12828ccb2f2ce34857192d215969d
+
+ 62.000000 	-	     4329 	-	 SEND_PIPE 	-	 4
+ 62.000000 	-	     4329 	-	 ENTRY 	-	 8	.
+
+ 62.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 62.000000 	-	     4270 	-	 EXIT 	-	 0
+ 63.000000 	-	     4330 	-	 ENTRY 	-	 4	./.git/objects/7d/23630865159012614a461ddd436e3967ab1960
+
+ 63.000000 	-	     4330 	-	 SEND_PIPE 	-	 4
+ 63.000000 	-	     4330 	-	 ENTRY 	-	 8	.
+
+ 63.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 63.000000 	-	     4270 	-	 EXIT 	-	 0
+ 63.000000 	-	     4331 	-	 ENTRY 	-	 4	./.git/objects/b2/fb66221ecbe851200cf2a3bef1d883ad54f7ef
+
+ 63.000000 	-	     4331 	-	 SEND_PIPE 	-	 4
+ 63.000000 	-	     4331 	-	 ENTRY 	-	 8	.
+
+ 63.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 63.000000 	-	     4270 	-	 EXIT 	-	 0
+ 63.000000 	-	     4332 	-	 ENTRY 	-	 4	./.git/objects/b7/150233f8ddb3d0f8e76bd3381549eed6aab685
+
+ 63.000000 	-	     4332 	-	 SEND_PIPE 	-	 4
+ 63.000000 	-	     4332 	-	 ENTRY 	-	 8	.
+
+ 63.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 63.000000 	-	     4270 	-	 EXIT 	-	 0
+ 64.000000 	-	     4335 	-	 ENTRY 	-	 4	./.git/objects/pack/pack-3563bcc243f297801f50fb0c38028a224e491c5b.pack
+
+ 64.000000 	-	     4335 	-	 ENTRY 	-	 4	./.git/objects/pack/pack-dfeb73b0f223a1bea94992256ba8a6eabf407b8a.pack
+
+ 64.000000 	-	     4335 	-	 ENTRY 	-	 4	./.git/objects/pack/pack-3563bcc243f297801f50fb0c38028a224e491c5b.idx
+
+ 64.000000 	-	     4335 	-	 ENTRY 	-	 4	./.git/objects/pack/pack-dfeb73b0f223a1bea94992256ba8a6eabf407b8a.idx
+
+ 64.000000 	-	     4335 	-	 SEND_PIPE 	-	 16
+ 64.000000 	-	     4335 	-	 ENTRY 	-	 20	.
+
+ 64.000000 	-	     4270 	-	 RECV_PIPE 	-	 16
+ 64.000000 	-	     4270 	-	 EXIT 	-	 0
+ 64.000000 	-	     4336 	-	 ENTRY 	-	 4	./.git/objects/8f/384dd8850b5670661ed5c55b734da3c49d7e64
+
+ 64.000000 	-	     4336 	-	 SEND_PIPE 	-	 4
+ 64.000000 	-	     4336 	-	 ENTRY 	-	 8	.
+
+ 64.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 64.000000 	-	     4270 	-	 EXIT 	-	 0
+ 65.000000 	-	     4337 	-	 ENTRY 	-	 4	./.git/objects/ce/ee34d07ace28b044a0b5ddb69ce4a0a5753818
+
+ 65.000000 	-	     4337 	-	 SEND_PIPE 	-	 4
+ 65.000000 	-	     4337 	-	 ENTRY 	-	 8	.
+
+ 65.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 65.000000 	-	     4270 	-	 EXIT 	-	 0
+ 65.000000 	-	     4338 	-	 ENTRY 	-	 4	./.git/objects/ec/d2022271e6e5fd1541efe750dab4927ec9c769
+
+ 65.000000 	-	     4338 	-	 SEND_PIPE 	-	 4
+ 65.000000 	-	     4338 	-	 ENTRY 	-	 8	.
+
+ 66.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 66.000000 	-	     4270 	-	 EXIT 	-	 0
+ 66.000000 	-	     4339 	-	 ENTRY 	-	 4	./.git/objects/3a/73517ebac1b2b20556af8380f2239f352c8346
+
+ 66.000000 	-	     4339 	-	 SEND_PIPE 	-	 4
+ 66.000000 	-	     4339 	-	 ENTRY 	-	 8	.
+
+ 66.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 66.000000 	-	     4270 	-	 EXIT 	-	 0
+ 67.000000 	-	     4340 	-	 ENTRY 	-	 4	./.git/objects/83/92495fc05299d3e9cbed2dd047ff6ecfb9d9aa
+
+ 67.000000 	-	     4340 	-	 ENTRY 	-	 4	./.git/objects/83/6edf6443b4597baf301310d2a0197b3279598c
+
+ 67.000000 	-	     4340 	-	 SEND_PIPE 	-	 8
+ 67.000000 	-	     4340 	-	 ENTRY 	-	 12	.
+
+ 67.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 67.000000 	-	     4270 	-	 EXIT 	-	 0
+ 67.000000 	-	     4341 	-	 ENTRY 	-	 4	./.git/objects/63/972bd400aec5488656685db554251ed2a4f39a
+
+ 68.000000 	-	     4341 	-	 SEND_PIPE 	-	 4
+ 68.000000 	-	     4341 	-	 ENTRY 	-	 8	.
+
+ 68.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 68.000000 	-	     4270 	-	 EXIT 	-	 0
+ 68.000000 	-	     4342 	-	 ENTRY 	-	 4	./.git/objects/88/89c17c3daaa73ebf666b927ff513b5c55712f6
+
+ 68.000000 	-	     4342 	-	 SEND_PIPE 	-	 4
+ 68.000000 	-	     4342 	-	 ENTRY 	-	 8	.
+
+ 68.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 68.000000 	-	     4270 	-	 EXIT 	-	 0
+ 69.000000 	-	     4343 	-	 ENTRY 	-	 4	./.git/objects/3f/445cdbb0388048ba2630f808d6987c9aad6442
+
+ 69.000000 	-	     4343 	-	 SEND_PIPE 	-	 4
+ 69.000000 	-	     4343 	-	 ENTRY 	-	 8	.
+
+ 69.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 69.000000 	-	     4270 	-	 EXIT 	-	 0
+ 69.000000 	-	     4344 	-	 ENTRY 	-	 4	./.git/objects/3d/30c9f0cfd6ee1a0ebde9508ea470e5fd7647c1
+
+ 69.000000 	-	     4344 	-	 ENTRY 	-	 4	./.git/objects/3d/fc3826912100739a2108da06e7ec3cf95b7af8
+
+ 69.000000 	-	     4344 	-	 SEND_PIPE 	-	 8
+ 69.000000 	-	     4344 	-	 ENTRY 	-	 12	.
+
+ 69.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 69.000000 	-	     4270 	-	 EXIT 	-	 0
+ 70.000000 	-	     4345 	-	 ENTRY 	-	 4	./.git/objects/e1/4a175bc26b802523cd277bfd2711b8da469167
+
+ 70.000000 	-	     4345 	-	 SEND_PIPE 	-	 4
+ 70.000000 	-	     4345 	-	 ENTRY 	-	 8	.
+
+ 70.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 70.000000 	-	     4270 	-	 EXIT 	-	 0
+ 70.000000 	-	     4346 	-	 ENTRY 	-	 4	./.git/objects/8b/43e1d3af6c85144050939e198424a23e83571a
+
+ 70.000000 	-	     4346 	-	 ENTRY 	-	 4	./.git/objects/8b/1e0586f7aea157b730909f11c103110dbcc88c
+
+ 70.000000 	-	     4346 	-	 SEND_PIPE 	-	 8
+ 70.000000 	-	     4346 	-	 ENTRY 	-	 12	.
+
+ 70.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 70.000000 	-	     4270 	-	 EXIT 	-	 0
+ 71.000000 	-	     4347 	-	 ENTRY 	-	 4	./.git/objects/e3/ecdb93ffe528160c4571cb909b9274700193ce
+
+ 71.000000 	-	     4347 	-	 ENTRY 	-	 4	./.git/objects/e3/67a5389f301ef1db9a0c8028fda3899e31f47a
+
+ 71.000000 	-	     4347 	-	 SEND_PIPE 	-	 8
+ 71.000000 	-	     4347 	-	 ENTRY 	-	 12	.
+
+ 71.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 71.000000 	-	     4270 	-	 EXIT 	-	 0
+ 71.000000 	-	     4348 	-	 ENTRY 	-	 4	./.git/objects/05/d31ca767e6a48bbcae9fac5178c739bc26710d
+
+ 71.000000 	-	     4348 	-	 SEND_PIPE 	-	 4
+ 71.000000 	-	     4348 	-	 ENTRY 	-	 8	.
+
+ 71.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 71.000000 	-	     4270 	-	 EXIT 	-	 0
+ 72.000000 	-	     4349 	-	 ENTRY 	-	 4	./.git/objects/67/352252dc370651851f9d2c6d49302b07e23c17
+
+ 72.000000 	-	     4349 	-	 SEND_PIPE 	-	 4
+ 72.000000 	-	     4349 	-	 ENTRY 	-	 8	.
+
+ 72.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 72.000000 	-	     4270 	-	 EXIT 	-	 0
+ 72.000000 	-	     4350 	-	 ENTRY 	-	 4	./.git/objects/9f/2e4d4e1681d8b78171e8fb77713d1471a5f51a
+
+ 72.000000 	-	     4350 	-	 SEND_PIPE 	-	 4
+ 72.000000 	-	     4350 	-	 ENTRY 	-	 8	.
+
+ 72.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 72.000000 	-	     4270 	-	 EXIT 	-	 0
+ 73.000000 	-	     4351 	-	 ENTRY 	-	 4	./.git/objects/af/ef7307aa320ee68fb8f652b23a15b01d8af725
+
+ 73.000000 	-	     4351 	-	 SEND_PIPE 	-	 4
+ 73.000000 	-	     4351 	-	 ENTRY 	-	 8	.
+
+ 73.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 73.000000 	-	     4270 	-	 EXIT 	-	 0
+ 73.000000 	-	     4352 	-	 ENTRY 	-	 4	./.git/objects/1a/30b6442681fc0bbf23f43c30145157a861841a
+
+ 73.000000 	-	     4352 	-	 ENTRY 	-	 4	./.git/objects/1a/0b938c2718d9976fe9737d6b80d40305e8783f
+
+ 73.000000 	-	     4352 	-	 SEND_PIPE 	-	 8
+ 73.000000 	-	     4352 	-	 ENTRY 	-	 12	.
+
+ 73.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 73.000000 	-	     4270 	-	 EXIT 	-	 0
+ 73.000000 	-	     4353 	-	 ENTRY 	-	 4	./.git/objects/8e/c41caa4b11a66f627b1f7a2410de8370d1ecf0
+
+ 73.000000 	-	     4353 	-	 SEND_PIPE 	-	 4
+ 73.000000 	-	     4353 	-	 ENTRY 	-	 8	.
+
+ 74.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 74.000000 	-	     4270 	-	 EXIT 	-	 0
+ 74.000000 	-	     4354 	-	 ENTRY 	-	 4	./.git/objects/02/72ec184fa4d8fcbf05c4344f7e833f519b4ccf
+
+ 74.000000 	-	     4354 	-	 SEND_PIPE 	-	 4
+ 74.000000 	-	     4354 	-	 ENTRY 	-	 8	.
+
+ 74.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 74.000000 	-	     4270 	-	 EXIT 	-	 0
+ 74.000000 	-	     4355 	-	 ENTRY 	-	 4	./.git/objects/8a/dadd2e8fc27eae7dcf909bb804d93af2641624
+
+ 74.000000 	-	     4355 	-	 SEND_PIPE 	-	 4
+ 74.000000 	-	     4355 	-	 ENTRY 	-	 8	.
+
+ 74.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 74.000000 	-	     4270 	-	 EXIT 	-	 0
+ 75.000000 	-	     4356 	-	 ENTRY 	-	 4	./.git/objects/53/4126c894eceae17f62769a91a519f736372900
+
+ 75.000000 	-	     4356 	-	 SEND_PIPE 	-	 4
+ 75.000000 	-	     4356 	-	 ENTRY 	-	 8	.
+
+ 75.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 75.000000 	-	     4270 	-	 EXIT 	-	 0
+ 75.000000 	-	     4357 	-	 ENTRY 	-	 4	./.git/objects/68/b1890d13c3ed6ae57f0e1c5ed62dca659a2d54
+
+ 75.000000 	-	     4357 	-	 ENTRY 	-	 4	./.git/objects/68/9fdb358bd7adfa217e1e25b2062e919cf416ac
+
+ 75.000000 	-	     4357 	-	 SEND_PIPE 	-	 8
+ 75.000000 	-	     4357 	-	 ENTRY 	-	 12	.
+
+ 75.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 75.000000 	-	     4270 	-	 EXIT 	-	 0
+ 76.000000 	-	     4358 	-	 ENTRY 	-	 4	./.git/objects/b5/c823bf6805ef830b521036874aef18f333cf45
+
+ 76.000000 	-	     4358 	-	 ENTRY 	-	 4	./.git/objects/b5/6d7a78591d19c671839c0d77d2e0f353d378aa
+
+ 76.000000 	-	     4358 	-	 SEND_PIPE 	-	 8
+ 76.000000 	-	     4358 	-	 ENTRY 	-	 12	.
+
+ 76.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 76.000000 	-	     4270 	-	 EXIT 	-	 0
+ 76.000000 	-	     4359 	-	 ENTRY 	-	 4	./.git/objects/5d/1def9b38e8ea67171d7253610dd01dea33017b
+
+ 76.000000 	-	     4359 	-	 SEND_PIPE 	-	 4
+ 76.000000 	-	     4359 	-	 ENTRY 	-	 8	.
+
+ 76.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 76.000000 	-	     4270 	-	 EXIT 	-	 0
+ 76.000000 	-	     4360 	-	 ENTRY 	-	 4	./.git/objects/bd/f59a093e4a8de4fc83eb52ccef923a59fd492a
+
+ 76.000000 	-	     4360 	-	 SEND_PIPE 	-	 4
+ 76.000000 	-	     4360 	-	 ENTRY 	-	 8	.
+
+ 76.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 77.000000 	-	     4270 	-	 EXIT 	-	 0
+ 77.000000 	-	     4361 	-	 ENTRY 	-	 4	./.git/objects/c9/4dad1285b58d2c67ecd4207949645d3899ee5f
+
+ 77.000000 	-	     4361 	-	 ENTRY 	-	 4	./.git/objects/c9/52f69a829666962d11273d7f1fdddb3dbb5f91
+
+ 77.000000 	-	     4361 	-	 SEND_PIPE 	-	 8
+ 77.000000 	-	     4361 	-	 ENTRY 	-	 12	.
+
+ 77.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 77.000000 	-	     4270 	-	 EXIT 	-	 0
+ 78.000000 	-	     4362 	-	 ENTRY 	-	 4	./.git/objects/74/4f56f3ed19c41ae10549f8336c97d32bfd3afb
+
+ 78.000000 	-	     4362 	-	 SEND_PIPE 	-	 4
+ 78.000000 	-	     4362 	-	 ENTRY 	-	 8	.
+
+ 78.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 78.000000 	-	     4270 	-	 EXIT 	-	 0
+ 78.000000 	-	     4363 	-	 ENTRY 	-	 4	./.git/objects/5c/5b37247b992f9f561edb3adc67564256c557ac
+
+ 78.000000 	-	     4363 	-	 SEND_PIPE 	-	 4
+ 78.000000 	-	     4363 	-	 ENTRY 	-	 8	.
+
+ 79.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 79.000000 	-	     4270 	-	 EXIT 	-	 0
+ 79.000000 	-	     4364 	-	 ENTRY 	-	 4	./.git/objects/16/d52ab8e30a77edbbbb03f1fc97f38c197018ef
+
+ 79.000000 	-	     4364 	-	 SEND_PIPE 	-	 4
+ 79.000000 	-	     4364 	-	 ENTRY 	-	 8	.
+
+ 79.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 79.000000 	-	     4270 	-	 EXIT 	-	 0
+ 79.000000 	-	     4365 	-	 ENTRY 	-	 4	./.git/objects/ed/c8f7d3709a4a5b089ce01fd90f6dc1614ab3f5
+
+ 79.000000 	-	     4365 	-	 SEND_PIPE 	-	 4
+ 79.000000 	-	     4365 	-	 ENTRY 	-	 8	.
+
+ 80.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 80.000000 	-	     4270 	-	 EXIT 	-	 0
+ 80.000000 	-	     4366 	-	 ENTRY 	-	 4	./.git/objects/22/a6550e27c1ceb28891d8fdad4a52ba2f03d113
+
+ 80.000000 	-	     4366 	-	 ENTRY 	-	 4	./.git/objects/22/ebdf7f6e022b4e227399deced2ea9fd4042929
+
+ 80.000000 	-	     4366 	-	 SEND_PIPE 	-	 8
+ 80.000000 	-	     4366 	-	 ENTRY 	-	 12	.
+
+ 80.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 80.000000 	-	     4270 	-	 EXIT 	-	 0
+ 80.000000 	-	     4367 	-	 ENTRY 	-	 4	./.git/objects/75/e846cb9cb308a73b5627ef0909bfe39b895138
+
+ 80.000000 	-	     4367 	-	 SEND_PIPE 	-	 4
+ 80.000000 	-	     4367 	-	 ENTRY 	-	 8	.
+
+ 80.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 80.000000 	-	     4270 	-	 EXIT 	-	 0
+ 81.000000 	-	     4368 	-	 ENTRY 	-	 4	./.git/objects/44/ea7dcbafd502555ea288f6c2a0d7112400f67c
+
+ 81.000000 	-	     4368 	-	 SEND_PIPE 	-	 4
+ 81.000000 	-	     4368 	-	 ENTRY 	-	 8	.
+
+ 81.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 81.000000 	-	     4270 	-	 EXIT 	-	 0
+ 81.000000 	-	     4369 	-	 ENTRY 	-	 4	./.git/objects/f3/c83ed95d2942346364d1ee87f37aa61b0ecb52
+
+ 81.000000 	-	     4369 	-	 SEND_PIPE 	-	 4
+ 81.000000 	-	     4369 	-	 ENTRY 	-	 8	.
+
+ 81.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 81.000000 	-	     4270 	-	 EXIT 	-	 0
+ 81.000000 	-	     4370 	-	 ENTRY 	-	 4	./.git/objects/82/2f5477e76285d030e2b5924b7711df052ee565
+
+ 82.000000 	-	     4370 	-	 SEND_PIPE 	-	 4
+ 82.000000 	-	     4370 	-	 ENTRY 	-	 8	.
+
+ 82.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 82.000000 	-	     4270 	-	 EXIT 	-	 0
+ 82.000000 	-	     4371 	-	 ENTRY 	-	 4	./.git/objects/40/486bf5668a42fd7d35f885f0622c37f567c16e
+
+ 82.000000 	-	     4371 	-	 SEND_PIPE 	-	 4
+ 82.000000 	-	     4371 	-	 ENTRY 	-	 8	.
+
+ 82.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 82.000000 	-	     4270 	-	 EXIT 	-	 0
+ 83.000000 	-	     4372 	-	 ENTRY 	-	 4	./.git/objects/81/c7a16a3275fa775cea4a4f7a16264391319454
+
+ 83.000000 	-	     4372 	-	 SEND_PIPE 	-	 4
+ 83.000000 	-	     4372 	-	 ENTRY 	-	 8	.
+
+ 83.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 83.000000 	-	     4270 	-	 EXIT 	-	 0
+ 83.000000 	-	     4373 	-	 ENTRY 	-	 4	./.git/objects/61/dbe52bf980886be295722e5fb62aebd15c3cc3
+
+ 83.000000 	-	     4373 	-	 SEND_PIPE 	-	 4
+ 83.000000 	-	     4373 	-	 ENTRY 	-	 8	.
+
+ 84.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 84.000000 	-	     4270 	-	 EXIT 	-	 0
+ 84.000000 	-	     4374 	-	 ENTRY 	-	 4	./.git/objects/fe/0f3bfedfe75615f1ae03b9400a4c991ab54d54
+
+ 84.000000 	-	     4374 	-	 SEND_PIPE 	-	 4
+ 84.000000 	-	     4374 	-	 ENTRY 	-	 8	.
+
+ 84.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 84.000000 	-	     4270 	-	 EXIT 	-	 0
+ 84.000000 	-	     4381 	-	 ENTRY 	-	 4	./.git/objects/65/5ca9d384a529d5392875c813bf9263acc20920
+
+ 85.000000 	-	     4381 	-	 SEND_PIPE 	-	 4
+ 85.000000 	-	     4381 	-	 ENTRY 	-	 8	.
+
+ 85.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 85.000000 	-	     4270 	-	 EXIT 	-	 0
+ 85.000000 	-	     4382 	-	 ENTRY 	-	 4	./.git/objects/8d/51e3a507c9dadf357f843c05e0fe963e8f7710
+
+ 85.000000 	-	     4382 	-	 SEND_PIPE 	-	 4
+ 85.000000 	-	     4382 	-	 ENTRY 	-	 8	.
+
+ 85.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 85.000000 	-	     4270 	-	 EXIT 	-	 0
+ 85.000000 	-	     4383 	-	 ENTRY 	-	 4	./.git/objects/25/644b00fffaa1c8a744db1f84a06febdba55302
+
+ 85.000000 	-	     4383 	-	 SEND_PIPE 	-	 4
+ 85.000000 	-	     4383 	-	 ENTRY 	-	 8	.
+
+ 86.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 86.000000 	-	     4270 	-	 EXIT 	-	 0
+ 86.000000 	-	     4384 	-	 ENTRY 	-	 4	./.git/objects/01/ac3cf5e8ce0ab447923c76ad2712498a3d1d13
+
+ 86.000000 	-	     4384 	-	 SEND_PIPE 	-	 4
+ 86.000000 	-	     4384 	-	 ENTRY 	-	 8	.
+
+ 86.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 86.000000 	-	     4270 	-	 EXIT 	-	 0
+ 86.000000 	-	     4385 	-	 ENTRY 	-	 4	./.git/objects/10/cd123347da56970073e545037728145eaff761
+
+ 86.000000 	-	     4385 	-	 SEND_PIPE 	-	 4
+ 86.000000 	-	     4385 	-	 ENTRY 	-	 8	.
+
+ 87.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 87.000000 	-	     4270 	-	 EXIT 	-	 0
+ 87.000000 	-	     4386 	-	 ENTRY 	-	 4	./.git/objects/ad/db04cef2aa1287069979fc612ebc5ebc8b8724
+
+ 87.000000 	-	     4386 	-	 SEND_PIPE 	-	 4
+ 87.000000 	-	     4386 	-	 ENTRY 	-	 8	.
+
+ 87.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 87.000000 	-	     4270 	-	 EXIT 	-	 0
+ 87.000000 	-	     4387 	-	 ENTRY 	-	 4	./.git/objects/24/9600ca2c6824561281b0ed2c98348413efa849
+
+ 87.000000 	-	     4387 	-	 ENTRY 	-	 4	./.git/objects/24/ec36558d039bea8a9c3955c145e407550e6dd0
+
+ 87.000000 	-	     4387 	-	 SEND_PIPE 	-	 8
+ 87.000000 	-	     4387 	-	 ENTRY 	-	 12	.
+
+ 88.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 88.000000 	-	     4270 	-	 EXIT 	-	 0
+ 88.000000 	-	     4388 	-	 ENTRY 	-	 4	./.git/objects/b6/128d5e3c0e1b73f5ec983a9d7047721636a162
+
+ 88.000000 	-	     4388 	-	 SEND_PIPE 	-	 4
+ 88.000000 	-	     4388 	-	 ENTRY 	-	 8	.
+
+ 88.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 88.000000 	-	     4270 	-	 EXIT 	-	 0
+ 88.000000 	-	     4392 	-	 ENTRY 	-	 4	./.git/objects/5e/cd0cf51acce86bfd6df75e911bffe4d760bb23
+
+ 88.000000 	-	     4392 	-	 SEND_PIPE 	-	 4
+ 88.000000 	-	     4392 	-	 ENTRY 	-	 8	.
+
+ 89.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 89.000000 	-	     4270 	-	 EXIT 	-	 0
+ 89.000000 	-	     4396 	-	 ENTRY 	-	 4	./.git/objects/5f/b8cea3b6e8723af444c90682e1f693542c147b
+
+ 89.000000 	-	     4396 	-	 ENTRY 	-	 4	./.git/objects/5f/d1eb421a997713e67a3af201f08e31d4a40fcd
+
+ 89.000000 	-	     4396 	-	 SEND_PIPE 	-	 8
+ 89.000000 	-	     4396 	-	 ENTRY 	-	 12	.
+
+ 89.000000 	-	     4270 	-	 RECV_PIPE 	-	 8
+ 89.000000 	-	     4270 	-	 EXIT 	-	 0
+ 89.000000 	-	     4402 	-	 ENTRY 	-	 4	./.git/objects/41/b3c34c9d368679ca2381f6b00ba22fccb04f25
+
+ 89.000000 	-	     4402 	-	 SEND_PIPE 	-	 4
+ 89.000000 	-	     4402 	-	 ENTRY 	-	 8	.
+
+ 89.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 89.000000 	-	     4270 	-	 EXIT 	-	 0
+ 89.000000 	-	     4403 	-	 SEND_PIPE 	-	 0
+ 90.000000 	-	     4403 	-	 ENTRY 	-	 4	.
+
+ 90.000000 	-	     4270 	-	 RECV_PIPE 	-	 0
+ 90.000000 	-	     4270 	-	 EXIT 	-	 0
+ 90.000000 	-	     4404 	-	 ENTRY 	-	 4	./.git/objects/b0/61a8229dda2640c5243d4924cba569894e8c0d
+
+ 90.000000 	-	     4404 	-	 SEND_PIPE 	-	 4
+ 90.000000 	-	     4404 	-	 ENTRY 	-	 8	.
+
+ 90.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 90.000000 	-	     4270 	-	 EXIT 	-	 0
+ 90.000000 	-	     4405 	-	 ENTRY 	-	 4	./.git/objects/a4/9844782be027aee4bd9b58090a9367e98e2f03
+
+ 90.000000 	-	     4405 	-	 SEND_PIPE 	-	 4
+ 90.000000 	-	     4405 	-	 ENTRY 	-	 8	.
+
+ 90.000000 	-	     4270 	-	 RECV_PIPE 	-	 4
+ 91.000000 	-	     4270 	-	 EXIT 	-	 0
+ 91.000000 	-	     4270 	-	 SEND_PIPE 	-	 916
+ 91.000000 	-	     4270 	-	 ENTRY 	-	 920	.
+
+ 91.000000 	-	     4269 	-	 RECV_PIPE 	-	 916
+ 91.000000 	-	     4269 	-	 EXIT 	-	 0
+ 91.000000 	-	     4269 	-	 ENTRY 	-	 4	./.git/index
+
+ 91.000000 	-	     4269 	-	 ENTRY 	-	 4	./.git/HEAD
+
+ 91.000000 	-	     4269 	-	 ENTRY 	-	 4	./.git/FETCH_HEAD
+
+ 91.000000 	-	     4407 	-	 SEND_PIPE 	-	 0
+ 91.000000 	-	     4407 	-	 ENTRY 	-	 4	.
+
+ 91.000000 	-	     4406 	-	 RECV_PIPE 	-	 0
+ 91.000000 	-	     4406 	-	 EXIT 	-	 0
+ 92.000000 	-	     4409 	-	 ENTRY 	-	 4	./.git/refs/remotes/origin/master
+
+ 92.000000 	-	     4409 	-	 SEND_PIPE 	-	 4
+ 92.000000 	-	     4409 	-	 ENTRY 	-	 8	.
+
+ 92.000000 	-	     4408 	-	 RECV_PIPE 	-	 4
+ 92.000000 	-	     4408 	-	 EXIT 	-	 0
+ 92.000000 	-	     4408 	-	 SEND_PIPE 	-	 8
+ 92.000000 	-	     4408 	-	 ENTRY 	-	 12	.
+
+ 92.000000 	-	     4406 	-	 RECV_PIPE 	-	 8
+ 92.000000 	-	     4406 	-	 EXIT 	-	 0
+ 92.000000 	-	     4413 	-	 ENTRY 	-	 4	./.git/refs/heads/master
+
+ 92.000000 	-	     4413 	-	 SEND_PIPE 	-	 4
+ 92.000000 	-	     4413 	-	 ENTRY 	-	 8	.
+
+ 93.000000 	-	     4406 	-	 RECV_PIPE 	-	 4
+ 93.000000 	-	     4406 	-	 EXIT 	-	 0
+ 93.000000 	-	     4406 	-	 SEND_PIPE 	-	 24
+ 93.000000 	-	     4406 	-	 ENTRY 	-	 28	.
+
+ 93.000000 	-	     4269 	-	 RECV_PIPE 	-	 24
+ 93.000000 	-	     4269 	-	 EXIT 	-	 0
+ 93.000000 	-	     4414 	-	 ENTRY 	-	 4	./.git/hooks/README.sample
+
+ 93.000000 	-	     4414 	-	 SEND_PIPE 	-	 4
+ 93.000000 	-	     4414 	-	 ENTRY 	-	 8	.
+
+ 93.000000 	-	     4269 	-	 RECV_PIPE 	-	 4
+ 93.000000 	-	     4269 	-	 EXIT 	-	 0
+ 93.000000 	-	     4269 	-	 ENTRY 	-	 4	./.git/description
+
+ 118.000000 	-	     4415 	-	 ENTRY 	-	 4	./.git/logs/HEAD
+
+ 118.000000 	-	     4434 	-	 ENTRY 	-	 4	./.git/logs/refs/remotes/origin/master
+
+ 119.000000 	-	     4434 	-	 SEND_PIPE 	-	 4
+ 119.000000 	-	     4434 	-	 ENTRY 	-	 8	.
+
+ 119.000000 	-	     4427 	-	 RECV_PIPE 	-	 4
+ 119.000000 	-	     4427 	-	 EXIT 	-	 0
+ 119.000000 	-	     4427 	-	 SEND_PIPE 	-	 8
+ 119.000000 	-	     4427 	-	 ENTRY 	-	 12	.
+
+ 119.000000 	-	     4417 	-	 RECV_PIPE 	-	 8
+ 119.000000 	-	     4417 	-	 EXIT 	-	 0
+ 119.000000 	-	     4435 	-	 ENTRY 	-	 4	./.git/logs/refs/heads/master
+
+ 119.000000 	-	     4435 	-	 SEND_PIPE 	-	 4
+ 119.000000 	-	     4435 	-	 ENTRY 	-	 8	.
+
+ 120.000000 	-	     4417 	-	 RECV_PIPE 	-	 4
+ 120.000000 	-	     4417 	-	 EXIT 	-	 0
+ 120.000000 	-	     4417 	-	 SEND_PIPE 	-	 20
+ 120.000000 	-	     4417 	-	 ENTRY 	-	 24	.
+
+ 120.000000 	-	     4415 	-	 RECV_PIPE 	-	 20
+ 120.000000 	-	     4415 	-	 EXIT 	-	 0
+ 120.000000 	-	     4415 	-	 SEND_PIPE 	-	 28
+ 120.000000 	-	     4415 	-	 ENTRY 	-	 32	.
+
+ 120.000000 	-	     4269 	-	 RECV_PIPE 	-	 28
+ 120.000000 	-	     4269 	-	 EXIT 	-	 0
+ 120.000000 	-	     4447 	-	 ENTRY 	-	 4	./.git/info/exclude
+
+ 120.000000 	-	     4447 	-	 SEND_PIPE 	-	 4
+ 120.000000 	-	     4447 	-	 ENTRY 	-	 8	.
+
+ 120.000000 	-	     4269 	-	 RECV_PIPE 	-	 4
+ 120.000000 	-	     4269 	-	 EXIT 	-	 0
+ 120.000000 	-	     4269 	-	 SEND_PIPE 	-	 1016
+ 121.000000 	-	     4269 	-	 ENTRY 	-	 1020	.
+
+ 121.000000 	-	     4262 	-	 RECV_PIPE 	-	 1016
+ 121.000000 	-	     4262 	-	 EXIT 	-	 0
+ 121.000000 	-	     4262 	-	 ENTRY 	-	 36	./logfile.txt
+
+ 121.000000 	-	     4262 	-	 SEND_PIPE 	-	 1308
+ 121.000000 	-	     4262 	-	 ENTRY 	-	 1312	.
+
+ 121.000000 	-	     4262 	-	 EXIT 	-	 0

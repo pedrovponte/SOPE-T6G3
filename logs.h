@@ -3,10 +3,15 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+#include <stdlib.h>
+#include <sys/time.h>
+#include <fcntl.h>
 
 int get_initial_time();
 
-int openLog(const char* filename);
+int openLog();
 
 double get_elapsed_time(void);
 
@@ -20,9 +25,9 @@ void recvSignalLog(char *signal);
 
 void sendSignalLog(char *signal, int pid);
 
-void recvPipeLog(char *message);
+void recvPipeLog(long int message);
 
-void sendPipeLog(char *message);
+void sendPipeLog(long int message);
 
 void entryLog(char *path);
 

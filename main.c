@@ -7,11 +7,11 @@
 char *directory;
 int fd[2];
 char *copy;
+commands coms;
 
 int main(int argc, char *argv[]){
-    struct commands coms;
     copy = malloc(100);
-    //openLog(getenv("LOG_FILENAME"));
+    openLog();
 
     if(argc < 1){ 
         fprintf(stderr, "Wrong number of arguments.\n");
@@ -23,16 +23,17 @@ int main(int argc, char *argv[]){
         directory = ".";
     }
     else{
-        args_commands(argc, argv, &coms);
+        coms = args_commands(argc, argv);
     }
 
     //createLog(argc, argv);
 
-    args_commands(argc, argv, &coms);
+    //args_commands(argc, argv);
 
     pipe(fd);
 
-    dirs(&coms, copy, 0);
+    dirs(copy, 0);
 
+    exitLog(0);
     return 0;
 }

@@ -10,17 +10,17 @@
 #include <limits.h>
 #include <inttypes.h>
 
-struct commands {
-    bool all_files;
-    bool show_bytes;
-    bool block_size;
+typedef struct{
+    int all_files;
+    int show_bytes;
+    int block_size;
     int block_size_bytes; 
-    bool dereference;
-    bool separate_dirs;
-    bool max_depth;
+    int dereference;
+    int separate_dirs;
+    int max_depth;
     long int max_depth_size;
-};
+} commands;
 
-int args_commands(int argc, char* argv[], struct commands *coms);
+commands args_commands(int argc, char* argv[]);
 
 bool check_is_dir(const char* path);
