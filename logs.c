@@ -76,11 +76,11 @@ void recvSignalLog(char *signal){
     registLog(getpid(), "RECV_SIGNAL", info);
 }
 
-void sendSignalLog(char *signal, int pid){
+void sendSignalLog(char *signal, pid_t pid){
     //pid_t pidp = getpid();
     char info[200];
     sprintf(info, "Signal %s sent to process with pid %d", signal, pid);
-    registLog(getpid(), "SEND_SIGNAL", info);
+    registLog(pid, "SEND_SIGNAL", info);
 }
 
 void recvPipeLog(long int message){

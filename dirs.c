@@ -6,6 +6,8 @@
 extern char *directory;
 extern int fd[2];
 extern commands coms;
+extern pid_t pgid;
+pid_t son;
 
 int dirs(char *path_file, int level){
     
@@ -14,7 +16,7 @@ int dirs(char *path_file, int level){
     struct dirent *de;
     pid_t pid;
     int status;
-    char *name, *dir_name, *subdir;
+    char *name, *dir_name, *subdir/*, *d*/;
 
     DIR *dir = opendir(path_file);
 
@@ -40,17 +42,17 @@ int dirs(char *path_file, int level){
 
         sprintf(name, "%s%s", path_file, dir_name);
         
-        if(coms.dereference){
+        if(coms.dereference == 1){
             //printf("Lstat\n");
-            if(lstat(name, &path_stat) == -1){
-                perror("Lstat error");
+            if(stat(name, &path_stat) == -1){
+                perror("Stat error");
                 exitLog(EXIT_FAILURE);
                 exit(1);
             }
         }
         else{
-            if(stat(name, &path_stat) == -1){
-                perror("Stat error");
+            if(lstat(name, &path_stat) == -1){
+                perror("Lstat error");
                 exitLog(EXIT_FAILURE);
                 exit(1);
             }
@@ -132,15 +134,14 @@ int dirs(char *path_file, int level){
             pid = fork();
 
             if(pid > 0){
-                //waitpid(pid, &status, WUNTRACED);
-                //waitpid(-1, &status, WNOHANG);
-                //wait(NULL);
-                //waitpid(-1, &status, 0);
+                
+                if(getpgrp() == pgid){
+                    son = pid;
+                }
+                
                 waitpid(pid, &status, 0);
-                //while((pid = wait(&status)));
-                //printf("%i\n",getpid());
                 long int total_rest;
-                //close(fd[WRITE]);
+
                 if(!coms.separate_dirs){
                     if(read(fd[READ],&total_rest,sizeof(long int)) == -1){
                         perror("Error reading from pipe");
@@ -161,6 +162,10 @@ int dirs(char *path_file, int level){
             else if(pid == 0){
                 //signal(SIGINT, SIG_IGN);
                 
+                if(getpgrp() == pgid){
+                    setpgid(pid, getpid());
+                }
+
                 dirs(subdir, level + 1);
 
                 //printf("Ola do filho %i\n",getpid());
@@ -222,6 +227,9 @@ int dirs(char *path_file, int level){
     else{
         total += 4096 / coms.block_size_bytes;
     }
+
+    /*d = path_file;
+    d[strlen(d) - 1] = '\0';*/
 
     if(level <= coms.max_depth_size){
         if(strcmp(path_file, directory)){       //tirar a barra do final do diretorio

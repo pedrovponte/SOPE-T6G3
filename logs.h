@@ -23,7 +23,7 @@ void exitLog(int status_code);
 
 void recvSignalLog(char *signal);
 
-void sendSignalLog(char *signal, int pid);
+void sendSignalLog(char *signal, pid_t pid);
 
 void recvPipeLog(long int message);
 

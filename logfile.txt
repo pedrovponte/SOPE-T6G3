@@ -1,59 +1,59 @@
- 0.00 	-	 00014527 	-	 CREATE 	-	 ./simpledu ./Testar -a
- 0.00 	-	 00014529 	-	 ENTRY 	-	 4	./Testar/D2/D3/file1.txt
+ 0.00 	-	 00018423 	-	 CREATE 	-	 ./simpledu ./Testar -a
+ 0.00 	-	 00018425 	-	 ENTRY 	-	 4	./Testar/D2/D3/file1.txt
 
- 0.00 	-	 00014529 	-	 ENTRY 	-	 4	./Testar/D2/D3/file2.txt
+ 0.00 	-	 00018425 	-	 ENTRY 	-	 4	./Testar/D2/D3/file2.txt
 
- 0.00 	-	 00014530 	-	 ENTRY 	-	 4	./Testar/D2/D3/D4/file.txt
+ 0.00 	-	 00018426 	-	 ENTRY 	-	 4	./Testar/D2/D3/D4/file.txt
 
- 0.00 	-	 00014530 	-	 ENTRY 	-	 4	./Testar/D2/D3/D4/fil35.txt
+ 0.00 	-	 00018426 	-	 ENTRY 	-	 4	./Testar/D2/D3/D4/fil35.txt
 
- 0.00 	-	 00014530 	-	 SEND_PIPE 	-	 8
- 1.00 	-	 00014530 	-	 ENTRY 	-	 12	./Testar/D2/D3/D4
+ 0.00 	-	 00018426 	-	 SEND_PIPE 	-	 8
+ 0.00 	-	 00018426 	-	 ENTRY 	-	 12	./Testar/D2/D3/D4
 
- 1.00 	-	 00014530 	-	 EXIT 	-	 0
- 1.00 	-	 00014529 	-	 RECV_PIPE 	-	 8
- 1.00 	-	 00014529 	-	 SEND_PIPE 	-	 20
- 1.00 	-	 00014529 	-	 ENTRY 	-	 24	./Testar/D2/D3
+ 0.00 	-	 00018426 	-	 EXIT 	-	 0
+ 1.00 	-	 00018425 	-	 RECV_PIPE 	-	 8
+ 1.00 	-	 00018425 	-	 SEND_PIPE 	-	 20
+ 1.00 	-	 00018425 	-	 ENTRY 	-	 24	./Testar/D2/D3
 
- 1.00 	-	 00014529 	-	 EXIT 	-	 0
- 1.00 	-	 00014528 	-	 RECV_PIPE 	-	 20
- 1.00 	-	 00014528 	-	 ENTRY 	-	 4	./Testar/D2/ex2c.c
+ 1.00 	-	 00018425 	-	 EXIT 	-	 0
+ 1.00 	-	 00018424 	-	 RECV_PIPE 	-	 20
+ 1.00 	-	 00018424 	-	 ENTRY 	-	 4	./Testar/D2/ex2c.c
 
- 1.00 	-	 00014528 	-	 ENTRY 	-	 4	./Testar/D2/ex2d.c
+ 1.00 	-	 00018424 	-	 ENTRY 	-	 4	./Testar/D2/ex2d.c
 
- 1.00 	-	 00014528 	-	 ENTRY 	-	 4	./Testar/D2/ex1.c
+ 1.00 	-	 00018424 	-	 ENTRY 	-	 4	./Testar/D2/ex1.c
 
- 1.00 	-	 00014528 	-	 ENTRY 	-	 4	./Testar/D2/ex2a.c
+ 1.00 	-	 00018424 	-	 ENTRY 	-	 4	./Testar/D2/ex2a.c
 
- 1.00 	-	 00014528 	-	 SEND_PIPE 	-	 40
- 1.00 	-	 00014528 	-	 ENTRY 	-	 44	./Testar/D2
+ 1.00 	-	 00018424 	-	 SEND_PIPE 	-	 40
+ 1.00 	-	 00018424 	-	 ENTRY 	-	 44	./Testar/D2
 
- 1.00 	-	 00014528 	-	 EXIT 	-	 0
- 1.00 	-	 00014527 	-	 RECV_PIPE 	-	 40
- 1.00 	-	 00014531 	-	 ENTRY 	-	 4	./Testar/D1/ex2b.c
+ 1.00 	-	 00018424 	-	 EXIT 	-	 0
+ 1.00 	-	 00018423 	-	 RECV_PIPE 	-	 40
+ 1.00 	-	 00018427 	-	 ENTRY 	-	 4	./Testar/D1/ex2b.c
 
- 1.00 	-	 00014531 	-	 ENTRY 	-	 4	./Testar/D1/ex3b.c
+ 1.00 	-	 00018427 	-	 ENTRY 	-	 4	./Testar/D1/ex3b.c
 
- 2.00 	-	 00014531 	-	 ENTRY 	-	 4	./Testar/D1/ex1.c
+ 1.00 	-	 00018427 	-	 ENTRY 	-	 4	./Testar/D1/ex1.c
 
- 2.00 	-	 00014531 	-	 ENTRY 	-	 4	./Testar/D1/ex2a.c
+ 1.00 	-	 00018427 	-	 ENTRY 	-	 4	./Testar/D1/ex2a.c
 
- 2.00 	-	 00014531 	-	 ENTRY 	-	 4	./Testar/D1/ex3a.c
+ 1.00 	-	 00018427 	-	 ENTRY 	-	 4	./Testar/D1/ex3a.c
 
- 2.00 	-	 00014531 	-	 SEND_PIPE 	-	 20
- 2.00 	-	 00014531 	-	 ENTRY 	-	 24	./Testar/D1
+ 1.00 	-	 00018427 	-	 SEND_PIPE 	-	 20
+ 1.00 	-	 00018427 	-	 ENTRY 	-	 24	./Testar/D1
 
- 2.00 	-	 00014531 	-	 EXIT 	-	 0
- 2.00 	-	 00014527 	-	 RECV_PIPE 	-	 20
- 2.00 	-	 00014527 	-	 ENTRY 	-	 4	./Testar/ex3.c
+ 1.00 	-	 00018427 	-	 EXIT 	-	 0
+ 1.00 	-	 00018423 	-	 RECV_PIPE 	-	 20
+ 1.00 	-	 00018423 	-	 ENTRY 	-	 4	./Testar/ex3.c
 
- 2.00 	-	 00014527 	-	 ENTRY 	-	 4	./Testar/ex2.c
+ 2.00 	-	 00018423 	-	 ENTRY 	-	 4	./Testar/ex2.c
 
- 2.00 	-	 00014527 	-	 ENTRY 	-	 4	./Testar/ex4.c
+ 2.00 	-	 00018423 	-	 ENTRY 	-	 4	./Testar/ex4.c
 
- 2.00 	-	 00014527 	-	 ENTRY 	-	 0	./Testar/mylink.txt
+ 2.00 	-	 00018423 	-	 ENTRY 	-	 0	./Testar/mylink.txt
 
- 2.00 	-	 00014527 	-	 SEND_PIPE 	-	 80
- 2.00 	-	 00014527 	-	 ENTRY 	-	 84	./Testar
+ 2.00 	-	 00018423 	-	 SEND_PIPE 	-	 80
+ 2.00 	-	 00018423 	-	 ENTRY 	-	 84	./Testar
 
- 2.00 	-	 00014527 	-	 EXIT 	-	 0
+ 2.00 	-	 00018423 	-	 EXIT 	-	 0
