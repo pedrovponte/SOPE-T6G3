@@ -9,6 +9,7 @@
 #include <sys/types.h>
 #include <limits.h>
 #include <inttypes.h>
+#include "utils.h"
 
 typedef struct{
     int all_files;

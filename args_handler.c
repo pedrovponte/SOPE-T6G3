@@ -45,7 +45,7 @@ commands args_commands(int argc, char* argv[]){
             coms.block_size_bytes = atoi(last);
         }   
 
-        else if(strcmp(argv[i], "-l") == 0){
+        else if(strcmp(argv[i], "-l") == 0  || strcmp(argv[i], "--count-links") == 0){
             continue;
         }
 
@@ -93,13 +93,3 @@ commands args_commands(int argc, char* argv[]){
     return coms;
 }
 
-bool check_is_dir(const char* path){
-    struct stat path_stat;
-
-    if(stat(path, &path_stat) != 0){
-        fprintf(stderr, "Invalid directory.\n");
-        exit(1);
-    }
-
-    return S_ISDIR(path_stat.st_mode);
-}

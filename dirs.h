@@ -12,5 +12,6 @@
 #include <signal.h>
 #include "args_handler.h"
 #include "logs.h"
+#include "utils.h"
 
 int dirs(char *path_file, int level);

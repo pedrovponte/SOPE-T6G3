@@ -3,6 +3,7 @@
 #include "args_handler.h"
 #include "dirs.h"
 #include "logs.h"
+#include "utils.h"
 
 char *directory;
 int fd[2];
@@ -18,15 +19,10 @@ int main(int argc, char *argv[]){
         exit(1);
     }
 
-    if(argc == 1){
-        strcpy(copy,".");
-        directory = ".";
-    }
-    else{
-        coms = args_commands(argc, argv);
-    }
+    coms = args_commands(argc, argv);
 
-    //createLog(argc, argv);
+
+    createLog(argc, argv);
 
     //args_commands(argc, argv);
 

@@ -38,7 +38,7 @@ double get_elapsed_time(void){
 }
 
 int registLog(pid_t pid, char* action, char *info){
-    if(fprintf(file, " %2f \t-\t %8u \t-\t %s \t-\t %s\n", get_elapsed_time(), pid, action, info) < 0){
+    if(fprintf(file, " %.2f \t-\t %.8u \t-\t %s \t-\t %s\n", get_elapsed_time(), pid, action, info) < 0){
         perror("Error writing to log file.\n");
         exit(1);
     }
@@ -50,12 +50,14 @@ int registLog(pid_t pid, char* action, char *info){
 
 void createLog(int argc, char *args[]){
     //pid_t pid = getpid();
-    char info[150];
-    for(int i = 0; i < argc; i++){
+    char info[512];
+    int i = 0;
+    while(i < argc){
         strcat(info, args[i]);
-        while(i != argc - 1){
+        if(i != argc - 1){
             strcat(info, " ");
         }
+        i++;
     }
     registLog(getpid(), "CREATE", info);
 }

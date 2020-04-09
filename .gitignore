@@ -10,3 +10,7 @@ comp
 main.o
 
 *.o
+
+testeT_du.txt
+
+testeT_simpledu.txt

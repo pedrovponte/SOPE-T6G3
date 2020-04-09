@@ -10,7 +10,6 @@ extern commands coms;
 int dirs(char *path_file, int level){
     
     long int total = 0;
-    //long int total_rest = 0;
     struct stat path_stat;
     struct dirent *de;
     pid_t pid;
@@ -29,23 +28,24 @@ int dirs(char *path_file, int level){
         dir_name = de->d_name;
         //printf("%s\n",de->d_name);
 
-        if(!strcmp(dir_name,".") || !strcmp(dir_name,"..")){
+        if(strcmp(dir_name,".") == 0 || strcmp(dir_name,"..") == 0){
             continue;
         }
 
-        if(!strcmp(".", path_file) || !strcmp("..", path_file)){
+        if(strcmp(".", path_file) == 0 || strcmp("..", path_file) == 0){
             return 0;
         }
 
-        name = (char*) malloc (512 * sizeof(char));
+        name = malloc(225 * sizeof(char));
 
         sprintf(name, "%s%s", path_file, dir_name);
         
-        if(coms.dereference == 1){
+        if(coms.dereference){
+            //printf("Lstat\n");
             if(lstat(name, &path_stat) == -1){
                 perror("Lstat error");
-                exitLog(1);
-                exit(EXIT_FAILURE);
+                exitLog(EXIT_FAILURE);
+                exit(1);
             }
         }
         else{
@@ -54,14 +54,18 @@ int dirs(char *path_file, int level){
                 exitLog(EXIT_FAILURE);
                 exit(1);
             }
-        }        
+        }    
+
+        /*if(S_ISLNK(path_stat.st_mode)){
+            printf("Tamanho: %li\n", path_stat.st_blocks / 2);
+        }*/  
         
         if(S_ISREG(path_stat.st_mode) || S_ISLNK(path_stat.st_mode)){    
             long int size;
-            char *size_file;
+            //char *size_file;
 
             if(coms.all_files == 1 && level < coms.max_depth_size){
-                if(coms.show_bytes == 1 && coms.block_size == 1){     //faltam bytes
+                if(coms.show_bytes == 1 && coms.block_size == 1){     
                     if((path_stat.st_size % coms.block_size_bytes) == 0){
                         size = path_stat.st_size / coms.block_size_bytes;
                     }
@@ -69,7 +73,7 @@ int dirs(char *path_file, int level){
                         size = path_stat.st_size / coms.block_size_bytes + 1;
                     }
                 }
-                if(coms.block_size == 1 && coms.show_bytes == 0){             //faltam bytes
+                if(coms.block_size == 1 && coms.show_bytes == 0){             
                     if(((path_stat.st_blocks / 2) * 1024 % coms.block_size_bytes) == 0) {
                         size = (path_stat.st_blocks / 2) * 1024 / coms.block_size_bytes;
                     }
@@ -78,16 +82,21 @@ int dirs(char *path_file, int level){
                     }
                 }
                 if(coms.block_size == 0 && coms.show_bytes == 1){
-                    size = path_stat.st_size;   //faltam 4096 bytes
+                    size = path_stat.st_size;   
                 }
                 if(coms.block_size == 0 && coms.show_bytes == 0){
-                    size = path_stat.st_blocks / 2; //faltam 4 blocos
+                    size = path_stat.st_blocks / 2; 
                 }
-                size_file = (char*) malloc(512 * 2 * sizeof(char));
+                /*size_file = malloc(2048 * sizeof(char));
                 sprintf(size_file, "%ld\t%s\n", size, name);
                 write(STDOUT_FILENO, size_file, strlen(size_file));
                 entryLog(size_file);
-                free(size_file);
+                free(size_file);*/
+                if(print_screen(name, size) != 0){
+                    perror("Error writing on the screen\n");
+                    exitLog(EXIT_FAILURE);
+                    exit(1);
+                }
                 total += size;
             }
             else{
@@ -99,7 +108,7 @@ int dirs(char *path_file, int level){
                         total += path_stat.st_size / coms.block_size_bytes + 1;
                     }
                 }
-                if(coms.block_size == 1 && coms.show_bytes == 0){               //faltam 2048 bytes
+                if(coms.block_size == 1 && coms.show_bytes == 0){               
                     if(((path_stat.st_blocks / 2) * 1024 % coms.block_size_bytes) == 0) {
                         total += (path_stat.st_blocks / 2) * 1024 / coms.block_size_bytes;
                     }
@@ -111,27 +120,23 @@ int dirs(char *path_file, int level){
                     total += path_stat.st_size;
                 }
                 if(coms.block_size == 0 && coms.show_bytes == 0){
-                    total += path_stat.st_blocks / 2;     //faltam 4 blocos
+                    total += path_stat.st_blocks / 2;     
                 }
             }
         }
 
         if(S_ISDIR(path_stat.st_mode)){   
-            subdir = (char*) malloc(strlen(path_file) + strlen(dir_name) + 2);
+            subdir = malloc(2048);
             sprintf(subdir, "%s%s/", path_file, dir_name);
-            //int fd[2];
-
-            //pipe(fd);
 
             pid = fork();
-            
 
             if(pid > 0){
-                waitpid(pid, &status, WUNTRACED);
+                //waitpid(pid, &status, WUNTRACED);
                 //waitpid(-1, &status, WNOHANG);
                 //wait(NULL);
                 //waitpid(-1, &status, 0);
-                //waitpid(pid, &status, 0);
+                waitpid(pid, &status, 0);
                 //while((pid = wait(&status)));
                 //printf("%i\n",getpid());
                 long int total_rest;
@@ -149,7 +154,7 @@ int dirs(char *path_file, int level){
                 //printf("Total Rest: %li\n", total_rest);
                 //total += total_rest;
                 //printf("Total: %li\n", total);
-                exitLog(EXIT_SUCCESS);
+                //exitLog(EXIT_SUCCESS);
                 //exit(0);
             }
 
@@ -165,6 +170,7 @@ int dirs(char *path_file, int level){
                     exitLog(EXIT_FAILURE);
                     exit(1);
                 }
+                exitLog(EXIT_SUCCESS);
                 exit(0);
 
                 //close(fd[READ]);
@@ -226,12 +232,17 @@ int dirs(char *path_file, int level){
                 path_file[strlen(path_file) - 1] = '\0';
             }
         }
-        char *final_dir;
-        final_dir = (char*) malloc(512 * 2 * sizeof(char));
+        /*char *final_dir;
+        final_dir = malloc(2048 * sizeof(char));
         sprintf(final_dir, "%ld\t%s\n", total, path_file);
         write(STDOUT_FILENO, final_dir, strlen(final_dir));
         entryLog(final_dir);
-        free(final_dir);
+        free(final_dir);*/
+        if(print_screen(path_file, total) != 0){
+            perror("Error writing on the screen\n");
+            exitLog(EXIT_FAILURE);
+            exit(1);
+        }
     }
     
     //free(name);

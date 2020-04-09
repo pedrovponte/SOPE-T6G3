@@ -1,8 +1,8 @@
 cc		 = gcc
 CFLAGS	 = -Wall -Wextra -g
 LDFLAGS  =
-DEPS	 = main.c logs.c logs.h dirs.c dirs.h args_handler.c args_handler.h Makefile
-OBJFILES = main.o logs.o dirs.o args_handler.o
+DEPS	 = main.c logs.c logs.h dirs.c dirs.h args_handler.c args_handler.h utils.c utils.h Makefile
+OBJFILES = main.o logs.o dirs.o args_handler.o utils.o
 TARGET	 = simpledu
 
 all: $(TARGET)
