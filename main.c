@@ -6,7 +6,7 @@
 #include "utils.h"
 #include "signals_handler.h"
 
-char *directory;
+char *act_dir;
 int fd[2];
 char *copy;
 commands coms;
@@ -14,34 +14,39 @@ pid_t pgid;
 
 int main(int argc, char *argv[]){
     
-    copy = malloc(100);
+    copy = malloc(512);
 
     if(init_signals() != 0){
         perror("Error initializing signals");
-        exit(1);
+        exitLog(EXIT_FAILURE);
+        exit(EXIT_FAILURE);
     }
     
     if(openLog() !=0){
         perror("Error opening logs file");
-        exit(1);
+        exitLog(EXIT_FAILURE);
+        exit(EXIT_FAILURE);
     }
 
     if(argc < 1){ 
         fprintf(stderr, "Wrong number of arguments.\n");
-        exit(1);
+        exitLog(EXIT_FAILURE);
+        exit(EXIT_FAILURE);
     }
 
     coms = args_commands(argc, argv);
 
-
     createLog(argc, argv);
 
-    //args_commands(argc, argv);
-
-    pipe(fd);
+    if(pipe(fd) < 0){
+        perror("Error creating pipe");
+        exitLog(EXIT_FAILURE);
+        exit(EXIT_FAILURE);
+    }
 
     dirs(copy, 0);
 
-    exitLog(0);
+    exitLog(EXIT_SUCCESS);
+    
     return 0;
 }

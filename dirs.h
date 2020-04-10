@@ -14,4 +14,4 @@
 #include "logs.h"
 #include "utils.h"
 
-int dirs(char *path_file, int level);
+int dirs(char *path_file, int indx);

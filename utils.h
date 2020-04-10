@@ -7,7 +7,7 @@
 #include "logs.h"
 #include "stdbool.h"
 
-extern char* directory;
+extern char* act_dir;
 
 bool check_is_dir(const char* path);
 int print_screen(const char* path, long int size);

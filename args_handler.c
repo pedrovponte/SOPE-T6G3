@@ -1,7 +1,8 @@
 #include "args_handler.h"
 
 extern char* copy;
-extern char* directory;
+extern char* act_dir;
+bool inp_dir = false;
 
 commands args_commands(int argc, char* argv[]){
     commands coms;
@@ -13,8 +14,6 @@ commands args_commands(int argc, char* argv[]){
     coms.separate_dirs = 0;
     coms.max_depth = 0;
     coms.max_depth_size = INT_MAX;
-
-    bool inp_dir = false;
 
     for(int i = 1; i < argc; i++){
 
@@ -73,16 +72,18 @@ commands args_commands(int argc, char* argv[]){
         else if(check_is_dir(argv[i])){
             inp_dir = true;
             strcpy(copy, argv[i]);
-            directory = argv[i];
+            act_dir = argv[i];
         }
 
         else{
             perror("Invalid argument");
+            exitLog(EXIT_FAILURE);
+            exit(EXIT_FAILURE);
         }
     }
     if(!inp_dir){
-        strcpy(copy, ".");
-        directory = ".";
+        strcpy(copy, "./");
+        act_dir = "./";
     }
 
     if (copy[strlen(copy) - 1] != '/') {

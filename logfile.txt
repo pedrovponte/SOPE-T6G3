@@ -1,59 +1,1130 @@
- 0.00 	-	 00018423 	-	 CREATE 	-	 ./simpledu ./Testar -a
- 0.00 	-	 00018425 	-	 ENTRY 	-	 4	./Testar/D2/D3/file1.txt
+ 0.00 	-	 00026853 	-	 CREATE 	-	 ./simpledu -a
+ 0.00 	-	 00026853 	-	 ENTRY 	-	 8	./dirs.c
 
- 0.00 	-	 00018425 	-	 ENTRY 	-	 4	./Testar/D2/D3/file2.txt
+ 0.00 	-	 00026853 	-	 ENTRY 	-	 4	./logs.c
 
- 0.00 	-	 00018426 	-	 ENTRY 	-	 4	./Testar/D2/D3/D4/file.txt
+ 0.00 	-	 00026853 	-	 ENTRY 	-	 4	./testeT_du.txt
 
- 0.00 	-	 00018426 	-	 ENTRY 	-	 4	./Testar/D2/D3/D4/fil35.txt
+ 0.00 	-	 00026853 	-	 ENTRY 	-	 16	./signals_handler.o
 
- 0.00 	-	 00018426 	-	 SEND_PIPE 	-	 8
- 0.00 	-	 00018426 	-	 ENTRY 	-	 12	./Testar/D2/D3/D4
+ 0.00 	-	 00026853 	-	 ENTRY 	-	 0	./testeT_du
 
- 0.00 	-	 00018426 	-	 EXIT 	-	 0
- 1.00 	-	 00018425 	-	 RECV_PIPE 	-	 8
- 1.00 	-	 00018425 	-	 SEND_PIPE 	-	 20
- 1.00 	-	 00018425 	-	 ENTRY 	-	 24	./Testar/D2/D3
+ 0.00 	-	 00026853 	-	 ENTRY 	-	 44	./simpledu
 
- 1.00 	-	 00018425 	-	 EXIT 	-	 0
- 1.00 	-	 00018424 	-	 RECV_PIPE 	-	 20
- 1.00 	-	 00018424 	-	 ENTRY 	-	 4	./Testar/D2/ex2c.c
+ 0.00 	-	 00026854 	-	 ENTRY 	-	 4	./.vscode/settings.json
 
- 1.00 	-	 00018424 	-	 ENTRY 	-	 4	./Testar/D2/ex2d.c
+ 0.00 	-	 00026854 	-	 SEND_PIPE 	-	 4
+ 0.00 	-	 00026854 	-	 ENTRY 	-	 8	./.vscode
 
- 1.00 	-	 00018424 	-	 ENTRY 	-	 4	./Testar/D2/ex1.c
+ 0.00 	-	 00026854 	-	 EXIT 	-	 0
+ 1.00 	-	 00026853 	-	 RECV_PIPE 	-	 4
+ 1.00 	-	 00026853 	-	 ENTRY 	-	 4	./args_handler.h
 
- 1.00 	-	 00018424 	-	 ENTRY 	-	 4	./Testar/D2/ex2a.c
+ 1.00 	-	 00026853 	-	 ENTRY 	-	 4	./Makefile
 
- 1.00 	-	 00018424 	-	 SEND_PIPE 	-	 40
- 1.00 	-	 00018424 	-	 ENTRY 	-	 44	./Testar/D2
+ 1.00 	-	 00026853 	-	 ENTRY 	-	 4	./logs.h
 
- 1.00 	-	 00018424 	-	 EXIT 	-	 0
- 1.00 	-	 00018423 	-	 RECV_PIPE 	-	 40
- 1.00 	-	 00018427 	-	 ENTRY 	-	 4	./Testar/D1/ex2b.c
+ 1.00 	-	 00026853 	-	 ENTRY 	-	 4	./.gitignore
 
- 1.00 	-	 00018427 	-	 ENTRY 	-	 4	./Testar/D1/ex3b.c
+ 1.00 	-	 00026853 	-	 ENTRY 	-	 4	./utils.h
 
- 1.00 	-	 00018427 	-	 ENTRY 	-	 4	./Testar/D1/ex1.c
+ 1.00 	-	 00026853 	-	 ENTRY 	-	 4	./dirs.h
 
- 1.00 	-	 00018427 	-	 ENTRY 	-	 4	./Testar/D1/ex2a.c
+ 1.00 	-	 00026853 	-	 ENTRY 	-	 4	./README.md
 
- 1.00 	-	 00018427 	-	 ENTRY 	-	 4	./Testar/D1/ex3a.c
+ 1.00 	-	 00026853 	-	 ENTRY 	-	 4	./utils.c
 
- 1.00 	-	 00018427 	-	 SEND_PIPE 	-	 20
- 1.00 	-	 00018427 	-	 ENTRY 	-	 24	./Testar/D1
+ 1.00 	-	 00026853 	-	 ENTRY 	-	 4	./signals_handler.c
 
- 1.00 	-	 00018427 	-	 EXIT 	-	 0
- 1.00 	-	 00018423 	-	 RECV_PIPE 	-	 20
- 1.00 	-	 00018423 	-	 ENTRY 	-	 4	./Testar/ex3.c
+ 1.00 	-	 00026853 	-	 ENTRY 	-	 20	./dirs.o
 
- 2.00 	-	 00018423 	-	 ENTRY 	-	 4	./Testar/ex2.c
+ 1.00 	-	 00026853 	-	 ENTRY 	-	 4	./signals_handler.h
 
- 2.00 	-	 00018423 	-	 ENTRY 	-	 4	./Testar/ex4.c
+ 1.00 	-	 00026857 	-	 ENTRY 	-	 4	./Testar/D2/D3/file1.txt
 
- 2.00 	-	 00018423 	-	 ENTRY 	-	 0	./Testar/mylink.txt
+ 1.00 	-	 00026857 	-	 ENTRY 	-	 4	./Testar/D2/D3/file2.txt
 
- 2.00 	-	 00018423 	-	 SEND_PIPE 	-	 80
- 2.00 	-	 00018423 	-	 ENTRY 	-	 84	./Testar
+ 2.00 	-	 00026858 	-	 ENTRY 	-	 4	./Testar/D2/D3/D4/file.txt
 
- 2.00 	-	 00018423 	-	 EXIT 	-	 0
+ 2.00 	-	 00026858 	-	 ENTRY 	-	 4	./Testar/D2/D3/D4/fil35.txt
+
+ 2.00 	-	 00026858 	-	 SEND_PIPE 	-	 8
+ 2.00 	-	 00026858 	-	 ENTRY 	-	 12	./Testar/D2/D3/D4
+
+ 2.00 	-	 00026858 	-	 EXIT 	-	 0
+ 2.00 	-	 00026857 	-	 RECV_PIPE 	-	 8
+ 2.00 	-	 00026857 	-	 SEND_PIPE 	-	 20
+ 2.00 	-	 00026857 	-	 ENTRY 	-	 24	./Testar/D2/D3
+
+ 2.00 	-	 00026857 	-	 EXIT 	-	 0
+ 2.00 	-	 00026856 	-	 RECV_PIPE 	-	 20
+ 2.00 	-	 00026856 	-	 ENTRY 	-	 4	./Testar/D2/ex2c.c
+
+ 2.00 	-	 00026856 	-	 ENTRY 	-	 4	./Testar/D2/ex2d.c
+
+ 2.00 	-	 00026856 	-	 ENTRY 	-	 4	./Testar/D2/ex1.c
+
+ 2.00 	-	 00026856 	-	 ENTRY 	-	 4	./Testar/D2/ex2a.c
+
+ 2.00 	-	 00026856 	-	 SEND_PIPE 	-	 40
+ 2.00 	-	 00026856 	-	 ENTRY 	-	 44	./Testar/D2
+
+ 2.00 	-	 00026856 	-	 EXIT 	-	 0
+ 2.00 	-	 00026855 	-	 RECV_PIPE 	-	 40
+ 2.00 	-	 00026859 	-	 ENTRY 	-	 4	./Testar/D1/ex2b.c
+
+ 3.00 	-	 00026859 	-	 ENTRY 	-	 4	./Testar/D1/ex3b.c
+
+ 3.00 	-	 00026859 	-	 ENTRY 	-	 4	./Testar/D1/ex1.c
+
+ 3.00 	-	 00026859 	-	 ENTRY 	-	 4	./Testar/D1/ex2a.c
+
+ 3.00 	-	 00026859 	-	 ENTRY 	-	 4	./Testar/D1/ex3a.c
+
+ 3.00 	-	 00026859 	-	 SEND_PIPE 	-	 20
+ 3.00 	-	 00026859 	-	 ENTRY 	-	 24	./Testar/D1
+
+ 3.00 	-	 00026859 	-	 EXIT 	-	 0
+ 3.00 	-	 00026855 	-	 RECV_PIPE 	-	 20
+ 3.00 	-	 00026855 	-	 ENTRY 	-	 4	./Testar/ex3.c
+
+ 3.00 	-	 00026855 	-	 ENTRY 	-	 4	./Testar/ex2.c
+
+ 3.00 	-	 00026855 	-	 ENTRY 	-	 4	./Testar/ex4.c
+
+ 3.00 	-	 00026855 	-	 ENTRY 	-	 0	./Testar/mylink.txt
+
+ 3.00 	-	 00026855 	-	 SEND_PIPE 	-	 80
+ 3.00 	-	 00026855 	-	 ENTRY 	-	 84	./Testar
+
+ 3.00 	-	 00026855 	-	 EXIT 	-	 0
+ 3.00 	-	 00026853 	-	 RECV_PIPE 	-	 80
+ 3.00 	-	 00026853 	-	 ENTRY 	-	 12	./utils.o
+
+ 3.00 	-	 00026853 	-	 ENTRY 	-	 4	./main.c
+
+ 3.00 	-	 00026853 	-	 ENTRY 	-	 12	./args_handler.o
+
+ 3.00 	-	 00026853 	-	 ENTRY 	-	 4	./args_handler.c
+
+ 3.00 	-	 00026853 	-	 ENTRY 	-	 4	./testeT_simpledu.txt
+
+ 3.00 	-	 00026853 	-	 ENTRY 	-	 12	./a.out
+
+ 3.00 	-	 00026853 	-	 ENTRY 	-	 16	./logs.o
+
+ 3.00 	-	 00026853 	-	 ENTRY 	-	 12	./main.o
+
+ 3.00 	-	 00026860 	-	 ENTRY 	-	 4	./.git/config
+
+ 4.00 	-	 00026862 	-	 ENTRY 	-	 4	./.git/objects/86/7c4e7a215bd001c19b61c22e8eb2f28dade08c
+
+ 4.00 	-	 00026862 	-	 SEND_PIPE 	-	 4
+ 4.00 	-	 00026862 	-	 ENTRY 	-	 8	./.git/objects/86
+
+ 4.00 	-	 00026862 	-	 EXIT 	-	 0
+ 4.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 4.00 	-	 00026863 	-	 ENTRY 	-	 4	./.git/objects/a0/337850731e1771183e3bbfa7be36503db52fa9
+
+ 4.00 	-	 00026863 	-	 ENTRY 	-	 4	./.git/objects/a0/cf3d89e6afaaa626174377af37d70cdc2f1c8d
+
+ 4.00 	-	 00026863 	-	 SEND_PIPE 	-	 8
+ 4.00 	-	 00026863 	-	 ENTRY 	-	 12	./.git/objects/a0
+
+ 4.00 	-	 00026863 	-	 EXIT 	-	 0
+ 4.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 5.00 	-	 00026864 	-	 ENTRY 	-	 8	./.git/objects/99/dc1118c268424d2c79e3bf27062f677fe8e82f
+
+ 5.00 	-	 00026864 	-	 SEND_PIPE 	-	 8
+ 5.00 	-	 00026864 	-	 ENTRY 	-	 12	./.git/objects/99
+
+ 5.00 	-	 00026864 	-	 EXIT 	-	 0
+ 5.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 5.00 	-	 00026865 	-	 ENTRY 	-	 4	./.git/objects/54/6b856ff89153fc064f1f147aa483600700df39
+
+ 5.00 	-	 00026865 	-	 SEND_PIPE 	-	 4
+ 5.00 	-	 00026865 	-	 ENTRY 	-	 8	./.git/objects/54
+
+ 5.00 	-	 00026865 	-	 EXIT 	-	 0
+ 5.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 5.00 	-	 00026866 	-	 ENTRY 	-	 4	./.git/objects/45/523ab1dcfe1cca53561fdc29d8736ddbd2142a
+
+ 5.00 	-	 00026866 	-	 SEND_PIPE 	-	 4
+ 5.00 	-	 00026866 	-	 ENTRY 	-	 8	./.git/objects/45
+
+ 5.00 	-	 00026866 	-	 EXIT 	-	 0
+ 6.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 6.00 	-	 00026867 	-	 ENTRY 	-	 4	./.git/objects/f0/aff85c0e1076738cb0bb594542e29e1d40aa1f
+
+ 6.00 	-	 00026867 	-	 SEND_PIPE 	-	 4
+ 6.00 	-	 00026867 	-	 ENTRY 	-	 8	./.git/objects/f0
+
+ 6.00 	-	 00026867 	-	 EXIT 	-	 0
+ 6.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 6.00 	-	 00026868 	-	 ENTRY 	-	 4	./.git/objects/a6/576884fab9e7d039e1c45587b7c068cb3abdcf
+
+ 6.00 	-	 00026868 	-	 SEND_PIPE 	-	 4
+ 6.00 	-	 00026868 	-	 ENTRY 	-	 8	./.git/objects/a6
+
+ 6.00 	-	 00026868 	-	 EXIT 	-	 0
+ 6.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 6.00 	-	 00026869 	-	 ENTRY 	-	 4	./.git/objects/33/4df1fcd153224c4da210cf60fb26f66f91766e
+
+ 7.00 	-	 00026869 	-	 SEND_PIPE 	-	 4
+ 7.00 	-	 00026869 	-	 ENTRY 	-	 8	./.git/objects/33
+
+ 7.00 	-	 00026869 	-	 EXIT 	-	 0
+ 7.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 7.00 	-	 00026870 	-	 ENTRY 	-	 4	./.git/objects/36/dc45de4bdb9ea818b4a8a557ab3070b45e67ae
+
+ 7.00 	-	 00026870 	-	 SEND_PIPE 	-	 4
+ 7.00 	-	 00026870 	-	 ENTRY 	-	 8	./.git/objects/36
+
+ 7.00 	-	 00026870 	-	 EXIT 	-	 0
+ 7.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 7.00 	-	 00026871 	-	 ENTRY 	-	 4	./.git/objects/e9/65047ad7c57865823c7d992b1d046ea66edf78
+
+ 7.00 	-	 00026871 	-	 SEND_PIPE 	-	 4
+ 7.00 	-	 00026871 	-	 ENTRY 	-	 8	./.git/objects/e9
+
+ 7.00 	-	 00026871 	-	 EXIT 	-	 0
+ 7.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 8.00 	-	 00026872 	-	 ENTRY 	-	 4	./.git/objects/2b/60207f037a00cfa1dbdbc8ef00cd7b84f7b688
+
+ 8.00 	-	 00026872 	-	 ENTRY 	-	 4	./.git/objects/2b/d787e3b07960eddaa3ff284a611e5232450449
+
+ 8.00 	-	 00026872 	-	 ENTRY 	-	 4	./.git/objects/2b/d299ac9f0c4ea0e4f36d3eb03f9f336ad2ab6f
+
+ 8.00 	-	 00026872 	-	 ENTRY 	-	 4	./.git/objects/2b/f65bc6ac12522436784944a8210d406dabab19
+
+ 8.00 	-	 00026872 	-	 SEND_PIPE 	-	 16
+ 8.00 	-	 00026872 	-	 ENTRY 	-	 20	./.git/objects/2b
+
+ 8.00 	-	 00026872 	-	 EXIT 	-	 0
+ 8.00 	-	 00026861 	-	 RECV_PIPE 	-	 16
+ 8.00 	-	 00026873 	-	 ENTRY 	-	 4	./.git/objects/14/d8769c9410116931ec600521bea49f4959949e
+
+ 8.00 	-	 00026873 	-	 SEND_PIPE 	-	 4
+ 8.00 	-	 00026873 	-	 ENTRY 	-	 8	./.git/objects/14
+
+ 8.00 	-	 00026873 	-	 EXIT 	-	 0
+ 8.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 8.00 	-	 00026874 	-	 ENTRY 	-	 4	./.git/objects/ae/0a95cf1f52811ea13cdbed247a9e01d9e4b7b8
+
+ 8.00 	-	 00026874 	-	 SEND_PIPE 	-	 4
+ 8.00 	-	 00026874 	-	 ENTRY 	-	 8	./.git/objects/ae
+
+ 8.00 	-	 00026874 	-	 EXIT 	-	 0
+ 8.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 9.00 	-	 00026875 	-	 ENTRY 	-	 4	./.git/objects/56/37063e68cc334174c6581b1765eb493e57c4e1
+
+ 9.00 	-	 00026875 	-	 ENTRY 	-	 4	./.git/objects/56/d152dd26c02649f3fb77c20a159e55494b5283
+
+ 9.00 	-	 00026875 	-	 SEND_PIPE 	-	 8
+ 9.00 	-	 00026875 	-	 ENTRY 	-	 12	./.git/objects/56
+
+ 9.00 	-	 00026875 	-	 EXIT 	-	 0
+ 9.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 9.00 	-	 00026876 	-	 ENTRY 	-	 4	./.git/objects/62/ea9d980aec6a367b474c4ad972d35d7c710723
+
+ 9.00 	-	 00026876 	-	 ENTRY 	-	 4	./.git/objects/62/4477d07e33a9977ccd0bd0c5f82dee3cda024b
+
+ 9.00 	-	 00026876 	-	 ENTRY 	-	 4	./.git/objects/62/746ddf1e0f5ba8819468135498fd90753c64ac
+
+ 9.00 	-	 00026876 	-	 SEND_PIPE 	-	 12
+ 9.00 	-	 00026876 	-	 ENTRY 	-	 16	./.git/objects/62
+
+ 9.00 	-	 00026876 	-	 EXIT 	-	 0
+ 9.00 	-	 00026861 	-	 RECV_PIPE 	-	 12
+ 10.00 	-	 00026877 	-	 ENTRY 	-	 4	./.git/objects/94/5074db2ffcf269876cd6b689480c8862a3eae7
+
+ 10.00 	-	 00026877 	-	 SEND_PIPE 	-	 4
+ 10.00 	-	 00026877 	-	 ENTRY 	-	 8	./.git/objects/94
+
+ 10.00 	-	 00026877 	-	 EXIT 	-	 0
+ 10.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 10.00 	-	 00026878 	-	 ENTRY 	-	 4	./.git/objects/29/ab23df6c177355a559136a49f7fd721aa58338
+
+ 10.00 	-	 00026878 	-	 SEND_PIPE 	-	 4
+ 10.00 	-	 00026878 	-	 ENTRY 	-	 8	./.git/objects/29
+
+ 10.00 	-	 00026878 	-	 EXIT 	-	 0
+ 10.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 11.00 	-	 00026879 	-	 ENTRY 	-	 4	./.git/objects/c1/297d1bdfc6c7217738db68cfd751d393d2cc4c
+
+ 11.00 	-	 00026879 	-	 ENTRY 	-	 4	./.git/objects/c1/b526bbad00397196b4b3517b3de72a0e4a962a
+
+ 11.00 	-	 00026879 	-	 SEND_PIPE 	-	 8
+ 11.00 	-	 00026879 	-	 ENTRY 	-	 12	./.git/objects/c1
+
+ 11.00 	-	 00026879 	-	 EXIT 	-	 0
+ 11.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 11.00 	-	 00026880 	-	 ENTRY 	-	 4	./.git/objects/1b/74dd258dcc6f0e26ae675d45a9e78434409f62
+
+ 11.00 	-	 00026880 	-	 SEND_PIPE 	-	 4
+ 11.00 	-	 00026880 	-	 ENTRY 	-	 8	./.git/objects/1b
+
+ 11.00 	-	 00026880 	-	 EXIT 	-	 0
+ 11.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 11.00 	-	 00026881 	-	 ENTRY 	-	 4	./.git/objects/f2/1dbea4dba5b49ae0450ffeba9f774f9fa15023
+
+ 12.00 	-	 00026881 	-	 SEND_PIPE 	-	 4
+ 12.00 	-	 00026881 	-	 ENTRY 	-	 8	./.git/objects/f2
+
+ 12.00 	-	 00026881 	-	 EXIT 	-	 0
+ 12.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 12.00 	-	 00026882 	-	 ENTRY 	-	 4	./.git/objects/9b/eb884298a2091dc92a60961353738726b79ddb
+
+ 12.00 	-	 00026882 	-	 SEND_PIPE 	-	 4
+ 12.00 	-	 00026882 	-	 ENTRY 	-	 8	./.git/objects/9b
+
+ 12.00 	-	 00026882 	-	 EXIT 	-	 0
+ 12.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 12.00 	-	 00026883 	-	 ENTRY 	-	 4	./.git/objects/93/4a3a43a562fd1328c95f99f4d34ed5c1a7071f
+
+ 12.00 	-	 00026883 	-	 ENTRY 	-	 4	./.git/objects/93/34c60e08a8a0d54de18587d9d36adbac173e0f
+
+ 12.00 	-	 00026883 	-	 SEND_PIPE 	-	 8
+ 12.00 	-	 00026883 	-	 ENTRY 	-	 12	./.git/objects/93
+
+ 12.00 	-	 00026883 	-	 EXIT 	-	 0
+ 13.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 13.00 	-	 00026884 	-	 ENTRY 	-	 4	./.git/objects/12/98d827384ab34195b526dd7a4ee8bca3cd5416
+
+ 13.00 	-	 00026884 	-	 ENTRY 	-	 4	./.git/objects/12/c32823c854c35e52b1f5cd01635752f8470d0f
+
+ 13.00 	-	 00026884 	-	 SEND_PIPE 	-	 8
+ 13.00 	-	 00026884 	-	 ENTRY 	-	 12	./.git/objects/12
+
+ 13.00 	-	 00026884 	-	 EXIT 	-	 0
+ 13.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 13.00 	-	 00026885 	-	 ENTRY 	-	 4	./.git/objects/e0/cf96f9e0730c3c254926adf7f79047c4ee3806
+
+ 13.00 	-	 00026885 	-	 SEND_PIPE 	-	 4
+ 13.00 	-	 00026885 	-	 ENTRY 	-	 8	./.git/objects/e0
+
+ 13.00 	-	 00026885 	-	 EXIT 	-	 0
+ 14.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 14.00 	-	 00026886 	-	 ENTRY 	-	 4	./.git/objects/6b/ff2d29c067ae6ad44327ec446f53b164269f77
+
+ 14.00 	-	 00026886 	-	 SEND_PIPE 	-	 4
+ 14.00 	-	 00026886 	-	 ENTRY 	-	 8	./.git/objects/6b
+
+ 14.00 	-	 00026886 	-	 EXIT 	-	 0
+ 14.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 14.00 	-	 00026887 	-	 ENTRY 	-	 4	./.git/objects/ef/7f996b7f9bd192994d4095f15e38b30b1df652
+
+ 14.00 	-	 00026887 	-	 SEND_PIPE 	-	 4
+ 14.00 	-	 00026887 	-	 ENTRY 	-	 8	./.git/objects/ef
+
+ 14.00 	-	 00026887 	-	 EXIT 	-	 0
+ 14.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 15.00 	-	 00026888 	-	 ENTRY 	-	 4	./.git/objects/46/914bab3277c847b04da32b14824ff902c57d8a
+
+ 15.00 	-	 00026888 	-	 SEND_PIPE 	-	 4
+ 15.00 	-	 00026888 	-	 ENTRY 	-	 8	./.git/objects/46
+
+ 15.00 	-	 00026888 	-	 EXIT 	-	 0
+ 15.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 15.00 	-	 00026889 	-	 ENTRY 	-	 4	./.git/objects/03/9751e378562e12f8bdb7d1e14c71811a6c2191
+
+ 15.00 	-	 00026889 	-	 ENTRY 	-	 4	./.git/objects/03/f7f1752d4af6db29bd908ec447442a815d7e96
+
+ 15.00 	-	 00026889 	-	 SEND_PIPE 	-	 8
+ 15.00 	-	 00026889 	-	 ENTRY 	-	 12	./.git/objects/03
+
+ 15.00 	-	 00026889 	-	 EXIT 	-	 0
+ 15.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 15.00 	-	 00026890 	-	 ENTRY 	-	 4	./.git/objects/da/aaaff4e637f9781599d15312f0c9157df27f8e
+
+ 15.00 	-	 00026890 	-	 SEND_PIPE 	-	 4
+ 16.00 	-	 00026890 	-	 ENTRY 	-	 8	./.git/objects/da
+
+ 16.00 	-	 00026890 	-	 EXIT 	-	 0
+ 16.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 16.00 	-	 00026891 	-	 ENTRY 	-	 4	./.git/objects/9e/045178f12e970749fcee2e02e0c0ac7c02ce75
+
+ 16.00 	-	 00026891 	-	 SEND_PIPE 	-	 4
+ 16.00 	-	 00026891 	-	 ENTRY 	-	 8	./.git/objects/9e
+
+ 16.00 	-	 00026891 	-	 EXIT 	-	 0
+ 16.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 16.00 	-	 00026892 	-	 ENTRY 	-	 4	./.git/objects/0f/04850b0f446a9ec23a6904655232e7506e9443
+
+ 16.00 	-	 00026892 	-	 ENTRY 	-	 4	./.git/objects/0f/79d39fc664ccafd85ffd541db46390d739ff46
+
+ 16.00 	-	 00026892 	-	 SEND_PIPE 	-	 8
+ 16.00 	-	 00026892 	-	 ENTRY 	-	 12	./.git/objects/0f
+
+ 16.00 	-	 00026892 	-	 EXIT 	-	 0
+ 16.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 17.00 	-	 00026893 	-	 ENTRY 	-	 4	./.git/objects/1f/22d5b71b6298619f0236aad80617c3734c97e4
+
+ 17.00 	-	 00026893 	-	 SEND_PIPE 	-	 4
+ 17.00 	-	 00026893 	-	 ENTRY 	-	 8	./.git/objects/1f
+
+ 17.00 	-	 00026893 	-	 EXIT 	-	 0
+ 17.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 17.00 	-	 00026894 	-	 ENTRY 	-	 4	./.git/objects/6f/bdb2be42fabb4596f14c9c00bd7bc0169ea26a
+
+ 17.00 	-	 00026894 	-	 SEND_PIPE 	-	 4
+ 17.00 	-	 00026894 	-	 ENTRY 	-	 8	./.git/objects/6f
+
+ 17.00 	-	 00026894 	-	 EXIT 	-	 0
+ 17.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 17.00 	-	 00026895 	-	 ENTRY 	-	 4	./.git/objects/43/d396d4858adf0fd152b09aa7e5cd57d94144d7
+
+ 17.00 	-	 00026895 	-	 SEND_PIPE 	-	 4
+ 17.00 	-	 00026895 	-	 ENTRY 	-	 8	./.git/objects/43
+
+ 17.00 	-	 00026895 	-	 EXIT 	-	 0
+ 18.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 18.00 	-	 00026896 	-	 ENTRY 	-	 4	./.git/objects/48/abea4128b446176adcd574b3cc12385b20421d
+
+ 18.00 	-	 00026896 	-	 SEND_PIPE 	-	 4
+ 18.00 	-	 00026896 	-	 ENTRY 	-	 8	./.git/objects/48
+
+ 18.00 	-	 00026896 	-	 EXIT 	-	 0
+ 18.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 18.00 	-	 00026897 	-	 ENTRY 	-	 4	./.git/objects/7b/8f733d4500da065b95a0f3f42c6e05f08fd4f8
+
+ 18.00 	-	 00026897 	-	 SEND_PIPE 	-	 4
+ 18.00 	-	 00026897 	-	 ENTRY 	-	 8	./.git/objects/7b
+
+ 18.00 	-	 00026897 	-	 EXIT 	-	 0
+ 18.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 18.00 	-	 00026898 	-	 ENTRY 	-	 4	./.git/objects/a7/3cad0f3f9c2ccaa36c2b1b9db65ef051ac1d70
+
+ 18.00 	-	 00026898 	-	 SEND_PIPE 	-	 4
+ 18.00 	-	 00026898 	-	 ENTRY 	-	 8	./.git/objects/a7
+
+ 18.00 	-	 00026898 	-	 EXIT 	-	 0
+ 19.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 19.00 	-	 00026899 	-	 ENTRY 	-	 4	./.git/objects/d5/8ac723fe33d0da3338a077171c3dadf53de15d
+
+ 19.00 	-	 00026899 	-	 SEND_PIPE 	-	 4
+ 19.00 	-	 00026899 	-	 ENTRY 	-	 8	./.git/objects/d5
+
+ 19.00 	-	 00026899 	-	 EXIT 	-	 0
+ 19.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 19.00 	-	 00026900 	-	 ENTRY 	-	 4	./.git/objects/e2/d459f0936955e0867e83af4eb2b6fd4a174f88
+
+ 19.00 	-	 00026900 	-	 SEND_PIPE 	-	 4
+ 19.00 	-	 00026900 	-	 ENTRY 	-	 8	./.git/objects/e2
+
+ 19.00 	-	 00026900 	-	 EXIT 	-	 0
+ 19.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 19.00 	-	 00026901 	-	 ENTRY 	-	 4	./.git/objects/76/2b08eed78fd37d59b6a8053f41a56171225890
+
+ 19.00 	-	 00026901 	-	 SEND_PIPE 	-	 4
+ 19.00 	-	 00026901 	-	 ENTRY 	-	 8	./.git/objects/76
+
+ 19.00 	-	 00026901 	-	 EXIT 	-	 0
+ 20.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 20.00 	-	 00026902 	-	 ENTRY 	-	 4	./.git/objects/73/fc71321fbef39a8654f00445586d0a10a467d9
+
+ 20.00 	-	 00026902 	-	 ENTRY 	-	 4	./.git/objects/73/290a7f7467abd5cd788745ef0102984b77950e
+
+ 20.00 	-	 00026902 	-	 SEND_PIPE 	-	 8
+ 20.00 	-	 00026902 	-	 ENTRY 	-	 12	./.git/objects/73
+
+ 20.00 	-	 00026902 	-	 EXIT 	-	 0
+ 20.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 20.00 	-	 00026903 	-	 ENTRY 	-	 4	./.git/objects/70/7d844e38d9eabfae86717b8eaa5ec3ae4d466b
+
+ 20.00 	-	 00026903 	-	 SEND_PIPE 	-	 4
+ 20.00 	-	 00026903 	-	 ENTRY 	-	 8	./.git/objects/70
+
+ 20.00 	-	 00026903 	-	 EXIT 	-	 0
+ 20.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 20.00 	-	 00026904 	-	 ENTRY 	-	 4	./.git/objects/aa/c42c84324e704e045bcfa2fa4d34ba32e726a3
+
+ 20.00 	-	 00026904 	-	 SEND_PIPE 	-	 4
+ 20.00 	-	 00026904 	-	 ENTRY 	-	 8	./.git/objects/aa
+
+ 20.00 	-	 00026904 	-	 EXIT 	-	 0
+ 21.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 21.00 	-	 00026905 	-	 ENTRY 	-	 4	./.git/objects/58/24cfdf60f81fe449c02f66ed1394eceb5b4dc4
+
+ 21.00 	-	 00026905 	-	 SEND_PIPE 	-	 4
+ 21.00 	-	 00026905 	-	 ENTRY 	-	 8	./.git/objects/58
+
+ 21.00 	-	 00026905 	-	 EXIT 	-	 0
+ 21.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 21.00 	-	 00026906 	-	 ENTRY 	-	 4	./.git/objects/7c/93198ca4944aa0af0366cf1468b62ecf52bf3c
+
+ 21.00 	-	 00026906 	-	 SEND_PIPE 	-	 4
+ 21.00 	-	 00026906 	-	 ENTRY 	-	 8	./.git/objects/7c
+
+ 21.00 	-	 00026906 	-	 EXIT 	-	 0
+ 21.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 22.00 	-	 00026907 	-	 ENTRY 	-	 4	./.git/objects/2f/1e7edd5c82423bcc3a4ef1d64b1f0d24349e4e
+
+ 22.00 	-	 00026907 	-	 SEND_PIPE 	-	 4
+ 22.00 	-	 00026907 	-	 ENTRY 	-	 8	./.git/objects/2f
+
+ 22.00 	-	 00026907 	-	 EXIT 	-	 0
+ 22.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 22.00 	-	 00026908 	-	 ENTRY 	-	 4	./.git/objects/1c/339d81e2789c7350ec5836843c22477a51133c
+
+ 22.00 	-	 00026908 	-	 ENTRY 	-	 4	./.git/objects/1c/e2e976dd941b7666e4597f98183adaf07449d9
+
+ 22.00 	-	 00026908 	-	 ENTRY 	-	 4	./.git/objects/1c/3461515ff82488be320e58564f7c7af76d6445
+
+ 22.00 	-	 00026908 	-	 ENTRY 	-	 4	./.git/objects/1c/b5a1b6883131d767aef01b9e7b1a35bd0fb23a
+
+ 22.00 	-	 00026908 	-	 SEND_PIPE 	-	 16
+ 22.00 	-	 00026908 	-	 ENTRY 	-	 20	./.git/objects/1c
+
+ 22.00 	-	 00026908 	-	 EXIT 	-	 0
+ 22.00 	-	 00026861 	-	 RECV_PIPE 	-	 16
+ 22.00 	-	 00026909 	-	 ENTRY 	-	 4	./.git/objects/20/d59049772c4b38c02af2e89104a27b8f659beb
+
+ 22.00 	-	 00026909 	-	 SEND_PIPE 	-	 4
+ 22.00 	-	 00026909 	-	 ENTRY 	-	 8	./.git/objects/20
+
+ 22.00 	-	 00026909 	-	 EXIT 	-	 0
+ 22.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 23.00 	-	 00026910 	-	 ENTRY 	-	 4	./.git/objects/4f/adc95ceef9fd881e34d94521bfb6e912bb1fa4
+
+ 23.00 	-	 00026910 	-	 ENTRY 	-	 4	./.git/objects/4f/989d922a031d4afae83e9fd1aa65991f8fa74f
+
+ 23.00 	-	 00026910 	-	 SEND_PIPE 	-	 8
+ 23.00 	-	 00026910 	-	 ENTRY 	-	 12	./.git/objects/4f
+
+ 23.00 	-	 00026910 	-	 EXIT 	-	 0
+ 23.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 23.00 	-	 00026911 	-	 ENTRY 	-	 4	./.git/objects/77/72268e17d12828ccb2f2ce34857192d215969d
+
+ 23.00 	-	 00026911 	-	 SEND_PIPE 	-	 4
+ 23.00 	-	 00026911 	-	 ENTRY 	-	 8	./.git/objects/77
+
+ 23.00 	-	 00026911 	-	 EXIT 	-	 0
+ 23.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 23.00 	-	 00026912 	-	 ENTRY 	-	 4	./.git/objects/7d/23630865159012614a461ddd436e3967ab1960
+
+ 23.00 	-	 00026912 	-	 SEND_PIPE 	-	 4
+ 23.00 	-	 00026912 	-	 ENTRY 	-	 8	./.git/objects/7d
+
+ 23.00 	-	 00026912 	-	 EXIT 	-	 0
+ 23.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 24.00 	-	 00026913 	-	 ENTRY 	-	 4	./.git/objects/b2/f59dd59f36229d5cc04e6b5a692a388a5d8909
+
+ 24.00 	-	 00026913 	-	 ENTRY 	-	 4	./.git/objects/b2/fb66221ecbe851200cf2a3bef1d883ad54f7ef
+
+ 24.00 	-	 00026913 	-	 SEND_PIPE 	-	 8
+ 24.00 	-	 00026913 	-	 ENTRY 	-	 12	./.git/objects/b2
+
+ 24.00 	-	 00026913 	-	 EXIT 	-	 0
+ 24.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 24.00 	-	 00026914 	-	 ENTRY 	-	 4	./.git/objects/bb/0638ba666579ebcb2bfdf9e81bd454bc1a2b81
+
+ 24.00 	-	 00026914 	-	 SEND_PIPE 	-	 4
+ 24.00 	-	 00026914 	-	 ENTRY 	-	 8	./.git/objects/bb
+
+ 24.00 	-	 00026914 	-	 EXIT 	-	 0
+ 24.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 24.00 	-	 00026915 	-	 ENTRY 	-	 4	./.git/objects/b7/150233f8ddb3d0f8e76bd3381549eed6aab685
+
+ 24.00 	-	 00026915 	-	 SEND_PIPE 	-	 4
+ 24.00 	-	 00026915 	-	 ENTRY 	-	 8	./.git/objects/b7
+
+ 24.00 	-	 00026915 	-	 EXIT 	-	 0
+ 24.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 25.00 	-	 00026916 	-	 ENTRY 	-	 4	./.git/objects/pack/pack-3563bcc243f297801f50fb0c38028a224e491c5b.pack
+
+ 25.00 	-	 00026916 	-	 ENTRY 	-	 4	./.git/objects/pack/pack-dfeb73b0f223a1bea94992256ba8a6eabf407b8a.pack
+
+ 25.00 	-	 00026916 	-	 ENTRY 	-	 4	./.git/objects/pack/pack-3563bcc243f297801f50fb0c38028a224e491c5b.idx
+
+ 25.00 	-	 00026916 	-	 ENTRY 	-	 4	./.git/objects/pack/pack-dfeb73b0f223a1bea94992256ba8a6eabf407b8a.idx
+
+ 25.00 	-	 00026916 	-	 SEND_PIPE 	-	 16
+ 25.00 	-	 00026916 	-	 ENTRY 	-	 20	./.git/objects/pack
+
+ 25.00 	-	 00026916 	-	 EXIT 	-	 0
+ 25.00 	-	 00026861 	-	 RECV_PIPE 	-	 16
+ 25.00 	-	 00026917 	-	 ENTRY 	-	 8	./.git/objects/66/88d293df0e704380f2180cf5e6b4cab9f5a415
+
+ 25.00 	-	 00026917 	-	 SEND_PIPE 	-	 8
+ 25.00 	-	 00026917 	-	 ENTRY 	-	 12	./.git/objects/66
+
+ 25.00 	-	 00026917 	-	 EXIT 	-	 0
+ 25.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 25.00 	-	 00026918 	-	 ENTRY 	-	 4	./.git/objects/8f/384dd8850b5670661ed5c55b734da3c49d7e64
+
+ 25.00 	-	 00026918 	-	 SEND_PIPE 	-	 4
+ 25.00 	-	 00026918 	-	 ENTRY 	-	 8	./.git/objects/8f
+
+ 25.00 	-	 00026918 	-	 EXIT 	-	 0
+ 26.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 26.00 	-	 00026919 	-	 ENTRY 	-	 4	./.git/objects/ce/ee34d07ace28b044a0b5ddb69ce4a0a5753818
+
+ 26.00 	-	 00026919 	-	 SEND_PIPE 	-	 4
+ 26.00 	-	 00026919 	-	 ENTRY 	-	 8	./.git/objects/ce
+
+ 26.00 	-	 00026919 	-	 EXIT 	-	 0
+ 26.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 26.00 	-	 00026920 	-	 ENTRY 	-	 4	./.git/objects/ec/d2022271e6e5fd1541efe750dab4927ec9c769
+
+ 26.00 	-	 00026920 	-	 SEND_PIPE 	-	 4
+ 26.00 	-	 00026920 	-	 ENTRY 	-	 8	./.git/objects/ec
+
+ 26.00 	-	 00026920 	-	 EXIT 	-	 0
+ 26.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 27.00 	-	 00026921 	-	 ENTRY 	-	 4	./.git/objects/3a/73517ebac1b2b20556af8380f2239f352c8346
+
+ 27.00 	-	 00026921 	-	 SEND_PIPE 	-	 4
+ 27.00 	-	 00026921 	-	 ENTRY 	-	 8	./.git/objects/3a
+
+ 27.00 	-	 00026921 	-	 EXIT 	-	 0
+ 27.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 27.00 	-	 00026922 	-	 ENTRY 	-	 4	./.git/objects/83/92495fc05299d3e9cbed2dd047ff6ecfb9d9aa
+
+ 27.00 	-	 00026922 	-	 ENTRY 	-	 4	./.git/objects/83/6edf6443b4597baf301310d2a0197b3279598c
+
+ 27.00 	-	 00026922 	-	 SEND_PIPE 	-	 8
+ 27.00 	-	 00026922 	-	 ENTRY 	-	 12	./.git/objects/83
+
+ 27.00 	-	 00026922 	-	 EXIT 	-	 0
+ 27.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 27.00 	-	 00026923 	-	 ENTRY 	-	 4	./.git/objects/17/17aa71747aa7d7546b7bdfdd71e2b36ca58ab3
+
+ 27.00 	-	 00026923 	-	 SEND_PIPE 	-	 4
+ 27.00 	-	 00026923 	-	 ENTRY 	-	 8	./.git/objects/17
+
+ 27.00 	-	 00026923 	-	 EXIT 	-	 0
+ 28.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 28.00 	-	 00026924 	-	 ENTRY 	-	 4	./.git/objects/63/972bd400aec5488656685db554251ed2a4f39a
+
+ 28.00 	-	 00026924 	-	 SEND_PIPE 	-	 4
+ 28.00 	-	 00026924 	-	 ENTRY 	-	 8	./.git/objects/63
+
+ 28.00 	-	 00026924 	-	 EXIT 	-	 0
+ 28.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 28.00 	-	 00026925 	-	 ENTRY 	-	 4	./.git/objects/88/89c17c3daaa73ebf666b927ff513b5c55712f6
+
+ 28.00 	-	 00026925 	-	 SEND_PIPE 	-	 4
+ 28.00 	-	 00026925 	-	 ENTRY 	-	 8	./.git/objects/88
+
+ 28.00 	-	 00026925 	-	 EXIT 	-	 0
+ 28.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 28.00 	-	 00026926 	-	 ENTRY 	-	 4	./.git/objects/3f/445cdbb0388048ba2630f808d6987c9aad6442
+
+ 29.00 	-	 00026926 	-	 SEND_PIPE 	-	 4
+ 29.00 	-	 00026926 	-	 ENTRY 	-	 8	./.git/objects/3f
+
+ 29.00 	-	 00026926 	-	 EXIT 	-	 0
+ 29.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 29.00 	-	 00026927 	-	 ENTRY 	-	 4	./.git/objects/3d/30c9f0cfd6ee1a0ebde9508ea470e5fd7647c1
+
+ 29.00 	-	 00026927 	-	 ENTRY 	-	 4	./.git/objects/3d/55ed5dfb6f8fce07d0e6dd05b81fba7c5eaa1e
+
+ 29.00 	-	 00026927 	-	 ENTRY 	-	 4	./.git/objects/3d/fc3826912100739a2108da06e7ec3cf95b7af8
+
+ 29.00 	-	 00026927 	-	 SEND_PIPE 	-	 12
+ 29.00 	-	 00026927 	-	 ENTRY 	-	 16	./.git/objects/3d
+
+ 29.00 	-	 00026927 	-	 EXIT 	-	 0
+ 29.00 	-	 00026861 	-	 RECV_PIPE 	-	 12
+ 29.00 	-	 00026928 	-	 ENTRY 	-	 4	./.git/objects/e1/4a175bc26b802523cd277bfd2711b8da469167
+
+ 29.00 	-	 00026928 	-	 SEND_PIPE 	-	 4
+ 29.00 	-	 00026928 	-	 ENTRY 	-	 8	./.git/objects/e1
+
+ 29.00 	-	 00026928 	-	 EXIT 	-	 0
+ 29.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 30.00 	-	 00026929 	-	 ENTRY 	-	 4	./.git/objects/8b/43e1d3af6c85144050939e198424a23e83571a
+
+ 30.00 	-	 00026929 	-	 ENTRY 	-	 4	./.git/objects/8b/1e0586f7aea157b730909f11c103110dbcc88c
+
+ 30.00 	-	 00026929 	-	 SEND_PIPE 	-	 8
+ 30.00 	-	 00026929 	-	 ENTRY 	-	 12	./.git/objects/8b
+
+ 30.00 	-	 00026929 	-	 EXIT 	-	 0
+ 30.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 30.00 	-	 00026930 	-	 ENTRY 	-	 4	./.git/objects/e3/ecdb93ffe528160c4571cb909b9274700193ce
+
+ 30.00 	-	 00026930 	-	 ENTRY 	-	 4	./.git/objects/e3/67a5389f301ef1db9a0c8028fda3899e31f47a
+
+ 30.00 	-	 00026930 	-	 SEND_PIPE 	-	 8
+ 30.00 	-	 00026930 	-	 ENTRY 	-	 12	./.git/objects/e3
+
+ 30.00 	-	 00026930 	-	 EXIT 	-	 0
+ 30.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 31.00 	-	 00026931 	-	 ENTRY 	-	 4	./.git/objects/05/d31ca767e6a48bbcae9fac5178c739bc26710d
+
+ 31.00 	-	 00026931 	-	 ENTRY 	-	 4	./.git/objects/05/189af206bf6f559bb03aaa29dec858f765e458
+
+ 31.00 	-	 00026931 	-	 ENTRY 	-	 4	./.git/objects/05/fe78786efd9cb9ae2a09440d1a205a134db5c5
+
+ 31.00 	-	 00026931 	-	 SEND_PIPE 	-	 12
+ 31.00 	-	 00026931 	-	 ENTRY 	-	 16	./.git/objects/05
+
+ 31.00 	-	 00026931 	-	 EXIT 	-	 0
+ 31.00 	-	 00026861 	-	 RECV_PIPE 	-	 12
+ 31.00 	-	 00026932 	-	 ENTRY 	-	 4	./.git/objects/67/352252dc370651851f9d2c6d49302b07e23c17
+
+ 31.00 	-	 00026932 	-	 SEND_PIPE 	-	 4
+ 31.00 	-	 00026932 	-	 ENTRY 	-	 8	./.git/objects/67
+
+ 31.00 	-	 00026932 	-	 EXIT 	-	 0
+ 31.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 32.00 	-	 00026933 	-	 ENTRY 	-	 4	./.git/objects/9f/5081c9f10b37d989ba540b99091d9f97c8d784
+
+ 32.00 	-	 00026933 	-	 ENTRY 	-	 4	./.git/objects/9f/2e4d4e1681d8b78171e8fb77713d1471a5f51a
+
+ 32.00 	-	 00026933 	-	 SEND_PIPE 	-	 8
+ 32.00 	-	 00026933 	-	 ENTRY 	-	 12	./.git/objects/9f
+
+ 32.00 	-	 00026933 	-	 EXIT 	-	 0
+ 32.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 32.00 	-	 00026934 	-	 ENTRY 	-	 4	./.git/objects/af/ef7307aa320ee68fb8f652b23a15b01d8af725
+
+ 32.00 	-	 00026934 	-	 SEND_PIPE 	-	 4
+ 32.00 	-	 00026934 	-	 ENTRY 	-	 8	./.git/objects/af
+
+ 32.00 	-	 00026934 	-	 EXIT 	-	 0
+ 32.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 32.00 	-	 00026935 	-	 ENTRY 	-	 4	./.git/objects/1a/30b6442681fc0bbf23f43c30145157a861841a
+
+ 32.00 	-	 00026935 	-	 ENTRY 	-	 4	./.git/objects/1a/0b938c2718d9976fe9737d6b80d40305e8783f
+
+ 32.00 	-	 00026935 	-	 SEND_PIPE 	-	 8
+ 32.00 	-	 00026935 	-	 ENTRY 	-	 12	./.git/objects/1a
+
+ 32.00 	-	 00026935 	-	 EXIT 	-	 0
+ 33.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 33.00 	-	 00026936 	-	 ENTRY 	-	 4	./.git/objects/8e/c41caa4b11a66f627b1f7a2410de8370d1ecf0
+
+ 33.00 	-	 00026936 	-	 SEND_PIPE 	-	 4
+ 33.00 	-	 00026936 	-	 ENTRY 	-	 8	./.git/objects/8e
+
+ 33.00 	-	 00026936 	-	 EXIT 	-	 0
+ 33.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 33.00 	-	 00026937 	-	 ENTRY 	-	 4	./.git/objects/02/72ec184fa4d8fcbf05c4344f7e833f519b4ccf
+
+ 33.00 	-	 00026937 	-	 SEND_PIPE 	-	 4
+ 33.00 	-	 00026937 	-	 ENTRY 	-	 8	./.git/objects/02
+
+ 33.00 	-	 00026937 	-	 EXIT 	-	 0
+ 33.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 33.00 	-	 00026938 	-	 ENTRY 	-	 4	./.git/objects/8a/dadd2e8fc27eae7dcf909bb804d93af2641624
+
+ 34.00 	-	 00026938 	-	 SEND_PIPE 	-	 4
+ 34.00 	-	 00026938 	-	 ENTRY 	-	 8	./.git/objects/8a
+
+ 34.00 	-	 00026938 	-	 EXIT 	-	 0
+ 34.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 34.00 	-	 00026939 	-	 ENTRY 	-	 4	./.git/objects/53/4126c894eceae17f62769a91a519f736372900
+
+ 34.00 	-	 00026939 	-	 SEND_PIPE 	-	 4
+ 34.00 	-	 00026939 	-	 ENTRY 	-	 8	./.git/objects/53
+
+ 34.00 	-	 00026939 	-	 EXIT 	-	 0
+ 34.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 34.00 	-	 00026940 	-	 ENTRY 	-	 4	./.git/objects/68/b1890d13c3ed6ae57f0e1c5ed62dca659a2d54
+
+ 34.00 	-	 00026940 	-	 ENTRY 	-	 4	./.git/objects/68/9fdb358bd7adfa217e1e25b2062e919cf416ac
+
+ 34.00 	-	 00026940 	-	 SEND_PIPE 	-	 8
+ 34.00 	-	 00026940 	-	 ENTRY 	-	 12	./.git/objects/68
+
+ 34.00 	-	 00026940 	-	 EXIT 	-	 0
+ 34.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 35.00 	-	 00026941 	-	 ENTRY 	-	 4	./.git/objects/b5/c823bf6805ef830b521036874aef18f333cf45
+
+ 35.00 	-	 00026941 	-	 ENTRY 	-	 4	./.git/objects/b5/6639370473644ff54c799aa1160c708e3cbea1
+
+ 35.00 	-	 00026941 	-	 ENTRY 	-	 4	./.git/objects/b5/6d7a78591d19c671839c0d77d2e0f353d378aa
+
+ 35.00 	-	 00026941 	-	 SEND_PIPE 	-	 12
+ 35.00 	-	 00026941 	-	 ENTRY 	-	 16	./.git/objects/b5
+
+ 35.00 	-	 00026941 	-	 EXIT 	-	 0
+ 35.00 	-	 00026861 	-	 RECV_PIPE 	-	 12
+ 35.00 	-	 00026942 	-	 ENTRY 	-	 4	./.git/objects/38/9fc367d3b9428921850036faa3a3084e0b8701
+
+ 35.00 	-	 00026942 	-	 SEND_PIPE 	-	 4
+ 35.00 	-	 00026942 	-	 ENTRY 	-	 8	./.git/objects/38
+
+ 35.00 	-	 00026942 	-	 EXIT 	-	 0
+ 35.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 35.00 	-	 00026943 	-	 ENTRY 	-	 4	./.git/objects/b8/5693cc49deee2ceb918bffa47d1e8dd185bbba
+
+ 35.00 	-	 00026943 	-	 SEND_PIPE 	-	 4
+ 35.00 	-	 00026943 	-	 ENTRY 	-	 8	./.git/objects/b8
+
+ 35.00 	-	 00026943 	-	 EXIT 	-	 0
+ 35.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 36.00 	-	 00026944 	-	 ENTRY 	-	 4	./.git/objects/5d/76d747f8be0952f108dc774c67def2324386b6
+
+ 36.00 	-	 00026944 	-	 ENTRY 	-	 4	./.git/objects/5d/1def9b38e8ea67171d7253610dd01dea33017b
+
+ 36.00 	-	 00026944 	-	 SEND_PIPE 	-	 8
+ 36.00 	-	 00026944 	-	 ENTRY 	-	 12	./.git/objects/5d
+
+ 36.00 	-	 00026944 	-	 EXIT 	-	 0
+ 36.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 36.00 	-	 00026945 	-	 ENTRY 	-	 4	./.git/objects/bd/f59a093e4a8de4fc83eb52ccef923a59fd492a
+
+ 36.00 	-	 00026945 	-	 SEND_PIPE 	-	 4
+ 36.00 	-	 00026945 	-	 ENTRY 	-	 8	./.git/objects/bd
+
+ 36.00 	-	 00026945 	-	 EXIT 	-	 0
+ 36.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 36.00 	-	 00026946 	-	 ENTRY 	-	 4	./.git/objects/c9/4dad1285b58d2c67ecd4207949645d3899ee5f
+
+ 36.00 	-	 00026946 	-	 ENTRY 	-	 4	./.git/objects/c9/52f69a829666962d11273d7f1fdddb3dbb5f91
+
+ 36.00 	-	 00026946 	-	 SEND_PIPE 	-	 8
+ 37.00 	-	 00026946 	-	 ENTRY 	-	 12	./.git/objects/c9
+
+ 37.00 	-	 00026946 	-	 EXIT 	-	 0
+ 37.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 37.00 	-	 00026947 	-	 ENTRY 	-	 4	./.git/objects/74/4f56f3ed19c41ae10549f8336c97d32bfd3afb
+
+ 37.00 	-	 00026947 	-	 SEND_PIPE 	-	 4
+ 37.00 	-	 00026947 	-	 ENTRY 	-	 8	./.git/objects/74
+
+ 37.00 	-	 00026947 	-	 EXIT 	-	 0
+ 37.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 37.00 	-	 00026948 	-	 ENTRY 	-	 4	./.git/objects/5c/5b37247b992f9f561edb3adc67564256c557ac
+
+ 37.00 	-	 00026948 	-	 SEND_PIPE 	-	 4
+ 37.00 	-	 00026948 	-	 ENTRY 	-	 8	./.git/objects/5c
+
+ 37.00 	-	 00026948 	-	 EXIT 	-	 0
+ 37.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 38.00 	-	 00026949 	-	 ENTRY 	-	 4	./.git/objects/98/f86b171959c5ea8bda5df41d29d2e69ade0344
+
+ 38.00 	-	 00026949 	-	 SEND_PIPE 	-	 4
+ 38.00 	-	 00026949 	-	 ENTRY 	-	 8	./.git/objects/98
+
+ 38.00 	-	 00026949 	-	 EXIT 	-	 0
+ 38.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 38.00 	-	 00026950 	-	 ENTRY 	-	 4	./.git/objects/16/d52ab8e30a77edbbbb03f1fc97f38c197018ef
+
+ 38.00 	-	 00026950 	-	 SEND_PIPE 	-	 4
+ 38.00 	-	 00026950 	-	 ENTRY 	-	 8	./.git/objects/16
+
+ 38.00 	-	 00026950 	-	 EXIT 	-	 0
+ 38.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 38.00 	-	 00026951 	-	 ENTRY 	-	 4	./.git/objects/ed/c8f7d3709a4a5b089ce01fd90f6dc1614ab3f5
+
+ 38.00 	-	 00026951 	-	 SEND_PIPE 	-	 4
+ 38.00 	-	 00026951 	-	 ENTRY 	-	 8	./.git/objects/ed
+
+ 38.00 	-	 00026951 	-	 EXIT 	-	 0
+ 39.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 39.00 	-	 00026952 	-	 ENTRY 	-	 4	./.git/objects/22/a6550e27c1ceb28891d8fdad4a52ba2f03d113
+
+ 39.00 	-	 00026952 	-	 ENTRY 	-	 4	./.git/objects/22/ebdf7f6e022b4e227399deced2ea9fd4042929
+
+ 39.00 	-	 00026952 	-	 SEND_PIPE 	-	 8
+ 39.00 	-	 00026952 	-	 ENTRY 	-	 12	./.git/objects/22
+
+ 39.00 	-	 00026952 	-	 EXIT 	-	 0
+ 39.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 39.00 	-	 00026953 	-	 ENTRY 	-	 4	./.git/objects/09/d7a8b0db269d41de1cc0a61ce87a20589371b5
+
+ 39.00 	-	 00026953 	-	 SEND_PIPE 	-	 4
+ 39.00 	-	 00026953 	-	 ENTRY 	-	 8	./.git/objects/09
+
+ 39.00 	-	 00026953 	-	 EXIT 	-	 0
+ 39.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 39.00 	-	 00026954 	-	 ENTRY 	-	 4	./.git/objects/6e/3520d102d47e437825f5f2a6178149f7c78c96
+
+ 40.00 	-	 00026954 	-	 ENTRY 	-	 4	./.git/objects/6e/167be957f1e60c694ede934bb9aa98466328ec
+
+ 40.00 	-	 00026954 	-	 SEND_PIPE 	-	 8
+ 40.00 	-	 00026954 	-	 ENTRY 	-	 12	./.git/objects/6e
+
+ 40.00 	-	 00026954 	-	 EXIT 	-	 0
+ 40.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 40.00 	-	 00026955 	-	 ENTRY 	-	 4	./.git/objects/75/e846cb9cb308a73b5627ef0909bfe39b895138
+
+ 40.00 	-	 00026955 	-	 SEND_PIPE 	-	 4
+ 40.00 	-	 00026955 	-	 ENTRY 	-	 8	./.git/objects/75
+
+ 40.00 	-	 00026955 	-	 EXIT 	-	 0
+ 40.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 40.00 	-	 00026956 	-	 ENTRY 	-	 4	./.git/objects/44/ea7dcbafd502555ea288f6c2a0d7112400f67c
+
+ 40.00 	-	 00026956 	-	 SEND_PIPE 	-	 4
+ 40.00 	-	 00026956 	-	 ENTRY 	-	 8	./.git/objects/44
+
+ 40.00 	-	 00026956 	-	 EXIT 	-	 0
+ 40.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 41.00 	-	 00026957 	-	 ENTRY 	-	 4	./.git/objects/f3/c83ed95d2942346364d1ee87f37aa61b0ecb52
+
+ 41.00 	-	 00026957 	-	 SEND_PIPE 	-	 4
+ 41.00 	-	 00026957 	-	 ENTRY 	-	 8	./.git/objects/f3
+
+ 41.00 	-	 00026957 	-	 EXIT 	-	 0
+ 41.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 41.00 	-	 00026958 	-	 ENTRY 	-	 4	./.git/objects/82/2f5477e76285d030e2b5924b7711df052ee565
+
+ 41.00 	-	 00026958 	-	 SEND_PIPE 	-	 4
+ 41.00 	-	 00026958 	-	 ENTRY 	-	 8	./.git/objects/82
+
+ 41.00 	-	 00026958 	-	 EXIT 	-	 0
+ 41.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 41.00 	-	 00026959 	-	 ENTRY 	-	 4	./.git/objects/ac/bddd18f00cd51f929dd0c57a84366986302608
+
+ 41.00 	-	 00026959 	-	 SEND_PIPE 	-	 4
+ 41.00 	-	 00026959 	-	 ENTRY 	-	 8	./.git/objects/ac
+
+ 41.00 	-	 00026959 	-	 EXIT 	-	 0
+ 42.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 42.00 	-	 00026960 	-	 ENTRY 	-	 4	./.git/objects/40/486bf5668a42fd7d35f885f0622c37f567c16e
+
+ 42.00 	-	 00026960 	-	 SEND_PIPE 	-	 4
+ 42.00 	-	 00026960 	-	 ENTRY 	-	 8	./.git/objects/40
+
+ 42.00 	-	 00026960 	-	 EXIT 	-	 0
+ 42.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 42.00 	-	 00026961 	-	 ENTRY 	-	 4	./.git/objects/81/c7a16a3275fa775cea4a4f7a16264391319454
+
+ 42.00 	-	 00026961 	-	 SEND_PIPE 	-	 4
+ 42.00 	-	 00026961 	-	 ENTRY 	-	 8	./.git/objects/81
+
+ 42.00 	-	 00026961 	-	 EXIT 	-	 0
+ 42.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 43.00 	-	 00026962 	-	 ENTRY 	-	 4	./.git/objects/61/dbe52bf980886be295722e5fb62aebd15c3cc3
+
+ 43.00 	-	 00026962 	-	 SEND_PIPE 	-	 4
+ 43.00 	-	 00026962 	-	 ENTRY 	-	 8	./.git/objects/61
+
+ 43.00 	-	 00026962 	-	 EXIT 	-	 0
+ 43.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 43.00 	-	 00026963 	-	 ENTRY 	-	 4	./.git/objects/49/cad753503c6730ffd8819782c13df842fc659e
+
+ 43.00 	-	 00026963 	-	 SEND_PIPE 	-	 4
+ 43.00 	-	 00026963 	-	 ENTRY 	-	 8	./.git/objects/49
+
+ 43.00 	-	 00026963 	-	 EXIT 	-	 0
+ 43.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 43.00 	-	 00026964 	-	 ENTRY 	-	 4	./.git/objects/fe/0f3bfedfe75615f1ae03b9400a4c991ab54d54
+
+ 43.00 	-	 00026964 	-	 SEND_PIPE 	-	 4
+ 43.00 	-	 00026964 	-	 ENTRY 	-	 8	./.git/objects/fe
+
+ 43.00 	-	 00026964 	-	 EXIT 	-	 0
+ 43.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 44.00 	-	 00026965 	-	 ENTRY 	-	 4	./.git/objects/65/5ca9d384a529d5392875c813bf9263acc20920
+
+ 44.00 	-	 00026965 	-	 SEND_PIPE 	-	 4
+ 44.00 	-	 00026965 	-	 ENTRY 	-	 8	./.git/objects/65
+
+ 44.00 	-	 00026965 	-	 EXIT 	-	 0
+ 44.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 44.00 	-	 00026966 	-	 ENTRY 	-	 4	./.git/objects/8d/51e3a507c9dadf357f843c05e0fe963e8f7710
+
+ 44.00 	-	 00026966 	-	 SEND_PIPE 	-	 4
+ 44.00 	-	 00026966 	-	 ENTRY 	-	 8	./.git/objects/8d
+
+ 44.00 	-	 00026966 	-	 EXIT 	-	 0
+ 44.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 44.00 	-	 00026967 	-	 ENTRY 	-	 4	./.git/objects/79/f2ebf4bcf8d68aee9d6b7190218b99838b2121
+
+ 44.00 	-	 00026967 	-	 SEND_PIPE 	-	 4
+ 44.00 	-	 00026967 	-	 ENTRY 	-	 8	./.git/objects/79
+
+ 44.00 	-	 00026967 	-	 EXIT 	-	 0
+ 44.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 45.00 	-	 00026968 	-	 ENTRY 	-	 4	./.git/objects/25/d14c02eba3ceff02afe68c9c10a5e75a7afc37
+
+ 45.00 	-	 00026968 	-	 ENTRY 	-	 4	./.git/objects/25/644b00fffaa1c8a744db1f84a06febdba55302
+
+ 45.00 	-	 00026968 	-	 SEND_PIPE 	-	 8
+ 45.00 	-	 00026968 	-	 ENTRY 	-	 12	./.git/objects/25
+
+ 45.00 	-	 00026968 	-	 EXIT 	-	 0
+ 45.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 45.00 	-	 00026969 	-	 ENTRY 	-	 4	./.git/objects/01/ac3cf5e8ce0ab447923c76ad2712498a3d1d13
+
+ 45.00 	-	 00026969 	-	 SEND_PIPE 	-	 4
+ 45.00 	-	 00026969 	-	 ENTRY 	-	 8	./.git/objects/01
+
+ 45.00 	-	 00026969 	-	 EXIT 	-	 0
+ 45.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 45.00 	-	 00026970 	-	 ENTRY 	-	 4	./.git/objects/0b/973b6ec6b1c56033c00698f14c851ad56ad70d
+
+ 45.00 	-	 00026970 	-	 SEND_PIPE 	-	 4
+ 45.00 	-	 00026970 	-	 ENTRY 	-	 8	./.git/objects/0b
+
+ 45.00 	-	 00026970 	-	 EXIT 	-	 0
+ 46.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 46.00 	-	 00026971 	-	 ENTRY 	-	 4	./.git/objects/10/63d094273c0e1025968277283884ac68102d8e
+
+ 46.00 	-	 00026971 	-	 ENTRY 	-	 4	./.git/objects/10/cd123347da56970073e545037728145eaff761
+
+ 46.00 	-	 00026971 	-	 SEND_PIPE 	-	 8
+ 46.00 	-	 00026971 	-	 ENTRY 	-	 12	./.git/objects/10
+
+ 46.00 	-	 00026971 	-	 EXIT 	-	 0
+ 46.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 46.00 	-	 00026972 	-	 ENTRY 	-	 4	./.git/objects/ad/db04cef2aa1287069979fc612ebc5ebc8b8724
+
+ 46.00 	-	 00026972 	-	 SEND_PIPE 	-	 4
+ 46.00 	-	 00026972 	-	 ENTRY 	-	 8	./.git/objects/ad
+
+ 46.00 	-	 00026972 	-	 EXIT 	-	 0
+ 46.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 46.00 	-	 00026973 	-	 ENTRY 	-	 4	./.git/objects/24/9600ca2c6824561281b0ed2c98348413efa849
+
+ 46.00 	-	 00026973 	-	 ENTRY 	-	 4	./.git/objects/24/ec36558d039bea8a9c3955c145e407550e6dd0
+
+ 46.00 	-	 00026973 	-	 SEND_PIPE 	-	 8
+ 46.00 	-	 00026973 	-	 ENTRY 	-	 12	./.git/objects/24
+
+ 47.00 	-	 00026973 	-	 EXIT 	-	 0
+ 47.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 47.00 	-	 00026974 	-	 ENTRY 	-	 4	./.git/objects/b6/128d5e3c0e1b73f5ec983a9d7047721636a162
+
+ 47.00 	-	 00026974 	-	 SEND_PIPE 	-	 4
+ 47.00 	-	 00026974 	-	 ENTRY 	-	 8	./.git/objects/b6
+
+ 47.00 	-	 00026974 	-	 EXIT 	-	 0
+ 47.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 47.00 	-	 00026975 	-	 ENTRY 	-	 4	./.git/objects/5e/cd0cf51acce86bfd6df75e911bffe4d760bb23
+
+ 47.00 	-	 00026975 	-	 SEND_PIPE 	-	 4
+ 47.00 	-	 00026975 	-	 ENTRY 	-	 8	./.git/objects/5e
+
+ 47.00 	-	 00026975 	-	 EXIT 	-	 0
+ 47.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 47.00 	-	 00026976 	-	 ENTRY 	-	 4	./.git/objects/5f/b8cea3b6e8723af444c90682e1f693542c147b
+
+ 47.00 	-	 00026976 	-	 ENTRY 	-	 4	./.git/objects/5f/d1eb421a997713e67a3af201f08e31d4a40fcd
+
+ 48.00 	-	 00026976 	-	 SEND_PIPE 	-	 8
+ 48.00 	-	 00026976 	-	 ENTRY 	-	 12	./.git/objects/5f
+
+ 48.00 	-	 00026976 	-	 EXIT 	-	 0
+ 48.00 	-	 00026861 	-	 RECV_PIPE 	-	 8
+ 48.00 	-	 00026977 	-	 ENTRY 	-	 4	./.git/objects/41/b3c34c9d368679ca2381f6b00ba22fccb04f25
+
+ 48.00 	-	 00026977 	-	 SEND_PIPE 	-	 4
+ 48.00 	-	 00026977 	-	 ENTRY 	-	 8	./.git/objects/41
+
+ 48.00 	-	 00026977 	-	 EXIT 	-	 0
+ 48.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 48.00 	-	 00026978 	-	 SEND_PIPE 	-	 0
+ 48.00 	-	 00026978 	-	 ENTRY 	-	 4	./.git/objects/info
+
+ 48.00 	-	 00026978 	-	 EXIT 	-	 0
+ 48.00 	-	 00026861 	-	 RECV_PIPE 	-	 0
+ 48.00 	-	 00026979 	-	 ENTRY 	-	 4	./.git/objects/b0/61a8229dda2640c5243d4924cba569894e8c0d
+
+ 48.00 	-	 00026979 	-	 SEND_PIPE 	-	 4
+ 48.00 	-	 00026979 	-	 ENTRY 	-	 8	./.git/objects/b0
+
+ 49.00 	-	 00026979 	-	 EXIT 	-	 0
+ 49.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 49.00 	-	 00026980 	-	 ENTRY 	-	 4	./.git/objects/a4/9844782be027aee4bd9b58090a9367e98e2f03
+
+ 49.00 	-	 00026980 	-	 SEND_PIPE 	-	 4
+ 49.00 	-	 00026980 	-	 ENTRY 	-	 8	./.git/objects/a4
+
+ 49.00 	-	 00026980 	-	 EXIT 	-	 0
+ 49.00 	-	 00026861 	-	 RECV_PIPE 	-	 4
+ 49.00 	-	 00026861 	-	 SEND_PIPE 	-	 1120
+ 49.00 	-	 00026861 	-	 ENTRY 	-	 1124	./.git/objects
+
+ 49.00 	-	 00026861 	-	 EXIT 	-	 0
+ 49.00 	-	 00026860 	-	 RECV_PIPE 	-	 1120
+ 49.00 	-	 00026860 	-	 ENTRY 	-	 4	./.git/index
+
+ 49.00 	-	 00026860 	-	 ENTRY 	-	 4	./.git/HEAD
+
+ 49.00 	-	 00026860 	-	 ENTRY 	-	 4	./.git/FETCH_HEAD
+
+ 50.00 	-	 00026982 	-	 SEND_PIPE 	-	 0
+ 50.00 	-	 00026982 	-	 ENTRY 	-	 4	./.git/refs/tags
+
+ 50.00 	-	 00026982 	-	 EXIT 	-	 0
+ 50.00 	-	 00026981 	-	 RECV_PIPE 	-	 0
+ 50.00 	-	 00026984 	-	 ENTRY 	-	 4	./.git/refs/remotes/origin/master
+
+ 50.00 	-	 00026984 	-	 SEND_PIPE 	-	 4
+ 50.00 	-	 00026984 	-	 ENTRY 	-	 8	./.git/refs/remotes/origin
+
+ 50.00 	-	 00026984 	-	 EXIT 	-	 0
+ 50.00 	-	 00026983 	-	 RECV_PIPE 	-	 4
+ 50.00 	-	 00026983 	-	 SEND_PIPE 	-	 8
+ 50.00 	-	 00026983 	-	 ENTRY 	-	 12	./.git/refs/remotes
+
+ 50.00 	-	 00026983 	-	 EXIT 	-	 0
+ 50.00 	-	 00026981 	-	 RECV_PIPE 	-	 8
+ 51.00 	-	 00026985 	-	 ENTRY 	-	 4	./.git/refs/heads/master
+
+ 51.00 	-	 00026985 	-	 SEND_PIPE 	-	 4
+ 51.00 	-	 00026985 	-	 ENTRY 	-	 8	./.git/refs/heads
+
+ 51.00 	-	 00026985 	-	 EXIT 	-	 0
+ 51.00 	-	 00026981 	-	 RECV_PIPE 	-	 4
+ 51.00 	-	 00026981 	-	 SEND_PIPE 	-	 24
+ 51.00 	-	 00026981 	-	 ENTRY 	-	 28	./.git/refs
+
+ 51.00 	-	 00026981 	-	 EXIT 	-	 0
+ 51.00 	-	 00026860 	-	 RECV_PIPE 	-	 24
+ 52.00 	-	 00026986 	-	 ENTRY 	-	 4	./.git/hooks/README.sample
+
+ 52.00 	-	 00026986 	-	 SEND_PIPE 	-	 4
+ 52.00 	-	 00026986 	-	 ENTRY 	-	 8	./.git/hooks
+
+ 52.00 	-	 00026986 	-	 EXIT 	-	 0
+ 52.00 	-	 00026860 	-	 RECV_PIPE 	-	 4
+ 52.00 	-	 00026860 	-	 ENTRY 	-	 4	./.git/description
+
+ 52.00 	-	 00026987 	-	 ENTRY 	-	 4	./.git/logs/HEAD
+
+ 52.00 	-	 00026990 	-	 ENTRY 	-	 4	./.git/logs/refs/remotes/origin/master
+
+ 52.00 	-	 00026990 	-	 SEND_PIPE 	-	 4
+ 53.00 	-	 00026990 	-	 ENTRY 	-	 8	./.git/logs/refs/remotes/origin
+
+ 53.00 	-	 00026990 	-	 EXIT 	-	 0
+ 53.00 	-	 00026989 	-	 RECV_PIPE 	-	 4
+ 53.00 	-	 00026989 	-	 SEND_PIPE 	-	 8
+ 53.00 	-	 00026989 	-	 ENTRY 	-	 12	./.git/logs/refs/remotes
+
+ 53.00 	-	 00026989 	-	 EXIT 	-	 0
+ 53.00 	-	 00026988 	-	 RECV_PIPE 	-	 8
+ 53.00 	-	 00026991 	-	 ENTRY 	-	 4	./.git/logs/refs/heads/master
+
+ 53.00 	-	 00026991 	-	 SEND_PIPE 	-	 4
+ 53.00 	-	 00026991 	-	 ENTRY 	-	 8	./.git/logs/refs/heads
+
+ 53.00 	-	 00026991 	-	 EXIT 	-	 0
+ 53.00 	-	 00026988 	-	 RECV_PIPE 	-	 4
+ 53.00 	-	 00026988 	-	 SEND_PIPE 	-	 20
+ 53.00 	-	 00026988 	-	 ENTRY 	-	 24	./.git/logs/refs
+
+ 53.00 	-	 00026988 	-	 EXIT 	-	 0
+ 54.00 	-	 00026987 	-	 RECV_PIPE 	-	 20
+ 54.00 	-	 00026987 	-	 SEND_PIPE 	-	 28
+ 54.00 	-	 00026987 	-	 ENTRY 	-	 32	./.git/logs
+
+ 54.00 	-	 00026987 	-	 EXIT 	-	 0
+ 54.00 	-	 00026860 	-	 RECV_PIPE 	-	 28
+ 54.00 	-	 00026992 	-	 ENTRY 	-	 4	./.git/info/exclude
+
+ 54.00 	-	 00026992 	-	 SEND_PIPE 	-	 4
+ 54.00 	-	 00026992 	-	 ENTRY 	-	 8	./.git/info
+
+ 54.00 	-	 00026992 	-	 EXIT 	-	 0
+ 54.00 	-	 00026860 	-	 RECV_PIPE 	-	 4
+ 54.00 	-	 00026860 	-	 SEND_PIPE 	-	 1220
+ 54.00 	-	 00026860 	-	 ENTRY 	-	 1224	./.git
+
+ 54.00 	-	 00026860 	-	 EXIT 	-	 0
+ 54.00 	-	 00026853 	-	 RECV_PIPE 	-	 1220
+ 54.00 	-	 00026853 	-	 ENTRY 	-	 44	./logfile.txt
+
+ 54.00 	-	 00026853 	-	 SEND_PIPE 	-	 1572
+ 54.00 	-	 00026853 	-	 ENTRY 	-	 1576	./
+
+ 54.00 	-	 00026853 	-	 EXIT 	-	 0

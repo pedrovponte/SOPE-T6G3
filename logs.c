@@ -49,7 +49,6 @@ int registLog(pid_t pid, char* action, char *info){
 }
 
 void createLog(int argc, char *args[]){
-    //pid_t pid = getpid();
     char info[512];
     int i = 0;
     while(i < argc){
@@ -63,21 +62,18 @@ void createLog(int argc, char *args[]){
 }
 
 void exitLog(int status_code){
-    //pid_t pid = getpid();
     char info[150];
     sprintf(info, "%d", status_code);
     registLog(getpid(), "EXIT", info);
 }
 
 void recvSignalLog(char *signal){
-    //pid_t pid = getpid();
     char info[150];
     strcpy(info, signal);
     registLog(getpid(), "RECV_SIGNAL", info);
 }
 
 void sendSignalLog(char *signal, pid_t pid){
-    //pid_t pidp = getpid();
     char info[200];
     sprintf(info, "Signal %s sent to process with pid %d", signal, pid);
     registLog(pid, "SEND_SIGNAL", info);
@@ -96,7 +92,6 @@ void sendPipeLog(long int message){
 }
 
 void entryLog(char *path){
-    //pid_t pid = getpid();
     char info[200];
     sprintf(info, "%s", path);
     registLog(getpid(), "ENTRY", info);
