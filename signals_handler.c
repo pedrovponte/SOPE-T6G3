@@ -50,6 +50,7 @@ int init_signals(){
 
     if(sigaction(SIGINT, &act_sigint, NULL) < 0){
         fprintf(stderr, "Unable to install SIGINT handler\n");
+        exitLog(EXIT_FAILURE)
         exit(1);
     }
 
@@ -59,6 +60,7 @@ int init_signals(){
 
     if(sigaction(SIGTERM, &act_sigterm, NULL) < 0){
         fprintf(stderr, "Unable to install SIGTERM handler\n");
+        exitLog(EXIT_FAILURE);
         exit(1);
     }
 
@@ -68,7 +70,8 @@ int init_signals(){
 
     if(sigaction(SIGCONT, &act_sigcont, NULL) < 0){
         fprintf(stderr, "Unable to install SIGCONT handler\n");
-        exit(1);
+        exitLog(EXIT_FAILURE);
+        exit(EXIT_FAILURE);
     }
     
     return 0;

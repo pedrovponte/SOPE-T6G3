@@ -11,42 +11,38 @@ int fd[2];
 char *copy;
 commands coms;
 pid_t pgid;
+bool inp_dir;
 
 int main(int argc, char *argv[]){
     
-    copy = malloc(512);
+    copy = malloc(100);
 
     if(init_signals() != 0){
         perror("Error initializing signals");
-        exitLog(EXIT_FAILURE);
         exit(EXIT_FAILURE);
     }
     
     if(openLog() !=0){
         perror("Error opening logs file");
-        exitLog(EXIT_FAILURE);
         exit(EXIT_FAILURE);
     }
 
     if(argc < 1){ 
         fprintf(stderr, "Wrong number of arguments.\n");
-        exitLog(EXIT_FAILURE);
         exit(EXIT_FAILURE);
     }
 
     coms = args_commands(argc, argv);
 
+
     createLog(argc, argv);
 
-    if(pipe(fd) < 0){
-        perror("Error creating pipe");
-        exitLog(EXIT_FAILURE);
-        exit(EXIT_FAILURE);
-    }
+    //args_commands(argc, argv);
+
+    pipe(fd);
 
     dirs(copy, 0);
 
     exitLog(EXIT_SUCCESS);
-    
     return 0;
 }
