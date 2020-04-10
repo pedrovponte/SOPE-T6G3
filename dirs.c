@@ -233,13 +233,10 @@ int dirs(char *path_file, int level)
     {
         total += path_stat.st_size;
 
-        //total += 4096;
     }
     else
     {
-        
         total += path_stat.st_size / coms.block_size_bytes;
-        //total += 4096 / coms.block_size_bytes;
     }
     if (!inp_dir)
     {
@@ -258,7 +255,7 @@ int dirs(char *path_file, int level)
             }
             else
             {
-                //path_file[strlen(path_file) - 1] = '\0';
+                path_file[strlen(path_file) - 1] = '\0';
             }
         }
         if (inp_dir)

@@ -1,1267 +1,1012 @@
- 0.00 	-	 00000684 	-	 CREATE 	-	 ./simpledu -l -a
- 0.00 	-	 00000684 	-	 ENTRY 	-	 8	./dirs.c
+ 0.00 	-	 00008441 	-	 CREATE 	-	 ./simpledu -l -a /home/pedro/Documentos/SOPE -S -b
+ 0.00 	-	 00008442 	-	 ENTRY 	-	 109	/home/pedro/Documentos/SOPE/.vscode/settings.json
 
- 0.00 	-	 00000684 	-	 ENTRY 	-	 4	./logs.c
+ 0.00 	-	 00008442 	-	 ENTRY 	-	 4205	/home/pedro/Documentos/SOPE/.vscode
 
- 0.00 	-	 00000684 	-	 ENTRY 	-	 164	./testeT_du.txt
+ 0.00 	-	 00008442 	-	 EXIT 	-	 0
+ 0.00 	-	 00008441 	-	 RECV_PIPE 	-	 0
+ 0.00 	-	 00008441 	-	 ENTRY 	-	 7038104	/home/pedro/Documentos/SOPE/Operating System Concepts - 9th Edition.pdf
 
- 0.00 	-	 00000684 	-	 ENTRY 	-	 16	./signals_handler.o
+ 0.00 	-	 00008441 	-	 ENTRY 	-	 107	/home/pedro/Documentos/SOPE/.gitignore
 
- 0.00 	-	 00000684 	-	 ENTRY 	-	 44	./simpledu
+ 1.00 	-	 00008443 	-	 ENTRY 	-	 330145	/home/pedro/Documentos/SOPE/Resumos/Aulas.pdf
 
- 0.00 	-	 00000685 	-	 ENTRY 	-	 4	./.vscode/settings.json
+ 2.00 	-	 00008444 	-	 ENTRY 	-	 15398	/home/pedro/Documentos/SOPE/Resumos/Imagens/pipes3.PNG
 
- 0.00 	-	 00000685 	-	 SEND_PIPE 	-	 4
- 0.00 	-	 00000685 	-	 ENTRY 	-	 8	./.vscode
+ 2.00 	-	 00008444 	-	 ENTRY 	-	 19604	/home/pedro/Documentos/SOPE/Resumos/Imagens/pipes1.PNG
 
- 0.00 	-	 00000685 	-	 EXIT 	-	 0
- 0.00 	-	 00000684 	-	 RECV_PIPE 	-	 4
- 0.00 	-	 00000684 	-	 ENTRY 	-	 4	./args_handler.h
+ 2.00 	-	 00008444 	-	 ENTRY 	-	 8094	/home/pedro/Documentos/SOPE/Resumos/Imagens/pipes2.PNG
 
- 0.00 	-	 00000684 	-	 ENTRY 	-	 4	./Makefile
+ 2.00 	-	 00008444 	-	 ENTRY 	-	 15081	/home/pedro/Documentos/SOPE/Resumos/Imagens/exec.PNG
 
- 0.00 	-	 00000684 	-	 ENTRY 	-	 4	./logs.h
+ 2.00 	-	 00008444 	-	 ENTRY 	-	 59197	/home/pedro/Documentos/SOPE/Resumos/Imagens/exemplos_sinais.PNG
 
- 0.00 	-	 00000684 	-	 ENTRY 	-	 4	./.gitignore
+ 2.00 	-	 00008444 	-	 ENTRY 	-	 50148	/home/pedro/Documentos/SOPE/Resumos/Imagens/terminacao_processo.PNG
 
- 0.00 	-	 00000684 	-	 ENTRY 	-	 4	./utils.h
+ 2.00 	-	 00008444 	-	 ENTRY 	-	 22045	/home/pedro/Documentos/SOPE/Resumos/Imagens/fork.PNG
 
- 0.00 	-	 00000684 	-	 ENTRY 	-	 4	./dirs.h
+ 2.00 	-	 00008444 	-	 ENTRY 	-	 193663	/home/pedro/Documentos/SOPE/Resumos/Imagens
 
- 0.00 	-	 00000684 	-	 ENTRY 	-	 4	./README.md
+ 2.00 	-	 00008444 	-	 EXIT 	-	 0
+ 2.00 	-	 00008443 	-	 RECV_PIPE 	-	 140726400599552
+ 2.00 	-	 00008443 	-	 ENTRY 	-	 71403	/home/pedro/Documentos/SOPE/Resumos/Aulas.html
 
- 0.00 	-	 00000684 	-	 ENTRY 	-	 4	./utils.c
+ 2.00 	-	 00008443 	-	 ENTRY 	-	 16150	/home/pedro/Documentos/SOPE/Resumos/Comandos.html
 
- 1.00 	-	 00000684 	-	 ENTRY 	-	 4	./signals_handler.c
+ 2.00 	-	 00008443 	-	 ENTRY 	-	 26359	/home/pedro/Documentos/SOPE/Resumos/Aulas.md
 
- 1.00 	-	 00000684 	-	 ENTRY 	-	 20	./dirs.o
+ 2.00 	-	 00008443 	-	 ENTRY 	-	 1060	/home/pedro/Documentos/SOPE/Resumos/Comandos.md
 
- 1.00 	-	 00000684 	-	 ENTRY 	-	 4	./signals_handler.h
+ 2.00 	-	 00008443 	-	 ENTRY 	-	 449213	/home/pedro/Documentos/SOPE/Resumos
 
- 1.00 	-	 00000689 	-	 ENTRY 	-	 4	./Testar/D2/D3/file1.txt
+ 2.00 	-	 00008443 	-	 EXIT 	-	 0
+ 2.00 	-	 00008441 	-	 RECV_PIPE 	-	 0
+ 2.00 	-	 00008441 	-	 ENTRY 	-	 20	/home/pedro/Documentos/SOPE/README.md
 
- 1.00 	-	 00000689 	-	 ENTRY 	-	 4	./Testar/D2/D3/file2.txt
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 42862	/home/pedro/Documentos/SOPE/Teoricas/tp_01_ProgUnix.pdf
 
- 1.00 	-	 00000690 	-	 ENTRY 	-	 4	./Testar/D2/D3/D4/file.txt
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 571433	/home/pedro/Documentos/SOPE/Teoricas/Quick Review C concepts.pdf
 
- 1.00 	-	 00000690 	-	 ENTRY 	-	 4	./Testar/D2/D3/D4/fil35.txt
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 23313	/home/pedro/Documentos/SOPE/Teoricas/exemplos_ficheiros.pdf
 
- 2.00 	-	 00000690 	-	 SEND_PIPE 	-	 8
- 2.00 	-	 00000690 	-	 ENTRY 	-	 12	./Testar/D2/D3/D4
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 95778	/home/pedro/Documentos/SOPE/Teoricas/tp_05_Pipes.pdf
 
- 2.00 	-	 00000690 	-	 EXIT 	-	 0
- 2.00 	-	 00000689 	-	 RECV_PIPE 	-	 8
- 2.00 	-	 00000689 	-	 SEND_PIPE 	-	 20
- 2.00 	-	 00000689 	-	 ENTRY 	-	 24	./Testar/D2/D3
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 30751	/home/pedro/Documentos/SOPE/Teoricas/fork_exec.pdf
 
- 2.00 	-	 00000689 	-	 EXIT 	-	 0
- 2.00 	-	 00000688 	-	 RECV_PIPE 	-	 20
- 2.00 	-	 00000688 	-	 ENTRY 	-	 4	./Testar/D2/ex2c.c
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 55766	/home/pedro/Documentos/SOPE/Teoricas/tp_08_Threads.pdf
 
- 2.00 	-	 00000688 	-	 ENTRY 	-	 4	./Testar/D2/ex2d.c
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 162221	/home/pedro/Documentos/SOPE/Teoricas/API_cap3.pdf
 
- 2.00 	-	 00000688 	-	 ENTRY 	-	 4	./Testar/D2/ex1.c
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 225243	/home/pedro/Documentos/SOPE/Teoricas/tp_07_Threads.pdf
 
- 2.00 	-	 00000688 	-	 ENTRY 	-	 4	./Testar/D2/ex2a.c
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 34738	/home/pedro/Documentos/SOPE/Teoricas/threads_examples.pdf
 
- 2.00 	-	 00000688 	-	 SEND_PIPE 	-	 40
- 2.00 	-	 00000688 	-	 ENTRY 	-	 44	./Testar/D2
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 395044	/home/pedro/Documentos/SOPE/Teoricas/Threads_cont.pdf
 
- 2.00 	-	 00000688 	-	 EXIT 	-	 0
- 2.00 	-	 00000686 	-	 RECV_PIPE 	-	 40
- 2.00 	-	 00000691 	-	 ENTRY 	-	 4	./Testar/D1/ex2b.c
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 31276	/home/pedro/Documentos/SOPE/Teoricas/signals_examples.pdf
 
- 3.00 	-	 00000691 	-	 ENTRY 	-	 4	./Testar/D1/ex3b.c
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 122271	/home/pedro/Documentos/SOPE/Teoricas/API_cap5.pdf
 
- 3.00 	-	 00000691 	-	 ENTRY 	-	 4	./Testar/D1/ex1.c
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 97517	/home/pedro/Documentos/SOPE/Teoricas/API_cap4.pdf
 
- 3.00 	-	 00000691 	-	 ENTRY 	-	 4	./Testar/D1/ex2a.c
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 142235	/home/pedro/Documentos/SOPE/Teoricas/API_cap1.pdf
 
- 3.00 	-	 00000691 	-	 ENTRY 	-	 4	./Testar/D1/ex3a.c
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 397729	/home/pedro/Documentos/SOPE/Teoricas/tp_06_SO.pdf
 
- 3.00 	-	 00000691 	-	 SEND_PIPE 	-	 20
- 3.00 	-	 00000691 	-	 ENTRY 	-	 24	./Testar/D1
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 62223	/home/pedro/Documentos/SOPE/Teoricas/tp_03_Processos.pdf
 
- 3.00 	-	 00000691 	-	 EXIT 	-	 0
- 3.00 	-	 00000686 	-	 RECV_PIPE 	-	 20
- 3.00 	-	 00000686 	-	 ENTRY 	-	 4	./Testar/ex3.c
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 39033	/home/pedro/Documentos/SOPE/Teoricas/exemplos_Pipes_Fifos.pdf
 
- 3.00 	-	 00000686 	-	 ENTRY 	-	 4	./Testar/ex2.c
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 76363	/home/pedro/Documentos/SOPE/Teoricas/Sinais_exemplos_aula_2019-2020_10-11.pdf
 
- 3.00 	-	 00000686 	-	 ENTRY 	-	 4	./Testar/ex4.c
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 161459	/home/pedro/Documentos/SOPE/Teoricas/API_cap7.pdf
 
- 3.00 	-	 00000686 	-	 ENTRY 	-	 0	./Testar/mylink.txt
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 81292	/home/pedro/Documentos/SOPE/Teoricas/tp_04_Sinais.pdf
 
- 3.00 	-	 00000686 	-	 SEND_PIPE 	-	 80
- 3.00 	-	 00000686 	-	 ENTRY 	-	 84	./Testar
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 138223	/home/pedro/Documentos/SOPE/Teoricas/API_cap6.pdf
 
- 3.00 	-	 00000686 	-	 EXIT 	-	 0
- 3.00 	-	 00000684 	-	 RECV_PIPE 	-	 80
- 3.00 	-	 00000684 	-	 ENTRY 	-	 12	./utils.o
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 48236	/home/pedro/Documentos/SOPE/Teoricas/tp_02_Consola_Ficheiros.pdf
 
- 3.00 	-	 00000684 	-	 ENTRY 	-	 4	./main.c
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 167808	/home/pedro/Documentos/SOPE/Teoricas/API_cap2.pdf
 
- 3.00 	-	 00000684 	-	 ENTRY 	-	 12	./args_handler.o
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 72296	/home/pedro/Documentos/SOPE/Teoricas/ArraysStringsPointers.pdf
 
- 3.00 	-	 00000684 	-	 ENTRY 	-	 4	./args_handler.c
+ 3.00 	-	 00008445 	-	 ENTRY 	-	 3279206	/home/pedro/Documentos/SOPE/Teoricas
 
- 3.00 	-	 00000684 	-	 ENTRY 	-	 0	./testeT_simpledu.txt
+ 3.00 	-	 00008445 	-	 EXIT 	-	 0
+ 3.00 	-	 00008441 	-	 RECV_PIPE 	-	 0
+ 3.00 	-	 00008446 	-	 ENTRY 	-	 238200	/home/pedro/Documentos/SOPE/Projeto/SOPE_2019-2020_TP1_v1.pdf
 
- 3.00 	-	 00000684 	-	 ENTRY 	-	 16	./logs.o
+ 3.00 	-	 00008446 	-	 ENTRY 	-	 242296	/home/pedro/Documentos/SOPE/Projeto
 
- 3.00 	-	 00000684 	-	 ENTRY 	-	 12	./main.o
+ 3.00 	-	 00008446 	-	 EXIT 	-	 0
+ 4.00 	-	 00008441 	-	 RECV_PIPE 	-	 0
+ 4.00 	-	 00008441 	-	 ENTRY 	-	 556	/home/pedro/Documentos/SOPE/sites_proj.txt
 
- 3.00 	-	 00000692 	-	 ENTRY 	-	 4	./.git/config
+ 4.00 	-	 00008447 	-	 ENTRY 	-	 304941	/home/pedro/Documentos/SOPE/Apoio Linux/Makefiles.pdf
 
- 4.00 	-	 00000694 	-	 ENTRY 	-	 4	./.git/objects/86/7c4e7a215bd001c19b61c22e8eb2f28dade08c
+ 4.00 	-	 00008447 	-	 ENTRY 	-	 260359	/home/pedro/Documentos/SOPE/Apoio Linux/SOPE_Makefile.pdf
 
- 4.00 	-	 00000694 	-	 SEND_PIPE 	-	 4
- 4.00 	-	 00000694 	-	 ENTRY 	-	 8	./.git/objects/86
+ 4.00 	-	 00008447 	-	 ENTRY 	-	 127239	/home/pedro/Documentos/SOPE/Apoio Linux/shell_intro_01.pdf
 
- 4.00 	-	 00000694 	-	 EXIT 	-	 0
- 4.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 4.00 	-	 00000695 	-	 ENTRY 	-	 4	./.git/objects/a0/337850731e1771183e3bbfa7be36503db52fa9
+ 4.00 	-	 00008447 	-	 ENTRY 	-	 329829	/home/pedro/Documentos/SOPE/Apoio Linux/make_vvsintro.pdf
 
- 4.00 	-	 00000695 	-	 ENTRY 	-	 12	./.git/objects/a0/fe719a1d717bd4feb0914892a2f9ef73276965
+ 4.00 	-	 00008447 	-	 ENTRY 	-	 1731039	/home/pedro/Documentos/SOPE/Apoio Linux/Linux101_intro.pdf
 
- 4.00 	-	 00000695 	-	 ENTRY 	-	 4	./.git/objects/a0/cf3d89e6afaaa626174377af37d70cdc2f1c8d
+ 4.00 	-	 00008447 	-	 ENTRY 	-	 447906	/home/pedro/Documentos/SOPE/Apoio Linux/gcc_intro_02.pdf
 
- 4.00 	-	 00000695 	-	 SEND_PIPE 	-	 20
- 4.00 	-	 00000695 	-	 ENTRY 	-	 24	./.git/objects/a0
+ 4.00 	-	 00008447 	-	 ENTRY 	-	 3205409	/home/pedro/Documentos/SOPE/Apoio Linux
 
- 4.00 	-	 00000695 	-	 EXIT 	-	 0
- 4.00 	-	 00000693 	-	 RECV_PIPE 	-	 20
- 5.00 	-	 00000696 	-	 ENTRY 	-	 4	./.git/objects/07/f2457839f6f263e0f850bbf0e54ddc71845db3
+ 4.00 	-	 00008447 	-	 EXIT 	-	 0
+ 4.00 	-	 00008441 	-	 RECV_PIPE 	-	 0
+ 4.00 	-	 00008448 	-	 ENTRY 	-	 264	/home/pedro/Documentos/SOPE/.git/config
 
- 5.00 	-	 00000696 	-	 ENTRY 	-	 4	./.git/objects/07/fbe99b52b72cd9e65bee30638c06a9d51937d6
+ 4.00 	-	 00008448 	-	 ENTRY 	-	 25	/home/pedro/Documentos/SOPE/.git/COMMIT_EDITMSG
 
- 5.00 	-	 00000696 	-	 SEND_PIPE 	-	 8
- 5.00 	-	 00000696 	-	 ENTRY 	-	 12	./.git/objects/07
+ 5.00 	-	 00008450 	-	 ENTRY 	-	 406	/home/pedro/Documentos/SOPE/.git/objects/86/c8b15a152666b52d7b7905253986d118a6faf0
 
- 5.00 	-	 00000696 	-	 EXIT 	-	 0
- 5.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 5.00 	-	 00000697 	-	 ENTRY 	-	 8	./.git/objects/99/dc1118c268424d2c79e3bf27062f677fe8e82f
+ 5.00 	-	 00008450 	-	 ENTRY 	-	 4502	/home/pedro/Documentos/SOPE/.git/objects/86
 
- 5.00 	-	 00000697 	-	 SEND_PIPE 	-	 8
- 5.00 	-	 00000697 	-	 ENTRY 	-	 12	./.git/objects/99
+ 5.00 	-	 00008450 	-	 EXIT 	-	 0
+ 5.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 5.00 	-	 00008451 	-	 ENTRY 	-	 315	/home/pedro/Documentos/SOPE/.git/objects/a0/a61612aebe5299710bbd373ed475a7764b2344
 
- 5.00 	-	 00000697 	-	 EXIT 	-	 0
- 5.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 6.00 	-	 00000698 	-	 ENTRY 	-	 4	./.git/objects/27/fa69da016000515c8de85b00f3a0ed7cc183a8
+ 5.00 	-	 00008451 	-	 ENTRY 	-	 53	/home/pedro/Documentos/SOPE/.git/objects/a0/5eb95ef559a5bb81fdd43ad7921c9e43cf169f
 
- 6.00 	-	 00000698 	-	 SEND_PIPE 	-	 4
- 6.00 	-	 00000698 	-	 ENTRY 	-	 8	./.git/objects/27
+ 5.00 	-	 00008451 	-	 ENTRY 	-	 4464	/home/pedro/Documentos/SOPE/.git/objects/a0
 
- 6.00 	-	 00000698 	-	 EXIT 	-	 0
- 6.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 6.00 	-	 00000699 	-	 ENTRY 	-	 4	./.git/objects/54/6b856ff89153fc064f1f147aa483600700df39
+ 5.00 	-	 00008451 	-	 EXIT 	-	 0
+ 5.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 6.00 	-	 00008452 	-	 ENTRY 	-	 251	/home/pedro/Documentos/SOPE/.git/objects/99/98670f49e652e3d3db462927165dd312c4f11f
 
- 6.00 	-	 00000699 	-	 SEND_PIPE 	-	 4
- 6.00 	-	 00000699 	-	 ENTRY 	-	 8	./.git/objects/54
+ 6.00 	-	 00008452 	-	 ENTRY 	-	 4347	/home/pedro/Documentos/SOPE/.git/objects/99
 
- 6.00 	-	 00000699 	-	 EXIT 	-	 0
- 6.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 6.00 	-	 00000700 	-	 ENTRY 	-	 4	./.git/objects/45/523ab1dcfe1cca53561fdc29d8736ddbd2142a
+ 6.00 	-	 00008452 	-	 EXIT 	-	 0
+ 6.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 6.00 	-	 00008453 	-	 ENTRY 	-	 319	/home/pedro/Documentos/SOPE/.git/objects/45/523ab1dcfe1cca53561fdc29d8736ddbd2142a
 
- 6.00 	-	 00000700 	-	 SEND_PIPE 	-	 4
- 6.00 	-	 00000700 	-	 ENTRY 	-	 8	./.git/objects/45
+ 6.00 	-	 00008453 	-	 ENTRY 	-	 4415	/home/pedro/Documentos/SOPE/.git/objects/45
 
- 6.00 	-	 00000700 	-	 EXIT 	-	 0
- 6.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 7.00 	-	 00000701 	-	 ENTRY 	-	 4	./.git/objects/f0/aff85c0e1076738cb0bb594542e29e1d40aa1f
+ 6.00 	-	 00008453 	-	 EXIT 	-	 0
+ 6.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 6.00 	-	 00008454 	-	 ENTRY 	-	 307	/home/pedro/Documentos/SOPE/.git/objects/cb/90869baa40b7b0d20b0d3c8572d0a9f40b3fef
 
- 7.00 	-	 00000701 	-	 SEND_PIPE 	-	 4
- 7.00 	-	 00000701 	-	 ENTRY 	-	 8	./.git/objects/f0
+ 6.00 	-	 00008454 	-	 ENTRY 	-	 48	/home/pedro/Documentos/SOPE/.git/objects/cb/93f6f37c01dedadf6abb68c5bcb6d6c0a9232d
 
- 7.00 	-	 00000701 	-	 EXIT 	-	 0
- 7.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 7.00 	-	 00000702 	-	 ENTRY 	-	 4	./.git/objects/a6/576884fab9e7d039e1c45587b7c068cb3abdcf
+ 6.00 	-	 00008454 	-	 ENTRY 	-	 4451	/home/pedro/Documentos/SOPE/.git/objects/cb
 
- 7.00 	-	 00000702 	-	 SEND_PIPE 	-	 4
- 7.00 	-	 00000702 	-	 ENTRY 	-	 8	./.git/objects/a6
+ 6.00 	-	 00008454 	-	 EXIT 	-	 0
+ 7.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 7.00 	-	 00008455 	-	 ENTRY 	-	 197	/home/pedro/Documentos/SOPE/.git/objects/f0/019cfa534d90ea4089bfa8a20287505c0a1950
 
- 7.00 	-	 00000702 	-	 EXIT 	-	 0
- 7.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 7.00 	-	 00000703 	-	 ENTRY 	-	 4	./.git/objects/33/4df1fcd153224c4da210cf60fb26f66f91766e
+ 7.00 	-	 00008455 	-	 ENTRY 	-	 4293	/home/pedro/Documentos/SOPE/.git/objects/f0
 
- 7.00 	-	 00000703 	-	 ENTRY 	-	 4	./.git/objects/33/d393fcc5785797e9617fc29f80d8c65cec5ffb
+ 7.00 	-	 00008455 	-	 EXIT 	-	 0
+ 7.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 7.00 	-	 00008456 	-	 ENTRY 	-	 112	/home/pedro/Documentos/SOPE/.git/objects/a6/576884fab9e7d039e1c45587b7c068cb3abdcf
 
- 7.00 	-	 00000703 	-	 SEND_PIPE 	-	 8
- 7.00 	-	 00000703 	-	 ENTRY 	-	 12	./.git/objects/33
+ 7.00 	-	 00008456 	-	 ENTRY 	-	 4208	/home/pedro/Documentos/SOPE/.git/objects/a6
 
- 7.00 	-	 00000703 	-	 EXIT 	-	 0
- 8.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 8.00 	-	 00000704 	-	 ENTRY 	-	 4	./.git/objects/36/dc45de4bdb9ea818b4a8a557ab3070b45e67ae
+ 7.00 	-	 00008456 	-	 EXIT 	-	 0
+ 7.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 7.00 	-	 00008457 	-	 ENTRY 	-	 350	/home/pedro/Documentos/SOPE/.git/objects/97/28d9468945dc5781986b6a1e4ff657fe96e68b
 
- 8.00 	-	 00000704 	-	 SEND_PIPE 	-	 4
- 8.00 	-	 00000704 	-	 ENTRY 	-	 8	./.git/objects/36
+ 7.00 	-	 00008457 	-	 ENTRY 	-	 4446	/home/pedro/Documentos/SOPE/.git/objects/97
 
- 8.00 	-	 00000704 	-	 EXIT 	-	 0
- 8.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 8.00 	-	 00000705 	-	 ENTRY 	-	 4	./.git/objects/e9/65047ad7c57865823c7d992b1d046ea66edf78
+ 8.00 	-	 00008457 	-	 EXIT 	-	 0
+ 8.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 8.00 	-	 00008458 	-	 ENTRY 	-	 2848	/home/pedro/Documentos/SOPE/.git/objects/42/2663cec0f00cbed311933be612db4ace0bc08a
 
- 8.00 	-	 00000705 	-	 ENTRY 	-	 4	./.git/objects/e9/5f941d7e2d6c226cab10f915e9f3e9389fedfa
+ 8.00 	-	 00008458 	-	 ENTRY 	-	 6944	/home/pedro/Documentos/SOPE/.git/objects/42
 
- 8.00 	-	 00000705 	-	 SEND_PIPE 	-	 8
- 8.00 	-	 00000705 	-	 ENTRY 	-	 12	./.git/objects/e9
+ 8.00 	-	 00008458 	-	 EXIT 	-	 0
+ 8.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 8.00 	-	 00008459 	-	 ENTRY 	-	 288	/home/pedro/Documentos/SOPE/.git/objects/2a/17334a22e7434e69b7ffc832040bf3dbd2b621
 
- 8.00 	-	 00000705 	-	 EXIT 	-	 0
- 8.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 9.00 	-	 00000706 	-	 ENTRY 	-	 4	./.git/objects/2b/60207f037a00cfa1dbdbc8ef00cd7b84f7b688
+ 8.00 	-	 00008459 	-	 ENTRY 	-	 4384	/home/pedro/Documentos/SOPE/.git/objects/2a
 
- 9.00 	-	 00000706 	-	 ENTRY 	-	 4	./.git/objects/2b/d787e3b07960eddaa3ff284a611e5232450449
+ 8.00 	-	 00008459 	-	 EXIT 	-	 0
+ 8.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 9.00 	-	 00008460 	-	 ENTRY 	-	 283	/home/pedro/Documentos/SOPE/.git/objects/56/a17a6c34815e18c6712a5e7b7dfc359ca079a3
 
- 9.00 	-	 00000706 	-	 ENTRY 	-	 4	./.git/objects/2b/d299ac9f0c4ea0e4f36d3eb03f9f336ad2ab6f
+ 9.00 	-	 00008460 	-	 ENTRY 	-	 183	/home/pedro/Documentos/SOPE/.git/objects/56/23fd910ce201e57904eb018c69f1b09bf5592f
 
- 9.00 	-	 00000706 	-	 ENTRY 	-	 4	./.git/objects/2b/f65bc6ac12522436784944a8210d406dabab19
+ 9.00 	-	 00008460 	-	 ENTRY 	-	 4562	/home/pedro/Documentos/SOPE/.git/objects/56
 
- 9.00 	-	 00000706 	-	 SEND_PIPE 	-	 16
- 9.00 	-	 00000706 	-	 ENTRY 	-	 20	./.git/objects/2b
+ 9.00 	-	 00008460 	-	 EXIT 	-	 0
+ 9.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 9.00 	-	 00008461 	-	 ENTRY 	-	 157	/home/pedro/Documentos/SOPE/.git/objects/62/6555319223e028c6d4b27ec062944df3a01447
 
- 9.00 	-	 00000706 	-	 EXIT 	-	 0
- 9.00 	-	 00000693 	-	 RECV_PIPE 	-	 16
- 9.00 	-	 00000707 	-	 ENTRY 	-	 4	./.git/objects/14/d8769c9410116931ec600521bea49f4959949e
+ 9.00 	-	 00008461 	-	 ENTRY 	-	 359	/home/pedro/Documentos/SOPE/.git/objects/62/f02862289c17d006b52ebfbb8fca85758077e3
 
- 9.00 	-	 00000707 	-	 SEND_PIPE 	-	 4
- 9.00 	-	 00000707 	-	 ENTRY 	-	 8	./.git/objects/14
+ 9.00 	-	 00008461 	-	 ENTRY 	-	 3163	/home/pedro/Documentos/SOPE/.git/objects/62/2d00dbe6be3fcad59caf90d84eea1819171b20
 
- 9.00 	-	 00000707 	-	 EXIT 	-	 0
- 9.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 9.00 	-	 00000708 	-	 ENTRY 	-	 4	./.git/objects/ae/0a95cf1f52811ea13cdbed247a9e01d9e4b7b8
+ 9.00 	-	 00008461 	-	 ENTRY 	-	 7775	/home/pedro/Documentos/SOPE/.git/objects/62
 
- 9.00 	-	 00000708 	-	 SEND_PIPE 	-	 4
- 9.00 	-	 00000708 	-	 ENTRY 	-	 8	./.git/objects/ae
+ 9.00 	-	 00008461 	-	 EXIT 	-	 0
+ 9.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 9.00 	-	 00008462 	-	 ENTRY 	-	 182	/home/pedro/Documentos/SOPE/.git/objects/94/15233a4f8adf576e71d39bda7468258df3eebd
 
- 9.00 	-	 00000708 	-	 EXIT 	-	 0
- 10.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 10.00 	-	 00000709 	-	 ENTRY 	-	 4	./.git/objects/56/37063e68cc334174c6581b1765eb493e57c4e1
+ 9.00 	-	 00008462 	-	 ENTRY 	-	 4278	/home/pedro/Documentos/SOPE/.git/objects/94
 
- 10.00 	-	 00000709 	-	 ENTRY 	-	 4	./.git/objects/56/d152dd26c02649f3fb77c20a159e55494b5283
+ 9.00 	-	 00008462 	-	 EXIT 	-	 0
+ 9.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 10.00 	-	 00008463 	-	 ENTRY 	-	 312	/home/pedro/Documentos/SOPE/.git/objects/fd/b4d1ee0f512a2b2cd60e77712f40aebff1eeef
 
- 10.00 	-	 00000709 	-	 SEND_PIPE 	-	 8
- 10.00 	-	 00000709 	-	 ENTRY 	-	 12	./.git/objects/56
+ 10.00 	-	 00008463 	-	 ENTRY 	-	 4408	/home/pedro/Documentos/SOPE/.git/objects/fd
 
- 10.00 	-	 00000709 	-	 EXIT 	-	 0
- 10.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 10.00 	-	 00000710 	-	 ENTRY 	-	 4	./.git/objects/62/ea9d980aec6a367b474c4ad972d35d7c710723
+ 10.00 	-	 00008463 	-	 EXIT 	-	 0
+ 10.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 10.00 	-	 00008464 	-	 ENTRY 	-	 386	/home/pedro/Documentos/SOPE/.git/objects/29/ab23df6c177355a559136a49f7fd721aa58338
 
- 10.00 	-	 00000710 	-	 ENTRY 	-	 4	./.git/objects/62/4477d07e33a9977ccd0bd0c5f82dee3cda024b
+ 10.00 	-	 00008464 	-	 ENTRY 	-	 4482	/home/pedro/Documentos/SOPE/.git/objects/29
 
- 10.00 	-	 00000710 	-	 ENTRY 	-	 4	./.git/objects/62/746ddf1e0f5ba8819468135498fd90753c64ac
+ 10.00 	-	 00008464 	-	 EXIT 	-	 0
+ 10.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 10.00 	-	 00008465 	-	 ENTRY 	-	 298	/home/pedro/Documentos/SOPE/.git/objects/c4/1266c60b298429f52e142f6d65e017d338e904
 
- 10.00 	-	 00000710 	-	 SEND_PIPE 	-	 12
- 10.00 	-	 00000710 	-	 ENTRY 	-	 16	./.git/objects/62
+ 10.00 	-	 00008465 	-	 ENTRY 	-	 4394	/home/pedro/Documentos/SOPE/.git/objects/c4
 
- 10.00 	-	 00000710 	-	 EXIT 	-	 0
- 10.00 	-	 00000693 	-	 RECV_PIPE 	-	 12
- 11.00 	-	 00000711 	-	 ENTRY 	-	 4	./.git/objects/94/5074db2ffcf269876cd6b689480c8862a3eae7
+ 10.00 	-	 00008465 	-	 EXIT 	-	 0
+ 11.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 11.00 	-	 00008466 	-	 ENTRY 	-	 260	/home/pedro/Documentos/SOPE/.git/objects/08/d6b25d06e0161a6088ac42e88cfe237da51249
 
- 11.00 	-	 00000711 	-	 SEND_PIPE 	-	 4
- 11.00 	-	 00000711 	-	 ENTRY 	-	 8	./.git/objects/94
+ 11.00 	-	 00008466 	-	 ENTRY 	-	 4356	/home/pedro/Documentos/SOPE/.git/objects/08
 
- 11.00 	-	 00000711 	-	 EXIT 	-	 0
- 11.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 11.00 	-	 00000712 	-	 ENTRY 	-	 4	./.git/objects/29/ab23df6c177355a559136a49f7fd721aa58338
+ 11.00 	-	 00008466 	-	 EXIT 	-	 0
+ 11.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 11.00 	-	 00008467 	-	 ENTRY 	-	 214	/home/pedro/Documentos/SOPE/.git/objects/f2/a1b676059667a44241a532b07da0815a26c860
 
- 11.00 	-	 00000712 	-	 SEND_PIPE 	-	 4
- 11.00 	-	 00000712 	-	 ENTRY 	-	 8	./.git/objects/29
+ 11.00 	-	 00008467 	-	 ENTRY 	-	 4310	/home/pedro/Documentos/SOPE/.git/objects/f2
 
- 11.00 	-	 00000712 	-	 EXIT 	-	 0
- 11.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 12.00 	-	 00000713 	-	 ENTRY 	-	 4	./.git/objects/c1/297d1bdfc6c7217738db68cfd751d393d2cc4c
+ 11.00 	-	 00008467 	-	 EXIT 	-	 0
+ 11.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 12.00 	-	 00008468 	-	 ENTRY 	-	 24	/home/pedro/Documentos/SOPE/.git/objects/9b/df167310ced10f4550bc5c0da333bd3e6e11af
 
- 12.00 	-	 00000713 	-	 ENTRY 	-	 4	./.git/objects/c1/b526bbad00397196b4b3517b3de72a0e4a962a
+ 12.00 	-	 00008468 	-	 ENTRY 	-	 347	/home/pedro/Documentos/SOPE/.git/objects/9b/eb884298a2091dc92a60961353738726b79ddb
 
- 12.00 	-	 00000713 	-	 SEND_PIPE 	-	 8
- 12.00 	-	 00000713 	-	 ENTRY 	-	 12	./.git/objects/c1
+ 12.00 	-	 00008468 	-	 ENTRY 	-	 4467	/home/pedro/Documentos/SOPE/.git/objects/9b
 
- 12.00 	-	 00000713 	-	 EXIT 	-	 0
- 12.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 12.00 	-	 00000714 	-	 ENTRY 	-	 4	./.git/objects/1b/74dd258dcc6f0e26ae675d45a9e78434409f62
+ 12.00 	-	 00008468 	-	 EXIT 	-	 0
+ 12.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 12.00 	-	 00008469 	-	 ENTRY 	-	 89	/home/pedro/Documentos/SOPE/.git/objects/6b/ff2d29c067ae6ad44327ec446f53b164269f77
 
- 12.00 	-	 00000714 	-	 SEND_PIPE 	-	 4
- 12.00 	-	 00000714 	-	 ENTRY 	-	 8	./.git/objects/1b
+ 12.00 	-	 00008469 	-	 ENTRY 	-	 4185	/home/pedro/Documentos/SOPE/.git/objects/6b
 
- 12.00 	-	 00000714 	-	 EXIT 	-	 0
- 12.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 12.00 	-	 00000715 	-	 ENTRY 	-	 4	./.git/objects/f2/1dbea4dba5b49ae0450ffeba9f774f9fa15023
+ 12.00 	-	 00008469 	-	 EXIT 	-	 0
+ 12.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 12.00 	-	 00008470 	-	 ENTRY 	-	 170	/home/pedro/Documentos/SOPE/.git/objects/03/add436bfbe99905413843f027119e5a22a6fa5
 
- 12.00 	-	 00000715 	-	 SEND_PIPE 	-	 4
- 12.00 	-	 00000715 	-	 ENTRY 	-	 8	./.git/objects/f2
+ 12.00 	-	 00008470 	-	 ENTRY 	-	 4266	/home/pedro/Documentos/SOPE/.git/objects/03
 
- 12.00 	-	 00000715 	-	 EXIT 	-	 0
- 13.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 13.00 	-	 00000717 	-	 ENTRY 	-	 4	./.git/objects/9b/eb884298a2091dc92a60961353738726b79ddb
+ 12.00 	-	 00008470 	-	 EXIT 	-	 0
+ 13.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 13.00 	-	 00008471 	-	 ENTRY 	-	 40	/home/pedro/Documentos/SOPE/.git/objects/a9/5471fd1883c16e4b9234d39b204d538d075898
 
- 13.00 	-	 00000717 	-	 SEND_PIPE 	-	 4
- 13.00 	-	 00000717 	-	 ENTRY 	-	 8	./.git/objects/9b
+ 13.00 	-	 00008471 	-	 ENTRY 	-	 4136	/home/pedro/Documentos/SOPE/.git/objects/a9
 
- 13.00 	-	 00000717 	-	 EXIT 	-	 0
- 13.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 13.00 	-	 00000718 	-	 ENTRY 	-	 4	./.git/objects/93/4a3a43a562fd1328c95f99f4d34ed5c1a7071f
+ 13.00 	-	 00008471 	-	 EXIT 	-	 0
+ 13.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 13.00 	-	 00008472 	-	 ENTRY 	-	 157	/home/pedro/Documentos/SOPE/.git/objects/39/859a8c489bcd24ffc7f1d8211286f5a3c3abb0
 
- 13.00 	-	 00000718 	-	 ENTRY 	-	 4	./.git/objects/93/34c60e08a8a0d54de18587d9d36adbac173e0f
+ 13.00 	-	 00008472 	-	 ENTRY 	-	 4253	/home/pedro/Documentos/SOPE/.git/objects/39
 
- 13.00 	-	 00000718 	-	 SEND_PIPE 	-	 8
- 13.00 	-	 00000718 	-	 ENTRY 	-	 12	./.git/objects/93
+ 13.00 	-	 00008472 	-	 EXIT 	-	 0
+ 13.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 14.00 	-	 00008473 	-	 ENTRY 	-	 401	/home/pedro/Documentos/SOPE/.git/objects/1f/22d5b71b6298619f0236aad80617c3734c97e4
 
- 13.00 	-	 00000718 	-	 EXIT 	-	 0
- 14.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 14.00 	-	 00000719 	-	 ENTRY 	-	 4	./.git/objects/12/98d827384ab34195b526dd7a4ee8bca3cd5416
+ 14.00 	-	 00008473 	-	 ENTRY 	-	 4497	/home/pedro/Documentos/SOPE/.git/objects/1f
 
- 14.00 	-	 00000719 	-	 ENTRY 	-	 4	./.git/objects/12/c32823c854c35e52b1f5cd01635752f8470d0f
+ 14.00 	-	 00008473 	-	 EXIT 	-	 0
+ 14.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 14.00 	-	 00008474 	-	 ENTRY 	-	 54	/home/pedro/Documentos/SOPE/.git/objects/43/4615aab8d760be64d8e24a483c8789455f8b07
 
- 14.00 	-	 00000719 	-	 SEND_PIPE 	-	 8
- 14.00 	-	 00000719 	-	 ENTRY 	-	 12	./.git/objects/12
+ 14.00 	-	 00008474 	-	 ENTRY 	-	 4150	/home/pedro/Documentos/SOPE/.git/objects/43
 
- 14.00 	-	 00000719 	-	 EXIT 	-	 0
- 14.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 14.00 	-	 00000720 	-	 ENTRY 	-	 4	./.git/objects/7f/f5df5ce49fa6f7a4613ff22f3412c2a0e67482
+ 14.00 	-	 00008474 	-	 EXIT 	-	 0
+ 14.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 14.00 	-	 00008475 	-	 ENTRY 	-	 118	/home/pedro/Documentos/SOPE/.git/objects/e8/5e1944ddeb24b1ad520bfedd763a4bceae52d6
 
- 14.00 	-	 00000720 	-	 SEND_PIPE 	-	 4
- 14.00 	-	 00000720 	-	 ENTRY 	-	 8	./.git/objects/7f
+ 14.00 	-	 00008475 	-	 ENTRY 	-	 4214	/home/pedro/Documentos/SOPE/.git/objects/e8
 
- 14.00 	-	 00000720 	-	 EXIT 	-	 0
- 15.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 15.00 	-	 00000721 	-	 ENTRY 	-	 4	./.git/objects/e0/cf96f9e0730c3c254926adf7f79047c4ee3806
+ 14.00 	-	 00008475 	-	 EXIT 	-	 0
+ 14.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 15.00 	-	 00008476 	-	 ENTRY 	-	 403	/home/pedro/Documentos/SOPE/.git/objects/6c/8cc00b47c9a665b30e4d92899498366e9d7376
 
- 15.00 	-	 00000721 	-	 SEND_PIPE 	-	 4
- 15.00 	-	 00000721 	-	 ENTRY 	-	 8	./.git/objects/e0
+ 15.00 	-	 00008476 	-	 ENTRY 	-	 4499	/home/pedro/Documentos/SOPE/.git/objects/6c
 
- 15.00 	-	 00000721 	-	 EXIT 	-	 0
- 15.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 16.00 	-	 00000722 	-	 ENTRY 	-	 4	./.git/objects/6b/ff2d29c067ae6ad44327ec446f53b164269f77
+ 15.00 	-	 00008476 	-	 EXIT 	-	 0
+ 15.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 15.00 	-	 00008477 	-	 ENTRY 	-	 284	/home/pedro/Documentos/SOPE/.git/objects/7b/829f9d6c3262332994ea5096088ccc40e02d17
 
- 16.00 	-	 00000722 	-	 SEND_PIPE 	-	 4
- 16.00 	-	 00000722 	-	 ENTRY 	-	 8	./.git/objects/6b
+ 15.00 	-	 00008477 	-	 ENTRY 	-	 4380	/home/pedro/Documentos/SOPE/.git/objects/7b
 
- 16.00 	-	 00000722 	-	 EXIT 	-	 0
- 16.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 16.00 	-	 00000723 	-	 ENTRY 	-	 4	./.git/objects/ef/5b9fec7023d4ed2d8f5132abec95e13aa6bc05
+ 15.00 	-	 00008477 	-	 EXIT 	-	 0
+ 15.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 15.00 	-	 00008478 	-	 ENTRY 	-	 221	/home/pedro/Documentos/SOPE/.git/objects/52/22e8da3ec553bd90e96f48f14ae0eb775c44d2
 
- 16.00 	-	 00000723 	-	 ENTRY 	-	 4	./.git/objects/ef/7f996b7f9bd192994d4095f15e38b30b1df652
+ 15.00 	-	 00008478 	-	 ENTRY 	-	 4317	/home/pedro/Documentos/SOPE/.git/objects/52
 
- 16.00 	-	 00000723 	-	 SEND_PIPE 	-	 8
- 16.00 	-	 00000723 	-	 ENTRY 	-	 12	./.git/objects/ef
+ 15.00 	-	 00008478 	-	 EXIT 	-	 0
+ 16.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 16.00 	-	 00008479 	-	 ENTRY 	-	 279	/home/pedro/Documentos/SOPE/.git/objects/a7/8e2f9f481bd1c0b5a04f07e412f3f6a9d863a5
 
- 16.00 	-	 00000723 	-	 EXIT 	-	 0
- 16.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 17.00 	-	 00000724 	-	 ENTRY 	-	 4	./.git/objects/46/914bab3277c847b04da32b14824ff902c57d8a
+ 16.00 	-	 00008479 	-	 ENTRY 	-	 4375	/home/pedro/Documentos/SOPE/.git/objects/a7
 
- 17.00 	-	 00000724 	-	 SEND_PIPE 	-	 4
- 17.00 	-	 00000724 	-	 ENTRY 	-	 8	./.git/objects/46
+ 16.00 	-	 00008479 	-	 EXIT 	-	 0
+ 16.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 16.00 	-	 00008480 	-	 ENTRY 	-	 158	/home/pedro/Documentos/SOPE/.git/objects/28/edd53903650f60d654b0f2b6a193490c1da1e0
 
- 17.00 	-	 00000724 	-	 EXIT 	-	 0
- 17.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 17.00 	-	 00000725 	-	 ENTRY 	-	 4	./.git/objects/03/9751e378562e12f8bdb7d1e14c71811a6c2191
+ 16.00 	-	 00008480 	-	 ENTRY 	-	 4254	/home/pedro/Documentos/SOPE/.git/objects/28
 
- 17.00 	-	 00000725 	-	 ENTRY 	-	 4	./.git/objects/03/f7f1752d4af6db29bd908ec447442a815d7e96
+ 16.00 	-	 00008480 	-	 EXIT 	-	 0
+ 16.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 17.00 	-	 00008481 	-	 ENTRY 	-	 3172	/home/pedro/Documentos/SOPE/.git/objects/d5/d4d6adb16aac858fd221bc998ab057c13a032c
 
- 17.00 	-	 00000725 	-	 SEND_PIPE 	-	 8
- 17.00 	-	 00000725 	-	 ENTRY 	-	 12	./.git/objects/03
+ 17.00 	-	 00008481 	-	 ENTRY 	-	 7268	/home/pedro/Documentos/SOPE/.git/objects/d5
 
- 17.00 	-	 00000725 	-	 EXIT 	-	 0
- 17.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 18.00 	-	 00000726 	-	 ENTRY 	-	 4	./.git/objects/da/aaaff4e637f9781599d15312f0c9157df27f8e
+ 17.00 	-	 00008481 	-	 EXIT 	-	 0
+ 17.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 17.00 	-	 00008482 	-	 ENTRY 	-	 70	/home/pedro/Documentos/SOPE/.git/objects/70/8e420e924b396b02a322f1b6ef51b13e882e45
 
- 18.00 	-	 00000726 	-	 SEND_PIPE 	-	 4
- 18.00 	-	 00000726 	-	 ENTRY 	-	 8	./.git/objects/da
+ 17.00 	-	 00008482 	-	 ENTRY 	-	 4166	/home/pedro/Documentos/SOPE/.git/objects/70
 
- 18.00 	-	 00000726 	-	 EXIT 	-	 0
- 18.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 18.00 	-	 00000727 	-	 ENTRY 	-	 4	./.git/objects/9e/045178f12e970749fcee2e02e0c0ac7c02ce75
+ 17.00 	-	 00008482 	-	 EXIT 	-	 0
+ 17.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 17.00 	-	 00008483 	-	 ENTRY 	-	 3051	/home/pedro/Documentos/SOPE/.git/objects/34/dabf23bf74fa3888d7f2b96f939afa7184d525
 
- 18.00 	-	 00000727 	-	 SEND_PIPE 	-	 4
- 18.00 	-	 00000727 	-	 ENTRY 	-	 8	./.git/objects/9e
+ 17.00 	-	 00008483 	-	 ENTRY 	-	 7147	/home/pedro/Documentos/SOPE/.git/objects/34
 
- 18.00 	-	 00000727 	-	 EXIT 	-	 0
- 18.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 19.00 	-	 00000728 	-	 ENTRY 	-	 4	./.git/objects/0f/04850b0f446a9ec23a6904655232e7506e9443
+ 17.00 	-	 00008483 	-	 EXIT 	-	 0
+ 17.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 18.00 	-	 00008484 	-	 ENTRY 	-	 350	/home/pedro/Documentos/SOPE/.git/objects/aa/6be32460e7d3d7cab468d99fc9d8b0f6388d52
 
- 19.00 	-	 00000728 	-	 ENTRY 	-	 4	./.git/objects/0f/79d39fc664ccafd85ffd541db46390d739ff46
+ 18.00 	-	 00008484 	-	 ENTRY 	-	 4446	/home/pedro/Documentos/SOPE/.git/objects/aa
 
- 19.00 	-	 00000728 	-	 SEND_PIPE 	-	 8
- 19.00 	-	 00000728 	-	 ENTRY 	-	 12	./.git/objects/0f
+ 18.00 	-	 00008484 	-	 EXIT 	-	 0
+ 18.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 18.00 	-	 00008485 	-	 ENTRY 	-	 26	/home/pedro/Documentos/SOPE/.git/objects/58/79aa3b044262270b0ae1656919965f77441bdb
 
- 19.00 	-	 00000728 	-	 EXIT 	-	 0
- 19.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 19.00 	-	 00000729 	-	 ENTRY 	-	 4	./.git/objects/1f/22d5b71b6298619f0236aad80617c3734c97e4
+ 18.00 	-	 00008485 	-	 ENTRY 	-	 4122	/home/pedro/Documentos/SOPE/.git/objects/58
 
- 19.00 	-	 00000729 	-	 SEND_PIPE 	-	 4
- 19.00 	-	 00000729 	-	 ENTRY 	-	 8	./.git/objects/1f
+ 18.00 	-	 00008485 	-	 EXIT 	-	 0
+ 18.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 18.00 	-	 00008486 	-	 ENTRY 	-	 15	/home/pedro/Documentos/SOPE/.git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391
 
- 19.00 	-	 00000729 	-	 EXIT 	-	 0
- 19.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 20.00 	-	 00000730 	-	 ENTRY 	-	 4	./.git/objects/6f/bdb2be42fabb4596f14c9c00bd7bc0169ea26a
+ 18.00 	-	 00008486 	-	 ENTRY 	-	 3162	/home/pedro/Documentos/SOPE/.git/objects/e6/199e18791a793a32db728d19b4c91deb4b2b2c
 
- 20.00 	-	 00000730 	-	 SEND_PIPE 	-	 4
- 20.00 	-	 00000730 	-	 ENTRY 	-	 8	./.git/objects/6f
+ 18.00 	-	 00008486 	-	 ENTRY 	-	 7273	/home/pedro/Documentos/SOPE/.git/objects/e6
 
- 20.00 	-	 00000730 	-	 EXIT 	-	 0
- 20.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 20.00 	-	 00000731 	-	 ENTRY 	-	 4	./.git/objects/43/d396d4858adf0fd152b09aa7e5cd57d94144d7
+ 18.00 	-	 00008486 	-	 EXIT 	-	 0
+ 19.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 19.00 	-	 00008487 	-	 ENTRY 	-	 156	/home/pedro/Documentos/SOPE/.git/objects/1c/482d9de55034cdf69961adfd43a507976c110b
 
- 20.00 	-	 00000731 	-	 SEND_PIPE 	-	 4
- 20.00 	-	 00000731 	-	 ENTRY 	-	 8	./.git/objects/43
+ 19.00 	-	 00008487 	-	 ENTRY 	-	 4252	/home/pedro/Documentos/SOPE/.git/objects/1c
 
- 20.00 	-	 00000731 	-	 EXIT 	-	 0
- 20.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 20.00 	-	 00000732 	-	 ENTRY 	-	 4	./.git/objects/48/abea4128b446176adcd574b3cc12385b20421d
+ 19.00 	-	 00008487 	-	 EXIT 	-	 0
+ 19.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 19.00 	-	 00008488 	-	 ENTRY 	-	 255	/home/pedro/Documentos/SOPE/.git/objects/20/c03a5bbaa21f083083f3bb6fde346a18d5ed70
 
- 20.00 	-	 00000732 	-	 SEND_PIPE 	-	 4
- 21.00 	-	 00000732 	-	 ENTRY 	-	 8	./.git/objects/48
+ 19.00 	-	 00008488 	-	 ENTRY 	-	 4351	/home/pedro/Documentos/SOPE/.git/objects/20
 
- 21.00 	-	 00000732 	-	 EXIT 	-	 0
- 21.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 21.00 	-	 00000733 	-	 ENTRY 	-	 4	./.git/objects/7b/8f733d4500da065b95a0f3f42c6e05f08fd4f8
+ 19.00 	-	 00008488 	-	 EXIT 	-	 0
+ 19.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 19.00 	-	 00008489 	-	 ENTRY 	-	 3248	/home/pedro/Documentos/SOPE/.git/objects/4a/e6b97a32ccfbac484b37a1e81d2b5cbff4869e
 
- 21.00 	-	 00000733 	-	 SEND_PIPE 	-	 4
- 21.00 	-	 00000733 	-	 ENTRY 	-	 8	./.git/objects/7b
+ 20.00 	-	 00008489 	-	 ENTRY 	-	 488	/home/pedro/Documentos/SOPE/.git/objects/4a/80d915486ce0e710ad5b8c59587449c46a43b9
 
- 21.00 	-	 00000733 	-	 EXIT 	-	 0
- 21.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 21.00 	-	 00000734 	-	 ENTRY 	-	 4	./.git/objects/a7/3cad0f3f9c2ccaa36c2b1b9db65ef051ac1d70
+ 20.00 	-	 00008489 	-	 ENTRY 	-	 7832	/home/pedro/Documentos/SOPE/.git/objects/4a
 
- 21.00 	-	 00000734 	-	 SEND_PIPE 	-	 4
- 21.00 	-	 00000734 	-	 ENTRY 	-	 8	./.git/objects/a7
+ 20.00 	-	 00008489 	-	 EXIT 	-	 0
+ 20.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 20.00 	-	 00008490 	-	 ENTRY 	-	 117	/home/pedro/Documentos/SOPE/.git/objects/b2/91fa0c66581e4d5001aa93f70047f485c006b3
 
- 21.00 	-	 00000734 	-	 EXIT 	-	 0
- 22.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 22.00 	-	 00000735 	-	 ENTRY 	-	 4	./.git/objects/d5/8ac723fe33d0da3338a077171c3dadf53de15d
+ 20.00 	-	 00008490 	-	 ENTRY 	-	 4213	/home/pedro/Documentos/SOPE/.git/objects/b2
 
- 22.00 	-	 00000735 	-	 SEND_PIPE 	-	 4
- 22.00 	-	 00000735 	-	 ENTRY 	-	 8	./.git/objects/d5
+ 20.00 	-	 00008490 	-	 EXIT 	-	 0
+ 20.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 20.00 	-	 00008491 	-	 ENTRY 	-	 21	/home/pedro/Documentos/SOPE/.git/objects/d0/a60d8a7a651bf163616b3654bccbb9500129b5
 
- 22.00 	-	 00000735 	-	 EXIT 	-	 0
- 22.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 22.00 	-	 00000736 	-	 ENTRY 	-	 4	./.git/objects/e2/f25785f1d12490921c89efa1e4598f0c777f8a
+ 20.00 	-	 00008491 	-	 ENTRY 	-	 4117	/home/pedro/Documentos/SOPE/.git/objects/d0
 
- 22.00 	-	 00000736 	-	 ENTRY 	-	 4	./.git/objects/e2/d459f0936955e0867e83af4eb2b6fd4a174f88
+ 20.00 	-	 00008491 	-	 EXIT 	-	 0
+ 20.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 21.00 	-	 00008492 	-	 ENTRY 	-	 3164	/home/pedro/Documentos/SOPE/.git/objects/15/2c571640968436337da9a5aecbf76da77b95fc
 
- 22.00 	-	 00000736 	-	 SEND_PIPE 	-	 8
- 22.00 	-	 00000736 	-	 ENTRY 	-	 12	./.git/objects/e2
+ 21.00 	-	 00008492 	-	 ENTRY 	-	 7260	/home/pedro/Documentos/SOPE/.git/objects/15
 
- 22.00 	-	 00000736 	-	 EXIT 	-	 0
- 23.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 23.00 	-	 00000737 	-	 ENTRY 	-	 4	./.git/objects/76/2b08eed78fd37d59b6a8053f41a56171225890
+ 21.00 	-	 00008492 	-	 EXIT 	-	 0
+ 21.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 21.00 	-	 00008493 	-	 ENTRY 	-	 312	/home/pedro/Documentos/SOPE/.git/objects/b7/bc2a7e75ca64df65f7c2b9e79918990623bd6f
 
- 23.00 	-	 00000737 	-	 SEND_PIPE 	-	 4
- 23.00 	-	 00000737 	-	 ENTRY 	-	 8	./.git/objects/76
+ 21.00 	-	 00008493 	-	 ENTRY 	-	 4408	/home/pedro/Documentos/SOPE/.git/objects/b7
 
- 23.00 	-	 00000737 	-	 EXIT 	-	 0
- 23.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 23.00 	-	 00000738 	-	 ENTRY 	-	 4	./.git/objects/73/fc71321fbef39a8654f00445586d0a10a467d9
+ 21.00 	-	 00008493 	-	 EXIT 	-	 0
+ 21.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 1296	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-060f126c93e7c7aaa8290f1234a1770e46e7ac5a.idx
 
- 23.00 	-	 00000738 	-	 ENTRY 	-	 4	./.git/objects/73/290a7f7467abd5cd788745ef0102984b77950e
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 1548	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-34fd9157ea97a86af04dcaa7520da663f68bede8.idx
 
- 23.00 	-	 00000738 	-	 SEND_PIPE 	-	 8
- 23.00 	-	 00000738 	-	 ENTRY 	-	 12	./.git/objects/73
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 1296	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-a8acd6f9c3a6f806a7889a4af93c6679395ebd7e.idx
 
- 23.00 	-	 00000738 	-	 EXIT 	-	 0
- 24.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 24.00 	-	 00000739 	-	 ENTRY 	-	 4	./.git/objects/70/7d844e38d9eabfae86717b8eaa5ec3ae4d466b
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 1604	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-57f13f8d6e9007ea9e7f6afad0a085800e5cfdfe.idx
 
- 24.00 	-	 00000739 	-	 SEND_PIPE 	-	 4
- 24.00 	-	 00000739 	-	 ENTRY 	-	 8	./.git/objects/70
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 6183457	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-c8fc25bb631761b9d13177fcee57e7d2ff889164.pack
 
- 24.00 	-	 00000739 	-	 EXIT 	-	 0
- 24.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 24.00 	-	 00000740 	-	 ENTRY 	-	 4	./.git/objects/aa/c42c84324e704e045bcfa2fa4d34ba32e726a3
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 1020	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-37e8938019c5e9028e87bff0b1ff0aca1240ef46.pack
 
- 24.00 	-	 00000740 	-	 SEND_PIPE 	-	 4
- 24.00 	-	 00000740 	-	 ENTRY 	-	 8	./.git/objects/aa
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 658167	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-989ee92c6c45d2d13091e8d8feaf459070f9dbba.pack
 
- 24.00 	-	 00000740 	-	 EXIT 	-	 0
- 24.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 25.00 	-	 00000741 	-	 ENTRY 	-	 4	./.git/objects/58/24cfdf60f81fe449c02f66ed1394eceb5b4dc4
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 4017933	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-ad5ace3a79798304ba80343f0ec7c78762c6b5c0.pack
 
- 25.00 	-	 00000741 	-	 SEND_PIPE 	-	 4
- 25.00 	-	 00000741 	-	 ENTRY 	-	 8	./.git/objects/58
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 1604	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-989ee92c6c45d2d13091e8d8feaf459070f9dbba.idx
 
- 25.00 	-	 00000741 	-	 EXIT 	-	 0
- 25.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 25.00 	-	 00000742 	-	 ENTRY 	-	 4	./.git/objects/7c/93198ca4944aa0af0366cf1468b62ecf52bf3c
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 1492	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-216f0ca3705e633fe88aac3839da33f6db5a2cfe.idx
 
- 25.00 	-	 00000742 	-	 SEND_PIPE 	-	 4
- 25.00 	-	 00000742 	-	 ENTRY 	-	 8	./.git/objects/7c
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 85133	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-57f13f8d6e9007ea9e7f6afad0a085800e5cfdfe.pack
 
- 25.00 	-	 00000742 	-	 EXIT 	-	 0
- 25.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 26.00 	-	 00000743 	-	 ENTRY 	-	 4	./.git/objects/2f/1e7edd5c82423bcc3a4ef1d64b1f0d24349e4e
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 204150	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-34fd9157ea97a86af04dcaa7520da663f68bede8.pack
 
- 26.00 	-	 00000743 	-	 SEND_PIPE 	-	 4
- 26.00 	-	 00000743 	-	 ENTRY 	-	 8	./.git/objects/2f
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 1352	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-6771cd6fd5de4d195c1de755e9195943b691e587.idx
 
- 26.00 	-	 00000743 	-	 EXIT 	-	 0
- 26.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 26.00 	-	 00000744 	-	 ENTRY 	-	 4	./.git/objects/1c/339d81e2789c7350ec5836843c22477a51133c
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 1212	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-37e8938019c5e9028e87bff0b1ff0aca1240ef46.idx
 
- 26.00 	-	 00000744 	-	 ENTRY 	-	 4	./.git/objects/1c/e2e976dd941b7666e4597f98183adaf07449d9
+ 21.00 	-	 00008494 	-	 ENTRY 	-	 801219	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-1a01480c8f788b126958c5e050f68675c2470402.pack
 
- 26.00 	-	 00000744 	-	 ENTRY 	-	 4	./.git/objects/1c/3461515ff82488be320e58564f7c7af76d6445
+ 22.00 	-	 00008494 	-	 ENTRY 	-	 1716	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-1a01480c8f788b126958c5e050f68675c2470402.idx
 
- 26.00 	-	 00000744 	-	 ENTRY 	-	 4	./.git/objects/1c/b5a1b6883131d767aef01b9e7b1a35bd0fb23a
+ 22.00 	-	 00008494 	-	 ENTRY 	-	 705529	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-216f0ca3705e633fe88aac3839da33f6db5a2cfe.pack
 
- 26.00 	-	 00000744 	-	 SEND_PIPE 	-	 16
- 26.00 	-	 00000744 	-	 ENTRY 	-	 20	./.git/objects/1c
+ 22.00 	-	 00008494 	-	 ENTRY 	-	 99129	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-a8acd6f9c3a6f806a7889a4af93c6679395ebd7e.pack
 
- 26.00 	-	 00000744 	-	 EXIT 	-	 0
- 26.00 	-	 00000693 	-	 RECV_PIPE 	-	 16
- 26.00 	-	 00000745 	-	 ENTRY 	-	 4	./.git/objects/20/d59049772c4b38c02af2e89104a27b8f659beb
+ 22.00 	-	 00008494 	-	 ENTRY 	-	 623407	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-060f126c93e7c7aaa8290f1234a1770e46e7ac5a.pack
 
- 26.00 	-	 00000745 	-	 ENTRY 	-	 4	./.git/objects/20/d12c7df19bea0c088de6dd60cc5f0e87f75f3d
+ 22.00 	-	 00008494 	-	 ENTRY 	-	 1632	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-ad5ace3a79798304ba80343f0ec7c78762c6b5c0.idx
 
- 26.00 	-	 00000745 	-	 SEND_PIPE 	-	 8
- 26.00 	-	 00000745 	-	 ENTRY 	-	 12	./.git/objects/20
+ 22.00 	-	 00008494 	-	 ENTRY 	-	 1240	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-c8fc25bb631761b9d13177fcee57e7d2ff889164.idx
 
- 26.00 	-	 00000745 	-	 EXIT 	-	 0
- 27.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 27.00 	-	 00000746 	-	 ENTRY 	-	 4	./.git/objects/d2/833da1fc96a2fc96716582f568e889da274f0c
+ 22.00 	-	 00008494 	-	 ENTRY 	-	 207137	/home/pedro/Documentos/SOPE/.git/objects/pack/pack-6771cd6fd5de4d195c1de755e9195943b691e587.pack
 
- 27.00 	-	 00000746 	-	 SEND_PIPE 	-	 4
- 27.00 	-	 00000746 	-	 ENTRY 	-	 8	./.git/objects/d2
+ 22.00 	-	 00008494 	-	 ENTRY 	-	 13606369	/home/pedro/Documentos/SOPE/.git/objects/pack
 
- 27.00 	-	 00000746 	-	 EXIT 	-	 0
- 27.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 27.00 	-	 00000747 	-	 ENTRY 	-	 4	./.git/objects/4f/adc95ceef9fd881e34d94521bfb6e912bb1fa4
+ 22.00 	-	 00008494 	-	 EXIT 	-	 0
+ 22.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 22.00 	-	 00008495 	-	 ENTRY 	-	 312	/home/pedro/Documentos/SOPE/.git/objects/de/f0ee3b36ca053e4f24a4c670c7ba0e6ef1fbe4
 
- 27.00 	-	 00000747 	-	 ENTRY 	-	 4	./.git/objects/4f/989d922a031d4afae83e9fd1aa65991f8fa74f
+ 22.00 	-	 00008495 	-	 ENTRY 	-	 4408	/home/pedro/Documentos/SOPE/.git/objects/de
 
- 27.00 	-	 00000747 	-	 SEND_PIPE 	-	 8
- 27.00 	-	 00000747 	-	 ENTRY 	-	 12	./.git/objects/4f
+ 22.00 	-	 00008495 	-	 EXIT 	-	 0
+ 22.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 22.00 	-	 00008496 	-	 ENTRY 	-	 191	/home/pedro/Documentos/SOPE/.git/objects/9a/7d895d13b708dabfc777b206ade4035fb85379
 
- 27.00 	-	 00000747 	-	 EXIT 	-	 0
- 27.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 28.00 	-	 00000748 	-	 ENTRY 	-	 4	./.git/objects/77/72268e17d12828ccb2f2ce34857192d215969d
+ 22.00 	-	 00008496 	-	 ENTRY 	-	 4287	/home/pedro/Documentos/SOPE/.git/objects/9a
 
- 28.00 	-	 00000748 	-	 SEND_PIPE 	-	 4
- 28.00 	-	 00000748 	-	 ENTRY 	-	 8	./.git/objects/77
+ 22.00 	-	 00008496 	-	 EXIT 	-	 0
+ 22.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 23.00 	-	 00008497 	-	 ENTRY 	-	 249	/home/pedro/Documentos/SOPE/.git/objects/ce/395f7ed7aa0b7949d8dc07755f86b1dd4d470d
 
- 28.00 	-	 00000748 	-	 EXIT 	-	 0
- 28.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 28.00 	-	 00000749 	-	 ENTRY 	-	 4	./.git/objects/7d/23630865159012614a461ddd436e3967ab1960
+ 23.00 	-	 00008497 	-	 ENTRY 	-	 4345	/home/pedro/Documentos/SOPE/.git/objects/ce
 
- 28.00 	-	 00000749 	-	 SEND_PIPE 	-	 4
- 28.00 	-	 00000749 	-	 ENTRY 	-	 8	./.git/objects/7d
+ 23.00 	-	 00008497 	-	 EXIT 	-	 0
+ 23.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 23.00 	-	 00008498 	-	 ENTRY 	-	 3003	/home/pedro/Documentos/SOPE/.git/objects/95/9530442906f7c007962a60ec77725d2d213b3b
 
- 28.00 	-	 00000749 	-	 EXIT 	-	 0
- 28.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 29.00 	-	 00000750 	-	 ENTRY 	-	 4	./.git/objects/b2/f59dd59f36229d5cc04e6b5a692a388a5d8909
+ 23.00 	-	 00008498 	-	 ENTRY 	-	 7099	/home/pedro/Documentos/SOPE/.git/objects/95
 
- 29.00 	-	 00000750 	-	 ENTRY 	-	 4	./.git/objects/b2/04577aa71d4430e5820b2c0811d1f9578f80fd
+ 23.00 	-	 00008498 	-	 EXIT 	-	 0
+ 23.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 23.00 	-	 00008499 	-	 ENTRY 	-	 312	/home/pedro/Documentos/SOPE/.git/objects/e7/ebf52c9110d88362034c1cafd7b26716015269
 
- 29.00 	-	 00000750 	-	 ENTRY 	-	 4	./.git/objects/b2/fb66221ecbe851200cf2a3bef1d883ad54f7ef
+ 23.00 	-	 00008499 	-	 ENTRY 	-	 480	/home/pedro/Documentos/SOPE/.git/objects/e7/8acc86627bddedfbaa8ad7a334f024bd20aef1
 
- 29.00 	-	 00000750 	-	 SEND_PIPE 	-	 12
- 29.00 	-	 00000750 	-	 ENTRY 	-	 16	./.git/objects/b2
+ 23.00 	-	 00008499 	-	 ENTRY 	-	 4888	/home/pedro/Documentos/SOPE/.git/objects/e7
 
- 29.00 	-	 00000750 	-	 EXIT 	-	 0
- 29.00 	-	 00000693 	-	 RECV_PIPE 	-	 12
- 29.00 	-	 00000751 	-	 ENTRY 	-	 4	./.git/objects/d0/e4f931da882503cbf023f0414b9ffcb995193c
+ 23.00 	-	 00008499 	-	 EXIT 	-	 0
+ 24.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 24.00 	-	 00008500 	-	 ENTRY 	-	 311	/home/pedro/Documentos/SOPE/.git/objects/ca/72fa54ab094ae77fe70464dcd1756d9feb5acb
 
- 29.00 	-	 00000751 	-	 SEND_PIPE 	-	 4
- 29.00 	-	 00000751 	-	 ENTRY 	-	 8	./.git/objects/d0
+ 24.00 	-	 00008500 	-	 ENTRY 	-	 4407	/home/pedro/Documentos/SOPE/.git/objects/ca
 
- 29.00 	-	 00000751 	-	 EXIT 	-	 0
- 30.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 30.00 	-	 00000752 	-	 ENTRY 	-	 4	./.git/objects/bb/0638ba666579ebcb2bfdf9e81bd454bc1a2b81
+ 24.00 	-	 00008500 	-	 EXIT 	-	 0
+ 24.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 24.00 	-	 00008501 	-	 ENTRY 	-	 217	/home/pedro/Documentos/SOPE/.git/objects/83/92495fc05299d3e9cbed2dd047ff6ecfb9d9aa
 
- 30.00 	-	 00000752 	-	 SEND_PIPE 	-	 4
- 30.00 	-	 00000752 	-	 ENTRY 	-	 8	./.git/objects/bb
+ 24.00 	-	 00008501 	-	 ENTRY 	-	 4313	/home/pedro/Documentos/SOPE/.git/objects/83
 
- 30.00 	-	 00000752 	-	 EXIT 	-	 0
- 30.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 30.00 	-	 00000753 	-	 ENTRY 	-	 4	./.git/objects/b7/150233f8ddb3d0f8e76bd3381549eed6aab685
+ 24.00 	-	 00008501 	-	 EXIT 	-	 0
+ 24.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 24.00 	-	 00008502 	-	 ENTRY 	-	 157	/home/pedro/Documentos/SOPE/.git/objects/17/0dd1fd35c5915759c927e916d9ac2c0d7f93c3
 
- 30.00 	-	 00000753 	-	 SEND_PIPE 	-	 4
- 30.00 	-	 00000753 	-	 ENTRY 	-	 8	./.git/objects/b7
+ 25.00 	-	 00008502 	-	 ENTRY 	-	 4253	/home/pedro/Documentos/SOPE/.git/objects/17
 
- 30.00 	-	 00000753 	-	 EXIT 	-	 0
- 30.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 31.00 	-	 00000754 	-	 ENTRY 	-	 4	./.git/objects/pack/pack-3563bcc243f297801f50fb0c38028a224e491c5b.pack
+ 25.00 	-	 00008502 	-	 EXIT 	-	 0
+ 25.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 25.00 	-	 00008503 	-	 ENTRY 	-	 84	/home/pedro/Documentos/SOPE/.git/objects/7a/9c5ecbff30cc5be9a43e212aa7f8cb7be875b5
 
- 31.00 	-	 00000754 	-	 ENTRY 	-	 4	./.git/objects/pack/pack-dfeb73b0f223a1bea94992256ba8a6eabf407b8a.pack
+ 25.00 	-	 00008503 	-	 ENTRY 	-	 441	/home/pedro/Documentos/SOPE/.git/objects/7a/f2d1c4a52d4afb1a3e78654c9a8554bfba5984
 
- 31.00 	-	 00000754 	-	 ENTRY 	-	 4	./.git/objects/pack/pack-3563bcc243f297801f50fb0c38028a224e491c5b.idx
+ 25.00 	-	 00008503 	-	 ENTRY 	-	 4621	/home/pedro/Documentos/SOPE/.git/objects/7a
 
- 31.00 	-	 00000754 	-	 ENTRY 	-	 4	./.git/objects/pack/pack-dfeb73b0f223a1bea94992256ba8a6eabf407b8a.idx
+ 25.00 	-	 00008503 	-	 EXIT 	-	 0
+ 25.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 25.00 	-	 00008504 	-	 ENTRY 	-	 162	/home/pedro/Documentos/SOPE/.git/objects/63/a48d031038ee2175949f4996e7c6b1b0c9a58f
 
- 31.00 	-	 00000754 	-	 SEND_PIPE 	-	 16
- 31.00 	-	 00000754 	-	 ENTRY 	-	 20	./.git/objects/pack
+ 25.00 	-	 00008504 	-	 ENTRY 	-	 4258	/home/pedro/Documentos/SOPE/.git/objects/63
 
- 31.00 	-	 00000754 	-	 EXIT 	-	 0
- 31.00 	-	 00000693 	-	 RECV_PIPE 	-	 16
- 31.00 	-	 00000755 	-	 ENTRY 	-	 4	./.git/objects/de/fdab1e5d7f36655048b7377f47d583cb9e283b
+ 25.00 	-	 00008504 	-	 EXIT 	-	 0
+ 25.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 26.00 	-	 00008505 	-	 ENTRY 	-	 220	/home/pedro/Documentos/SOPE/.git/objects/dc/f10e263f473cbde722ff44f0757c54055cc7fc
 
- 31.00 	-	 00000755 	-	 SEND_PIPE 	-	 4
- 31.00 	-	 00000755 	-	 ENTRY 	-	 8	./.git/objects/de
+ 26.00 	-	 00008505 	-	 ENTRY 	-	 4316	/home/pedro/Documentos/SOPE/.git/objects/dc
 
- 32.00 	-	 00000755 	-	 EXIT 	-	 0
- 32.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- 32.00 	-	 00000756 	-	 ENTRY 	-	 8	./.git/objects/66/88d293df0e704380f2180cf5e6b4cab9f5a415
+ 26.00 	-	 00008505 	-	 EXIT 	-	 0
+ 26.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 26.00 	-	 00008506 	-	 ENTRY 	-	 183	/home/pedro/Documentos/SOPE/.git/objects/88/0e01d54f814e7d1d53e6c26f5de13a3b578d25
 
- 32.00 	-	 00000756 	-	 SEND_PIPE 	-	 8
- 32.00 	-	 00000756 	-	 ENTRY 	-	 12	./.git/objects/66
+ 26.00 	-	 00008506 	-	 ENTRY 	-	 4279	/home/pedro/Documentos/SOPE/.git/objects/88
 
- 32.00 	-	 00000756 	-	 EXIT 	-	 0
- 33.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- 33.00 	-	 00000757 	-	 ENTRY 	-	 4	./.git/objects/8f/384dd8850b5670661ed5c55b734da3c49d7e64
+ 26.00 	-	 00008506 	-	 EXIT 	-	 0
+ 26.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 26.00 	-	 00008507 	-	 ENTRY 	-	 157	/home/pedro/Documentos/SOPE/.git/objects/e1/3818336ae0026a163cd44df200cf8101242b2f
 
- 33.00 	-	 00000757 	-	 SEND_PIPE 	-	 4
- 33.00 	-	 00000757 	-	 ENTRY 	-	 8	./.git/objects/8f
+ 26.00 	-	 00008507 	-	 ENTRY 	-	 4253	/home/pedro/Documentos/SOPE/.git/objects/e1
 
- 33.00 	-	 00000757 	-	 EXIT 	-	 0
- -965.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -965.00 	-	 00000758 	-	 ENTRY 	-	 4	./.git/objects/ce/ee34d07ace28b044a0b5ddb69ce4a0a5753818
+ 26.00 	-	 00008507 	-	 EXIT 	-	 0
+ 26.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 27.00 	-	 00008508 	-	 ENTRY 	-	 322	/home/pedro/Documentos/SOPE/.git/objects/8b/1e0586f7aea157b730909f11c103110dbcc88c
 
- -965.00 	-	 00000758 	-	 SEND_PIPE 	-	 4
- -965.00 	-	 00000758 	-	 ENTRY 	-	 8	./.git/objects/ce
+ 27.00 	-	 00008508 	-	 ENTRY 	-	 4418	/home/pedro/Documentos/SOPE/.git/objects/8b
 
- -965.00 	-	 00000758 	-	 EXIT 	-	 0
- -964.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -964.00 	-	 00000759 	-	 ENTRY 	-	 4	./.git/objects/ec/d2022271e6e5fd1541efe750dab4927ec9c769
+ 27.00 	-	 00008508 	-	 EXIT 	-	 0
+ 27.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 27.00 	-	 00008509 	-	 ENTRY 	-	 314	/home/pedro/Documentos/SOPE/.git/objects/e3/22297440b5d74ca2f11d78c937cc9fb2888f36
 
- -964.00 	-	 00000759 	-	 SEND_PIPE 	-	 4
- -964.00 	-	 00000759 	-	 ENTRY 	-	 8	./.git/objects/ec
+ 27.00 	-	 00008509 	-	 ENTRY 	-	 4410	/home/pedro/Documentos/SOPE/.git/objects/e3
 
- -964.00 	-	 00000759 	-	 EXIT 	-	 0
- -964.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -963.00 	-	 00000760 	-	 ENTRY 	-	 4	./.git/objects/3a/73517ebac1b2b20556af8380f2239f352c8346
+ 27.00 	-	 00008509 	-	 EXIT 	-	 0
+ 27.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 27.00 	-	 00008510 	-	 ENTRY 	-	 58	/home/pedro/Documentos/SOPE/.git/objects/67/ddec023533f40577fee6434ea15a4f3cafc368
 
- -963.00 	-	 00000760 	-	 SEND_PIPE 	-	 4
- -963.00 	-	 00000760 	-	 ENTRY 	-	 8	./.git/objects/3a
+ 28.00 	-	 00008510 	-	 ENTRY 	-	 354	/home/pedro/Documentos/SOPE/.git/objects/67/3e8666b80aec8b7d8c24207af0c28c2ab71aa5
 
- -963.00 	-	 00000760 	-	 EXIT 	-	 0
- -963.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -963.00 	-	 00000761 	-	 ENTRY 	-	 4	./.git/objects/83/92495fc05299d3e9cbed2dd047ff6ecfb9d9aa
+ 28.00 	-	 00008510 	-	 ENTRY 	-	 4508	/home/pedro/Documentos/SOPE/.git/objects/67
 
- -963.00 	-	 00000761 	-	 ENTRY 	-	 4	./.git/objects/83/6edf6443b4597baf301310d2a0197b3279598c
+ 28.00 	-	 00008510 	-	 EXIT 	-	 0
+ 28.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 28.00 	-	 00008511 	-	 ENTRY 	-	 3270	/home/pedro/Documentos/SOPE/.git/objects/c5/90c46b5287288cadc9767fd6eefdfcc287f178
 
- -963.00 	-	 00000761 	-	 SEND_PIPE 	-	 8
- -963.00 	-	 00000761 	-	 ENTRY 	-	 12	./.git/objects/83
+ 28.00 	-	 00008511 	-	 ENTRY 	-	 67	/home/pedro/Documentos/SOPE/.git/objects/c5/f93ea311c0e25bd5e2402327dc625a935d35a8
 
- -963.00 	-	 00000761 	-	 EXIT 	-	 0
- -963.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -963.00 	-	 00000762 	-	 ENTRY 	-	 4	./.git/objects/17/c853f333d65af41d634b27d3dd16d90529cd31
+ 28.00 	-	 00008511 	-	 ENTRY 	-	 7433	/home/pedro/Documentos/SOPE/.git/objects/c5
 
- -962.00 	-	 00000762 	-	 ENTRY 	-	 4	./.git/objects/17/17aa71747aa7d7546b7bdfdd71e2b36ca58ab3
+ 28.00 	-	 00008511 	-	 EXIT 	-	 0
+ 28.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 28.00 	-	 00008512 	-	 ENTRY 	-	 400	/home/pedro/Documentos/SOPE/.git/objects/1a/30b6442681fc0bbf23f43c30145157a861841a
 
- -962.00 	-	 00000762 	-	 SEND_PIPE 	-	 8
- -962.00 	-	 00000762 	-	 ENTRY 	-	 12	./.git/objects/17
+ 28.00 	-	 00008512 	-	 ENTRY 	-	 4582	/home/pedro/Documentos/SOPE/.git/objects/1a/bd1bf9d8537d43f18f27af5fe48ea485b4f13c
 
- -962.00 	-	 00000762 	-	 EXIT 	-	 0
- -962.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -962.00 	-	 00000763 	-	 ENTRY 	-	 4	./.git/objects/63/972bd400aec5488656685db554251ed2a4f39a
+ 28.00 	-	 00008512 	-	 ENTRY 	-	 9078	/home/pedro/Documentos/SOPE/.git/objects/1a
 
- -962.00 	-	 00000763 	-	 SEND_PIPE 	-	 4
- -962.00 	-	 00000763 	-	 ENTRY 	-	 8	./.git/objects/63
+ 28.00 	-	 00008512 	-	 EXIT 	-	 0
+ 28.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 29.00 	-	 00008513 	-	 ENTRY 	-	 283	/home/pedro/Documentos/SOPE/.git/objects/f6/22fb631f39f68e1d6d15fc6674a82e9e03ca26
 
- -962.00 	-	 00000763 	-	 EXIT 	-	 0
- -962.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -962.00 	-	 00000764 	-	 ENTRY 	-	 4	./.git/objects/88/89c17c3daaa73ebf666b927ff513b5c55712f6
+ 29.00 	-	 00008513 	-	 ENTRY 	-	 4379	/home/pedro/Documentos/SOPE/.git/objects/f6
 
- -962.00 	-	 00000764 	-	 ENTRY 	-	 4	./.git/objects/88/76fe2015241c92139b2981a96756568b031bc3
+ 29.00 	-	 00008513 	-	 EXIT 	-	 0
+ 29.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 29.00 	-	 00008514 	-	 ENTRY 	-	 193	/home/pedro/Documentos/SOPE/.git/objects/38/859785c21c5c8e03e81be723f34f21600e44a2
 
- -962.00 	-	 00000764 	-	 SEND_PIPE 	-	 8
- -962.00 	-	 00000764 	-	 ENTRY 	-	 12	./.git/objects/88
+ 29.00 	-	 00008514 	-	 ENTRY 	-	 4289	/home/pedro/Documentos/SOPE/.git/objects/38
 
- -962.00 	-	 00000764 	-	 EXIT 	-	 0
- -961.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -960.00 	-	 00000765 	-	 ENTRY 	-	 4	./.git/objects/3f/445cdbb0388048ba2630f808d6987c9aad6442
+ 29.00 	-	 00008514 	-	 EXIT 	-	 0
+ 29.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 29.00 	-	 00008515 	-	 ENTRY 	-	 127086	/home/pedro/Documentos/SOPE/.git/objects/1d/98f0d4f96465e851385b99f2073694cc6d23c0
 
- -960.00 	-	 00000765 	-	 SEND_PIPE 	-	 4
- -960.00 	-	 00000765 	-	 ENTRY 	-	 8	./.git/objects/3f
+ 29.00 	-	 00008515 	-	 ENTRY 	-	 131182	/home/pedro/Documentos/SOPE/.git/objects/1d
 
- -960.00 	-	 00000765 	-	 EXIT 	-	 0
- -960.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -960.00 	-	 00000766 	-	 ENTRY 	-	 4	./.git/objects/3d/30c9f0cfd6ee1a0ebde9508ea470e5fd7647c1
+ 29.00 	-	 00008515 	-	 EXIT 	-	 0
+ 30.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 30.00 	-	 00008516 	-	 ENTRY 	-	 117162	/home/pedro/Documentos/SOPE/.git/objects/b8/62bfd6f7b733297b523000984f9b4b3e50ea8c
 
- -960.00 	-	 00000766 	-	 ENTRY 	-	 4	./.git/objects/3d/55ed5dfb6f8fce07d0e6dd05b81fba7c5eaa1e
+ 30.00 	-	 00008516 	-	 ENTRY 	-	 121258	/home/pedro/Documentos/SOPE/.git/objects/b8
 
- -960.00 	-	 00000766 	-	 ENTRY 	-	 4	./.git/objects/3d/fc3826912100739a2108da06e7ec3cf95b7af8
+ 30.00 	-	 00008516 	-	 EXIT 	-	 0
+ 30.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 30.00 	-	 00008517 	-	 ENTRY 	-	 349	/home/pedro/Documentos/SOPE/.git/objects/5d/e1d08ac74ec446e58c3cec5fca5145c39a499a
 
- -960.00 	-	 00000766 	-	 SEND_PIPE 	-	 12
- -960.00 	-	 00000766 	-	 ENTRY 	-	 16	./.git/objects/3d
+ 30.00 	-	 00008517 	-	 ENTRY 	-	 4445	/home/pedro/Documentos/SOPE/.git/objects/5d
 
- -960.00 	-	 00000766 	-	 EXIT 	-	 0
- -960.00 	-	 00000693 	-	 RECV_PIPE 	-	 12
- -959.00 	-	 00000767 	-	 ENTRY 	-	 4	./.git/objects/e1/4a175bc26b802523cd277bfd2711b8da469167
+ 30.00 	-	 00008517 	-	 EXIT 	-	 0
+ 30.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 30.00 	-	 00008518 	-	 ENTRY 	-	 533	/home/pedro/Documentos/SOPE/.git/objects/bd/5a9276dad98a2a87ab06d7cc2fd488c8554ce3
 
- -959.00 	-	 00000767 	-	 SEND_PIPE 	-	 4
- -959.00 	-	 00000767 	-	 ENTRY 	-	 8	./.git/objects/e1
+ 30.00 	-	 00008518 	-	 ENTRY 	-	 4629	/home/pedro/Documentos/SOPE/.git/objects/bd
 
- -959.00 	-	 00000767 	-	 EXIT 	-	 0
- -959.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -959.00 	-	 00000768 	-	 ENTRY 	-	 4	./.git/objects/8b/43e1d3af6c85144050939e198424a23e83571a
+ 30.00 	-	 00008518 	-	 EXIT 	-	 0
+ 31.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 31.00 	-	 00008519 	-	 ENTRY 	-	 219	/home/pedro/Documentos/SOPE/.git/objects/c3/51ff2ee161e96daa516670847634cbf3d421a3
 
- -959.00 	-	 00000768 	-	 ENTRY 	-	 4	./.git/objects/8b/1e0586f7aea157b730909f11c103110dbcc88c
+ 31.00 	-	 00008519 	-	 ENTRY 	-	 283	/home/pedro/Documentos/SOPE/.git/objects/c3/2363240736ad279fc27b7f8bff6d62a844df64
 
- -959.00 	-	 00000768 	-	 SEND_PIPE 	-	 8
- -959.00 	-	 00000768 	-	 ENTRY 	-	 12	./.git/objects/8b
+ 31.00 	-	 00008519 	-	 ENTRY 	-	 4598	/home/pedro/Documentos/SOPE/.git/objects/c3
 
- -959.00 	-	 00000768 	-	 EXIT 	-	 0
- -959.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -959.00 	-	 00000769 	-	 ENTRY 	-	 4	./.git/objects/e3/ecdb93ffe528160c4571cb909b9274700193ce
+ 31.00 	-	 00008519 	-	 EXIT 	-	 0
+ 31.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 32.00 	-	 00008520 	-	 ENTRY 	-	 397	/home/pedro/Documentos/SOPE/.git/objects/c9/4dad1285b58d2c67ecd4207949645d3899ee5f
 
- -959.00 	-	 00000769 	-	 ENTRY 	-	 4	./.git/objects/e3/67a5389f301ef1db9a0c8028fda3899e31f47a
+ 32.00 	-	 00008520 	-	 ENTRY 	-	 4493	/home/pedro/Documentos/SOPE/.git/objects/c9
 
- -959.00 	-	 00000769 	-	 SEND_PIPE 	-	 8
- -959.00 	-	 00000769 	-	 ENTRY 	-	 12	./.git/objects/e3
+ 32.00 	-	 00008520 	-	 EXIT 	-	 0
+ 32.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 32.00 	-	 00008521 	-	 ENTRY 	-	 132	/home/pedro/Documentos/SOPE/.git/objects/ee/5a672818e413e4599820cc37da4a8b250d9f6c
 
- -959.00 	-	 00000769 	-	 EXIT 	-	 0
- -958.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -958.00 	-	 00000770 	-	 ENTRY 	-	 4	./.git/objects/05/d31ca767e6a48bbcae9fac5178c739bc26710d
+ 32.00 	-	 00008521 	-	 ENTRY 	-	 4228	/home/pedro/Documentos/SOPE/.git/objects/ee
 
- -958.00 	-	 00000770 	-	 ENTRY 	-	 4	./.git/objects/05/189af206bf6f559bb03aaa29dec858f765e458
+ 32.00 	-	 00008521 	-	 EXIT 	-	 0
+ 32.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 33.00 	-	 00008522 	-	 ENTRY 	-	 170	/home/pedro/Documentos/SOPE/.git/objects/74/f0c024f65b309f774479f065a5c07b7e795fe3
 
- -958.00 	-	 00000770 	-	 ENTRY 	-	 4	./.git/objects/05/fe78786efd9cb9ae2a09440d1a205a134db5c5
+ 33.00 	-	 00008522 	-	 ENTRY 	-	 156	/home/pedro/Documentos/SOPE/.git/objects/74/8484401183d2b35d4c27e242a18e4cd54b76d4
 
- -958.00 	-	 00000770 	-	 SEND_PIPE 	-	 12
- -958.00 	-	 00000770 	-	 ENTRY 	-	 16	./.git/objects/05
+ 33.00 	-	 00008522 	-	 ENTRY 	-	 4422	/home/pedro/Documentos/SOPE/.git/objects/74
 
- -958.00 	-	 00000770 	-	 EXIT 	-	 0
- -958.00 	-	 00000693 	-	 RECV_PIPE 	-	 12
- -958.00 	-	 00000771 	-	 ENTRY 	-	 4	./.git/objects/67/352252dc370651851f9d2c6d49302b07e23c17
+ 33.00 	-	 00008522 	-	 EXIT 	-	 0
+ 33.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 33.00 	-	 00008523 	-	 ENTRY 	-	 136	/home/pedro/Documentos/SOPE/.git/objects/92/4ece9092f0926d0a366e3550514bd6a3b8a5f3
 
- -958.00 	-	 00000771 	-	 SEND_PIPE 	-	 4
- -958.00 	-	 00000771 	-	 ENTRY 	-	 8	./.git/objects/67
+ 33.00 	-	 00008523 	-	 ENTRY 	-	 4232	/home/pedro/Documentos/SOPE/.git/objects/92
 
- -958.00 	-	 00000771 	-	 EXIT 	-	 0
- -958.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -957.00 	-	 00000772 	-	 ENTRY 	-	 4	./.git/objects/9f/5081c9f10b37d989ba540b99091d9f97c8d784
+ 33.00 	-	 00008523 	-	 EXIT 	-	 0
+ 33.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 33.00 	-	 00008524 	-	 ENTRY 	-	 458	/home/pedro/Documentos/SOPE/.git/objects/16/8ab4eaac1bd5cd139ab16da9cf48a9d897bd51
 
- -957.00 	-	 00000772 	-	 ENTRY 	-	 4	./.git/objects/9f/2e4d4e1681d8b78171e8fb77713d1471a5f51a
+ 33.00 	-	 00008524 	-	 ENTRY 	-	 4554	/home/pedro/Documentos/SOPE/.git/objects/16
 
- -957.00 	-	 00000772 	-	 SEND_PIPE 	-	 8
- -957.00 	-	 00000772 	-	 ENTRY 	-	 12	./.git/objects/9f
+ 33.00 	-	 00008524 	-	 EXIT 	-	 0
+ 33.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 34.00 	-	 00008525 	-	 ENTRY 	-	 154	/home/pedro/Documentos/SOPE/.git/objects/57/ed48f19e88bee9d5e848bae3b8281fc4b2d034
 
- -957.00 	-	 00000772 	-	 EXIT 	-	 0
- -957.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -957.00 	-	 00000773 	-	 ENTRY 	-	 4	./.git/objects/af/ef7307aa320ee68fb8f652b23a15b01d8af725
+ 34.00 	-	 00008525 	-	 ENTRY 	-	 4250	/home/pedro/Documentos/SOPE/.git/objects/57
 
- -957.00 	-	 00000773 	-	 SEND_PIPE 	-	 4
- -957.00 	-	 00000773 	-	 ENTRY 	-	 8	./.git/objects/af
+ 34.00 	-	 00008525 	-	 EXIT 	-	 0
+ 34.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 34.00 	-	 00008526 	-	 ENTRY 	-	 250	/home/pedro/Documentos/SOPE/.git/objects/ed/9a2fcbef9dd580eaab45d8c7181c06fad4cb69
 
- -957.00 	-	 00000773 	-	 EXIT 	-	 0
- -957.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -956.00 	-	 00000774 	-	 ENTRY 	-	 4	./.git/objects/1a/30b6442681fc0bbf23f43c30145157a861841a
+ 34.00 	-	 00008526 	-	 ENTRY 	-	 4346	/home/pedro/Documentos/SOPE/.git/objects/ed
 
- -956.00 	-	 00000774 	-	 ENTRY 	-	 4	./.git/objects/1a/0b938c2718d9976fe9737d6b80d40305e8783f
+ 34.00 	-	 00008526 	-	 EXIT 	-	 0
+ 34.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 34.00 	-	 00008527 	-	 ENTRY 	-	 421	/home/pedro/Documentos/SOPE/.git/objects/21/99435934d36df8d637e4726555316035b07a53
 
- -956.00 	-	 00000774 	-	 SEND_PIPE 	-	 8
- -956.00 	-	 00000774 	-	 ENTRY 	-	 12	./.git/objects/1a
+ 34.00 	-	 00008527 	-	 ENTRY 	-	 211	/home/pedro/Documentos/SOPE/.git/objects/21/0e637da5eca6e28f6d54412c634bcd465beab6
 
- -956.00 	-	 00000774 	-	 EXIT 	-	 0
- -956.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -956.00 	-	 00000775 	-	 ENTRY 	-	 4	./.git/objects/8e/c41caa4b11a66f627b1f7a2410de8370d1ecf0
+ 34.00 	-	 00008527 	-	 ENTRY 	-	 4728	/home/pedro/Documentos/SOPE/.git/objects/21
 
- -956.00 	-	 00000775 	-	 ENTRY 	-	 4	./.git/objects/8e/aef402bedbc4cb659f72274c39650a35ffb023
+ 34.00 	-	 00008527 	-	 EXIT 	-	 0
+ 35.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 35.00 	-	 00008528 	-	 ENTRY 	-	 208	/home/pedro/Documentos/SOPE/.git/objects/22/4ebfaccbb435619ce603f786721f3ad94854b9
 
- -956.00 	-	 00000775 	-	 SEND_PIPE 	-	 8
- -956.00 	-	 00000775 	-	 ENTRY 	-	 12	./.git/objects/8e
+ 35.00 	-	 00008528 	-	 ENTRY 	-	 4304	/home/pedro/Documentos/SOPE/.git/objects/22
 
- -956.00 	-	 00000775 	-	 EXIT 	-	 0
- -956.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -956.00 	-	 00000776 	-	 ENTRY 	-	 4	./.git/objects/02/72ec184fa4d8fcbf05c4344f7e833f519b4ccf
+ 35.00 	-	 00008528 	-	 EXIT 	-	 0
+ 35.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 35.00 	-	 00008529 	-	 ENTRY 	-	 208	/home/pedro/Documentos/SOPE/.git/objects/3b/220f4052db1c9bce71cc32231fdcf416df9f41
 
- -956.00 	-	 00000776 	-	 SEND_PIPE 	-	 4
- -956.00 	-	 00000776 	-	 ENTRY 	-	 8	./.git/objects/02
+ 35.00 	-	 00008529 	-	 ENTRY 	-	 4304	/home/pedro/Documentos/SOPE/.git/objects/3b
 
- -956.00 	-	 00000776 	-	 EXIT 	-	 0
- -955.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -955.00 	-	 00000777 	-	 ENTRY 	-	 4	./.git/objects/8a/dadd2e8fc27eae7dcf909bb804d93af2641624
+ 35.00 	-	 00008529 	-	 EXIT 	-	 0
+ 35.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 36.00 	-	 00008530 	-	 ENTRY 	-	 390	/home/pedro/Documentos/SOPE/.git/objects/2e/ac1b56b29ff766004dcf70c5664666068d6f53
 
- -955.00 	-	 00000777 	-	 SEND_PIPE 	-	 4
- -955.00 	-	 00000777 	-	 ENTRY 	-	 8	./.git/objects/8a
+ 36.00 	-	 00008530 	-	 ENTRY 	-	 4486	/home/pedro/Documentos/SOPE/.git/objects/2e
 
- -955.00 	-	 00000777 	-	 EXIT 	-	 0
- -955.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -955.00 	-	 00000778 	-	 ENTRY 	-	 4	./.git/objects/53/4126c894eceae17f62769a91a519f736372900
+ 36.00 	-	 00008530 	-	 EXIT 	-	 0
+ 36.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 36.00 	-	 00008531 	-	 ENTRY 	-	 40	/home/pedro/Documentos/SOPE/.git/objects/6e/7af2434563946025176f5c717b71a7becde9e4
 
- -955.00 	-	 00000778 	-	 SEND_PIPE 	-	 4
- -955.00 	-	 00000778 	-	 ENTRY 	-	 8	./.git/objects/53
+ 36.00 	-	 00008531 	-	 ENTRY 	-	 4136	/home/pedro/Documentos/SOPE/.git/objects/6e
 
- -955.00 	-	 00000778 	-	 EXIT 	-	 0
- -955.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -954.00 	-	 00000779 	-	 ENTRY 	-	 4	./.git/objects/68/b1890d13c3ed6ae57f0e1c5ed62dca659a2d54
+ 36.00 	-	 00008531 	-	 EXIT 	-	 0
+ 36.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 36.00 	-	 00008532 	-	 ENTRY 	-	 197	/home/pedro/Documentos/SOPE/.git/objects/84/b4a6e2a9b996347f58babafcbe4e57f0452800
 
- -954.00 	-	 00000779 	-	 ENTRY 	-	 4	./.git/objects/68/9fdb358bd7adfa217e1e25b2062e919cf416ac
+ 36.00 	-	 00008532 	-	 ENTRY 	-	 4293	/home/pedro/Documentos/SOPE/.git/objects/84
 
- -954.00 	-	 00000779 	-	 SEND_PIPE 	-	 8
- -954.00 	-	 00000779 	-	 ENTRY 	-	 12	./.git/objects/68
+ 36.00 	-	 00008532 	-	 EXIT 	-	 0
+ 36.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 37.00 	-	 00008533 	-	 ENTRY 	-	 178	/home/pedro/Documentos/SOPE/.git/objects/b3/feb05b3f59a49f4cdf411dea4e2b533495fc11
 
- -954.00 	-	 00000779 	-	 EXIT 	-	 0
- -954.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -954.00 	-	 00000780 	-	 ENTRY 	-	 4	./.git/objects/b5/c823bf6805ef830b521036874aef18f333cf45
+ 37.00 	-	 00008533 	-	 ENTRY 	-	 4274	/home/pedro/Documentos/SOPE/.git/objects/b3
 
- -954.00 	-	 00000780 	-	 ENTRY 	-	 4	./.git/objects/b5/6639370473644ff54c799aa1160c708e3cbea1
+ 37.00 	-	 00008533 	-	 EXIT 	-	 0
+ 37.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 37.00 	-	 00008534 	-	 ENTRY 	-	 549	/home/pedro/Documentos/SOPE/.git/objects/0d/ffd74ff7a8928d28698ebaa214322fb7b65054
 
- -954.00 	-	 00000780 	-	 ENTRY 	-	 4	./.git/objects/b5/6d7a78591d19c671839c0d77d2e0f353d378aa
+ 37.00 	-	 00008534 	-	 ENTRY 	-	 222	/home/pedro/Documentos/SOPE/.git/objects/0d/f41916321304e35cc828e775b9260caafa2335
 
- -954.00 	-	 00000780 	-	 SEND_PIPE 	-	 12
- -954.00 	-	 00000780 	-	 ENTRY 	-	 16	./.git/objects/b5
+ 37.00 	-	 00008534 	-	 ENTRY 	-	 4867	/home/pedro/Documentos/SOPE/.git/objects/0d
 
- -954.00 	-	 00000780 	-	 EXIT 	-	 0
- -954.00 	-	 00000693 	-	 RECV_PIPE 	-	 12
- -953.00 	-	 00000781 	-	 ENTRY 	-	 4	./.git/objects/38/9fc367d3b9428921850036faa3a3084e0b8701
+ 37.00 	-	 00008534 	-	 EXIT 	-	 0
+ 37.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 37.00 	-	 00008535 	-	 ENTRY 	-	 416	/home/pedro/Documentos/SOPE/.git/objects/40/486bf5668a42fd7d35f885f0622c37f567c16e
 
- -953.00 	-	 00000781 	-	 SEND_PIPE 	-	 4
- -953.00 	-	 00000781 	-	 ENTRY 	-	 8	./.git/objects/38
+ 37.00 	-	 00008535 	-	 ENTRY 	-	 4512	/home/pedro/Documentos/SOPE/.git/objects/40
 
- -953.00 	-	 00000781 	-	 EXIT 	-	 0
- -953.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -953.00 	-	 00000782 	-	 ENTRY 	-	 4	./.git/objects/bc/c5b4de7bf307a1d781ff54aac978160a5cac16
+ 37.00 	-	 00008535 	-	 EXIT 	-	 0
+ 37.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 38.00 	-	 00008536 	-	 ENTRY 	-	 541	/home/pedro/Documentos/SOPE/.git/objects/d7/d7a3042d4224f117a4a171aeea28617bf33f40
 
- -953.00 	-	 00000782 	-	 SEND_PIPE 	-	 4
- -953.00 	-	 00000782 	-	 ENTRY 	-	 8	./.git/objects/bc
+ 38.00 	-	 00008536 	-	 ENTRY 	-	 4637	/home/pedro/Documentos/SOPE/.git/objects/d7
 
- -953.00 	-	 00000782 	-	 EXIT 	-	 0
- -953.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -952.00 	-	 00000783 	-	 ENTRY 	-	 4	./.git/objects/b8/5693cc49deee2ceb918bffa47d1e8dd185bbba
+ 38.00 	-	 00008536 	-	 EXIT 	-	 0
+ 38.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 38.00 	-	 00008537 	-	 ENTRY 	-	 188	/home/pedro/Documentos/SOPE/.git/objects/4b/5532cee7fcfdc5bfe45560a4485b31c7435abd
 
- -952.00 	-	 00000783 	-	 SEND_PIPE 	-	 4
- -952.00 	-	 00000783 	-	 ENTRY 	-	 8	./.git/objects/b8
+ 38.00 	-	 00008537 	-	 ENTRY 	-	 4284	/home/pedro/Documentos/SOPE/.git/objects/4b
 
- -952.00 	-	 00000783 	-	 EXIT 	-	 0
- -952.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -952.00 	-	 00000784 	-	 ENTRY 	-	 4	./.git/objects/5d/76d747f8be0952f108dc774c67def2324386b6
+ 38.00 	-	 00008537 	-	 EXIT 	-	 0
+ 38.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 38.00 	-	 00008538 	-	 ENTRY 	-	 64	/home/pedro/Documentos/SOPE/.git/objects/cd/19313cd2bbfbfbd8a936ff002d02573f71725d
 
- -952.00 	-	 00000784 	-	 ENTRY 	-	 4	./.git/objects/5d/1def9b38e8ea67171d7253610dd01dea33017b
+ 38.00 	-	 00008538 	-	 ENTRY 	-	 4160	/home/pedro/Documentos/SOPE/.git/objects/cd
 
- -952.00 	-	 00000784 	-	 SEND_PIPE 	-	 8
- -952.00 	-	 00000784 	-	 ENTRY 	-	 12	./.git/objects/5d
+ 38.00 	-	 00008538 	-	 EXIT 	-	 0
+ 39.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 39.00 	-	 00008539 	-	 ENTRY 	-	 454	/home/pedro/Documentos/SOPE/.git/objects/25/d1aec51daa7b471c2a5582c0cb46b8d16a3a46
 
- -952.00 	-	 00000784 	-	 EXIT 	-	 0
- -952.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -952.00 	-	 00000785 	-	 ENTRY 	-	 4	./.git/objects/bd/f59a093e4a8de4fc83eb52ccef923a59fd492a
+ 39.00 	-	 00008539 	-	 ENTRY 	-	 4550	/home/pedro/Documentos/SOPE/.git/objects/25
 
- -951.00 	-	 00000785 	-	 SEND_PIPE 	-	 4
- -951.00 	-	 00000785 	-	 ENTRY 	-	 8	./.git/objects/bd
+ 39.00 	-	 00008539 	-	 EXIT 	-	 0
+ 39.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 39.00 	-	 00008540 	-	 ENTRY 	-	 260	/home/pedro/Documentos/SOPE/.git/objects/f9/006e1d200accff2c2d8e757b2d0bed3cc2410c
 
- -951.00 	-	 00000785 	-	 EXIT 	-	 0
- -951.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -951.00 	-	 00000786 	-	 ENTRY 	-	 4	./.git/objects/c9/4dad1285b58d2c67ecd4207949645d3899ee5f
+ 39.00 	-	 00008540 	-	 ENTRY 	-	 4356	/home/pedro/Documentos/SOPE/.git/objects/f9
 
- -951.00 	-	 00000786 	-	 ENTRY 	-	 4	./.git/objects/c9/52f69a829666962d11273d7f1fdddb3dbb5f91
+ 39.00 	-	 00008540 	-	 EXIT 	-	 0
+ 39.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 40.00 	-	 00008541 	-	 ENTRY 	-	 317	/home/pedro/Documentos/SOPE/.git/objects/72/77f6d378b7b850a7c86b1ef6ba56aa56938968
 
- -951.00 	-	 00000786 	-	 SEND_PIPE 	-	 8
- -951.00 	-	 00000786 	-	 ENTRY 	-	 12	./.git/objects/c9
+ 40.00 	-	 00008541 	-	 ENTRY 	-	 140	/home/pedro/Documentos/SOPE/.git/objects/72/fa154d092d33d129d721ce848462dff22d0993
 
- -951.00 	-	 00000786 	-	 EXIT 	-	 0
- -951.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -951.00 	-	 00000787 	-	 ENTRY 	-	 4	./.git/objects/74/4f56f3ed19c41ae10549f8336c97d32bfd3afb
+ 40.00 	-	 00008541 	-	 ENTRY 	-	 4553	/home/pedro/Documentos/SOPE/.git/objects/72
 
- -950.00 	-	 00000787 	-	 ENTRY 	-	 4	./.git/objects/74/9281c5eda9e29e803c436478fc50be360472c5
+ 40.00 	-	 00008541 	-	 EXIT 	-	 0
+ 40.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 40.00 	-	 00008542 	-	 ENTRY 	-	 176	/home/pedro/Documentos/SOPE/.git/objects/b6/128d5e3c0e1b73f5ec983a9d7047721636a162
 
- -950.00 	-	 00000787 	-	 SEND_PIPE 	-	 8
- -950.00 	-	 00000787 	-	 ENTRY 	-	 12	./.git/objects/74
+ 40.00 	-	 00008542 	-	 ENTRY 	-	 4272	/home/pedro/Documentos/SOPE/.git/objects/b6
 
- -950.00 	-	 00000787 	-	 EXIT 	-	 0
- -950.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -950.00 	-	 00000788 	-	 ENTRY 	-	 4	./.git/objects/5c/5b37247b992f9f561edb3adc67564256c557ac
+ 40.00 	-	 00008542 	-	 EXIT 	-	 0
+ 40.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 40.00 	-	 00008543 	-	 ENTRY 	-	 222	/home/pedro/Documentos/SOPE/.git/objects/5b/ec9a82d1b6775a02f656ec37e38a97588742c0
 
- -950.00 	-	 00000788 	-	 SEND_PIPE 	-	 4
- -950.00 	-	 00000788 	-	 ENTRY 	-	 8	./.git/objects/5c
+ 40.00 	-	 00008543 	-	 ENTRY 	-	 4318	/home/pedro/Documentos/SOPE/.git/objects/5b
 
- -950.00 	-	 00000788 	-	 EXIT 	-	 0
- -950.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -949.00 	-	 00000789 	-	 ENTRY 	-	 4	./.git/objects/98/f86b171959c5ea8bda5df41d29d2e69ade0344
+ 40.00 	-	 00008543 	-	 EXIT 	-	 0
+ 40.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 41.00 	-	 00008544 	-	 ENTRY 	-	 183	/home/pedro/Documentos/SOPE/.git/objects/fc/0b7d8228707d3ab4d2976acf431871d7d609ce
 
- -949.00 	-	 00000789 	-	 SEND_PIPE 	-	 4
- -949.00 	-	 00000789 	-	 ENTRY 	-	 8	./.git/objects/98
+ 41.00 	-	 00008544 	-	 ENTRY 	-	 4279	/home/pedro/Documentos/SOPE/.git/objects/fc
 
- -949.00 	-	 00000789 	-	 EXIT 	-	 0
- -949.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -949.00 	-	 00000790 	-	 ENTRY 	-	 4	./.git/objects/16/d52ab8e30a77edbbbb03f1fc97f38c197018ef
+ 41.00 	-	 00008544 	-	 EXIT 	-	 0
+ 41.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 41.00 	-	 00008545 	-	 ENTRY 	-	 466	/home/pedro/Documentos/SOPE/.git/objects/96/27102e5a64c971c815ff17b5fb34156bf05032
 
- -949.00 	-	 00000790 	-	 SEND_PIPE 	-	 4
- -949.00 	-	 00000790 	-	 ENTRY 	-	 8	./.git/objects/16
+ 41.00 	-	 00008545 	-	 ENTRY 	-	 4562	/home/pedro/Documentos/SOPE/.git/objects/96
 
- -949.00 	-	 00000790 	-	 EXIT 	-	 0
- -949.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -949.00 	-	 00000791 	-	 ENTRY 	-	 4	./.git/objects/ed/c8f7d3709a4a5b089ce01fd90f6dc1614ab3f5
+ 41.00 	-	 00008545 	-	 EXIT 	-	 0
+ 41.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 41.00 	-	 00008546 	-	 ENTRY 	-	 271	/home/pedro/Documentos/SOPE/.git/objects/a8/51e91d240a5949d09a0ad7992f7597d40837ae
 
- -949.00 	-	 00000791 	-	 SEND_PIPE 	-	 4
- -949.00 	-	 00000791 	-	 ENTRY 	-	 8	./.git/objects/ed
+ 41.00 	-	 00008546 	-	 ENTRY 	-	 4367	/home/pedro/Documentos/SOPE/.git/objects/a8
 
- -948.00 	-	 00000791 	-	 EXIT 	-	 0
- -948.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -948.00 	-	 00000792 	-	 ENTRY 	-	 4	./.git/objects/22/a6550e27c1ceb28891d8fdad4a52ba2f03d113
+ 41.00 	-	 00008546 	-	 EXIT 	-	 0
+ 42.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 42.00 	-	 00008547 	-	 ENTRY 	-	 4096	/home/pedro/Documentos/SOPE/.git/objects/info
 
- -948.00 	-	 00000792 	-	 ENTRY 	-	 4	./.git/objects/22/ebdf7f6e022b4e227399deced2ea9fd4042929
+ 42.00 	-	 00008547 	-	 EXIT 	-	 0
+ 42.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 42.00 	-	 00008548 	-	 ENTRY 	-	 384	/home/pedro/Documentos/SOPE/.git/objects/b0/d9b245c5826ec3d99989c816b7af0fa8df85a2
 
- -948.00 	-	 00000792 	-	 SEND_PIPE 	-	 8
- -948.00 	-	 00000792 	-	 ENTRY 	-	 12	./.git/objects/22
+ 42.00 	-	 00008548 	-	 ENTRY 	-	 4480	/home/pedro/Documentos/SOPE/.git/objects/b0
 
- -948.00 	-	 00000792 	-	 EXIT 	-	 0
- -948.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -948.00 	-	 00000793 	-	 ENTRY 	-	 4	./.git/objects/09/d7a8b0db269d41de1cc0a61ce87a20589371b5
+ 42.00 	-	 00008548 	-	 EXIT 	-	 0
+ 42.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 42.00 	-	 00008549 	-	 ENTRY 	-	 440	/home/pedro/Documentos/SOPE/.git/objects/9d/922e10f29789ff770f178386d593a6ad043aaa
 
- -948.00 	-	 00000793 	-	 SEND_PIPE 	-	 4
- -948.00 	-	 00000793 	-	 ENTRY 	-	 8	./.git/objects/09
+ 42.00 	-	 00008549 	-	 ENTRY 	-	 64	/home/pedro/Documentos/SOPE/.git/objects/9d/eab0ab7e8e05991b67436a9c0beddf68d96ba5
 
- -948.00 	-	 00000793 	-	 EXIT 	-	 0
- -947.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -947.00 	-	 00000794 	-	 ENTRY 	-	 4	./.git/objects/6e/3520d102d47e437825f5f2a6178149f7c78c96
+ 42.00 	-	 00008549 	-	 ENTRY 	-	 4600	/home/pedro/Documentos/SOPE/.git/objects/9d
 
- -947.00 	-	 00000794 	-	 ENTRY 	-	 4	./.git/objects/6e/167be957f1e60c694ede934bb9aa98466328ec
+ 42.00 	-	 00008549 	-	 EXIT 	-	 0
+ 43.00 	-	 00008449 	-	 RECV_PIPE 	-	 140726400599552
+ 43.00 	-	 00008449 	-	 ENTRY 	-	 4096	/home/pedro/Documentos/SOPE/.git/objects
 
- -947.00 	-	 00000794 	-	 SEND_PIPE 	-	 8
- -947.00 	-	 00000794 	-	 ENTRY 	-	 12	./.git/objects/6e
+ 43.00 	-	 00008449 	-	 EXIT 	-	 0
+ 43.00 	-	 00008448 	-	 RECV_PIPE 	-	 140726400599552
+ 43.00 	-	 00008448 	-	 ENTRY 	-	 8817	/home/pedro/Documentos/SOPE/.git/index
 
- -947.00 	-	 00000794 	-	 EXIT 	-	 0
- -946.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -946.00 	-	 00000795 	-	 ENTRY 	-	 4	./.git/objects/75/e846cb9cb308a73b5627ef0909bfe39b895138
+ 43.00 	-	 00008448 	-	 ENTRY 	-	 23	/home/pedro/Documentos/SOPE/.git/HEAD
 
- -946.00 	-	 00000795 	-	 SEND_PIPE 	-	 4
- -946.00 	-	 00000795 	-	 ENTRY 	-	 8	./.git/objects/75
+ 43.00 	-	 00008448 	-	 ENTRY 	-	 101	/home/pedro/Documentos/SOPE/.git/FETCH_HEAD
 
- -946.00 	-	 00000795 	-	 EXIT 	-	 0
- -946.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -946.00 	-	 00000796 	-	 ENTRY 	-	 4	./.git/objects/44/ea7dcbafd502555ea288f6c2a0d7112400f67c
+ 43.00 	-	 00008551 	-	 ENTRY 	-	 4096	/home/pedro/Documentos/SOPE/.git/refs/tags
 
- -946.00 	-	 00000796 	-	 SEND_PIPE 	-	 4
- -946.00 	-	 00000796 	-	 ENTRY 	-	 8	./.git/objects/44
+ 43.00 	-	 00008551 	-	 EXIT 	-	 0
+ 43.00 	-	 00008550 	-	 RECV_PIPE 	-	 140726400599552
+ 44.00 	-	 00008553 	-	 ENTRY 	-	 41	/home/pedro/Documentos/SOPE/.git/refs/remotes/origin/master
 
- -945.00 	-	 00000796 	-	 EXIT 	-	 0
- -945.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -945.00 	-	 00000797 	-	 ENTRY 	-	 4	./.git/objects/f3/c83ed95d2942346364d1ee87f37aa61b0ecb52
+ 44.00 	-	 00008553 	-	 ENTRY 	-	 4137	/home/pedro/Documentos/SOPE/.git/refs/remotes/origin
 
- -945.00 	-	 00000797 	-	 SEND_PIPE 	-	 4
- -945.00 	-	 00000797 	-	 ENTRY 	-	 8	./.git/objects/f3
+ 44.00 	-	 00008553 	-	 EXIT 	-	 0
+ 44.00 	-	 00008552 	-	 RECV_PIPE 	-	 140726400599552
+ 44.00 	-	 00008552 	-	 ENTRY 	-	 4096	/home/pedro/Documentos/SOPE/.git/refs/remotes
 
- -945.00 	-	 00000797 	-	 EXIT 	-	 0
- -945.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -945.00 	-	 00000798 	-	 ENTRY 	-	 4	./.git/objects/82/2f5477e76285d030e2b5924b7711df052ee565
+ 44.00 	-	 00008552 	-	 EXIT 	-	 0
+ 44.00 	-	 00008550 	-	 RECV_PIPE 	-	 140726400599552
+ 44.00 	-	 00008554 	-	 ENTRY 	-	 41	/home/pedro/Documentos/SOPE/.git/refs/heads/master
 
- -945.00 	-	 00000798 	-	 ENTRY 	-	 4	./.git/objects/82/e60080a90a515360f3d3086035ac1c7db5cb72
+ 44.00 	-	 00008554 	-	 ENTRY 	-	 4137	/home/pedro/Documentos/SOPE/.git/refs/heads
 
- -944.00 	-	 00000798 	-	 SEND_PIPE 	-	 8
- -944.00 	-	 00000798 	-	 ENTRY 	-	 12	./.git/objects/82
+ 44.00 	-	 00008554 	-	 EXIT 	-	 0
+ 45.00 	-	 00008550 	-	 RECV_PIPE 	-	 140726400599552
+ 45.00 	-	 00008550 	-	 ENTRY 	-	 4096	/home/pedro/Documentos/SOPE/.git/refs
 
- -944.00 	-	 00000798 	-	 EXIT 	-	 0
- -944.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -942.00 	-	 00000799 	-	 ENTRY 	-	 4	./.git/objects/ac/bddd18f00cd51f929dd0c57a84366986302608
+ 45.00 	-	 00008550 	-	 EXIT 	-	 0
+ 45.00 	-	 00008448 	-	 RECV_PIPE 	-	 140726400599552
+ 45.00 	-	 00008555 	-	 ENTRY 	-	 177	/home/pedro/Documentos/SOPE/.git/hooks/README.sample
 
- -942.00 	-	 00000799 	-	 SEND_PIPE 	-	 4
- -942.00 	-	 00000799 	-	 ENTRY 	-	 8	./.git/objects/ac
+ 45.00 	-	 00008555 	-	 ENTRY 	-	 4273	/home/pedro/Documentos/SOPE/.git/hooks
 
- -942.00 	-	 00000799 	-	 EXIT 	-	 0
- -942.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -942.00 	-	 00000800 	-	 ENTRY 	-	 4	./.git/objects/40/486bf5668a42fd7d35f885f0622c37f567c16e
+ 45.00 	-	 00008555 	-	 EXIT 	-	 0
+ 45.00 	-	 00008448 	-	 RECV_PIPE 	-	 140726400599552
+ 45.00 	-	 00008448 	-	 ENTRY 	-	 73	/home/pedro/Documentos/SOPE/.git/description
 
- -941.00 	-	 00000800 	-	 SEND_PIPE 	-	 4
- -941.00 	-	 00000800 	-	 ENTRY 	-	 8	./.git/objects/40
+ 45.00 	-	 00008556 	-	 ENTRY 	-	 3852	/home/pedro/Documentos/SOPE/.git/logs/HEAD
 
- -941.00 	-	 00000800 	-	 EXIT 	-	 0
- -941.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -941.00 	-	 00000801 	-	 ENTRY 	-	 4	./.git/objects/81/c7a16a3275fa775cea4a4f7a16264391319454
+ 46.00 	-	 00008559 	-	 ENTRY 	-	 2885	/home/pedro/Documentos/SOPE/.git/logs/refs/remotes/origin/master
 
- -941.00 	-	 00000801 	-	 ENTRY 	-	 12	./.git/objects/81/2487615e15a0d67ef14dd547c784bcfed3903e
+ 46.00 	-	 00008559 	-	 ENTRY 	-	 6981	/home/pedro/Documentos/SOPE/.git/logs/refs/remotes/origin
 
- -941.00 	-	 00000801 	-	 SEND_PIPE 	-	 16
- -941.00 	-	 00000801 	-	 ENTRY 	-	 20	./.git/objects/81
+ 46.00 	-	 00008559 	-	 EXIT 	-	 0
+ 46.00 	-	 00008558 	-	 RECV_PIPE 	-	 140726400599552
+ 46.00 	-	 00008558 	-	 ENTRY 	-	 4096	/home/pedro/Documentos/SOPE/.git/logs/refs/remotes
 
- -941.00 	-	 00000801 	-	 EXIT 	-	 0
- -941.00 	-	 00000693 	-	 RECV_PIPE 	-	 16
- -941.00 	-	 00000802 	-	 ENTRY 	-	 4	./.git/objects/3e/0c9f15a14fe7b79f018b0ed430177557aae2b6
+ 46.00 	-	 00008558 	-	 EXIT 	-	 0
+ 46.00 	-	 00008557 	-	 RECV_PIPE 	-	 140726400599552
+ 46.00 	-	 00008557 	-	 ENTRY 	-	 0	/home/pedro/Documentos/SOPE/.git/logs/refs/stash
 
- -941.00 	-	 00000802 	-	 SEND_PIPE 	-	 4
- -941.00 	-	 00000802 	-	 ENTRY 	-	 8	./.git/objects/3e
+ 46.00 	-	 00008560 	-	 ENTRY 	-	 3852	/home/pedro/Documentos/SOPE/.git/logs/refs/heads/master
 
- -941.00 	-	 00000802 	-	 EXIT 	-	 0
- -941.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -940.00 	-	 00000803 	-	 ENTRY 	-	 4	./.git/objects/61/dbe52bf980886be295722e5fb62aebd15c3cc3
+ 47.00 	-	 00008560 	-	 ENTRY 	-	 7948	/home/pedro/Documentos/SOPE/.git/logs/refs/heads
 
- -940.00 	-	 00000803 	-	 SEND_PIPE 	-	 4
- -940.00 	-	 00000803 	-	 ENTRY 	-	 8	./.git/objects/61
+ 47.00 	-	 00008560 	-	 EXIT 	-	 0
+ 47.00 	-	 00008557 	-	 RECV_PIPE 	-	 140726400599552
+ 47.00 	-	 00008557 	-	 ENTRY 	-	 4096	/home/pedro/Documentos/SOPE/.git/logs/refs
 
- -940.00 	-	 00000803 	-	 EXIT 	-	 0
- -940.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -940.00 	-	 00000804 	-	 ENTRY 	-	 4	./.git/objects/49/cad753503c6730ffd8819782c13df842fc659e
+ 47.00 	-	 00008557 	-	 EXIT 	-	 0
+ 47.00 	-	 00008556 	-	 RECV_PIPE 	-	 140726400599552
+ 47.00 	-	 00008556 	-	 ENTRY 	-	 7948	/home/pedro/Documentos/SOPE/.git/logs
 
- -940.00 	-	 00000804 	-	 SEND_PIPE 	-	 4
- -940.00 	-	 00000804 	-	 ENTRY 	-	 8	./.git/objects/49
+ 47.00 	-	 00008556 	-	 EXIT 	-	 0
+ 47.00 	-	 00008448 	-	 RECV_PIPE 	-	 140726400599552
+ 47.00 	-	 00008448 	-	 ENTRY 	-	 41	/home/pedro/Documentos/SOPE/.git/ORIG_HEAD
 
- -940.00 	-	 00000804 	-	 EXIT 	-	 0
- -940.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -940.00 	-	 00000805 	-	 ENTRY 	-	 4	./.git/objects/fe/0f3bfedfe75615f1ae03b9400a4c991ab54d54
+ 47.00 	-	 00008561 	-	 ENTRY 	-	 113	/home/pedro/Documentos/SOPE/.git/info/exclude
 
- -940.00 	-	 00000805 	-	 SEND_PIPE 	-	 4
- -940.00 	-	 00000805 	-	 ENTRY 	-	 8	./.git/objects/fe
+ 47.00 	-	 00008561 	-	 ENTRY 	-	 4209	/home/pedro/Documentos/SOPE/.git/info
 
- -940.00 	-	 00000805 	-	 EXIT 	-	 0
- -939.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -939.00 	-	 00000806 	-	 ENTRY 	-	 12	./.git/objects/cd/24566e453e8e726b5654349a724dd186f24d74
+ 47.00 	-	 00008561 	-	 EXIT 	-	 0
+ 47.00 	-	 00008448 	-	 RECV_PIPE 	-	 140726400599552
+ 47.00 	-	 00008448 	-	 ENTRY 	-	 13440	/home/pedro/Documentos/SOPE/.git
 
- -939.00 	-	 00000806 	-	 SEND_PIPE 	-	 12
- -939.00 	-	 00000806 	-	 ENTRY 	-	 16	./.git/objects/cd
+ 47.00 	-	 00008448 	-	 EXIT 	-	 0
+ 48.00 	-	 00008441 	-	 RECV_PIPE 	-	 0
+ 48.00 	-	 00008563 	-	 ENTRY 	-	 66	/home/pedro/Documentos/SOPE/Praticas/TP5/names.txt
 
- -939.00 	-	 00000806 	-	 EXIT 	-	 0
- -939.00 	-	 00000693 	-	 RECV_PIPE 	-	 12
- -939.00 	-	 00000807 	-	 ENTRY 	-	 4	./.git/objects/65/5ca9d384a529d5392875c813bf9263acc20920
+ 48.00 	-	 00008563 	-	 ENTRY 	-	 794	/home/pedro/Documentos/SOPE/Praticas/TP5/ex1a.c
 
- -939.00 	-	 00000807 	-	 SEND_PIPE 	-	 4
- -939.00 	-	 00000807 	-	 ENTRY 	-	 8	./.git/objects/65
+ 48.00 	-	 00008563 	-	 ENTRY 	-	 8776	/home/pedro/Documentos/SOPE/Praticas/TP5/comp
 
- -939.00 	-	 00000807 	-	 EXIT 	-	 0
- -939.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -938.00 	-	 00000808 	-	 ENTRY 	-	 4	./.git/objects/8d/51e3a507c9dadf357f843c05e0fe963e8f7710
+ 48.00 	-	 00008563 	-	 ENTRY 	-	 947	/home/pedro/Documentos/SOPE/Praticas/TP5/ex1b.c
 
- -938.00 	-	 00000808 	-	 SEND_PIPE 	-	 4
- -938.00 	-	 00000808 	-	 ENTRY 	-	 8	./.git/objects/8d
+ 48.00 	-	 00008563 	-	 ENTRY 	-	 1172	/home/pedro/Documentos/SOPE/Praticas/TP5/ex2.c
 
- -938.00 	-	 00000808 	-	 EXIT 	-	 0
- -938.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -938.00 	-	 00000809 	-	 ENTRY 	-	 4	./.git/objects/79/f2ebf4bcf8d68aee9d6b7190218b99838b2121
+ 48.00 	-	 00008563 	-	 ENTRY 	-	 1020	/home/pedro/Documentos/SOPE/Praticas/TP5/ex1c.c
 
- -938.00 	-	 00000809 	-	 SEND_PIPE 	-	 4
- -938.00 	-	 00000809 	-	 ENTRY 	-	 8	./.git/objects/79
+ 48.00 	-	 00008563 	-	 ENTRY 	-	 944	/home/pedro/Documentos/SOPE/Praticas/TP5/ex3a.c
 
- -938.00 	-	 00000809 	-	 EXIT 	-	 0
- -938.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -937.00 	-	 00000810 	-	 ENTRY 	-	 4	./.git/objects/25/d14c02eba3ceff02afe68c9c10a5e75a7afc37
+ 48.00 	-	 00008563 	-	 ENTRY 	-	 17815	/home/pedro/Documentos/SOPE/Praticas/TP5
 
- -937.00 	-	 00000810 	-	 ENTRY 	-	 4	./.git/objects/25/644b00fffaa1c8a744db1f84a06febdba55302
+ 48.00 	-	 00008563 	-	 EXIT 	-	 0
+ 48.00 	-	 00008562 	-	 RECV_PIPE 	-	 140726400599552
+ 48.00 	-	 00008562 	-	 ENTRY 	-	 149703	/home/pedro/Documentos/SOPE/Praticas/SOPE_2019-2020_Prob_01_v01.pdf
 
- -937.00 	-	 00000810 	-	 SEND_PIPE 	-	 8
- -937.00 	-	 00000810 	-	 ENTRY 	-	 12	./.git/objects/25
+ 48.00 	-	 00008564 	-	 ENTRY 	-	 608	/home/pedro/Documentos/SOPE/Praticas/TP2/ex5b.c
 
- -937.00 	-	 00000810 	-	 EXIT 	-	 0
- -937.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -937.00 	-	 00000811 	-	 ENTRY 	-	 4	./.git/objects/01/ac3cf5e8ce0ab447923c76ad2712498a3d1d13
+ 48.00 	-	 00008564 	-	 ENTRY 	-	 837	/home/pedro/Documentos/SOPE/Praticas/TP2/ex2b.c
 
- -937.00 	-	 00000811 	-	 SEND_PIPE 	-	 4
- -937.00 	-	 00000811 	-	 ENTRY 	-	 8	./.git/objects/01
+ 48.00 	-	 00008564 	-	 ENTRY 	-	 10	/home/pedro/Documentos/SOPE/Praticas/TP2/destino.txt
 
- -937.00 	-	 00000811 	-	 EXIT 	-	 0
- -937.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -936.00 	-	 00000812 	-	 ENTRY 	-	 4	./.git/objects/0b/973b6ec6b1c56033c00698f14c851ad56ad70d
+ 49.00 	-	 00008564 	-	 ENTRY 	-	 10	/home/pedro/Documentos/SOPE/Praticas/TP2/f1.txt
 
- -936.00 	-	 00000812 	-	 SEND_PIPE 	-	 4
- -936.00 	-	 00000812 	-	 ENTRY 	-	 8	./.git/objects/0b
+ 49.00 	-	 00008564 	-	 ENTRY 	-	 483	/home/pedro/Documentos/SOPE/Praticas/TP2/ex4b_read.c
 
- -936.00 	-	 00000812 	-	 EXIT 	-	 0
- -936.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -936.00 	-	 00000813 	-	 ENTRY 	-	 4	./.git/objects/10/63d094273c0e1025968277283884ac68102d8e
+ 49.00 	-	 00008564 	-	 ENTRY 	-	 9	/home/pedro/Documentos/SOPE/Praticas/TP2/origem.txt
 
- -936.00 	-	 00000813 	-	 ENTRY 	-	 4	./.git/objects/10/cd123347da56970073e545037728145eaff761
+ 49.00 	-	 00008564 	-	 ENTRY 	-	 733	/home/pedro/Documentos/SOPE/Praticas/TP2/ex3b.c
 
- -936.00 	-	 00000813 	-	 ENTRY 	-	 4	./.git/objects/10/b777de60e425bbd6f4f88c654ea0099988b479
+ 49.00 	-	 00008564 	-	 ENTRY 	-	 625	/home/pedro/Documentos/SOPE/Praticas/TP2/ex5a.c
 
- -936.00 	-	 00000813 	-	 SEND_PIPE 	-	 12
- -936.00 	-	 00000813 	-	 ENTRY 	-	 16	./.git/objects/10
+ 49.00 	-	 00008564 	-	 ENTRY 	-	 771	/home/pedro/Documentos/SOPE/Praticas/TP2/ex1.c
 
- -936.00 	-	 00000813 	-	 EXIT 	-	 0
- -936.00 	-	 00000693 	-	 RECV_PIPE 	-	 12
- -935.00 	-	 00000814 	-	 ENTRY 	-	 4	./.git/objects/ad/db04cef2aa1287069979fc612ebc5ebc8b8724
+ 49.00 	-	 00008564 	-	 ENTRY 	-	 208	/home/pedro/Documentos/SOPE/Praticas/TP2/grades.dat
 
- -935.00 	-	 00000814 	-	 SEND_PIPE 	-	 4
- -935.00 	-	 00000814 	-	 ENTRY 	-	 8	./.git/objects/ad
+ 49.00 	-	 00008564 	-	 ENTRY 	-	 1252	/home/pedro/Documentos/SOPE/Praticas/TP2/ex4a.c
 
- -935.00 	-	 00000814 	-	 EXIT 	-	 0
- -935.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -935.00 	-	 00000815 	-	 ENTRY 	-	 4	./.git/objects/24/9600ca2c6824561281b0ed2c98348413efa849
+ 49.00 	-	 00008564 	-	 ENTRY 	-	 592	/home/pedro/Documentos/SOPE/Praticas/TP2/ex2a.c
 
- -935.00 	-	 00000815 	-	 ENTRY 	-	 4	./.git/objects/24/ec36558d039bea8a9c3955c145e407550e6dd0
+ 49.00 	-	 00008564 	-	 ENTRY 	-	 691	/home/pedro/Documentos/SOPE/Praticas/TP2/ex4b.c
 
- -935.00 	-	 00000815 	-	 SEND_PIPE 	-	 8
- -935.00 	-	 00000815 	-	 ENTRY 	-	 12	./.git/objects/24
+ 49.00 	-	 00008564 	-	 ENTRY 	-	 539	/home/pedro/Documentos/SOPE/Praticas/TP2/ex3a.c
 
- -935.00 	-	 00000815 	-	 EXIT 	-	 0
- -935.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -935.00 	-	 00000816 	-	 ENTRY 	-	 4	./.git/objects/b6/128d5e3c0e1b73f5ec983a9d7047721636a162
+ 49.00 	-	 00008564 	-	 ENTRY 	-	 26	/home/pedro/Documentos/SOPE/Praticas/TP2/grades.txt
 
- -935.00 	-	 00000816 	-	 SEND_PIPE 	-	 4
- -935.00 	-	 00000816 	-	 ENTRY 	-	 8	./.git/objects/b6
+ 49.00 	-	 00008564 	-	 ENTRY 	-	 11490	/home/pedro/Documentos/SOPE/Praticas/TP2
 
- -935.00 	-	 00000816 	-	 EXIT 	-	 0
- -934.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -934.00 	-	 00000817 	-	 ENTRY 	-	 4	./.git/objects/5e/6cb8c36e0f97288ba7e952d16676635033cf59
+ 49.00 	-	 00008564 	-	 EXIT 	-	 0
+ 49.00 	-	 00008562 	-	 RECV_PIPE 	-	 140726400599552
+ 49.00 	-	 00008565 	-	 ENTRY 	-	 8440	/home/pedro/Documentos/SOPE/Praticas/TP1/hello
 
- -934.00 	-	 00000817 	-	 ENTRY 	-	 4	./.git/objects/5e/cd0cf51acce86bfd6df75e911bffe4d760bb23
+ 49.00 	-	 00008565 	-	 ENTRY 	-	 79	/home/pedro/Documentos/SOPE/Praticas/TP1/ex3.c
 
- -934.00 	-	 00000817 	-	 SEND_PIPE 	-	 8
- -934.00 	-	 00000817 	-	 ENTRY 	-	 12	./.git/objects/5e
+ 49.00 	-	 00008565 	-	 ENTRY 	-	 178	/home/pedro/Documentos/SOPE/Praticas/TP1/ex2.c
 
- -934.00 	-	 00000817 	-	 EXIT 	-	 0
- -934.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -934.00 	-	 00000818 	-	 ENTRY 	-	 4	./.git/objects/4d/414e1af58e0ae9254373812e8ef3296756f325
+ 49.00 	-	 00008565 	-	 ENTRY 	-	 1044	/home/pedro/Documentos/SOPE/Praticas/TP1/ex4.c
 
- -934.00 	-	 00000818 	-	 ENTRY 	-	 4	./.git/objects/4d/e1ad030f11d85bb6dab706fc869d4af9d4eb37
+ 49.00 	-	 00008565 	-	 ENTRY 	-	 13837	/home/pedro/Documentos/SOPE/Praticas/TP1
 
- -934.00 	-	 00000818 	-	 SEND_PIPE 	-	 8
- -934.00 	-	 00000818 	-	 ENTRY 	-	 12	./.git/objects/4d
+ 49.00 	-	 00008565 	-	 EXIT 	-	 0
+ 49.00 	-	 00008562 	-	 RECV_PIPE 	-	 140726400599552
+ 49.00 	-	 00008562 	-	 ENTRY 	-	 122267	/home/pedro/Documentos/SOPE/Praticas/SOPE_2019-2020_Prob_05_v01.pdf
 
- -934.00 	-	 00000818 	-	 EXIT 	-	 0
- -933.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -933.00 	-	 00000819 	-	 ENTRY 	-	 4	./.git/objects/c8/fa9338663a6936ddfc6d9824e7cc0748545eec
+ 49.00 	-	 00008562 	-	 ENTRY 	-	 133155	/home/pedro/Documentos/SOPE/Praticas/SOPE_2019-2020_Prob_03_v01.pdf
 
- -933.00 	-	 00000819 	-	 SEND_PIPE 	-	 4
- -933.00 	-	 00000819 	-	 ENTRY 	-	 8	./.git/objects/c8
+ 49.00 	-	 00008562 	-	 ENTRY 	-	 122871	/home/pedro/Documentos/SOPE/Praticas/SOPE_2019-2020_Prob_04_v01.pdf
 
- -933.00 	-	 00000819 	-	 EXIT 	-	 0
- -933.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -933.00 	-	 00000820 	-	 ENTRY 	-	 4	./.git/objects/5f/b8cea3b6e8723af444c90682e1f693542c147b
+ 49.00 	-	 00008562 	-	 ENTRY 	-	 129241	/home/pedro/Documentos/SOPE/Praticas/SOPE_2019-2020_Prob_02_v01.pdf
 
- -933.00 	-	 00000820 	-	 ENTRY 	-	 4	./.git/objects/5f/d1eb421a997713e67a3af201f08e31d4a40fcd
+ 50.00 	-	 00008566 	-	 ENTRY 	-	 969	/home/pedro/Documentos/SOPE/Praticas/TP4/ex5b.c
 
- -933.00 	-	 00000820 	-	 SEND_PIPE 	-	 8
- -933.00 	-	 00000820 	-	 ENTRY 	-	 12	./.git/objects/5f
+ 50.00 	-	 00008566 	-	 ENTRY 	-	 1228	/home/pedro/Documentos/SOPE/Praticas/TP4/ex3b.c
 
- -933.00 	-	 00000820 	-	 EXIT 	-	 0
- -933.00 	-	 00000693 	-	 RECV_PIPE 	-	 8
- -932.00 	-	 00000821 	-	 ENTRY 	-	 4	./.git/objects/41/b3c34c9d368679ca2381f6b00ba22fccb04f25
+ 50.00 	-	 00008566 	-	 ENTRY 	-	 1171	/home/pedro/Documentos/SOPE/Praticas/TP4/ex5a.c
 
- -932.00 	-	 00000821 	-	 SEND_PIPE 	-	 4
- -932.00 	-	 00000821 	-	 ENTRY 	-	 8	./.git/objects/41
+ 50.00 	-	 00008566 	-	 ENTRY 	-	 948	/home/pedro/Documentos/SOPE/Praticas/TP4/ex4a.c
 
- -932.00 	-	 00000821 	-	 EXIT 	-	 0
- -932.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -932.00 	-	 00000822 	-	 ENTRY 	-	 4	./.git/objects/a8/b31a6435ea61e5debc70888580ea8d7ce86521
+ 50.00 	-	 00008566 	-	 ENTRY 	-	 1030	/home/pedro/Documentos/SOPE/Praticas/TP4/ex2a.c
 
- -932.00 	-	 00000822 	-	 SEND_PIPE 	-	 4
- -932.00 	-	 00000822 	-	 ENTRY 	-	 8	./.git/objects/a8
+ 50.00 	-	 00008566 	-	 ENTRY 	-	 1135	/home/pedro/Documentos/SOPE/Praticas/TP4/ex4b.c
 
- -932.00 	-	 00000822 	-	 EXIT 	-	 0
- -932.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -932.00 	-	 00000823 	-	 SEND_PIPE 	-	 0
- -932.00 	-	 00000823 	-	 ENTRY 	-	 4	./.git/objects/info
+ 50.00 	-	 00008566 	-	 ENTRY 	-	 657	/home/pedro/Documentos/SOPE/Praticas/TP4/ex1a.c
 
- -932.00 	-	 00000823 	-	 EXIT 	-	 0
- -931.00 	-	 00000693 	-	 RECV_PIPE 	-	 0
- -931.00 	-	 00000824 	-	 ENTRY 	-	 4	./.git/objects/a1/f4f2d3304fbf1f4a1fb7a559b31606a03da908
+ 50.00 	-	 00008566 	-	 ENTRY 	-	 8760	/home/pedro/Documentos/SOPE/Praticas/TP4/comp
 
- -931.00 	-	 00000824 	-	 SEND_PIPE 	-	 4
- -931.00 	-	 00000824 	-	 ENTRY 	-	 8	./.git/objects/a1
+ 50.00 	-	 00008566 	-	 ENTRY 	-	 307	/home/pedro/Documentos/SOPE/Praticas/TP4/ex1b.c
 
- -931.00 	-	 00000824 	-	 EXIT 	-	 0
- -931.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -931.00 	-	 00000825 	-	 ENTRY 	-	 4	./.git/objects/b0/61a8229dda2640c5243d4924cba569894e8c0d
+ 50.00 	-	 00008566 	-	 ENTRY 	-	 569	/home/pedro/Documentos/SOPE/Praticas/TP4/ex1c.c
 
- -931.00 	-	 00000825 	-	 SEND_PIPE 	-	 4
- -931.00 	-	 00000825 	-	 ENTRY 	-	 8	./.git/objects/b0
+ 50.00 	-	 00008566 	-	 ENTRY 	-	 794	/home/pedro/Documentos/SOPE/Praticas/TP4/ex3a.c
 
- -931.00 	-	 00000825 	-	 EXIT 	-	 0
- -931.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -931.00 	-	 00000826 	-	 ENTRY 	-	 4	./.git/objects/9d/b9722d89a40ea5cc258c4370b7c761731d676f
+ 50.00 	-	 00008566 	-	 ENTRY 	-	 21664	/home/pedro/Documentos/SOPE/Praticas/TP4
 
- -931.00 	-	 00000826 	-	 SEND_PIPE 	-	 4
- -931.00 	-	 00000826 	-	 ENTRY 	-	 8	./.git/objects/9d
+ 50.00 	-	 00008566 	-	 EXIT 	-	 0
+ 50.00 	-	 00008562 	-	 RECV_PIPE 	-	 140726400599552
+ 50.00 	-	 00008567 	-	 ENTRY 	-	 615	/home/pedro/Documentos/SOPE/Praticas/TP3/ex2c.c
 
- -931.00 	-	 00000826 	-	 EXIT 	-	 0
- -930.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -930.00 	-	 00000830 	-	 ENTRY 	-	 60	./.git/objects/e5/51fd1212b201e4d3b8cf8052498789d1324b10
+ 50.00 	-	 00008567 	-	 ENTRY 	-	 674	/home/pedro/Documentos/SOPE/Praticas/TP3/ex2d.c
 
- -930.00 	-	 00000830 	-	 SEND_PIPE 	-	 60
- -930.00 	-	 00000830 	-	 ENTRY 	-	 64	./.git/objects/e5
+ 50.00 	-	 00008567 	-	 ENTRY 	-	 638	/home/pedro/Documentos/SOPE/Praticas/TP3/ex3.c
 
- -930.00 	-	 00000830 	-	 EXIT 	-	 0
- -930.00 	-	 00000693 	-	 RECV_PIPE 	-	 60
- -930.00 	-	 00000831 	-	 ENTRY 	-	 4	./.git/objects/a4/9844782be027aee4bd9b58090a9367e98e2f03
+ 50.00 	-	 00008567 	-	 ENTRY 	-	 446	/home/pedro/Documentos/SOPE/Praticas/TP3/ex1.c
 
- -930.00 	-	 00000831 	-	 SEND_PIPE 	-	 4
- -930.00 	-	 00000831 	-	 ENTRY 	-	 8	./.git/objects/a4
+ 50.00 	-	 00008567 	-	 ENTRY 	-	 331	/home/pedro/Documentos/SOPE/Praticas/TP3/ex4a.c
 
- -930.00 	-	 00000831 	-	 EXIT 	-	 0
- -930.00 	-	 00000693 	-	 RECV_PIPE 	-	 4
- -930.00 	-	 00000693 	-	 SEND_PIPE 	-	 1388
- -930.00 	-	 00000693 	-	 ENTRY 	-	 1392	./.git/objects
+ 50.00 	-	 00008567 	-	 ENTRY 	-	 368	/home/pedro/Documentos/SOPE/Praticas/TP3/ex2a.c
 
- -930.00 	-	 00000693 	-	 EXIT 	-	 0
- -930.00 	-	 00000692 	-	 RECV_PIPE 	-	 1388
- -929.00 	-	 00000692 	-	 ENTRY 	-	 4	./.git/index
+ 50.00 	-	 00008567 	-	 ENTRY 	-	 314	/home/pedro/Documentos/SOPE/Praticas/TP3/ex4b.c
 
- -929.00 	-	 00000692 	-	 ENTRY 	-	 4	./.git/HEAD
+ 50.00 	-	 00008567 	-	 ENTRY 	-	 8432	/home/pedro/Documentos/SOPE/Praticas/TP3/comp
 
- -929.00 	-	 00000692 	-	 ENTRY 	-	 4	./.git/FETCH_HEAD
+ 50.00 	-	 00008567 	-	 ENTRY 	-	 15914	/home/pedro/Documentos/SOPE/Praticas/TP3
 
- -929.00 	-	 00000836 	-	 SEND_PIPE 	-	 0
- -929.00 	-	 00000836 	-	 ENTRY 	-	 4	./.git/refs/tags
+ 50.00 	-	 00008567 	-	 EXIT 	-	 0
+ 51.00 	-	 00008562 	-	 RECV_PIPE 	-	 140726400599552
+ 51.00 	-	 00008562 	-	 ENTRY 	-	 661333	/home/pedro/Documentos/SOPE/Praticas
 
- -929.00 	-	 00000836 	-	 EXIT 	-	 0
- -929.00 	-	 00000833 	-	 RECV_PIPE 	-	 0
- -929.00 	-	 00000838 	-	 ENTRY 	-	 4	./.git/refs/remotes/origin/master
+ 51.00 	-	 00008562 	-	 EXIT 	-	 0
+ 51.00 	-	 00008441 	-	 RECV_PIPE 	-	 0
+ 51.00 	-	 00008441 	-	 ENTRY 	-	 7042883	/home/pedro/Documentos/SOPE
 
- -929.00 	-	 00000838 	-	 SEND_PIPE 	-	 4
- -929.00 	-	 00000838 	-	 ENTRY 	-	 8	./.git/refs/remotes/origin
-
- -929.00 	-	 00000838 	-	 EXIT 	-	 0
- -928.00 	-	 00000837 	-	 RECV_PIPE 	-	 4
- -928.00 	-	 00000837 	-	 SEND_PIPE 	-	 8
- -928.00 	-	 00000837 	-	 ENTRY 	-	 12	./.git/refs/remotes
-
- -928.00 	-	 00000837 	-	 EXIT 	-	 0
- -928.00 	-	 00000833 	-	 RECV_PIPE 	-	 8
- -928.00 	-	 00000839 	-	 ENTRY 	-	 4	./.git/refs/heads/master
-
- -928.00 	-	 00000839 	-	 SEND_PIPE 	-	 4
- -928.00 	-	 00000839 	-	 ENTRY 	-	 8	./.git/refs/heads
-
- -928.00 	-	 00000839 	-	 EXIT 	-	 0
- -928.00 	-	 00000833 	-	 RECV_PIPE 	-	 4
- -928.00 	-	 00000833 	-	 SEND_PIPE 	-	 24
- -928.00 	-	 00000833 	-	 ENTRY 	-	 28	./.git/refs
-
- -928.00 	-	 00000833 	-	 EXIT 	-	 0
- -928.00 	-	 00000692 	-	 RECV_PIPE 	-	 24
- -927.00 	-	 00000840 	-	 ENTRY 	-	 4	./.git/hooks/README.sample
-
- -927.00 	-	 00000840 	-	 SEND_PIPE 	-	 4
- -927.00 	-	 00000840 	-	 ENTRY 	-	 8	./.git/hooks
-
- -927.00 	-	 00000840 	-	 EXIT 	-	 0
- -927.00 	-	 00000692 	-	 RECV_PIPE 	-	 4
- -927.00 	-	 00000692 	-	 ENTRY 	-	 4	./.git/description
-
- -927.00 	-	 00000841 	-	 ENTRY 	-	 8	./.git/logs/HEAD
-
- -926.00 	-	 00000844 	-	 ENTRY 	-	 4	./.git/logs/refs/remotes/origin/master
-
- -926.00 	-	 00000844 	-	 SEND_PIPE 	-	 4
- -926.00 	-	 00000844 	-	 ENTRY 	-	 8	./.git/logs/refs/remotes/origin
-
- -926.00 	-	 00000844 	-	 EXIT 	-	 0
- -926.00 	-	 00000843 	-	 RECV_PIPE 	-	 4
- -926.00 	-	 00000843 	-	 SEND_PIPE 	-	 8
- -926.00 	-	 00000843 	-	 ENTRY 	-	 12	./.git/logs/refs/remotes
-
- -926.00 	-	 00000843 	-	 EXIT 	-	 0
- -926.00 	-	 00000842 	-	 RECV_PIPE 	-	 8
- -926.00 	-	 00000842 	-	 ENTRY 	-	 0	./.git/logs/refs/stash
-
- -926.00 	-	 00000845 	-	 ENTRY 	-	 4	./.git/logs/refs/heads/master
-
- -926.00 	-	 00000845 	-	 SEND_PIPE 	-	 4
- -926.00 	-	 00000845 	-	 ENTRY 	-	 8	./.git/logs/refs/heads
-
- -926.00 	-	 00000845 	-	 EXIT 	-	 0
- -925.00 	-	 00000842 	-	 RECV_PIPE 	-	 4
- -925.00 	-	 00000842 	-	 SEND_PIPE 	-	 20
- -925.00 	-	 00000842 	-	 ENTRY 	-	 24	./.git/logs/refs
-
- -925.00 	-	 00000842 	-	 EXIT 	-	 0
- -925.00 	-	 00000841 	-	 RECV_PIPE 	-	 20
- -925.00 	-	 00000841 	-	 SEND_PIPE 	-	 32
- -925.00 	-	 00000841 	-	 ENTRY 	-	 36	./.git/logs
-
- -925.00 	-	 00000841 	-	 EXIT 	-	 0
- -925.00 	-	 00000692 	-	 RECV_PIPE 	-	 32
- -925.00 	-	 00000846 	-	 ENTRY 	-	 4	./.git/info/exclude
-
- -925.00 	-	 00000846 	-	 SEND_PIPE 	-	 4
- -925.00 	-	 00000846 	-	 ENTRY 	-	 8	./.git/info
-
- -925.00 	-	 00000846 	-	 EXIT 	-	 0
- -925.00 	-	 00000692 	-	 RECV_PIPE 	-	 4
- -925.00 	-	 00000692 	-	 SEND_PIPE 	-	 1492
- -925.00 	-	 00000692 	-	 ENTRY 	-	 1496	./.git
-
- -925.00 	-	 00000692 	-	 EXIT 	-	 0
- -925.00 	-	 00000684 	-	 RECV_PIPE 	-	 1492
- -924.00 	-	 00000684 	-	 ENTRY 	-	 48	./logfile.txt
-
- -924.00 	-	 00000684 	-	 SEND_PIPE 	-	 1992
- -924.00 	-	 00000684 	-	 ENTRY 	-	 1996	.
-
- -924.00 	-	 00000684 	-	 EXIT 	-	 0
+ 51.00 	-	 00008441 	-	 EXIT 	-	 0

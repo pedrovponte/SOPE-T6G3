@@ -50,8 +50,8 @@ int init_signals(){
 
     if(sigaction(SIGINT, &act_sigint, NULL) < 0){
         fprintf(stderr, "Unable to install SIGINT handler\n");
-        exitLog(EXIT_FAILURE)
-        exit(1);
+        exitLog(EXIT_FAILURE);
+        exit(EXIT_FAILURE);
     }
 
     act_sigterm.sa_handler = sigterm_handler;
@@ -61,7 +61,7 @@ int init_signals(){
     if(sigaction(SIGTERM, &act_sigterm, NULL) < 0){
         fprintf(stderr, "Unable to install SIGTERM handler\n");
         exitLog(EXIT_FAILURE);
-        exit(1);
+        exit(EXIT_FAILURE);
     }
 
     act_sigcont.sa_handler = sigcont_handler;
