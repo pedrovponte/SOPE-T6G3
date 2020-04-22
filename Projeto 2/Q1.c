@@ -2,6 +2,9 @@
 #include "args_handler.h"
 #include "logs.h"
 
+int current_time;
+int max_time;
+
 int main(int argc, char *argv[]){
 
     if(argc < 4){ 
@@ -10,4 +13,9 @@ int main(int argc, char *argv[]){
     }
 
     args_q1 args = process_args_q(argc, argv);
+
+    current_time = 0;
+    max_time = args.nsecs;
+
+    
 }
