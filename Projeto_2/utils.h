@@ -1,12 +1,12 @@
 #include <string.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 typedef struct {
-    int i;
+    int id;
     int pid;
     int tid;
     int dur;
     int pl;
 } pedido;
 
-char *construct_fifo_name(int pid, int tid);

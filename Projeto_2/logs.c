@@ -38,7 +38,7 @@ double get_elapsed_time(void){
 }
 
 int registLog(int i, pid_t pid, pthread_t tid, int dur, int pl, char* action){
-    if(fprintf(file, " %.2f \t-\t %i \t-\t %.8u \t-\t %.8u \t-\t %i \t-\t %i \t-\t %s\n", get_elapsed_time(), i, pid, tid, dur, pl, action) < 0){
+    if(fprintf(file, " %.2f \t;\t %i \t;\t %.8u \t;\t %.8lu \t;\t %i \t;\t %i \t;\t %s\n", get_elapsed_time(), i, pid, tid, dur, pl, action) < 0){
         perror("Error writing to log file.\n");
         exit(1);
     }
@@ -48,41 +48,6 @@ int registLog(int i, pid_t pid, pthread_t tid, int dur, int pl, char* action){
     return 0;
 }
 
-void iwantLog(){
-
-}
-
-void recvdLog(){
-
-}
-
-void enterLog(){
-
-}
-
-void iaminLog(){
-
-}
-
-void timupLog(){
-
-}
-
-void late_2_Log(){
-
-}
-
-void closdLog(){
-
-}
-
-void faildLog(){
-
-}
-
-void gavupLog(){
-    
-}
 
 int closeLog(){
     if(fclose(file) != 0){

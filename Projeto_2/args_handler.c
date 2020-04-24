@@ -1,7 +1,7 @@
 #include "args_handler.h"
 
 void print_usage_u(){
-    printf("USAGE: Un <-t nsecs> fifoname\n");
+    printf("%s", "USAGE: Un <-t nsecs> fifoname\n");
 }
 
 args_u1 process_args_u(int argc, char *argv[]){
@@ -37,7 +37,7 @@ args_u1 process_args_u(int argc, char *argv[]){
 }
 
 void print_usage_q(){
-    printf("USAGE: Qn <-t nsecs> [-l nplaces] [-n nthreads] fifoname");
+    printf("%s", "USAGE: Qn <-t nsecs> [-l nplaces] [-n nthreads] fifoname");
 }
 
 args_q1 process_args_q(int argc, char *argv[]){
@@ -51,16 +51,18 @@ args_q1 process_args_q(int argc, char *argv[]){
         if(strcmp(argv[i], "-t") == 0){
             i++;
             int secs = atoi(argv[i]);
+            args.nsecs = secs;
         }
 
         else if(strcmp(argv[i], "-l") == 0){
             i++;
             int pls = atoi(argv[i]);
+            args.nplaces = pls;
         }
 
         else if(strcmp(argv[i], "-n") == 0){
             i++;
-            int ths = atoi(argv[i]);
+            args.nthreads = atoi(argv[i]);
         }
 
         else if(strcmp(args.fifoname, "") == 0){
