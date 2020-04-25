@@ -26,6 +26,8 @@ void *sendFifo(void * number){
         exit(1);
     } 
 
+    registLog(request.id, request.pid, request.tid, request.dur, request.pl, "IWANT");
+
     char private_fifo[50];
     sprintf(private_fifo, "/tmp/%d.%d", request.pid, request.tid);
     
@@ -45,14 +47,15 @@ void *sendFifo(void * number){
         usleep(15000);
     }
 
-    
-    //fazer operacoes de escrita
+    if(answer.pl > 0 && answer.dur > 0)
+        registLog(answer.id, answer.pid, answer.tid, answer.dur, answer.pl, "IAMIN");
+
+    //escrever logs quando nao entra (diferença entre CLOSD e FAILD, como descobrir?)
 
     if(close(fd2) == -1){
         perror("Error closing fifo.");
         exit(1);
     }
-
     
     unlink(private_fifo);
     return 0;
