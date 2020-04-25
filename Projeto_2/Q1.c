@@ -14,9 +14,9 @@ int main(int argc, char *argv[]){
 
     args_q1 args = process_args_q(argc, argv);
 
-    int current_time = 0;
-    int max_time = args.nsecs;
+    max_time = args.nsecs;
+    current_time = 0;
     
-    
+
 
 }
