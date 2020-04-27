@@ -21,14 +21,14 @@ args_u1 process_args_u(int argc, char *argv[]){
         }
 
         else{
-            perror("Invalid argument");
+            printf("%s\n", "ERROR: Invalid argument");
             print_usage_u();
             exit(1);
         }
     }
 
-    if(args.nsecs == 0){
-        perror("Invalid number of seconds");
+    if(args.nsecs <= 0){
+        printf("%s\n", "ERROR: Invalid number of seconds");
         print_usage_u();
         exit(1);
     }
@@ -70,14 +70,14 @@ args_q1 process_args_q(int argc, char *argv[]){
         }
 
         else{
-            perror("Invalid argument");
+            printf("%s\n", "ERROR: Invalid argument");
             print_usage_q();
             exit(1);
         }
     }
 
-    if(args.nsecs == 0){
-        perror("Invalid number of seconds");
+    if(args.nsecs <= 0){
+        printf("%s\n", "ERROR: Invalid number of seconds");
         print_usage_u();
         exit(1);
     }

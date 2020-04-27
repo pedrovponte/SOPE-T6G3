@@ -8,5 +8,5 @@ typedef struct {
     int tid;
     int dur;
     int pl;
-} pedido;
+} Pedido;
 
