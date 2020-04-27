@@ -11,7 +11,7 @@ int fd;
 char fifo_name[50];
 
 void *sendFifo(void * number){
-    
+
     int fd2;
     Pedido request;
 
@@ -24,32 +24,32 @@ void *sendFifo(void * number){
     if(write(fd, &request, sizeof(Pedido)) == -1){
         perror("Error writing to fifo.");
         exit(1);
-    } 
+    }
 
-    printf("%s\n", "I wrote");
+    //printf("%s\n", "I wrote");
 
     registLog(request.id, request.pid, request.tid, request.dur, request.pl, "IWANT");
 
     char private_fifo[50];
-    sprintf(private_fifo, "/tmp/%d.%d", request.pid, request.tid);
-    
+    sprintf(private_fifo, "/tmp/%d.%d", getpid(), request.tid);
+
     if(mkfifo(private_fifo, 0660) != 0){
-        perror("Error creating fifo.");
+        printf("Error creating fifo.\n");
         exit(1);
     }
 
-    printf("%s", "Created private fifo\n");
+    //printf("%s\n", "Created private fifo");
 
-    if((fd2 = open(private_fifo, O_RDONLY /*| O_NONBLOCK)*/)) != 0){
-        perror("Error opening fifo.");
+  /*if((fd2 = open(private_fifo, O_RDONLY | O_NONBLOCK)) != 0){
+        printf("Error opening fifo.\n");
         exit(1);
-    }
-
+    }*/
+    fd2 = open(private_fifo, O_RDONLY);
     printf("%s\n", "Openned fifo");
 
     Pedido answer;
 
-    while(read(fd2, &answer, sizeof(Pedido))){
+    while(read(fd2, &answer, sizeof(Pedido)) <= 0){
         usleep(15000);
     }
 
@@ -65,15 +65,15 @@ void *sendFifo(void * number){
         exit(1);
     }
 
-    printf("%s\n", "Closed fifo");
-    
+    //printf("%s\n", "Closed fifo");
+
     unlink(private_fifo);
     return 0;
 }
 
 int main(int argc, char *argv[]){
 
-    /*if(argc != 4){ 
+    /*if(argc != 4){
         printf("%s\n", "Wrong number of arguments");
         exit(1);
     }*/
@@ -88,7 +88,7 @@ int main(int argc, char *argv[]){
         fd = open(args.fifoname, O_WRONLY);
         if (fd == -1) {
             printf("Connecting to server...\n");
-            sleep(1);
+            usleep(1000000);
             current_time += 1000000;
         }
     } while(fd == -1);
@@ -97,18 +97,18 @@ int main(int argc, char *argv[]){
         int rc;
         pthread_t tid;
         rc = pthread_create(&tid, NULL, sendFifo, (void *) &id);
-        printf("%s\n", "thread created");
+        //printf("%s\n", "thread created");
         if(rc){
             printf("ERROR creating thread: return code from pthread_create() is %d\n", rc);
             exit(1);
         }
         id++;
-        current_time += 300000;
-        usleep(300000);
+        current_time += 1000000;
+        usleep(1000000);
     }
 
     pthread_exit(0);
-    
+
     if(close(fd) == -1){
         perror("Error closing fifo.");
         exit(1);

@@ -14,20 +14,23 @@ int place = 0;
 void * processFifo(void *req) {
 
     Pedido pedido = *(Pedido *) req;
+    registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "RECVD");
 
-    printf("%s\n", "Entered process fifo");
+    //printf("%s\n", "Entered process fifo");
 
     if(current_time < max_time) {
         place++;
-        printf("%s %i\n", "Entered wc and place is ", place);
+        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, place, "ENTER");
+        //printf("%s %i\n", "Entered wc and place is ", place);
         current_time += pedido.dur;
-        printf("Current time: %i \n", current_time);
-        printf("Total time: %i\n", max_time);
-        usleep(pedido.dur * 1000000);
+        //printf("Current time: %i \n", current_time);
+        //printf("Total time: %i\n", max_time);
+        usleep(pedido.dur);
     }
     else{
         place = pedido.pl;
         pedido.dur = -1;
+        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, place, "2LATE");
         printf("%s\n", "Wc closed");
     }
 
@@ -42,23 +45,27 @@ void * processFifo(void *req) {
     sprintf(private_fifo, "/tmp/%d.%d", pedido.pid, pedido.tid);
 
     int fd2;
-    if((fd2 = open(private_fifo, O_RDONLY | O_NONBLOCK)) != 0){
+    /*if((fd2 = open(private_fifo, O_WRONLY)) != 0){
         perror("Error opening fifo.");
         exit(1);
-    }
+    }*/
 
-    printf("%s\n", "Openned fifo");
+    do {
+      fd2 = open(private_fifo, O_WRONLY);
+    } while(fd2 == -1);
+
+    //printf("%s\n", "Openned fifo");
 
     write(fd2, &resposta, sizeof(Pedido));
 
-    printf("%s\n", "Wrote on fifo");
+    //printf("%s\n", "Wrote on fifo");
 
     if(close(fd2) == -1){
         perror("Error closing fifo.");
         exit(1);
     }
 
-    printf("%s\n", "Closed fifo");
+    //printf("%s\n", "Closed fifo");
 
     return 0;
 }
@@ -66,17 +73,17 @@ void * processFifo(void *req) {
 
 int main(int argc, char *argv[]){
 
-    /*if(argc < 4){ 
+    /*if(argc < 4){
         perror("Wrong number of arguments.");
         exit(1);
     }*/
-    
+
     int fd1;
     args_q1 args = process_args_q(argc, argv);
 
     max_time = args.nsecs * 1000000;
     //current_time = 0;
-    
+
     mkfifo(args.fifoname, 0660);
 
     printf("%s\n", "Created fifo Qn");
@@ -98,7 +105,7 @@ int main(int argc, char *argv[]){
     }
 
     pthread_exit(0);
-    
+
     if(close(fd1) == -1){
         perror("Error closing fifo.");
         exit(1);
