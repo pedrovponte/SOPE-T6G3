@@ -10,10 +10,6 @@
 
 int get_initial_time();
 
-int openLog();
-
 double get_elapsed_time(void);
 
 int registLog(int i, pid_t pid, pthread_t tid, int dur, int pl, char* action);
-
-int closeLog();

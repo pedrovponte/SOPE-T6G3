@@ -87,7 +87,7 @@ int main(int argc, char *argv[]){
 
     while(current_time < max_time){
         Pedido pedido;
-        while((read(fd1, &pedido, sizeof(Pedido)) != -1) && current_time < max_time){
+        while((read(fd1, &pedido, sizeof(Pedido)) <= 0) && current_time < max_time){
             printf("%s\n", "Waiting");
             sleep(1);
             current_time += 1000000;

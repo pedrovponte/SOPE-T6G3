@@ -40,7 +40,7 @@ void *sendFifo(void * number){
 
     printf("%s", "Created private fifo\n");
 
-    if((fd2 = open(private_fifo, O_RDONLY | O_NONBLOCK)) != 0){
+    if((fd2 = open(private_fifo, O_RDONLY /*| O_NONBLOCK)*/)) != 0){
         perror("Error opening fifo.");
         exit(1);
     }
