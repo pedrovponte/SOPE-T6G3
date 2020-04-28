@@ -15,42 +15,35 @@ void * processFifo(void *req) {
     Pedido pedido = *(Pedido *) req;
     registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "RECVD");
 
-    if(/*current_time*/ time(NULL) < max_time) {
-        place++;
-        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, place, "ENTER");
-        //current_time += pedido.dur;
-        usleep(pedido.dur);
-    }
-    else{
-        place = pedido.pl;
-        pedido.dur = -1;
-        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, place, "2LATE");
-        printf("%s\n", "Wc closed");
-    }
+    char private_fifo[50];
+    sprintf(private_fifo, "/tmp/%d.%d", pedido.pid, pedido.tid);
+
+    int fd2;
 
     Pedido resposta;
     resposta.id = pedido.id;
     resposta.pid = getpid();
     resposta.tid = pthread_self();
     resposta.dur = pedido.dur;
-    resposta.pl = place;
-
-    char private_fifo[50];
-    sprintf(private_fifo, "/tmp/%d.%d", pedido.pid, pedido.tid);
-
-    int fd2;
-    /*if((fd2 = open(private_fifo, O_WRONLY)) != 0){
-        perror("Error opening fifo.");
-        exit(1);
-    }*/
 
     do {
       fd2 = open(private_fifo, O_WRONLY);
     } while(fd2 == -1);
 
-    //printf("%s\n", "Openned fifo");
-
-    write(fd2, &resposta, sizeof(Pedido));
+    if(time(NULL) < max_time) {
+        place++;
+        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, place, "ENTER");
+        resposta.pl = place;
+        write(fd2, &resposta, sizeof(Pedido));
+        usleep(pedido.dur);
+    }
+    else{
+        resposta.pl = -1;
+        resposta.dur = -1;
+        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, place, "2LATE");
+        write(fd2, &resposta, sizeof(Pedido));
+        printf("%s\n", "Wc closed");
+    }
 
     if(close(fd2) == -1){
         perror("Error closing fifo.");
@@ -71,9 +64,7 @@ int main(int argc, char *argv[]){
     int fd1;
     args_q1 args = process_args_q(argc, argv);
 
-    //max_time = args.nsecs * 100000;
     max_time = time(NULL) + args.nsecs;
-    //current_time = 0;
 
     mkfifo(args.fifoname, 0660);
 
@@ -88,7 +79,6 @@ int main(int argc, char *argv[]){
         while((read(fd1, &pedido, sizeof(Pedido)) <= 0) && /*current_time*/ time(NULL) < max_time){
             printf("%s\n", "Waiting");
             sleep(1);
-            //current_time += 1000000;
         }
         pthread_t tid;
         pthread_create(&tid, NULL, processFifo, (void *) &pedido);

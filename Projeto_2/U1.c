@@ -17,7 +17,6 @@ void *sendFifo(void * number){
     Pedido request;
 
     if(finish == 1) {
-        //return 0;
         exit(0);
     }
 
@@ -47,17 +46,12 @@ void *sendFifo(void * number){
         printf("Error opening fifo.\n");
         exit(1);
     }
-    //fd2 = open(private_fifo, O_RDONLY);
-    //printf("fd2: %i\n", fd2);
-    //printf("%s\n", "Openned fifo");
 
     Pedido answer;
 
     while(read(fd2, &answer, sizeof(Pedido)) <= 0){
         usleep(15000);
     }
-
-    //printf("%s\n", "Read from fifo");
 
     if(answer.pl > 0 && answer.dur > 0){
         registLog(answer.id, answer.pid, answer.tid, answer.dur, answer.pl, "IAMIN");
@@ -66,6 +60,8 @@ void *sendFifo(void * number){
         registLog(answer.id, answer.pid, answer.tid, answer.dur, answer.pl, "CLOSD");
         finish = 1;
     }
+
+    printf("Place: %i\n", answer.pl);
 
     //escrever logs quando nao entra (diferença entre CLOSD e FAILD, como descobrir?)
 
@@ -87,9 +83,8 @@ int main(int argc, char *argv[]){
 
     args_u1 args = process_args_u(argc, argv);
 
-    int id = 1;
+    int id = 0;
 
-    //int max_time = args.nsecs * 1000000;
     int max_time = time(NULL) + args.nsecs;
 
     do {
@@ -97,11 +92,10 @@ int main(int argc, char *argv[]){
         if (fd == -1) {
             printf("Connecting to server...\n");
             usleep(1000000);
-            //current_time += 1000000;
         }
     } while(fd == -1);
 
-    while(/*current_time*/ time(NULL) < max_time){
+    while(time(NULL) < max_time){
         int rc;
         pthread_t tid;
         rc = pthread_create(&tid, NULL, sendFifo, (void *) &id);
