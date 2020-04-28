@@ -36,6 +36,7 @@ void * processFifo(void *req) {
         resposta.pl = place;
         write(fd2, &resposta, sizeof(Pedido));
         usleep(pedido.dur);
+        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, place, "TIMUP");
     }
     else{
         resposta.pl = -1;
@@ -74,9 +75,9 @@ int main(int argc, char *argv[]){
 
     printf("%s\n", "Opened fifo Qn");
 
-    while(/*current_time*/ time(NULL) < max_time){
+    while(time(NULL) < max_time){
         Pedido pedido;
-        while((read(fd1, &pedido, sizeof(Pedido)) <= 0) && /*current_time*/ time(NULL) < max_time){
+        while((read(fd1, &pedido, sizeof(Pedido)) <= 0) && time(NULL) < max_time){
             printf("%s\n", "Waiting");
             sleep(1);
         }
