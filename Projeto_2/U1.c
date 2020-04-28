@@ -9,12 +9,17 @@
 
 int fd;
 char fifo_name[50];
-
+int finish = 0;
 
 void *sendFifo(void * number){
 
     int fd2;
     Pedido request;
+
+    if(finish == 1) {
+        //return 0;
+        exit(0);
+    }
 
     request.id = *(int *) number;
     request.dur = rand() % 3000001 + 1;
@@ -37,12 +42,14 @@ void *sendFifo(void * number){
         exit(1);
     }
 
-  /*if((fd2 = open(private_fifo, O_RDONLY | O_NONBLOCK)) != 0){
+    if((fd2 = open(private_fifo, O_RDONLY | O_NONBLOCK)) < 0){
+        registLog(request.id, request.pid, request.tid, request.dur, request.pl, "FAILD");
         printf("Error opening fifo.\n");
         exit(1);
-    }*/
-    fd2 = open(private_fifo, O_RDONLY);
-    printf("%s\n", "Openned fifo");
+    }
+    //fd2 = open(private_fifo, O_RDONLY);
+    //printf("fd2: %i\n", fd2);
+    //printf("%s\n", "Openned fifo");
 
     Pedido answer;
 
@@ -50,10 +57,15 @@ void *sendFifo(void * number){
         usleep(15000);
     }
 
-    printf("%s\n", "Read from fifo");
+    //printf("%s\n", "Read from fifo");
 
-    if(answer.pl > 0 && answer.dur > 0)
+    if(answer.pl > 0 && answer.dur > 0){
         registLog(answer.id, answer.pid, answer.tid, answer.dur, answer.pl, "IAMIN");
+    }
+    else{
+        registLog(answer.id, answer.pid, answer.tid, answer.dur, answer.pl, "CLOSD");
+        finish = 1;
+    }
 
     //escrever logs quando nao entra (diferença entre CLOSD e FAILD, como descobrir?)
 
