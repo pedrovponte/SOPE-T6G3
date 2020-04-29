@@ -16,15 +16,17 @@ void *sendFifo(void * number){
     int fd2;
     Pedido request;
 
-    if(finish == 1) {
-        exit(0);
-    }
-
     request.id = *(int *) number;
     request.dur = rand() % 3000001 + 1;
     request.pid = getpid();
     request.tid = pthread_self();
     request.pl = -1;
+
+    if(finish == 1) {
+      request.dur = -1;
+      registLog(request.id, request.pid, request.tid, request.dur, request.pl, "FAILD");
+      exit(0);
+    }
 
     if(write(fd, &request, sizeof(Pedido)) == -1){
         perror("Error writing to fifo.");
@@ -60,8 +62,6 @@ void *sendFifo(void * number){
         registLog(answer.id, answer.pid, answer.tid, answer.dur, answer.pl, "CLOSD");
         finish = 1;
     }
-
-    printf("Place: %i\n", answer.pl);
 
     //escrever logs quando nao entra (diferença entre CLOSD e FAILD, como descobrir?)
 
