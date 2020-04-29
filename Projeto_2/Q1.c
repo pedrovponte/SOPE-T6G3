@@ -8,7 +8,6 @@
 
 
 int max_time = 0;
-int place = 0;
 
 void * processFifo(void *req) {
 
@@ -24,6 +23,7 @@ void * processFifo(void *req) {
     resposta.id = pedido.id;
     resposta.pid = getpid();
     resposta.tid = pthread_self();
+    resposta.pl = pedido.pl;
     resposta.dur = pedido.dur;
 
     do {
@@ -31,17 +31,15 @@ void * processFifo(void *req) {
     } while(fd2 == -1);
 
     if(time(NULL) < max_time) {
-        place++;
-        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, place, "ENTER");
-        resposta.pl = place;
+        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "ENTER");
         write(fd2, &resposta, sizeof(Pedido));
         usleep(pedido.dur);
-        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, place, "TIMUP");
+        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "TIMUP");
     }
     else{
         resposta.pl = -1;
         resposta.dur = -1;
-        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, place, "2LATE");
+        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "2LATE");
         write(fd2, &resposta, sizeof(Pedido));
         printf("%s\n", "Wc closed");
     }
@@ -62,28 +60,26 @@ int main(int argc, char *argv[]){
         exit(1);
     }*/
 
-    int fd1;
+    int fd1, place = 0;
     args_q1 args = process_args_q(argc, argv);
 
     max_time = time(NULL) + args.nsecs;
 
     mkfifo(args.fifoname, 0660);
 
-    printf("%s\n", "Created fifo Qn");
-
     fd1 = open(args.fifoname, O_RDONLY | O_NONBLOCK);
-
-    printf("%s\n", "Opened fifo Qn");
 
     while(time(NULL) < max_time){
         Pedido pedido;
         while((read(fd1, &pedido, sizeof(Pedido)) <= 0) && time(NULL) < max_time){
-            printf("%s\n", "Waiting");
+            printf("%s\n", "Waiting for requests");
             sleep(1);
         }
+        place++;
+        pedido.pl = place;
         pthread_t tid;
         pthread_create(&tid, NULL, processFifo, (void *) &pedido);
-        printf("%s\n", "Created fifo Qn");
+  
     }
 
     pthread_exit(0);
