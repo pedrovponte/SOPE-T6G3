@@ -57,10 +57,10 @@ void * processFifo(void *req) {
 
 int main(int argc, char *argv[]){
 
-    /*if(argc < 4){
+    if(argc < 2){
         perror("Wrong number of arguments.");
         exit(1);
-    }*/
+    }
 
     int fd1, place = -1;
     args_q1 args = process_args_q(argc, argv);

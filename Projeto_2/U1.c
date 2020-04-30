@@ -22,12 +22,6 @@ void *sendFifo(void * number){
     request.tid = pthread_self();
     request.pl = -1;
 
-    /*if(finish == 1) {
-      request.dur = -1;
-      registLog(request.id, request.pid, request.tid, request.dur, request.pl, "FAILD");
-      exit(0);
-    }*/
-
     if(write(fd, &request, sizeof(Pedido)) == -1){
         perror("Error writing to fifo.");
         exit(1);
@@ -63,8 +57,6 @@ void *sendFifo(void * number){
         finish = 1;
     }
 
-    //escrever logs quando nao entra (diferença entre CLOSD e FAILD, como descobrir?)
-
     if(close(fd2) == -1){
         perror("Error closing fifo.");
         exit(1);
@@ -76,10 +68,10 @@ void *sendFifo(void * number){
 
 int main(int argc, char *argv[]){
 
-    /*if(argc != 4){
+    if(argc < 2){
         printf("%s\n", "Wrong number of arguments");
         exit(1);
-    }*/
+    }
 
     args_u1 args = process_args_u(argc, argv);
 
