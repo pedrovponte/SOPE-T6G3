@@ -22,11 +22,11 @@ void *sendFifo(void * number){
     request.tid = pthread_self();
     request.pl = -1;
 
-    if(finish == 1) {
+    /*if(finish == 1) {
       request.dur = -1;
       registLog(request.id, request.pid, request.tid, request.dur, request.pl, "FAILD");
       exit(0);
-    }
+    }*/
 
     if(write(fd, &request, sizeof(Pedido)) == -1){
         perror("Error writing to fifo.");
@@ -91,7 +91,7 @@ int main(int argc, char *argv[]){
         fd = open(args.fifoname, O_WRONLY);
         if (fd == -1) {
             printf("Connecting to server...\n");
-            usleep(1000000);
+            sleep(1);
         }
     } while(fd == -1);
 
@@ -104,15 +104,15 @@ int main(int argc, char *argv[]){
             exit(1);
         }
         id++;
-        usleep(1000000);
+        sleep(1);
     }
 
-    pthread_exit(0);
+    /*pthread_exit(0);
 
     if(close(fd) == -1){
         perror("Error closing fifo.");
         exit(1);
-    }
+    }*/
 
     return 0;
 }

@@ -69,20 +69,33 @@ int main(int argc, char *argv[]){
 
     fd1 = open(args.fifoname, O_RDONLY | O_NONBLOCK);
 
+    Pedido pedido;
+    //read(fd1, &pedido, sizeof(Pedido));
     while(time(NULL) < max_time){
-        Pedido pedido;
-        while((read(fd1, &pedido, sizeof(Pedido)) <= 0) && time(NULL) < max_time){
+        //Pedido pedido;
+        /*while((read(fd1, &pedido, sizeof(Pedido)) <= 0) && time(NULL) < max_time){
             printf("%s\n", "Waiting for requests");
             sleep(1);
-        }
+        }*/
         place++;
         pedido.pl = place;
         pthread_t tid;
         pthread_create(&tid, NULL, processFifo, (void *) &pedido);
-  
+        while((read(fd1, &pedido, sizeof(Pedido)) <= 0) && time(NULL) < max_time){
+            printf("%s\n", "Waiting for requests");
+            sleep(1);
+        }
     }
 
-    pthread_exit(0);
+    sleep(1);
+    //Pedido pedido;
+    while(read(fd1, &pedido, sizeof(Pedido)) > 0) {
+        pthread_t tid;
+        pthread_create(&tid, NULL, processFifo, (void *) &pedido);
+        sleep(1);
+    }
+
+    //pthread_exit(0);
 
     if(close(fd1) == -1){
         perror("Error closing fifo.");

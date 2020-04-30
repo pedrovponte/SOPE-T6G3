@@ -9,4 +9,3 @@ typedef struct {
     int dur;
     int pl;
 } Pedido;
-
