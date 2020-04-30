@@ -8,11 +8,13 @@
 
 
 int max_time = 0;
+int start = 0;
 
 void * processFifo(void *req) {
 
     Pedido pedido = *(Pedido *) req;
-    registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "RECVD");
+    if(start == 1)
+        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "RECVD");
 
     char private_fifo[50];
     sprintf(private_fifo, "/tmp/%d.%d", pedido.pid, pedido.tid);
@@ -60,7 +62,7 @@ int main(int argc, char *argv[]){
         exit(1);
     }*/
 
-    int fd1, place = 0;
+    int fd1, place = -1;
     args_q1 args = process_args_q(argc, argv);
 
     max_time = time(NULL) + args.nsecs;
@@ -85,6 +87,7 @@ int main(int argc, char *argv[]){
             printf("%s\n", "Waiting for requests");
             sleep(1);
         }
+        start = 1;
     }
 
     sleep(1);
