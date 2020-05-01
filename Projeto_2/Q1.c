@@ -23,7 +23,6 @@ void * processFifo(void *req) {
 
     if(time(NULL) < max_time) {
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "ENTER");
-        //write(fd2, &pedido, sizeof(Pedido));
         usleep(pedido.dur);
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "TIMUP");
     }
