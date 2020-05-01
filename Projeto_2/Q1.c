@@ -3,17 +3,14 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include "args_handler.h"
-#include "logs.h"
 #include "utils.h"
 
 
 int max_time = 0;
-int start = 0;
 
 void * processFifo(void *req) {
 
     Pedido pedido = *(Pedido *) req;
-    if(start == 1)
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "RECVD");
 
     char private_fifo[50];
@@ -21,29 +18,36 @@ void * processFifo(void *req) {
 
     int fd2;
 
-    Pedido resposta;
-    resposta.id = pedido.id;
-    resposta.pid = getpid();
-    resposta.tid = pthread_self();
-    resposta.pl = pedido.pl;
-    resposta.dur = pedido.dur;
-
-    do {
-      fd2 = open(private_fifo, O_WRONLY);
-    } while(fd2 == -1);
+    pedido.pid = getpid();
+    pedido.tid = pthread_self();
 
     if(time(NULL) < max_time) {
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "ENTER");
-        write(fd2, &resposta, sizeof(Pedido));
+        //write(fd2, &pedido, sizeof(Pedido));
         usleep(pedido.dur);
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "TIMUP");
     }
     else{
-        resposta.pl = -1;
-        resposta.dur = -1;
+        pedido.pl = -1;
+        pedido.dur = -1;
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "2LATE");
-        write(fd2, &resposta, sizeof(Pedido));
         printf("%s\n", "Wc closed");
+    }
+
+    int tents = 0;
+    do {
+      fd2 = open(private_fifo, O_WRONLY);
+      tents++;
+      if(tents == 20){
+          break;
+      }
+    } while(fd2 == -1);
+
+    if(tents == 20) {
+        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "GAVUP");
+    }
+    else {
+        write(fd2, &pedido, sizeof(Pedido));
     }
 
     if(close(fd2) == -1){
@@ -57,12 +61,13 @@ void * processFifo(void *req) {
 
 int main(int argc, char *argv[]){
 
-    if(argc < 2){
+    if(argc < 4){
         perror("Wrong number of arguments.");
+        print_usage_q();
         exit(1);
     }
 
-    int fd1, place = -1;
+    int fd1, place = 0;
     args_q1 args = process_args_q(argc, argv);
 
     max_time = time(NULL) + args.nsecs;
@@ -72,33 +77,25 @@ int main(int argc, char *argv[]){
     fd1 = open(args.fifoname, O_RDONLY | O_NONBLOCK);
 
     Pedido pedido;
-    //read(fd1, &pedido, sizeof(Pedido));
     while(time(NULL) < max_time){
-        //Pedido pedido;
-        /*while((read(fd1, &pedido, sizeof(Pedido)) <= 0) && time(NULL) < max_time){
-            printf("%s\n", "Waiting for requests");
-            sleep(1);
-        }*/
-        place++;
-        pedido.pl = place;
-        pthread_t tid;
-        pthread_create(&tid, NULL, processFifo, (void *) &pedido);
-        while((read(fd1, &pedido, sizeof(Pedido)) <= 0) && time(NULL) < max_time){
-            printf("%s\n", "Waiting for requests");
+        if((read(fd1, &pedido, sizeof(Pedido)) <= 0) && time(NULL) < max_time){
+            printf("%s\n", "Waiting for requests...");
             sleep(1);
         }
-        start = 1;
+        if(read(fd1, &pedido, sizeof(Pedido)) > 0) {
+          place++;
+          pedido.pl = place;
+          pthread_t tid;
+          pthread_create(&tid, NULL, processFifo, (void *) &pedido);
+        }
     }
 
     sleep(1);
-    //Pedido pedido;
     while(read(fd1, &pedido, sizeof(Pedido)) > 0) {
         pthread_t tid;
         pthread_create(&tid, NULL, processFifo, (void *) &pedido);
         sleep(1);
     }
-
-    //pthread_exit(0);
 
     if(close(fd1) == -1){
         perror("Error closing fifo.");

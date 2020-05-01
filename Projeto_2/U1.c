@@ -4,7 +4,6 @@
 #include <fcntl.h>
 
 #include "args_handler.h"
-#include "logs.h"
 #include "utils.h"
 
 int fd;
@@ -68,8 +67,9 @@ void *sendFifo(void * number){
 
 int main(int argc, char *argv[]){
 
-    if(argc < 2){
+    if(argc < 4){
         printf("%s\n", "Wrong number of arguments");
+        print_usage_u();
         exit(1);
     }
 
@@ -85,7 +85,7 @@ int main(int argc, char *argv[]){
             printf("Connecting to server...\n");
             sleep(1);
         }
-    } while(fd == -1);
+    } while((fd == -1) && (time(NULL) < max_time));
 
     while(time(NULL) < max_time){
         int rc;
@@ -98,13 +98,6 @@ int main(int argc, char *argv[]){
         id++;
         sleep(1);
     }
-
-    /*pthread_exit(0);
-
-    if(close(fd) == -1){
-        perror("Error closing fifo.");
-        exit(1);
-    }*/
 
     return 0;
 }

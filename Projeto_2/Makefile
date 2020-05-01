@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -pthread
-DEPS = utils.h args_handler.h logs.h U1.c Q1.c
-OBJ = utils.o args_handler.o logs.o
+DEPS = utils.h args_handler.h U1.c Q1.c
+OBJ = utils.o args_handler.o
 TARGETS = U1 Q1
 
 all: U1 Q1

@@ -9,8 +9,6 @@ typedef struct {
 
 typedef struct {
     int nsecs;
-    int nplaces;
-    int nthreads;
     char fifoname[200];
 } args_q1;
 
