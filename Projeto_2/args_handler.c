@@ -65,7 +65,7 @@ args_q1 process_args_q(int argc, char *argv[]){
 
     if(args.nsecs <= 0){
         printf("%s\n", "ERROR: Invalid number of seconds");
-        print_usage_u();
+        print_usage_q();
         exit(1);
     }
 

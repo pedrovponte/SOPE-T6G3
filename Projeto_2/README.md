@@ -10,7 +10,7 @@ Trabalho realizado por:
 
 Neste documento pretendemos demonstrar alguns pormenores que achamos relevantes na implementação da tarefa pedida.
 
-Na primeira estapa do projeto, a operação do programa Q1 é mais restringida, pois a lotação e o número de threads do servidos é ilimitada. Deste modo, não introduzimos na struct responsável por guardar os dados necessários para o funcionamento deste processo variáveis que guardassem os valores para estes 2 atributos referidos.
+Na primeira etapa do projeto, a operação do programa Q1 é mais restrita, pois a lotação e o número de threads do servidor é ilimitada. Deste modo, não introduzimos na struct responsável por guardar os dados necessários para o funcionamento deste processo variáveis que guardassem os valores para estes 2 atributos referidos.
 
 Para correr o programa, basta escrever num terminal **./U1 -t nsecs fifoname** e noutro **Qn -t nsecs fifoname**.
 
@@ -90,7 +90,7 @@ em que **id, pid, tid, dur e pl** têm o mesmo significado que as variáveis uti
 
 ## Algumas notas extra
 
-* Mesmo depois da casa de banho fechar (servidor), ainda continua a receber pedidos de utilizadores que a querem frequentar enquanto o tempo de funcionamento do processo cliente não for atingido. No entanto, todos estes pedidos são regeitados a partir do momento em que a casa de banho fecha.
+* Mesmo depois da casa de banho fechar (servidor), ainda continua a receber pedidos de utilizadores que a querem frequentar enquanto o tempo de funcionamento do processo cliente não for atingido. No entanto, todos estes pedidos são rejeitados a partir do momento em que a casa de banho fecha.
 
 * Se o processo cliente for criado sem que exista nenhum servidor para receber os pedidos, o cliente vai ficar durante todo o tempo de execução a que se destinou a tentar comunicar com o servidor, aparecendo no terminal a mensagem "Connecting to server...".
 
