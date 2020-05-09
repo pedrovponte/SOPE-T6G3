@@ -37,7 +37,7 @@ args_u1 process_args_u(int argc, char *argv[]){
 }
 
 void print_usage_q(){
-    printf("%s", "USAGE: Qn <-t nsecs> fifoname");
+    printf("%s", "USAGE: Qn <-t nsecs> [-l nplaces] [-n nthreads] fifoname");
 }
 
 args_q1 process_args_q(int argc, char *argv[]){
@@ -50,6 +50,17 @@ args_q1 process_args_q(int argc, char *argv[]){
             i++;
             int secs = atoi(argv[i]);
             args.nsecs = secs;
+        }
+
+        else if(strcmp(argv[i], "-l") == 0){
+            i++;
+            int pls = atoi(argv[i]);
+            args.nplaces = pls;
+        }
+
+        else if(strcmp(argv[i], "-n") == 0){
+            i++;
+            args.nthreads = atoi(argv[i]);
         }
 
         else if(strcmp(args.fifoname, "") == 0){
