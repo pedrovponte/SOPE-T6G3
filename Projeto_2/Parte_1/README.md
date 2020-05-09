@@ -12,7 +12,7 @@ Neste documento pretendemos demonstrar alguns pormenores que achamos relevantes 
 
 Na primeira etapa do projeto, a operação do programa Q1 é mais restrita, pois a lotação e o número de threads do servidor é ilimitada. Deste modo, não introduzimos na struct responsável por guardar os dados necessários para o funcionamento deste processo variáveis que guardassem os valores para estes 2 atributos referidos.
 
-Para correr o programa, basta escrever num terminal **./U1 -t nsecs fifoname** e noutro **Qn -t nsecs fifoname**.
+Para correr o programa, basta escrever num terminal **./U1 -t nsecs fifoname** e noutro **./Qn -t nsecs fifoname**.
 
 ### Criação de structs para guardar os dados fornecidos
 
@@ -56,7 +56,7 @@ typedef struct {
 
 **dur** - duração, em milissegundos, de utilização (de um lugar) do Quarto de Banho (valor atribuído no pedido e repetido na resposta, se se der a ocupação; se não se der, por motivo de o Quarto de Banho estar em vias de encerrar, o servidor responde aqui com o valor -1;
 
-**pl** – no de lugar que eventualmente lhe será atribuído no Quarto de Banho (no pedido, este campo é
+**pl** – número de lugar que eventualmente lhe será atribuído no Quarto de Banho (no pedido, este campo é
 preenchido com o valor -1 e na resposta terá o valor do lugar efetivamente ocupado ou também -1, na sequência de insucesso de ocupação, por motivo de encerramento).
 
 ### Funções que lêm o que foi introduzido no terminal e preenchem as structs args_u1 e args_q1 em [args_handler.c](./args_handler.c)
@@ -96,4 +96,4 @@ em que **id, pid, tid, dur e pl** têm o mesmo significado que as variáveis uti
 
 * Enquanto o servidor não receber pedidos do cliente, aparecerá no terminal a mensagem "Waiting for requests...". 
 
-* Quando a casa de banho é fechada, o servidor escreve no terminal a mensagem "Wc closed".
+* Quando a casa de banho é fechada, o servidor escreve no terminal a mensagem "Wc closed" quando um pedido tenta aceder.
