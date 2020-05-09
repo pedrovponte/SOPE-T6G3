@@ -10,8 +10,8 @@
 
 typedef struct {
     int id;
-    int pid;
-    int tid;
+    pid_t pid;
+    pthread_t tid;
     int dur;
     int pl;
 } Pedido;

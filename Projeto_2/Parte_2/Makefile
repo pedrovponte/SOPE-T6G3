@@ -1,20 +1,20 @@
 CC = gcc
 CFLAGS = -Wall -pthread
-DEPS = utils.h args_handler.h U1.c Q1.c
+DEPS = utils.h args_handler.h U2.c Q2.c
 OBJ = utils.o args_handler.o
-TARGETS = U1 Q1
+TARGETS = U2 Q2
 
-all: U1 Q1
+all: U2 Q2
 
 %.o: %.c $(DEPS)
 	@$(CC) $(CFLAGS) -c -o $@ $<
 	@echo $@
 
-U1: $(OBJ)
+U2: $(OBJ)
 	@$(CC) $(CFLAGS) -o $@ $@.c $(OBJ) -lm
 	@echo $@
 
-Q1: $(OBJ)
+Q2: $(OBJ)
 	@$(CC) $(CFLAGS) -o $@ $@.c $(OBJ) -lm
 	@echo $@
 

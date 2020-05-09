@@ -43,6 +43,8 @@ void print_usage_q(){
 args_q1 process_args_q(int argc, char *argv[]){
     args_q1 args;
     args.nsecs = 0;
+    args.nplaces = __INT_MAX__;
+    args.nthreads = __INT_MAX__;
     strcpy(args.fifoname, "");
 
     for(int i = 1; i < argc; i++){

@@ -15,67 +15,76 @@ void *sendFifo(void * number){
     int fd2;
     Pedido request;
 
+    char private_fifo[50];
+    sprintf(private_fifo, "/tmp/%d.%ld", getpid(), pthread_self());
+
+    if(mkfifo(private_fifo, 0660) < 0){
+        perror("Error creating FIFO");
+        exit(1);
+    }
+
     request.id = *(int *) number;
     request.dur = rand() % 3000001 + 1;
     request.pid = getpid();
     request.tid = pthread_self();
     request.pl = -1;
 
-    if(write(fd, &request, sizeof(Pedido)) == -1){
+    int i  = write(fd, &request, sizeof(Pedido));
+
+    if(i == -1){
         perror("Error writing to fifo.");
+        pthread_exit(NULL);
+    }
+    else {
+        registLog(request.id, request.pid, request.tid, request.dur, request.pl, "IWANT");
+    }
+
+    if((fd2 = open(private_fifo, O_RDONLY /*| O_NONBLOCK*/)) == -1){
+        perror("Error opening FIFO");
         exit(1);
     }
 
-    registLog(request.id, request.pid, request.tid, request.dur, request.pl, "IWANT");
+    i = read(fd2, &request, sizeof(Pedido));
 
-    char private_fifo[50];
-    sprintf(private_fifo, "/tmp/%d.%d", getpid(), request.tid);
-
-    if(mkfifo(private_fifo, 0660) != 0){
-        printf("Error creating fifo.\n");
-        exit(1);
+    if(i < 0){
+        perror("ERROR reading from FIFO");
+        pthread_exit(NULL);
     }
-
-    if((fd2 = open(private_fifo, O_RDONLY | O_NONBLOCK)) < 0){
-        registLog(request.id, request.pid, request.tid, request.dur, request.pl, "FAILD");
-        printf("Error opening fifo.\n");
-        exit(1);
-    }
-
-    Pedido answer;
-
-    while(read(fd2, &answer, sizeof(Pedido)) <= 0){
-        usleep(15000);
-    }
-
-    if(answer.pl > 0 && answer.dur > 0){
-        registLog(answer.id, answer.pid, answer.tid, answer.dur, answer.pl, "IAMIN");
+    else if(i > 0){
+        if(request.pl > 0 && request.dur > 0){
+            registLog(request.id, request.pid, request.tid, request.dur, request.pl, "IAMIN");
+        }
+        else {
+            registLog(request.id, request.pid, request.tid, request.dur, request.pl, "CLOSD");
+        }
     }
     else{
-        registLog(answer.id, answer.pid, answer.tid, answer.dur, answer.pl, "CLOSD");
-        finish = 1;
+        registLog(request.id, request.pid, request.tid, request.dur, request.pl, "FAILD");
     }
 
     if(close(fd2) == -1){
         perror("Error closing fifo.");
-        exit(1);
+        pthread_exit(NULL);
     }
 
-    unlink(private_fifo);
-    return 0;
+    if(unlink(private_fifo) == -1) {
+        perror("ERROR unlinking FIFO");
+        exit(1);
+    }
+    pthread_exit(NULL);
 }
 
 int main(int argc, char *argv[]){
 
     if(argc < 4){
-        printf("%s\n", "Wrong number of arguments");
+        perror("Wrong number of arguments");
         print_usage_u();
         exit(1);
     }
 
     args_u1 args = process_args_u(argc, argv);
 
-    int id = 0;
+    int id = 1, tents = 0;
 
     int max_time = time(NULL) + args.nsecs;
 
@@ -83,21 +92,36 @@ int main(int argc, char *argv[]){
         fd = open(args.fifoname, O_WRONLY);
         if (fd == -1) {
             printf("Connecting to server...\n");
+            tents++;
             sleep(1);
         }
-    } while((fd == -1) && (time(NULL) < max_time));
+    } while((fd == -1) && tents < 5);
+
+    if(tents == 5) {
+        perror(" Main ERROR opening FIFO");
+        exit(1);
+    }
 
     while(time(NULL) < max_time){
-        int rc;
         pthread_t tid;
-        rc = pthread_create(&tid, NULL, sendFifo, (void *) &id);
-        if(rc){
-            printf("ERROR creating thread: return code from pthread_create() is %d\n", rc);
+        if(pthread_create(&tid, NULL, sendFifo, (void *) &id)){
+            perror("ERROR creating thread");
+            exit(1);
+        }
+
+        pthread_detach(tid);
+
+        if(usleep(10000)) {
+            perror("ERROR sleeping");
             exit(1);
         }
         id++;
-        sleep(1);
     }
 
-    return 0;
+    if(close(fd) == -1) {
+        perror("ERROR closing FIFO");
+        exit(1);
+    }
+
+    pthread_exit(NULL);
 }

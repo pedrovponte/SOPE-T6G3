@@ -11,15 +11,16 @@ int max_time = 0;
 void * processFifo(void *req) {
 
     Pedido pedido = *(Pedido *) req;
-        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "RECVD");
+    registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "RECVD");
 
     char private_fifo[50];
-    sprintf(private_fifo, "/tmp/%d.%d", pedido.pid, pedido.tid);
+    sprintf(private_fifo, "/tmp/%d.%ld", pedido.pid, pedido.tid);
 
     int fd2;
-
-    pedido.pid = getpid();
-    pedido.tid = pthread_self();
+    if((fd2 = open(private_fifo, O_WRONLY)) == -1) {
+        perror("ERROR opening FIFO");
+        exit(1);
+    }
 
     if(time(NULL) < max_time) {
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "ENTER");
@@ -30,31 +31,25 @@ void * processFifo(void *req) {
         pedido.pl = -1;
         pedido.dur = -1;
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "2LATE");
-        printf("%s\n", "Wc closed");
     }
 
-    int tents = 0;
-    do {
-      fd2 = open(private_fifo, O_WRONLY);
-      tents++;
-      if(tents == 20){
-          break;
-      }
-    } while(fd2 == -1);
+    int i = write(fd2, &pedido, sizeof(Pedido));
 
-    if(tents == 20) {
+    if(i < 0) {
+        perror("ERROR writing to FIFO");
+        pthread_exit(NULL);
+    }
+
+    else if (i == 0) {
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "GAVUP");
     }
-    else {
-        write(fd2, &pedido, sizeof(Pedido));
-    }
 
-    if(close(fd2) == -1){
+    if(close(fd2)){
         perror("Error closing fifo.");
         exit(1);
     }
 
-    return 0;
+    pthread_exit(NULL);
 }
 
 
@@ -66,42 +61,62 @@ int main(int argc, char *argv[]){
         exit(1);
     }
 
-    int fd1, place = 0;
+    int fd1, place = 0, i = 0;
     args_q1 args = process_args_q(argc, argv);
 
     max_time = time(NULL) + args.nsecs;
 
-    mkfifo(args.fifoname, 0660);
-
-    fd1 = open(args.fifoname, O_RDONLY | O_NONBLOCK);
-
-    Pedido pedido;
-    while(time(NULL) < max_time){
-        if((read(fd1, &pedido, sizeof(Pedido)) <= 0) && time(NULL) < max_time){
-            printf("%s\n", "Waiting for requests...");
-            sleep(1);
-        }
-        if(read(fd1, &pedido, sizeof(Pedido)) > 0) {
-          place++;
-          pedido.pl = place;
-          pthread_t tid;
-          pthread_create(&tid, NULL, processFifo, (void *) &pedido);
-        }
-    }
-
-    sleep(1);
-    while(read(fd1, &pedido, sizeof(Pedido)) > 0) {
-        pthread_t tid;
-        pthread_create(&tid, NULL, processFifo, (void *) &pedido);
-        sleep(1);
-    }
-
-    if(close(fd1) == -1){
-        perror("Error closing fifo.");
+    unlink(args.fifoname);
+    if(mkfifo(args.fifoname, 0660) == -1) {
+        perror("ERROR creating FIFO");
         exit(1);
     }
 
-    unlink(args.fifoname);
+    if((fd1 = open(args.fifoname, O_RDONLY /*| O_NONBLOCK*/)) == -1) {
+        perror("Main ERROR opening FIFO");
+        exit(1);
+    }
 
-    return 0;
+    Pedido pedido;
+
+    while(time(NULL) < max_time){
+        i = read(fd1, &pedido, sizeof(Pedido));
+        if(i < 0 /* && time(NULL) < max_time*/){
+            /*printf("%s\n", "Waiting for requests...");
+            sleep(1);*/
+            perror("ERROR reading FIFO");
+            exit(1);
+        }
+        else if(i > 0) {
+          place++;
+          pedido.pl = place;
+          pthread_t tid;
+          if(pthread_create(&tid, NULL, processFifo, (void *) &pedido)) {
+              perror("ERROR creating thread");
+              exit(1);
+          }
+          pthread_detach(tid);
+        }
+        else {
+          continue;
+        }
+    }
+
+
+    while(read(fd1, &pedido, sizeof(Pedido)) > 0) {
+        pthread_t tid;
+        pthread_create(&tid, NULL, processFifo, (void *) &pedido);
+    }
+
+    if(close(fd1) == -1){
+        perror("Error closing FIFO");
+        exit(1);
+    }
+
+    if(unlink(args.fifoname) == -1) {
+        perror("ERROR unlinking FIFO");
+        exit(1);
+    }
+
+    pthread_exit(NULL);
 }
