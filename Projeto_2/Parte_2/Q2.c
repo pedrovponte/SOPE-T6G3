@@ -2,16 +2,22 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
+#include <semaphore.h>
 #include "args_handler.h"
 #include "utils.h"
+#include "queue.h"
 
-
-int max_time = 0;
+int max_time = 0, place = 1;
+sem_t nPlaces;
+pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
+Queue q;
+int flagPlaces = 0;
 
 void * processFifo(void *req) {
 
     Pedido pedido = *(Pedido *) req;
     registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "RECVD");
+
 
     char private_fifo[50];
     sprintf(private_fifo, "/tmp/%d.%ld", pedido.pid, pedido.tid);
@@ -22,10 +28,23 @@ void * processFifo(void *req) {
         exit(1);
     }
 
+    int client_place;
+
     if(time(NULL) < max_time) {
+        if(flagPlaces) {
+            sem_wait(&nPlaces);
+            pthread_mutex_lock(&mutex);
+            client_place = enter(&q);
+            pthread_mutex_unlock(&mutex);
+        }
+        else {
+            pthread_mutex_lock(&mutex);
+            client_place = place;
+            place++;
+            pthread_mutex_unlock(&mutex);
+        }
+        pedido.pl = client_place;
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "ENTER");
-        usleep(pedido.dur);
-        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "TIMUP");
     }
     else{
         pedido.pl = -1;
@@ -37,11 +56,17 @@ void * processFifo(void *req) {
 
     if(i < 0) {
         perror("ERROR writing to FIFO");
-        pthread_exit(NULL);
-    }
-
-    else if (i == 0) {
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "GAVUP");
+        if(close(fd2) < 0) {
+            perror("ERROR closing FIFO");
+        }
+        if (flagPlaces) {
+            pthread_mutex_lock(&mutex);
+            eliminate(&q, client_place);
+            pthread_mutex_unlock(&mutex);
+            sem_post(&nPlaces);
+        }
+        pthread_exit(NULL);
     }
 
     if(close(fd2)){
@@ -49,9 +74,17 @@ void * processFifo(void *req) {
         exit(1);
     }
 
+    usleep(pedido.dur);
+    registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "TIMUP");
+    if (flagPlaces) {
+        pthread_mutex_lock(&mutex);
+        eliminate(&q, client_place);
+        pthread_mutex_unlock(&mutex);
+        sem_post(&nPlaces);
+    }
+
     pthread_exit(NULL);
 }
-
 
 int main(int argc, char *argv[]){
 
@@ -61,8 +94,17 @@ int main(int argc, char *argv[]){
         exit(1);
     }
 
-    int fd1, place = 0, i = 0;
+    int fd1, i = 0;
     args_q1 args = process_args_q(argc, argv);
+
+    if(args.nplaces < __INT_MAX__)
+        flagPlaces = 1;
+
+    if(flagPlaces) {
+        sem_init(&nPlaces, 0, args.nplaces);
+        q = createQueue(args.nplaces);
+        fillQueue(&q);
+    }
 
     max_time = time(NULL) + args.nsecs;
 
@@ -88,17 +130,15 @@ int main(int argc, char *argv[]){
             exit(1);
         }
         else if(i > 0) {
-          place++;
-          pedido.pl = place;
-          pthread_t tid;
-          if(pthread_create(&tid, NULL, processFifo, (void *) &pedido)) {
-              perror("ERROR creating thread");
-              exit(1);
+            pthread_t tid;
+            if(pthread_create(&tid, NULL, processFifo, (void *) &pedido)) {
+                perror("ERROR creating thread");
+                exit(1);
           }
           pthread_detach(tid);
         }
         else {
-          continue;
+            continue;
         }
     }
 

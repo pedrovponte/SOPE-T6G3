@@ -24,12 +24,17 @@ void *sendFifo(void * number){
     }
 
     request.id = *(int *) number;
-    request.dur = rand() % 3000001 + 1;
+    request.dur = rand() % 20000 + 1;
     request.pid = getpid();
     request.tid = pthread_self();
     request.pl = -1;
 
     int i  = write(fd, &request, sizeof(Pedido));
+
+    /*if(close(fd) == -1) {
+        perror("ERROR closing FIFO");
+        exit(1);
+    }*/
 
     if(i == -1){
         perror("Error writing to fifo.");
