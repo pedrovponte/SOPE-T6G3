@@ -24,7 +24,7 @@ void * processFifo(void *req) {
 
     int fd2;
     if((fd2 = open(private_fifo, O_WRONLY)) == -1) {
-        perror("ERROR opening FIFO");
+        perror("ERROR opening private FIFO");
         exit(1);
     }
 
@@ -32,16 +32,26 @@ void * processFifo(void *req) {
 
     if(time(NULL) < max_time) {
         if(flagPlaces) {
-            sem_wait(&nPlaces);
-            pthread_mutex_lock(&mutex);
+            if(sem_wait(&nPlaces) != 0) {
+                perror("ERROR on semaphore wait");
+            }
+            if(pthread_mutex_lock(&mutex) != 0) {
+                perror("ERROR locking the mutex");
+            }
             client_place = enter(&q);
-            pthread_mutex_unlock(&mutex);
+            if(pthread_mutex_unlock(&mutex) != 0) {
+                perror("ERROR unlocking the mutex");
+            }
         }
         else {
-            pthread_mutex_lock(&mutex);
+            if(pthread_mutex_lock(&mutex) != 0) {
+                perror("ERROR locking the mutex");
+            }
             client_place = place;
             place++;
-            pthread_mutex_unlock(&mutex);
+            if(pthread_mutex_unlock(&mutex) != 0) {
+                perror("ERROR unlocking the mutex");
+            }
         }
         pedido.pl = client_place;
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "ENTER");
@@ -54,33 +64,49 @@ void * processFifo(void *req) {
 
     int i = write(fd2, &pedido, sizeof(Pedido));
 
+
     if(i < 0) {
-        perror("ERROR writing to FIFO");
+        perror("ERROR writing to private FIFO");
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "GAVUP");
         if(close(fd2) < 0) {
-            perror("ERROR closing FIFO");
+            perror("ERROR closing private FIFO");
         }
         if (flagPlaces) {
-            pthread_mutex_lock(&mutex);
+            if(pthread_mutex_lock(&mutex) != 0) {
+                perror("ERROR locking the mutex");
+            }
             eliminate(&q, client_place);
-            pthread_mutex_unlock(&mutex);
-            sem_post(&nPlaces);
+            if(pthread_mutex_unlock(&mutex) != 0) {
+                perror("ERROR unlocking the mutex");
+            }
+            if(sem_post(&nPlaces) != 0) {
+                perror("ERROR on semaphore post");
+            }
         }
         pthread_exit(NULL);
     }
 
     if(close(fd2)){
-        perror("Error closing fifo.");
+        perror("ERROR closing private FIFO");
         exit(1);
     }
 
-    usleep(pedido.dur);
-    registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "TIMUP");
+    if(time(NULL) < max_time) {
+        usleep(pedido.dur);
+        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "TIMUP");
+    }
+
     if (flagPlaces) {
-        pthread_mutex_lock(&mutex);
+        if(pthread_mutex_lock(&mutex) != 0) {
+            perror("ERROR locking the mutex");
+        }
         eliminate(&q, client_place);
-        pthread_mutex_unlock(&mutex);
-        sem_post(&nPlaces);
+        if(pthread_mutex_unlock(&mutex) != 0) {
+            perror("ERROR unlocking the mutex");
+        }
+        if(sem_post(&nPlaces) != 0) {
+            perror("ERROR on semaphore post");
+        }
     }
 
     pthread_exit(NULL);
@@ -89,7 +115,7 @@ void * processFifo(void *req) {
 int main(int argc, char *argv[]){
 
     if(argc < 4){
-        perror("Wrong number of arguments.");
+        perror("Wrong number of arguments");
         print_usage_q();
         exit(1);
     }

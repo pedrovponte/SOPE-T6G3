@@ -1,7 +1,7 @@
 #include "args_handler.h"
 
 void print_usage_u(){
-    printf("%s", "USAGE: Un <-t nsecs> fifoname\n");
+    printf("USAGE: Un <-t nsecs> fifoname\n");
 }
 
 args_u1 process_args_u(int argc, char *argv[]){
@@ -21,14 +21,14 @@ args_u1 process_args_u(int argc, char *argv[]){
         }
 
         else{
-            printf("%s\n", "ERROR: Invalid argument");
+            perror("ERROR: Invalid argument");
             print_usage_u();
             exit(1);
         }
     }
 
     if(args.nsecs <= 0){
-        printf("%s\n", "ERROR: Invalid number of seconds");
+        perror("ERROR: Invalid number of seconds");
         print_usage_u();
         exit(1);
     }
@@ -37,7 +37,7 @@ args_u1 process_args_u(int argc, char *argv[]){
 }
 
 void print_usage_q(){
-    printf("%s", "USAGE: Qn <-t nsecs> [-l nplaces] [-n nthreads] fifoname");
+    printf("USAGE: Qn <-t nsecs> [-l nplaces] [-n nthreads] fifoname\n");
 }
 
 args_q1 process_args_q(int argc, char *argv[]){
@@ -70,14 +70,14 @@ args_q1 process_args_q(int argc, char *argv[]){
         }
 
         else{
-            printf("%s\n", "ERROR: Invalid argument");
+            perror("ERROR: Invalid argument");
             print_usage_q();
             exit(1);
         }
     }
 
     if(args.nsecs <= 0){
-        printf("%s\n", "ERROR: Invalid number of seconds");
+        perror("ERROR: Invalid number of seconds");
         print_usage_q();
         exit(1);
     }

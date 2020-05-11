@@ -9,8 +9,13 @@ typedef struct {
 } Queue;
 
 Queue createQueue(unsigned capacity);
+
 int isEmpty(Queue* q);
+
 int isFull(Queue* q);
+
 void eliminate(Queue* q, unsigned client);
+
 int enter(Queue *q);
+
 void fillQueue(Queue *q);

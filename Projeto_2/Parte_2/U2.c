@@ -19,7 +19,7 @@ void *sendFifo(void * number){
     sprintf(private_fifo, "/tmp/%d.%ld", getpid(), pthread_self());
 
     if(mkfifo(private_fifo, 0660) < 0){
-        perror("Error creating FIFO");
+        perror("ERROR creating private FIFO");
         exit(1);
     }
 
@@ -37,7 +37,7 @@ void *sendFifo(void * number){
     }*/
 
     if(i == -1){
-        perror("Error writing to fifo.");
+        perror("ERROR writing to public FIFO");
         pthread_exit(NULL);
     }
     else {
@@ -45,14 +45,14 @@ void *sendFifo(void * number){
     }
 
     if((fd2 = open(private_fifo, O_RDONLY /*| O_NONBLOCK*/)) == -1){
-        perror("Error opening FIFO");
+        perror("ERROR opening FIFO");
         exit(1);
     }
 
     i = read(fd2, &request, sizeof(Pedido));
 
     if(i < 0){
-        perror("ERROR reading from FIFO");
+        perror("ERROR reading from private FIFO");
         pthread_exit(NULL);
     }
     else if(i > 0){
@@ -68,12 +68,12 @@ void *sendFifo(void * number){
     }
 
     if(close(fd2) == -1){
-        perror("Error closing fifo.");
+        perror("ERROR closing private FIFO");
         pthread_exit(NULL);
     }
 
     if(unlink(private_fifo) == -1) {
-        perror("ERROR unlinking FIFO");
+        perror("ERROR unlinking private FIFO");
         exit(1);
     }
     pthread_exit(NULL);
@@ -96,14 +96,13 @@ int main(int argc, char *argv[]){
     do {
         fd = open(args.fifoname, O_WRONLY);
         if (fd == -1) {
-            printf("Connecting to server...\n");
             tents++;
             sleep(1);
         }
     } while((fd == -1) && tents < 5);
 
     if(tents == 5) {
-        perror(" Main ERROR opening FIFO");
+        perror("ERROR opening FIFO");
         exit(1);
     }
 
