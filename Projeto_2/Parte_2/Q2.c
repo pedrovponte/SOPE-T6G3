@@ -8,10 +8,11 @@
 #include "queue.h"
 
 int max_time = 0, place = 1;
-sem_t nPlaces;
+sem_t nPlaces, nThreads;
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 Queue q;
 int flagPlaces = 0;
+int flagThreads = 0;
 
 void * processFifo(void *req) {
 
@@ -83,6 +84,9 @@ void * processFifo(void *req) {
                 perror("ERROR on semaphore post");
             }
         }
+        if(flagThreads) {
+            sem_post(&nThreads);
+        }
         pthread_exit(NULL);
     }
 
@@ -109,6 +113,10 @@ void * processFifo(void *req) {
         }
     }
 
+    if(flagThreads) {
+        sem_post(&nThreads);
+    }
+
     pthread_exit(NULL);
 }
 
@@ -126,10 +134,17 @@ int main(int argc, char *argv[]){
     if(args.nplaces < __INT_MAX__)
         flagPlaces = 1;
 
+    if(args.nthreads < __INT_MAX__)
+        flagThreads = 1;
+
     if(flagPlaces) {
         sem_init(&nPlaces, 0, args.nplaces);
         q = createQueue(args.nplaces);
         fillQueue(&q);
+    }
+
+    if(flagThreads) {
+        sem_init(&nThreads, 0, args.nthreads);
     }
 
     max_time = time(NULL) + args.nsecs;
@@ -156,6 +171,9 @@ int main(int argc, char *argv[]){
             exit(1);
         }
         else if(i > 0) {
+            if(flagThreads) {
+                sem_wait(&nThreads);
+            }
             pthread_t tid;
             if(pthread_create(&tid, NULL, processFifo, (void *) &pedido)) {
                 perror("ERROR creating thread");
@@ -170,6 +188,9 @@ int main(int argc, char *argv[]){
 
 
     while(read(fd1, &pedido, sizeof(Pedido)) > 0) {
+        if(flagThreads) {
+            sem_wait(&nThreads);
+        }
         pthread_t tid;
         pthread_create(&tid, NULL, processFifo, (void *) &pedido);
     }
