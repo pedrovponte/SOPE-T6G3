@@ -24,7 +24,7 @@ void *sendFifo(void * number){
     }
 
     request.id = *(int *) number;
-    request.dur = rand() % 20000 + 1;
+    request.dur = rand() % 20 + 1;
     request.pid = getpid();
     request.tid = pthread_self();
     request.pl = -1;

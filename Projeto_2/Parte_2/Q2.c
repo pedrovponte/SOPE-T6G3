@@ -29,6 +29,9 @@ void * processFifo(void *req) {
         exit(1);
     }
 
+    pedido.pid = getpid();
+    pedido.tid = pthread_self();
+
     int client_place;
 
     if(time(NULL) < max_time) {
@@ -55,11 +58,15 @@ void * processFifo(void *req) {
             }
         }
         pedido.pl = client_place;
+        //pedido.pid = getpid();
+        //pedido.tid = pthread_self();
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "ENTER");
     }
     else{
         pedido.pl = -1;
         pedido.dur = -1;
+        //pedido.pid = getpid();
+        //pedido.tid = pthread_self();
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "2LATE");
     }
 
@@ -96,7 +103,7 @@ void * processFifo(void *req) {
     }
 
     if(time(NULL) < max_time) {
-        usleep(pedido.dur);
+        usleep(pedido.dur * 1000);
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "TIMUP");
     }
 
@@ -130,6 +137,7 @@ int main(int argc, char *argv[]){
 
     int fd1, i = 0;
     args_q1 args = process_args_q(argc, argv);
+    printf("%i\n", args.nthreads);
 
     if(args.nplaces < __INT_MAX__)
         flagPlaces = 1;
