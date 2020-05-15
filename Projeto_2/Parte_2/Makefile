@@ -7,16 +7,13 @@ TARGETS = U2 Q2
 all: U2 Q2
 
 %.o: %.c $(DEPS)
-	@$(CC) $(CFLAGS) -c -o $@ $<
-	@echo $@
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 U2: $(OBJ)
-	@$(CC) $(CFLAGS) -o $@ $@.c $(OBJ) -lm
-	@echo $@
+	$(CC) $(CFLAGS) -o $@ $@.c $(OBJ) -o $@
 
 Q2: $(OBJ)
-	@$(CC) $(CFLAGS) -o $@ $@.c $(OBJ) -lm
-	@echo $@
+	$(CC) $(CFLAGS) -o $@ $@.c $(OBJ) -o $@
 
 clean:
-	@rm *.o $(TARGETS)
+	rm *.o $(TARGETS)

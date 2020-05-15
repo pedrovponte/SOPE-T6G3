@@ -16,6 +16,7 @@ int flagThreads = 0;
 
 void * processFifo(void *req) {
 
+    pthread_detach(pthread_self());
     Pedido pedido = *(Pedido *) req;
     registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "RECVD");
 
@@ -23,43 +24,59 @@ void * processFifo(void *req) {
     char private_fifo[50];
     sprintf(private_fifo, "/tmp/%d.%ld", pedido.pid, pedido.tid);
 
-    int fd2;
-    if((fd2 = open(private_fifo, O_WRONLY)) == -1) {
-        perror("ERROR opening private FIFO");
-        exit(1);
-    }
 
     pedido.pid = getpid();
     pedido.tid = pthread_self();
 
+    int fd2, tries = 0;
+    while((fd2 = open(private_fifo, O_WRONLY)) < 0 && tries < 5) {
+        fprintf(stderr, "ERROR opening private FIFO\n");
+        //exit(1);
+        usleep(1000);
+        tries++;
+    }
+
+    if(tries == 5) {
+        registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, -1, "GAVUP");
+        if(flagThreads) {
+            sem_post(&nThreads);
+        }
+        /*if(flagPlaces) {
+            pthread_mutex_lock(&mutex);
+            eliminate(&q, client_place);
+            pthread_mutex_unlock(&mutex);
+            sem_post(&nPlaces);
+        }*/
+        pthread_exit(NULL);
+    }
+
     int client_place;
+    //if(time(NULL) < max_time) {
+    if(flagPlaces) {
+        if(sem_wait(&nPlaces) != 0) {
+            perror("ERROR on semaphore wait");
+        }
+        if(pthread_mutex_lock(&mutex) != 0) {
+            perror("ERROR locking the mutex");
+        }
+        client_place = enter(&q);
+        if(pthread_mutex_unlock(&mutex) != 0) {
+            perror("ERROR unlocking the mutex");
+        }
+    }
+    else {
+        if(pthread_mutex_lock(&mutex) != 0) {
+            perror("ERROR locking the mutex");
+        }
+        client_place = place;
+        place++;
+        if(pthread_mutex_unlock(&mutex) != 0) {
+            perror("ERROR unlocking the mutex");
+        }
+    }
+    pedido.pl = client_place;
 
     if(time(NULL) < max_time) {
-        if(flagPlaces) {
-            if(sem_wait(&nPlaces) != 0) {
-                perror("ERROR on semaphore wait");
-            }
-            if(pthread_mutex_lock(&mutex) != 0) {
-                perror("ERROR locking the mutex");
-            }
-            client_place = enter(&q);
-            if(pthread_mutex_unlock(&mutex) != 0) {
-                perror("ERROR unlocking the mutex");
-            }
-        }
-        else {
-            if(pthread_mutex_lock(&mutex) != 0) {
-                perror("ERROR locking the mutex");
-            }
-            client_place = place;
-            place++;
-            if(pthread_mutex_unlock(&mutex) != 0) {
-                perror("ERROR unlocking the mutex");
-            }
-        }
-        pedido.pl = client_place;
-        //pedido.pid = getpid();
-        //pedido.tid = pthread_self();
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "ENTER");
     }
     else{
@@ -71,7 +88,6 @@ void * processFifo(void *req) {
     }
 
     int i = write(fd2, &pedido, sizeof(Pedido));
-
 
     if(i < 0) {
         perror("ERROR writing to private FIFO");
@@ -97,7 +113,7 @@ void * processFifo(void *req) {
         pthread_exit(NULL);
     }
 
-    if(close(fd2)){
+    if(close(fd2) < 0){
         perror("ERROR closing private FIFO");
         exit(1);
     }
@@ -105,6 +121,10 @@ void * processFifo(void *req) {
     if(time(NULL) < max_time) {
         usleep(pedido.dur * 1000);
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "TIMUP");
+    }
+
+    if(flagThreads) {
+        sem_post(&nThreads);
     }
 
     if (flagPlaces) {
@@ -120,10 +140,6 @@ void * processFifo(void *req) {
         }
     }
 
-    if(flagThreads) {
-        sem_post(&nThreads);
-    }
-
     pthread_exit(NULL);
 }
 
@@ -137,7 +153,6 @@ int main(int argc, char *argv[]){
 
     int fd1, i = 0;
     args_q1 args = process_args_q(argc, argv);
-    printf("%i\n", args.nthreads);
 
     if(args.nplaces < __INT_MAX__)
         flagPlaces = 1;
@@ -169,6 +184,7 @@ int main(int argc, char *argv[]){
     }
 
     Pedido pedido;
+    pthread_t tid;
 
     while(time(NULL) < max_time){
         i = read(fd1, &pedido, sizeof(Pedido));
@@ -182,12 +198,12 @@ int main(int argc, char *argv[]){
             if(flagThreads) {
                 sem_wait(&nThreads);
             }
-            pthread_t tid;
+            //pthread_t tid;
             if(pthread_create(&tid, NULL, processFifo, (void *) &pedido)) {
                 perror("ERROR creating thread");
                 exit(1);
           }
-          pthread_detach(tid);
+          //pthread_detach(tid);
         }
         else {
             continue;
@@ -213,5 +229,5 @@ int main(int argc, char *argv[]){
         exit(1);
     }
 
-    pthread_exit(NULL);
+    pthread_exit(0);
 }

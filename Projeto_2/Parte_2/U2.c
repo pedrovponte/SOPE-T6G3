@@ -15,6 +15,8 @@ void *sendFifo(void * number){
     int fd2;
     Pedido request;
 
+    pthread_detach(pthread_self());
+
     char private_fifo[50];
     sprintf(private_fifo, "/tmp/%d.%ld", getpid(), pthread_self());
 
@@ -44,27 +46,36 @@ void *sendFifo(void * number){
         registLog(request.id, request.pid, request.tid, request.dur, request.pl, "IWANT");
     }
 
+    /*if(close(fd) < 0) {
+        perror("ERROR closing private FIFO");
+        pthread_exit(NULL);
+    }*/
+
     if((fd2 = open(private_fifo, O_RDONLY /*| O_NONBLOCK*/)) == -1){
         perror("ERROR opening FIFO");
         exit(1);
     }
 
-    i = read(fd2, &request, sizeof(Pedido));
+    int tries = 0;
+    while(read(fd2, &request, sizeof(Pedido)) <= 0 && tries < 5) {
+        fprintf(stderr, "ERROR reading from FIFO\n");
+        usleep(200);
+        tries++;
+    }
 
-    if(i < 0){
+    if(tries == 5){
         perror("ERROR reading from private FIFO");
+        registLog(request.id, request.pid, request.tid, request.dur, request.pl, "FAILD");
+        close(fd2);
+        unlink(private_fifo);
         pthread_exit(NULL);
     }
-    else if(i > 0){
-        if(request.pl > 0 && request.dur > 0){
-            registLog(request.id, request.pid, request.tid, request.dur, request.pl, "IAMIN");
-        }
-        else {
-            registLog(request.id, request.pid, request.tid, request.dur, request.pl, "CLOSD");
-        }
+
+    if(request.pl > 0 && request.dur > 0){
+        registLog(request.id, request.pid, request.tid, request.dur, request.pl, "IAMIN");
     }
-    else{
-        registLog(request.id, request.pid, request.tid, request.dur, request.pl, "FAILD");
+    else {
+        registLog(request.id, request.pid, request.tid, request.dur, request.pl, "CLOSD");
     }
 
     if(close(fd2) == -1){
@@ -113,7 +124,7 @@ int main(int argc, char *argv[]){
             exit(1);
         }
 
-        pthread_detach(tid);
+        //pthread_detach(tid);
 
         if(usleep(10000)) {
             perror("ERROR sleeping");
@@ -127,5 +138,5 @@ int main(int argc, char *argv[]){
         exit(1);
     }
 
-    pthread_exit(NULL);
+    pthread_exit(0);
 }
