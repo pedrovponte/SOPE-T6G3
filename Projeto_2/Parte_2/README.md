@@ -1,4 +1,4 @@
-# Projeto 2 SOPE - Etapa 1
+# Projeto 2 SOPE - Etapa 2
 
 Trabalho realizado por:
 
@@ -100,7 +100,7 @@ Para ser mais fácil controlar os lugares da casa de banho, implementamos uma qu
 
 Esta implementação foi baseada em https://www.geeksforgeeks.org/queue-set-1introduction-and-array-implementation/.
 
-### Implementação e funcionamento do arguento -l nplaces**
+### Implementação e funcionamento do arguento -l nplaces
 
 Para implementar esta funcionalidade, recorremos à utilização de um **mutex** e de um **semáforo**. Esta implementação está feita em [Q2.c](./Q2.c).
 
@@ -108,7 +108,7 @@ O semáforo serve para controlar o número de pedidos que entram na casa de banh
 
 O mutex é utilizado para controlar a secção crítica do servidor, de modo a impedir que dois clientes ocupem simultaneamente o mesmo lugar.
 
-### Implementação e funcionamento do argumento -n threads**
+### Implementação e funcionamento do argumento -n threads
 
 Para implementar esta funcionalidade, recorremos à utilização de um **semáforo**. Esta implementação está feita em [Q2.c](./Q2.c).
 

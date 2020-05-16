@@ -92,6 +92,7 @@ int main(int argc, char *argv[]){
 
     int id = 1, tries = 0;
 
+    int init_time = time(NULL);
     int max_time = time(NULL) + args.nsecs;
 
     do {
@@ -120,6 +121,8 @@ int main(int argc, char *argv[]){
         }
         id++;
     }
+
+    printf("Elapsed time: %li\n", time(NULL) - init_time);
 
     if(close(fd) == -1) {
         perror("ERROR closing FIFO");

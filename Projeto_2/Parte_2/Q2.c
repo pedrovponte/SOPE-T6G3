@@ -137,6 +137,7 @@ int main(int argc, char *argv[]){
         sem_init(&nThreads, 0, args.nthreads);
     }
 
+    int init_time = time(NULL);
     max_time = time(NULL) + args.nsecs;
 
     unlink(args.fifoname);
@@ -181,6 +182,8 @@ int main(int argc, char *argv[]){
         pthread_t tid;
         pthread_create(&tid, NULL, processFifo, (void *) &pedido);
     }
+
+    printf("Elapsed time: %ld\n", time(NULL) - init_time);
 
     if(close(fd1) == -1){
         perror("Error closing FIFO");
