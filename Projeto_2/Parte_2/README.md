@@ -120,6 +120,6 @@ Assim, sempre que uma thread é criada, decrementa-se o semáforo, e volta-se a 
 
 * Mesmo depois da casa de banho fechar (servidor), ainda continua a receber pedidos de utilizadores que a querem frequentar enquanto o tempo de funcionamento do processo cliente não for atingido. No entanto, todos estes pedidos são rejeitados a partir do momento em que a casa de banho fecha.
 
-* Se o processo cliente for criado sem que exista nenhum servidor para receber os pedidos, o cliente vai ficar durante todo o tempo de execução a que se destinou a tentar comunicar com o servidor.
+* Se o processo cliente for criado sem que exista nenhum servidor para receber os pedidos, passados 5 segundos o cliente termina o processo, imprimindo uma mensagem de erro.
 
 * Ao longo de todo o programa encontra-se em alguns sítios a variável **tries** que serve para contar o número de chamadas às funções **open** ou **read** e terminar o programa com erro caso estas funções sejam chamadas consecutivamente mais do que um certo número de vezes.
