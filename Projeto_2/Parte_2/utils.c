@@ -1,8 +1,5 @@
 #include "utils.h"
 
-extern long bathroom_places;
-extern int max;
-
 int registLog(int id, pid_t pid, pthread_t tid, int dur, int pl, char* action){
     char* log = malloc(500);
     time_t inst = time(NULL);

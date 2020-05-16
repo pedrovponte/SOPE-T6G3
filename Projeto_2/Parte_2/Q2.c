@@ -31,7 +31,6 @@ void * processFifo(void *req) {
     int fd2, tries = 0;
     while((fd2 = open(private_fifo, O_WRONLY)) < 0 && tries < 5) {
         fprintf(stderr, "ERROR opening private FIFO\n");
-        //exit(1);
         usleep(1000);
         tries++;
     }
@@ -41,38 +40,21 @@ void * processFifo(void *req) {
         if(flagThreads) {
             sem_post(&nThreads);
         }
-        /*if(flagPlaces) {
-            pthread_mutex_lock(&mutex);
-            eliminate(&q, client_place);
-            pthread_mutex_unlock(&mutex);
-            sem_post(&nPlaces);
-        }*/
         pthread_exit(NULL);
     }
 
     int client_place;
-    //if(time(NULL) < max_time) {
     if(flagPlaces) {
-        if(sem_wait(&nPlaces) != 0) {
-            perror("ERROR on semaphore wait");
-        }
-        if(pthread_mutex_lock(&mutex) != 0) {
-            perror("ERROR locking the mutex");
-        }
+        sem_wait(&nPlaces);
+        pthread_mutex_lock(&mutex);
         client_place = enter(&q);
-        if(pthread_mutex_unlock(&mutex) != 0) {
-            perror("ERROR unlocking the mutex");
-        }
+        pthread_mutex_unlock(&mutex);
     }
     else {
-        if(pthread_mutex_lock(&mutex) != 0) {
-            perror("ERROR locking the mutex");
-        }
+        pthread_mutex_lock(&mutex);
         client_place = place;
         place++;
-        if(pthread_mutex_unlock(&mutex) != 0) {
-            perror("ERROR unlocking the mutex");
-        }
+        pthread_mutex_unlock(&mutex);
     }
     pedido.pl = client_place;
 
@@ -82,8 +64,6 @@ void * processFifo(void *req) {
     else{
         pedido.pl = -1;
         pedido.dur = -1;
-        //pedido.pid = getpid();
-        //pedido.tid = pthread_self();
         registLog(pedido.id, pedido.pid, pedido.tid, pedido.dur, pedido.pl, "2LATE");
     }
 
@@ -96,16 +76,10 @@ void * processFifo(void *req) {
             perror("ERROR closing private FIFO");
         }
         if (flagPlaces) {
-            if(pthread_mutex_lock(&mutex) != 0) {
-                perror("ERROR locking the mutex");
-            }
+            pthread_mutex_lock(&mutex);
             eliminate(&q, client_place);
-            if(pthread_mutex_unlock(&mutex) != 0) {
-                perror("ERROR unlocking the mutex");
-            }
-            if(sem_post(&nPlaces) != 0) {
-                perror("ERROR on semaphore post");
-            }
+            pthread_mutex_unlock(&mutex);
+            sem_post(&nPlaces);
         }
         if(flagThreads) {
             sem_post(&nThreads);
@@ -128,18 +102,11 @@ void * processFifo(void *req) {
     }
 
     if (flagPlaces) {
-        if(pthread_mutex_lock(&mutex) != 0) {
-            perror("ERROR locking the mutex");
-        }
+        pthread_mutex_lock(&mutex);
         eliminate(&q, client_place);
-        if(pthread_mutex_unlock(&mutex) != 0) {
-            perror("ERROR unlocking the mutex");
-        }
-        if(sem_post(&nPlaces) != 0) {
-            perror("ERROR on semaphore post");
-        }
+        pthread_mutex_unlock(&mutex);
+        sem_post(&nPlaces);
     }
-
     pthread_exit(NULL);
 }
 
@@ -152,7 +119,7 @@ int main(int argc, char *argv[]){
     }
 
     int fd1, i = 0;
-    args_q1 args = process_args_q(argc, argv);
+    args_q2 args = process_args_q(argc, argv);
 
     if(args.nplaces < __INT_MAX__)
         flagPlaces = 1;
@@ -188,9 +155,7 @@ int main(int argc, char *argv[]){
 
     while(time(NULL) < max_time){
         i = read(fd1, &pedido, sizeof(Pedido));
-        if(i < 0 /* && time(NULL) < max_time*/){
-            /*printf("%s\n", "Waiting for requests...");
-            sleep(1);*/
+        if(i < 0){
             perror("ERROR reading FIFO");
             exit(1);
         }
@@ -198,12 +163,10 @@ int main(int argc, char *argv[]){
             if(flagThreads) {
                 sem_wait(&nThreads);
             }
-            //pthread_t tid;
             if(pthread_create(&tid, NULL, processFifo, (void *) &pedido)) {
                 perror("ERROR creating thread");
                 exit(1);
-          }
-          //pthread_detach(tid);
+            }
         }
         else {
             continue;

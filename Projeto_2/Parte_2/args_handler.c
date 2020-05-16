@@ -4,8 +4,8 @@ void print_usage_u(){
     printf("USAGE: Un <-t nsecs> fifoname\n");
 }
 
-args_u1 process_args_u(int argc, char *argv[]){
-    args_u1 args;
+args_u2 process_args_u(int argc, char *argv[]){
+    args_u2 args;
     args.nsecs = 0;
     strcpy(args.fifoname, "");
 
@@ -40,8 +40,8 @@ void print_usage_q(){
     printf("USAGE: Qn <-t nsecs> [-l nplaces] [-n nthreads] fifoname\n");
 }
 
-args_q1 process_args_q(int argc, char *argv[]){
-    args_q1 args;
+args_q2 process_args_q(int argc, char *argv[]){
+    args_q2 args;
     args.nsecs = 0;
     args.nplaces = __INT_MAX__;
     args.nthreads = __INT_MAX__;

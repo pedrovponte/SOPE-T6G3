@@ -33,11 +33,6 @@ void *sendFifo(void * number){
 
     int i  = write(fd, &request, sizeof(Pedido));
 
-    /*if(close(fd) == -1) {
-        perror("ERROR closing FIFO");
-        exit(1);
-    }*/
-
     if(i == -1){
         perror("ERROR writing to public FIFO");
         pthread_exit(NULL);
@@ -45,11 +40,6 @@ void *sendFifo(void * number){
     else {
         registLog(request.id, request.pid, request.tid, request.dur, request.pl, "IWANT");
     }
-
-    /*if(close(fd) < 0) {
-        perror("ERROR closing private FIFO");
-        pthread_exit(NULL);
-    }*/
 
     if((fd2 = open(private_fifo, O_RDONLY /*| O_NONBLOCK*/)) == -1){
         perror("ERROR opening FIFO");
@@ -98,21 +88,21 @@ int main(int argc, char *argv[]){
         exit(1);
     }
 
-    args_u1 args = process_args_u(argc, argv);
+    args_u2 args = process_args_u(argc, argv);
 
-    int id = 1, tents = 0;
+    int id = 1, tries = 0;
 
     int max_time = time(NULL) + args.nsecs;
 
     do {
         fd = open(args.fifoname, O_WRONLY);
         if (fd == -1) {
-            tents++;
+            tries++;
             sleep(1);
         }
-    } while((fd == -1) && tents < 5);
+    } while((fd == -1) && tries < 5);
 
-    if(tents == 5) {
+    if(tries == 5) {
         perror("ERROR opening FIFO");
         exit(1);
     }
@@ -123,8 +113,6 @@ int main(int argc, char *argv[]){
             perror("ERROR creating thread");
             exit(1);
         }
-
-        //pthread_detach(tid);
 
         if(usleep(10000)) {
             perror("ERROR sleeping");
